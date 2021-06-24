@@ -1,0 +1,12 @@
+<div class="container pt-3">
+	<h1>SVG Embedded Artwork</h1>
+	<p>SVG art can be embedded via an external SVG file. Because these use the same &lt;use&gt; method as our icon library, they can similarly respond to color changes via currentColor.</p>
+	<ul>
+	{{# svgArt }}
+		<li>
+			{{> atoms-svg-art }}
+			{{name}}
+		</li>
+	{{/ svgArt }}
+	</ul>
+</div>

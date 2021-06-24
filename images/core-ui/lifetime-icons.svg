@@ -1,0 +1,12 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol fill="currentColor" class="lti lti-chevron-down-short" viewBox="0 0 16 16" id="chevron-down-short" xmlns="http://www.w3.org/2000/svg">
+			<path d="M8.1,11.4c-0.1,0-0.2-0.1-0.3-0.1l-4.1-4c-0.2-0.2-0.2-0.5,0-0.7s0.5-0.2,0.7,0l3.7,3.7l3.6-3.6c0.2-0.2,0.5-0.2,0.7,0 s0.2,0.5,0,0.7l-3.9,4C8.3,11.4,8.2,11.4,8.1,11.4L8.1,11.4z"/>
+		</symbol>
+		<symbol fill="currentColor" class="lti lti-person-circle-outline" viewBox="0 0 16 16" id="person-circle-outline" xmlns="http://www.w3.org/2000/svg">
+			<path d="M8,0C3.6,0,0,3.6,0,8s3.6,8,8,8s8-3.6,8-8S12.4,0,8,0z M3.5,13.4v-0.7c0-1,0.8-1.9,1.9-1.9h5.2c1.1,0,1.9,0.8,1.9,1.9v0.7 C11.3,14.4,9.7,15,8,15S4.7,14.4,3.5,13.4z M13.5,12.4c-0.1-1.4-1.4-2.6-2.9-2.6H5.4c-1.5,0-2.7,1.1-2.9,2.6C1.6,11.2,1,9.6,1,8 c0-3.9,3.1-7,7-7s7,3.1,7,7C15,9.6,14.4,11.2,13.5,12.4L13.5,12.4z M8,8.8c-1.4,0-2.5-1-2.5-2.2V5c0-1.2,1.1-2.2,2.5-2.2 s2.5,1,2.5,2.2v1.6C10.5,7.8,9.4,8.8,8,8.8z M8,3.8C7.2,3.8,6.5,4.3,6.5,5v1.6c0,0.7,0.7,1.2,1.5,1.2s1.5-0.5,1.5-1.2V5 C9.5,4.3,8.8,3.8,8,3.8z"/>
+		</symbol>
+	</defs>
+</svg>
+
+

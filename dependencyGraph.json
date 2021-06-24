@@ -1,0 +1,544 @@
+{
+  "version": 1,
+  "timestamp": 1624564003380,
+  "graph": {
+    "options": {
+      "directed": true,
+      "multigraph": false,
+      "compound": false
+    },
+    "nodes": [
+      {
+        "v": "00-atoms/00-global/00-brand-colors.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/00-headings.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/01-paragraph.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/02-blockquote.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/03-links.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/04-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/01-text/06-hr.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/02-buttons/00-buttons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/03-images/00-logo.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-00-header-00-header-prospect/02-organisms-00-header-00-header-prospect.rendered.html",
+          "lineagePattern": "organisms-header-prospect"
+        }
+      },
+      {
+        "v": "00-atoms/03-images/01-svg-embeds.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/03-images/_svg-art.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/00-atoms-03-images-01-svg-embeds/00-atoms-03-images-01-svg-embeds.rendered.html",
+          "lineagePattern": "atoms-svg-embeds"
+        }
+      },
+      {
+        "v": "00-atoms/04-tables/00-basic-table.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/05-forms/00-input.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/05-forms/01-floating-label.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/05-forms/02-form-text.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/06-icons/00-lifetime-icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/06-icons/01-bootstrap-icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/06-icons/_lti-icon.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-00-header-00-header-prospect/02-organisms-00-header-00-header-prospect.rendered.html",
+          "lineagePattern": "organisms-header-prospect"
+        }
+      },
+      {
+        "v": "01-molecules/04-navigation/00-nav.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/04-navigation/01-nav-options.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/09-heros/00-hero-cutout.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/09-heros/01-hero-overlay.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/09-heros/02-hero-carousel.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/09-heros/03-hero-video.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-molecules/09-heros/_template-hero.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
+          "lineagePattern": "pages-prospect-home"
+        }
+      },
+      {
+        "v": "02-organisms/00-header/00-header-prospect.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
+          "lineagePattern": "pages-prospect-home"
+        }
+      },
+      {
+        "v": "02-organisms/08-sticky-bar/01-stickybar-examples.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "02-organisms/08-sticky-bar/_sticky-bar.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/02-organisms-08-sticky-bar-01-stickybar-examples/02-organisms-08-sticky-bar-01-stickybar-examples.rendered.html",
+          "lineagePattern": "organisms-stickybar-examples"
+        }
+      },
+      {
+        "v": "03-aem/00-headings/00-heading-variations.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/00-headings/_heading.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-aem-00-headings-00-heading-variations/03-aem-00-headings-00-heading-variations.rendered.html",
+          "lineagePattern": "aem-heading-variations"
+        }
+      },
+      {
+        "v": "03-aem/00-heroes/00-overview.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/00-heroes/01-overlay-hero.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/01-sticky-promo/00-primary-promo.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/01-sticky-promo/_sticky-promo.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
+          "lineagePattern": "pages-prospect-home"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/00-base-chapter.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/01-chapter-all-options.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/03-chapter-lead.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/04-chapter-break.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/_chapter-break-end.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/_chapter-break-start.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/02-club-highlight/00-hero-version.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/02-club-highlight/01-billboard-version.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/02-club-highlight/_club-highlight.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/03-cards/01-base-card.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/03-cards/03-card-row.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/03-cards/_feature-card.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
+          "lineagePattern": "templates-home"
+        }
+      },
+      {
+        "v": "03-aem/04-icon-lists/01-action-icon-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-pages/00-prospect-home.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "/Users/e177272/Development/shared-components/source/_meta/_00-head.mustache",
+        "value": {
+          "compileState": null
+        }
+      },
+      {
+        "v": "/Users/e177272/Development/shared-components/source/_meta/_01-foot.mustache",
+        "value": {
+          "compileState": null
+        }
+      }
+    ],
+    "edges": [
+      {
+        "v": "00-atoms/03-images/01-svg-embeds.mustache",
+        "w": "00-atoms/03-images/_svg-art.mustache",
+        "value": {}
+      },
+      {
+        "v": "00-atoms/06-icons/00-lifetime-icons.mustache",
+        "w": "00-atoms/06-icons/_lti-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/09-heros/00-hero-cutout.mustache",
+        "w": "01-molecules/09-heros/_template-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-molecules/09-heros/01-hero-overlay.mustache",
+        "w": "01-molecules/09-heros/_template-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-header/00-header-prospect.mustache",
+        "w": "00-atoms/03-images/00-logo.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/00-header/00-header-prospect.mustache",
+        "w": "00-atoms/06-icons/_lti-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "02-organisms/08-sticky-bar/01-stickybar-examples.mustache",
+        "w": "02-organisms/08-sticky-bar/_sticky-bar.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/00-headings/00-heading-variations.mustache",
+        "w": "03-aem/00-headings/_heading.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/00-heroes/01-overlay-hero.mustache",
+        "w": "01-molecules/09-heros/_template-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/01-sticky-promo/00-primary-promo.mustache",
+        "w": "03-aem/01-sticky-promo/_sticky-promo.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/00-base-chapter.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/00-base-chapter.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/01-chapter-all-options.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/01-chapter-all-options.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/03-chapter-lead.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/03-chapter-lead.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/04-chapter-break.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/04-chapter-break.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/04-chapter-break.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-chapter/04-chapter-break.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/02-club-highlight/00-hero-version.mustache",
+        "w": "03-aem/02-club-highlight/_club-highlight.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/03-cards/03-card-row.mustache",
+        "w": "03-aem/03-cards/_feature-card.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "02-organisms/00-header/00-header-prospect.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "01-molecules/09-heros/_template-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/01-sticky-promo/_sticky-promo.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/03-cards/_feature-card.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/02-club-highlight/_club-highlight.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/00-home.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/00-prospect-home.mustache",
+        "w": "02-organisms/00-header/00-header-prospect.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/00-prospect-home.mustache",
+        "w": "01-molecules/09-heros/_template-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/00-prospect-home.mustache",
+        "w": "03-aem/01-sticky-promo/_sticky-promo.mustache",
+        "value": {}
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<div class="container pt-3">
+	<h1>Bootstrap Icons</h1>
+	<h2>currently v1.5</h2>
+	<ul>
+	{{# biNames }}
+		<li>
+			<svg class="bi" width="1em" height="1em">
+  				<use xlink:href="/images/core-ui/bootstrap-icons.svg#{{name}}"/>
+			</svg>
+		{{name}}
+		</li>
+	{{/ biNames }}
+	</ul>
+</div>

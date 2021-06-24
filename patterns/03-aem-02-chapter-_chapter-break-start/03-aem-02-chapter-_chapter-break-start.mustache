@@ -1,0 +1,18 @@
+{{#addRule?}}
+<hr class="mt-2 mt-lg-4 mb-0">
+{{/addRule?}}
+<div class="pt-5 pt-lg-7">
+	<div class="row">
+		<div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
+			{{# headingTxt }}
+				<h3 class="{{headClass}}">{{headingTxt}}</h3>
+				{{# shortRule? }}
+				<hr class="hr-short">
+				{{/ shortRule? }}
+			{{/ headingTxt }}
+			{{# bodyTxt }}
+				<p class="{{bodyClass}}">{{bodyTxt}}</p>
+			{{/ bodyTxt }}
+		</div>
+	</div>
+
