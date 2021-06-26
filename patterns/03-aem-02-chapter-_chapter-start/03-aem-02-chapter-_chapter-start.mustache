@@ -1,13 +1,14 @@
 <div class="{{bgClass}}">
 	<div class="container pt-5 pb-2 pt-lg-7 pb-lg-4">
+		{{# headingTxt }}
 		<div class="row">
 			<div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
-				{{# headingTxt }}
+				
 					<h2 class="{{headClass}}">{{headingTxt}}</h2>
 					{{# shortRule? }}
 					<hr class="hr-short">
 					{{/ shortRule? }}
-				{{/ headingTxt }}
+				
 				{{# bodyTxt }}
 					<p class="{{bodyClass}}">{{bodyTxt}}</p>
 				{{/ bodyTxt }}
@@ -29,3 +30,4 @@
 				{{/ showNav? }}
 			</div>
 		</div>
+		{{/ headingTxt }}

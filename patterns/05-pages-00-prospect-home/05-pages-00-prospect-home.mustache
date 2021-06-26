@@ -3,9 +3,9 @@
 	{{> molecules-template-hero(headingTxt:"Countdown to Summer", bodyTxt:"Ready to reach your summer goals? Discover the inspiration and support to go further and do more than you thought possible at Life Time.", parentClasses:"hero-overlay", bodyClasses:"hero-content-semi-trans", imgXS:"https://www.lifetime.life/content/dam/ltp/images/offers/mkin21366954-cyp-exterior-03-intense-no-ath-xs.jpg",imgSM:"https://www.lifetime.life/content/dam/ltp/images/home/cut-out-hero-images/mkin20324958-hero-cyp-exterior-03-intense-no-ath-m.jpg",imgLG:"https://www.lifetime.life/content/dam/ltp/images/home/cut-out-hero-images/mkin20324958-hero-cyp-exterior-03-intense-no-ath-xl.jpg") }}
 	
 	{{> aem-sticky-promo(style:"stickybar-primary",inverseBtns:true,CTATxt:"New Beginnings Are Waiting", btn1Txt:"Build and Price", btn2Txt: "Free Pass") }}
-
-	<div class="bg-light py-lg-2">
-		<div class="container pt-5 pb-2">
+	{{!-- Intro Chapter Start--}}
+	<div class="bg-light pt-5 pb-2 pt-lg-7 pb-lg-4">
+		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3 text-center">
 					<h2>Meeting you where you&nbsp;are.</h2>
@@ -23,12 +23,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="py-lg-2">
-		<div class="container pt-5 pb-2">
+	{{!-- Intro Chapter End}}
+	{{!-- Benefits Chapter Start--}}
+	<div class="pt-5 pb-2 pt-lg-7 pb-lg-4">
+		<div class="container">
 			<div class="text-center">
 				<h2>Featured Benefits</h2>
 				<hr class="hr-short">	
 			</div>
+			{{!-- Benefits Card Row w Feature Cards Start--}}
 			<div class="row">
 				<div class="col-md-6 mb-3">
 					<div class="card h-100">
@@ -56,14 +59,18 @@
 					</div>
 				</div>
 			</div>
+			{{!-- Benefits Card Row End --}}
 		</div>
 	</div>
-	<div class="bg-light py-lg-2">
-		<div class="container pt-5 pb-2">
+	{{!-- Benefits Chapter End--}}
+	{{!-- Memberships Chapter Start--}}
+	<div class="bg-light pt-5 pb-2 pt-lg-7 pb-lg-4">
+		<div class="container">
 			<div class="text-center">
 				<h2>All New Memberships to Meet Your Needs</h2>
 				<hr class="hr-short">	
 			</div>
+			{{!-- Memberships Card Row w Billboard Cards Start--}}
 			<div class="row">
 				<div class="col-md-6 col-lg-12 mb-3">
 					<div class="card h-100">
@@ -120,8 +127,10 @@
 					</div>
 				</div>
 			</div>
+			{{!-- Memberships Card Row End--}}
 		</div>
 	</div>
+	{{!-- Club Highlight Start --}}
 	<div class="hero hero-overlay">
 		<div class="hero-media">
 			<picture>
@@ -147,8 +156,11 @@
 				</div>
 		</div>
 	</div>
-		<div class="bg-light py-lg-2">
-		<div class="container pt-5 pb-2">
+	{{!-- Club Highlight End --}}
+	{{!-- Safety Chapter Start --}}
+	<div class="bg-light pt-5 pb-2 pt-lg-7 pb-lg-4">
+		<div class="container">
+			{{!-- Safety Billboard Start --}}
 			<div class="card mb-3">
 				<div class="row g-0">
 					<div class="col-lg-7 order-lg-last">
@@ -166,8 +178,47 @@
 					</div>
 				</div>
 			</div>
+			{{!-- Safety Billboard End --}}
+			{{!-- Safety Feature Chapter Break Start --}}
+			<div class="pt-2 pt-lg-4">
+				{{!-- Safety Feature Icon List Start --}}
+				<ul class="list-unstyled row row-gap-3 row-gap-lg-7 justify-content-center text-center fw-bold row-cols-2 row-cols-lg-4">
+					<li class="col">
+						{{> atoms-svg-art(name:'chart-line', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Peak Usage Tracker
+					</li>
+					<li class="col">
+						{{> atoms-svg-art(name:'member-card', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Touchless Check-In
+					</li>
+					<li class="col">
+						{{> atoms-svg-art(name:'cleaning', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Extensive Cleaning Protocols
+					</li>
+					<li class="col">
+						{{> atoms-svg-art(name:'air-conditioning', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Hospital Grade Air Filtration
+					</li>
+					<li class="col">
+						{{> atoms-svg-art(name:'social-distance', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Spacious Clubs Offering Ample Social&nbsp;Distancing
+					</li>
+					<li class="col">
+						{{> atoms-svg-art(name:'member-online', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Online Class Reservation
+					</li>
+					<li class="col">
+						{{> atoms-svg-art(name:'mobile-video', classes:'d-block m-auto mb-1 text-gray-3') }}
+						Virtual Training and Class Options
+					</li>
+					
+				</ul>
+				{{!-- Safety Feature Icon List End --}}
+			</div>
+			{{!-- Safety Feature Chapter Break End --}}
 		</div>
 	</div>
+	{{!-- Safety Chapter End --}}
 	<div class="container">
 		<p>{{excerpt.long}}</p>
 		<p>{{excerpt.long}}</p>
