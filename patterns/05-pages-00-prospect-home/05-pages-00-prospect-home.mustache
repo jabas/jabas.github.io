@@ -219,20 +219,19 @@
 		</div>
 	</div>
 	{{!-- Safety Chapter End --}}
-	<div class="container">
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-		<p>{{excerpt.long}}</p>
-	</div>
+	{{!-- Join CTA Chapter Start --}}
+	{{> aem-chapter-start(headingTxt:'Ready to get started?')}}
+		<p class="text-center">TO DO: Icon Action List</p>
+		{{> aem-chapter-break-start(addRule?:true)}}
+			<div class="small">
+				<p>Membership levels, types, amenities, services, programs and their associated dues, pricing, fees and/or charges may vary by location and are subject to change. Access to clubs, and certain services, programs, amenities, or areas within a club (e.g., outdoor pools, racquet courts) may be restricted, conditioned, or otherwise limited by specific terms and conditions and/or subject to a separate or supplemental fee for access or use (e.g., your access to the outdoor pool area may require a separate fee and be limited to your designated club). Actual spaces may appear different depending on club. See club for additional terms and conditions that may apply. Always consult your physician before beginning any new exercise program.</p>
+				<p>Mask not required for fully vaccinated individuals. Members will be asked to take personal responsibility to follow the guidance of the CDC and any applicable government orders in regard to masking.</p>
+				<p>Apple Fitness+ included in membership offer is a promotional subscription code, and is not for resale, has no cash value, and will not be replaced if lost or stolen. Valid only for Apple Fitness+ in the United States and Canada. Requires Apple Media Services account. Terms and Apple Privacy Policy apply; see the applicable terms at. Compatible products and services required. Redeemable by only the primary, partner, or secondary member on the account. Must be 13+. The following memberships are not eligible for this offer: Day Pass, Short-term, trade-out, or tuition memberships.</p>
+				<p>This is a promotional subscription code, and is not for resale, has no cash value, and will not be replaced if lost or stolen. Valid only for Apple Fitness+ in the United States and Canada. Requires Apple Media Services account. Terms and Apple Privacy Policy apply; Must be 13+. Compatible products and services required. Cannot be combined with other offers providing access to the same service. Plan renews for $9.99/month after the promotion until cancelled. Amenities and services vary by location. Actual spaces may appear different depending on club.</p>
+			</div>
+		{{> aem-chapter-break-end}}
+	{{> aem-chapter-end}}
+	{{!-- Join CTA Chapter End --}}
 	
 </main>
+{{> organisms-footer }}
