@@ -14,7 +14,7 @@
 		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
 		<meta name="theme-color" content="#ffffff">
 
-		<link id="pagestyle" rel="stylesheet" href="/css/core4-ui-system.css?1624905932575" media="all" />
+		<link id="pagestyle" rel="stylesheet" href="/css/core4-ui-system.css?1624998228573" media="all" />
 
 
 		<!-- pass additional files to page --><!-- pass additional js files to page -->
@@ -27,12 +27,10 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1624905932575" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1624905932575" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1624998228573" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1624998228573" media="all" />
 
 		<!-- End Pattern Lab -->
-
-		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1624905932575" media="all" />
 	</head>
 	<body class="body ">
 
@@ -104,7 +102,7 @@
 				<ul class="nav nav-dark-neutral bg-gray-4">
 					<li class="nav-item">
 						<a class="nav-link dropdown-toggle" href="#">
-							<svg class="ico ico-person-circle-outline" width="1em" height="1em">
+							<svg class="ico ico-person-circle-outline" width="1em" height="1em" aria-label="">
 	<use xlink:href="/images/core-ui/lifetime-icons.svg#person-circle-outline"/>
 </svg> Account
 						</a>
@@ -382,8 +380,43 @@
 			</div>
 		</div>
 		
-		<p class="text-center">TO DO: Icon Action List</p>
-		<hr class="mt-2 mt-lg-4 mb-3">
+<div class="pt-2 pt-lg-4">
+
+
+			<div class="text-center">
+				<ul class="list-unstyled row row-gap-3 text-center justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-4 mb-4">
+					<li class="col">
+						<div class="h-100 bg-light pt-6 pb-3">
+							<svg class="svg-art svg-art-member-card-motion d-block m-auto mb-1 text-gray-3" width="72" height="72">
+	<use xlink:href="/images/core-ui/lifetime-lineart.svg#member-card-motion"/>
+</svg>
+							<p><a href="#0" class="text-decoration-none">Build Membership</a></p>
+						</div>
+					</li>
+					<li class="col">
+						<div class="h-100 bg-light pt-6 pb-3">
+							<svg class="svg-art svg-art-club-exterior d-block m-auto mb-1 text-gray-3" width="72" height="72">
+	<use xlink:href="/images/core-ui/lifetime-lineart.svg#club-exterior"/>
+</svg>
+							<p><a href="#0" class="text-decoration-none">Request Guest Pass</a></p>
+						</div>
+					</li>
+					<li class="col">
+						<div class="h-100 bg-light pt-6 pb-3">
+							<svg class="svg-art svg-art-clipboard-checklist d-block m-auto mb-1 text-gray-3" width="72" height="72">
+	<use xlink:href="/images/core-ui/lifetime-lineart.svg#clipboard-checklist"/>
+</svg>
+							<p><a href="#0" class="text-decoration-none">Membership Options</a></p>
+						</div>
+					</li>
+				</ul>
+				<p>Questions? <a href="#0">Request more information</a> or call 1-800-741-4109.</p>
+			</div>
+</div>
+
+		<div class="pt-2 pt-lg-4 pb-3">
+	<hr class="my-0">
+</div>
 <div class="pt-2 pt-lg-4">
 
 
@@ -401,7 +434,14 @@
 </main>
 <div class="lt-footer bg-dark text-white">
 	<nav class="container-fluid">
-		<div class="text-center float-md-end mb-3">TO DO: Social Links</div>
+		<div class="text-center float-md-end mb-3">
+			<ul class="list-unstyled d-inline-flex gap-1">
+				<li><a href="#0" class="icon-social icon-social-facebook">Visit Life Time Facebook</a></li>
+				<li><a href="#0" class="icon-social icon-social-instagram">Visit Life Time Instagram</a></li>
+				<li><a href="#0" class="icon-social icon-social-youtube">Visit Life Time YouTube</a></li>
+				<li><a href="#0" class="icon-social icon-social-twitter">Visit Life Time Twitter</a></li>
+			</ul>
+		</div>
 		<ul class="nav lt-footer-nav nav-dark-neutral gap-1 justify-content-center justify-content-md-start mb-3 mb-md-1">
 			<li class="nav-item"><a href="#0" class="nav-link p-0">About</a></li>
 			<li class="nav-item"><a href="#0" class="nav-link p-0">Newsroom</a></li>
@@ -462,10 +502,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1624905932575">
+<script id="pl-js-polyfill-insert-1624998228573">
   (function() {
     if (self != top) {
-      var cb = '1624905932575';
+      var cb = '1624998228573';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -475,10 +515,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1624905932575">
+<script id="pl-js-insert-1624998228573">
   (function() {
     if (self != top) {
-      var cb = '1624905932575';
+      var cb = '1624998228573';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }

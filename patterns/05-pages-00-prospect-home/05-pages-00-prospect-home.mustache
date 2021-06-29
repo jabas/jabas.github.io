@@ -221,7 +221,36 @@
 	{{!-- Safety Chapter End --}}
 	{{!-- Join CTA Chapter Start --}}
 	{{> aem-chapter-start(headingTxt:'Ready to get started?')}}
-		<p class="text-center">TO DO: Icon Action List</p>
+		{{!-- CTA Chapter Break Start --}}
+		{{> aem-chapter-break-start}}
+			{{!-- Action Icons Start --}}
+			<div class="text-center">
+				<ul class="list-unstyled row row-gap-3 text-center justify-content-center row-cols-1 row-cols-md-2 row-cols-lg-4 mb-4">
+					<li class="col">
+						<div class="h-100 bg-light pt-6 pb-3">
+							{{> atoms-svg-art(name:'member-card-motion', classes:'d-block m-auto mb-1 text-gray-3') }}
+							<p><a href="#0" class="text-decoration-none">Build Membership</a></p>
+						</div>
+					</li>
+					<li class="col">
+						<div class="h-100 bg-light pt-6 pb-3">
+							{{> atoms-svg-art(name:'club-exterior', classes:'d-block m-auto mb-1 text-gray-3') }}
+							<p><a href="#0" class="text-decoration-none">Request Guest Pass</a></p>
+						</div>
+					</li>
+					<li class="col">
+						<div class="h-100 bg-light pt-6 pb-3">
+							{{> atoms-svg-art(name:'clipboard-checklist', classes:'d-block m-auto mb-1 text-gray-3') }}
+							<p><a href="#0" class="text-decoration-none">Membership Options</a></p>
+						</div>
+					</li>
+				</ul>
+				<p>Questions? <a href="#0">Request more information</a> or call 1-800-741-4109.</p>
+			</div>
+			{{!-- Action Icons End --}}
+		{{> aem-chapter-break-end}}
+		{{!-- CTA Chapter Break End --}}
+		{{!-- Legal Chapter Break Start --}}
 		{{> aem-chapter-break-start(addRule?:true)}}
 			<div class="small">
 				<p>Membership levels, types, amenities, services, programs and their associated dues, pricing, fees and/or charges may vary by location and are subject to change. Access to clubs, and certain services, programs, amenities, or areas within a club (e.g., outdoor pools, racquet courts) may be restricted, conditioned, or otherwise limited by specific terms and conditions and/or subject to a separate or supplemental fee for access or use (e.g., your access to the outdoor pool area may require a separate fee and be limited to your designated club). Actual spaces may appear different depending on club. See club for additional terms and conditions that may apply. Always consult your physician before beginning any new exercise program.</p>
@@ -230,6 +259,7 @@
 				<p>This is a promotional subscription code, and is not for resale, has no cash value, and will not be replaced if lost or stolen. Valid only for Apple Fitness+ in the United States and Canada. Requires Apple Media Services account. Terms and Apple Privacy Policy apply; Must be 13+. Compatible products and services required. Cannot be combined with other offers providing access to the same service. Plan renews for $9.99/month after the promotion until cancelled. Amenities and services vary by location. Actual spaces may appear different depending on club.</p>
 			</div>
 		{{> aem-chapter-break-end}}
+		{{!-- Legal Chapter Break End --}}
 	{{> aem-chapter-end}}
 	{{!-- Join CTA Chapter End --}}
 	
