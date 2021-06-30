@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1624998234926,
+  "timestamp": 1625088894478,
   "graph": {
     "options": {
       "directed": true,
@@ -110,6 +110,12 @@
       },
       {
         "v": "00-atoms/06-icons/01-bootstrap-icons.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/06-icons/02-social-link.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -370,12 +376,6 @@
         "v": "/Users/e177272/Development/shared-components/source/_meta/_01-foot.mustache",
         "value": {
           "compileState": null
-        }
-      },
-      {
-        "v": "00-atoms/06-icons/02-social-link.mustache",
-        "value": {
-          "compileState": "clean"
         }
       }
     ],
