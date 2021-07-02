@@ -2,27 +2,27 @@
 <main>
 	{{> molecules-template-hero(parentClasses:"hero-overlay", bodyClasses:"hero-content-semi-trans") }}
 	{{> aem-sticky-promo(style:"stickybar-primary",inverseBtns:true,CTATxt:"Ultricies vehicula lorem bibendum un pharetra.", btn1Txt:"Button 1", btn2Txt: "Button 2") }}
-	{{> aem-chapter-start(bgClass: 'bg-light', shortRule?:true, headingTxt:'Maecenas eu ullamcorper orci.', bodyTxt:'Ut eu arcu dignissim, blandit nisl vel, vulputate augue. Praesent nec sem mattis, malesuada diam ac, scelerisque dui. Praesent vestibulum laoreet neque eu molestie. Nulla tempor tellus tempor tellus laoreet viverra. Ut efficitur sapien eu scelerisque auctor. Duis id rutrum nisi. Phasellus convallis elit orci, id pellentesque quam dictum accumsan. Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', showNav?: true)}}
+	{{> aem-chapter-start(bgClass: 'bg-light', shortRule?:true, headingTxt:'Maecenas eu ullamcorper orci.', bodyTxt:'Ut eu arcu dignissim, blandit nisl vel, vulputate augue. Praesent nec sem mattis, malesuada diam ac, scelerisque dui. Praesent vestibulum laoreet neque eu molestie. Nulla tempor tellus tempor tellus laoreet viverra. Ut efficitur sapien eu scelerisque auctor. Duis id rutrum nisi. Phasellus convallis elit orci, id pellentesque quam dictum accumsan. Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', navOne: 'Navigation #1', navTwo:'Navigation #2', navThree:'Navigation #3', navFour:'Navigation #4')}}
 	{{> aem-chapter-end}}
 	{{> aem-chapter-start(headingTxt:'Etiam pulvinar ullamcorper lorem', shortRule?:true)}}
-		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+		{{> aem-card-row-start(colMD:'2', colLG:'3') }}
 			{{> aem-feature-card(inRow:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardSubtitle:'Aenean ut purus tincidunt', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #1') }}
 			{{> aem-feature-card(inRow:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Suspendisse', cardSubtitle:'Ut eu arcu dignissim', cardText:'Etiam ante purus, finibus malesuada turpis nec, pretium facilisis felis. Suspendisse enim turpis, hendrerit vel augue suscipit, porttitor mollis lectus. Fusce ante odio, elementum vitae ultricies ac, pulvinar eu arcu. Curabitur enim ante, faucibus sed lacus id, lobortis mollis erat.', linkOne:'CTA #2') }}
 			{{> aem-feature-card(inRow:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #3', linkTwo:'CTA #4') }}
-		</div>
+		{{> aem-card-row-end }}
 	{{> aem-chapter-end}}
 	{{> aem-chapter-start(bgClass: 'bg-light', headingTxt:'Vestibulum sapien dolor', shortRule?:true)}}
-		<div class="row row-cols-1 row-cols-md-2 row-cols-lg-1">
+		{{> aem-card-row-start(colMD:'2', colLG:'1') }}
 			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardSubtitle:'Aenean ut purus tincidunt', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #1') }}
 			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Suspendisse', cardSubtitle:'Ut eu arcu dignissim', cardText:'Etiam ante purus, finibus malesuada turpis nec, pretium facilisis felis. Suspendisse enim turpis, hendrerit vel augue suscipit, porttitor mollis lectus. Fusce ante odio, elementum vitae ultricies ac, pulvinar eu arcu. Curabitur enim ante, faucibus sed lacus id, lobortis mollis erat.', linkOne:'CTA #2') }}
 			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #3', linkTwo:'CTA #4') }}
-		</div>
+		{{> aem-card-row-end }}
 	{{> aem-chapter-end}}
 	{{> aem-club-highlight }}
 	{{> aem-chapter-start(bgClass:'bg-light')}}
-		<div class="row row-cols-1">
+		{{> aem-card-row-start }}
 			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardSubtitle:'Aenean ut purus tincidunt', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.') }}
-		</div>
+		{{> aem-card-row-end }}
 		{{> aem-chapter-break-start }}
 			{{> aem-feature-icon-list }}
 		{{> aem-chapter-break-end }}
