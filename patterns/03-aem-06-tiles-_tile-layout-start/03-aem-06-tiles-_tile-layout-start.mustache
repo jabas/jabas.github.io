@@ -36,25 +36,32 @@
 			{{#eyebrowTxt}}{{{eyebrowTxt}}}{{/eyebrowTxt}}
 			{{^eyebrowTxt}}Lorem Ipsum Dolor{{/eyebrowTxt}}
 		</h2>
-		<div class="h3 mb-1">
+		<div class="h3">
 			{{#headingTxt}}{{{headingTxt}}}{{/headingTxt}}
 			{{^headingTxt}}Etiam eu Neque Ultrices, Tincidunt Tellus{{/headingTxt}}
 		</div>
-		<p class="h5">
-			{{#subheadingTxt}}{{{subheadingTxt}}}{{/subheadingTxt}}
-			{{^subheadingTxt}}Donec Sagittis Metus id Mauris Tincidunt Suscipit{{/subheadingTxt}}
-		</p>
+		{{#subheadingTxt}}
+		<p class="h5 mt-n2"> {{{subheadingTxt}}}</p>
+		{{/subheadingTxt}}
 		<p class="mb-0">
 			{{#bodyTxt}}{{{bodyTxt}}}{{/bodyTxt}}
 			{{^bodyTxt}}Mauris ornare, ex non feugiat iaculis, felis leo porttitor erat, quis vulputate justo sem nec magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus semper aliquet quam eget ullamcorper.{{/bodyTxt}}
 		</p>
+		{{# linkOne }}
+			<div class="gap-2 d-flex flex-wrap mt-3">
+				<a href="#" class="card-link">{{linkOne}}</a>
+				{{# linkTwo }}
+				<a href="#" class="card-link">{{linkTwo}}</a>
+				{{/ linkTwo }}
+			</div>
+		{{/ linkOne }}
 	</div>
 </div>
 {{!-- End Content Area --}}
 
 {{# layoutVertical? }}
 		</div>{{!-- close flex-grow --}}
-		<div class="mb-3 mb-lg-0">
+		<div class="my-3 my-lg-0">
 			{{#imgOneXS}}
 			<picture>
 				<source srcset="{{imgOneLG}}" media="(min-width: 992px)">
@@ -78,17 +85,13 @@
 {{/lgImgFirst?}}
 	{{# imgTwoXS }}
 	<picture>
-		<source srcset="{{imgTwoXXL}}" media="(min-width: 1400px)">
-		<source srcset="{{imgTwoXL}}" media="(min-width: 1200px)">
 		<source srcset="{{imgTwoLG}}" media="(min-width: 992px)">
 		<img src="{{imgTwoXS}}" alt="" class="img-fluid">
 	</picture>
 	{{/ imgTwoXS }}
 	{{^ imgTwoXS }}
 	<picture>
-		<source srcset="https://via.placeholder.com/652x1014" media="(min-width: 1400px)">
-		<source srcset="https://via.placeholder.com/552x860" media="(min-width: 1200px)">
-		<source srcset="https://via.placeholder.com/464x728" media="(min-width: 992px)">
+		<source srcset="https://via.placeholder.com/652x1014" media="(min-width: 992px)">
 		<img src="https://via.placeholder.com/992x558?text=16:9" alt="" class="img-fluid">
 	</picture>
 	{{/ imgTwoXS }}
@@ -98,7 +101,7 @@
 {{^ layoutVertical? }}					
 	</div>
 	<div class="col-lg-6">
-		<div class="mb-3 mb-lg-0">
+		<div class="my-3 my-lg-0">
 			{{#imgOneXS}}
 			<picture>
 				<source srcset="{{imgOneLG}}" media="(min-width: 992px)">
@@ -121,17 +124,13 @@
 	{{/lgImgFirst?}}
 		{{# imgTwoXS }}
 		<picture>
-			<source srcset="{{imgTwoXXL}}" media="(min-width: 1400px)">
-			<source srcset="{{imgTwoXL}}" media="(min-width: 1200px)">
 			<source srcset="{{imgTwoLG}}" media="(min-width: 992px)">
 			<img src="{{imgTwoXS}}" alt="" class="img-fluid">
 		</picture>
 		{{/ imgTwoXS }}
 		{{^ imgTwoXS }}
 		<picture>
-			<source srcset="https://via.placeholder.com/1336x489" media="(min-width: 1400px)">
-			<source srcset="https://via.placeholder.com/1136x414" media="(min-width: 1200px)">
-			<source srcset="https://via.placeholder.com/960x348" media="(min-width: 992px)">
+			<source srcset="https://via.placeholder.com/1336x489" media="(min-width: 992px)">
 			<img src="https://via.placeholder.com/992x558?text=16:9" alt="" class="img-fluid">
 		</picture>
 		{{/ imgTwoXS }}

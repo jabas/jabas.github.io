@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1625453864193,
+  "timestamp": 1625504976401,
   "graph": {
     "options": {
       "directed": true,
@@ -74,8 +74,8 @@
         "v": "00-atoms/03-images/_svg-art.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
-          "lineagePattern": "pages-prospect-home"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -176,16 +176,16 @@
         "v": "02-organisms/00-header/00-header-prospect.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-01-guest-pass/05-pages-01-guest-pass.rendered.html",
-          "lineagePattern": "pages-guest-pass"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
         "v": "02-organisms/01-footer/00-footer.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-01-guest-pass/05-pages-01-guest-pass.rendered.html",
-          "lineagePattern": "pages-guest-pass"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -238,8 +238,8 @@
         "v": "03-aem/00-heroes/03-location-hero.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
-          "lineagePattern": "templates-location-detail"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -258,8 +258,8 @@
         "v": "03-aem/01-sticky-promo/_sticky-promo.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
-          "lineagePattern": "pages-prospect-home"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -296,24 +296,24 @@
         "v": "03-aem/02-chapter/_chapter-break-end.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
-          "lineagePattern": "pages-prospect-home"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
         "v": "03-aem/02-chapter/_chapter-break-start.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-00-prospect-home/05-pages-00-prospect-home.rendered.html",
-          "lineagePattern": "pages-prospect-home"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
         "v": "03-aem/02-chapter/_chapter-end.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-01-guest-pass/05-pages-01-guest-pass.rendered.html",
-          "lineagePattern": "pages-guest-pass"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -336,8 +336,8 @@
         "v": "03-aem/02-chapter/_chapter-start.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/05-pages-01-guest-pass/05-pages-01-guest-pass.rendered.html",
-          "lineagePattern": "pages-guest-pass"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -444,16 +444,16 @@
         "v": "03-aem/06-tiles/_tile-layout-end.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
-          "lineagePattern": "templates-location-detail"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
         "v": "03-aem/06-tiles/_tile-layout-start.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
-          "lineagePattern": "templates-location-detail"
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
         }
       },
       {
@@ -482,6 +482,12 @@
       },
       {
         "v": "05-pages/01-guest-pass.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -802,6 +808,31 @@
       },
       {
         "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/06-tiles/_tile-layout-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/06-tiles/_tile-layout-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
         "w": "02-organisms/01-footer/00-footer.mustache",
         "value": {}
       },
@@ -906,28 +937,58 @@
         "value": {}
       },
       {
-        "v": "04-templates/02-location-detail.mustache",
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "02-organisms/00-header/00-header-prospect.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/00-heroes/03-location-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/01-sticky-promo/_sticky-promo.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
         "w": "03-aem/06-tiles/_tile-layout-start.mustache",
         "value": {}
       },
       {
-        "v": "04-templates/02-location-detail.mustache",
+        "v": "05-pages/02-new-hope-location.mustache",
         "w": "03-aem/06-tiles/_tile-layout-end.mustache",
         "value": {}
       },
       {
-        "v": "04-templates/02-location-detail.mustache",
-        "w": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-templates/02-location-detail.mustache",
+        "v": "05-pages/02-new-hope-location.mustache",
         "w": "03-aem/02-chapter/_chapter-break-start.mustache",
         "value": {}
       },
       {
-        "v": "04-templates/02-location-detail.mustache",
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "00-atoms/03-images/_svg-art.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
         "w": "03-aem/02-chapter/_chapter-break-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "02-organisms/01-footer/00-footer.mustache",
         "value": {}
       }
     ]
