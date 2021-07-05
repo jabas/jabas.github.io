@@ -6,13 +6,136 @@
 		<p class="text-center">TO DO: Navigation Element</p>
 	{{> aem-chapter-end }}
 	{{> aem-tile-layout-start(removeTopPadding?:true, eyebrowTxt:'Spaces & Amenities', headingTxt:'Designed to inspire. Ready for action.', bodyTxt:'From whirlpools to weight machines, it’s all here to help you reach your healthy-living goals — whatever they may be.', lgImgFirst?:true, contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/classes-16x9.jpg', imgOneLG:'/images/tiles/classes-4x3.jpg', imgTwoXS:'/images/tiles/spaces-16x9.jpg', imgTwoLG:'/images/tiles/spaces-wide.jpg')}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Spaces & Amenities Details',id:'SpacesAmenities') }}
+			<ul class="list-three-column list-bulleted">
+				<li>Cardio and Weight Machines</li>
+				<li>Free Weights</li>
+				<li>Functional Training</li>
+				<li>Pilates Studio</li>
+				<li>Cycle Studio</li>
+				<li>Alpha Studio</li>
+				<li>Indoor Lap Pool</li>
+				<li>Private, Secure Locker Rooms</li>
+				<li>Private Showers</li>
+				<li>Complimentary Terrycloth Towels</li>
+				<li>Eucalyptus Steam Rooms</li>
+				<li>Whirlpool Spas</li>
+				<li>LifeSpa</li>
+			</ul>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(shadedBG?:true, layoutVertical?:true, eyebrowTxt:'Group Training', headingTxt:'A fitness community like no other.', bodyTxt:'Progressive programs. Certified trainers. Unlimited classes. Access to more clubs. Group training provides the structure you need to reach your goals — whether you’re just getting started or have been training for years. <strong>And now it’s included when you choose a Signature Membership.</strong>', contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/treadmill-16x9.jpg', imgOneLG:'/images/tiles/treadmill-4x3.jpg', imgTwoXS:'/images/tiles/training-16x9.jpg', imgTwoLG:'/images/tiles/training-tall.jpg')}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Group Training Details',id:'GroupTraining') }}
+			<ul class="list-three-column list-unstyled">
+				<li>
+					<h4 class="h5 mb-2">GTX Conditioning</h4>
+					<p>Focus on new routines and healthy habits in this foundational program. Work through cardio and strength training circuits. Begin to make small lifestyle changes for real results.</p>
+				</li>
+				<li>
+					<h4 class="h5 mb-2">Alpha Strength</h4>
+					<p>Olympic lifting, strength training and athletic movement deliver results at the highest level. Face — and crush — constant challenges in your pursuit of athletic excellence.</p>
+				</li>
+				<li>
+					<h4 class="h5 mb-2">GTX Strength</h4>
+					<p>Go beyond the basics with body-changing cardio conditioning and advanced strength training to tone and transform.</p>
+				</li>
+				<li>
+					<h4 class="h5 mb-2">Ultra Fit</h4>
+					<p>Ultra Fit builds maximum sprinting power while incorporating agility, balance and coordination to bring out your inner athlete. This is one extreme treadmill-based workout.**</p>
+				</li>
+				<li>
+					<h4 class="h5 mb-2">Alpha Conditioning</h4>
+					<p>Train in this high-intensity, insanely effective fat-torching program. Build maximal cardiovascular and muscular endurance while sculpting your body.</p>
+				</li>
+			</ul>
+			<hr class="mt-0">
+			<p class="text-center"><a href="#0" class="text-decoration-none">Group Training Details</a></p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(eyebrowTxt:'Dynamic Classes', headingTxt:'Find your new favorite here.', bodyTxt:'Keep your workouts fun and fresh with a wide variety of classes — yoga, cardio, strength, conditioning and more. Even better? They’re all included with membership.', linkOne:'View Full Class Schedule', lgImgFirst?:true, contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/yoga-16x9.jpg', imgOneLG:'/images/tiles/yoga-4x3.jpg', imgTwoXS:'/images/tiles/weightroom-16x9.jpg', imgTwoLG:'/images/tiles/weightroom-wide.jpg')}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Studio Classes',id:'StudioClasses') }}
+			<ul class="list-three-column list-unstyled">
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/xtreme.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">HIIT</h4>
+					<p>Challenge yourself with the most innovative High-Intensity Interval Training format to deliver both Strength and Cardio results.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/warrior-sculpt.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Yoga + HIIT + Strength</h4>
+					<p>A soulful yet fierce fusion of yoga and weights, this sweaty nonstop flow is a demanding, energetic, yet surprisingly Zen-filled experience.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/glueteus-maxout.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Lower Body + Cardio</h4>
+					<p>This class focuses on movements that target and strengthen the muscles in and around your legs and glutes, with a little cardio to challenge your aerobic capacity.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/barbell-strength.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Weight Training For All</h4>
+					<p>With a strong emphasis on proper form, this foundational class will teach you the basic movements of weight training, providing options to keep things challenging as you build strength.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/upper-rx.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Guided Upper-Body Workout</h4>
+					<p>This strength-building and muscle toning class features a series of familiar fitness-floor exercises and training methods in a pulse-pounding, chest-thumping format.</p>
+				</li>
+			</ul>
+			<hr class="mt-0">
+			<p class="text-center"><a href="#0" class="text-decoration-none">View Full Class Schedule</a></p>
+		{{> aem-show-hide-end }}
+		{{> aem-show-hide-start(headingTxt:'Yoga Classes',id:'YogaClasses') }}
+			<ul class="list-four-column list-unstyled">
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/sol.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Guided</h4>
+					<p>This dynamic yoga class takes you through a guided flow of poses, synchronizing your breath with traditional yoga movements.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/flow.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Vinyasa</h4>
+					<p>Dynamic and challenging, this class synchronizes breath and builds strength through continuous flow-style movement.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/root.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Fundamentals</h4>
+					<p>For everyone from beginners who’ve never done yoga to athletes looking to deepen their understanding of the body with long-held, classic poses.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/surrender.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Yin</h4>
+					<p>In this class, you’ll hold passive yoga poses for a period of time to strengthen flexibility and mobility while practicing self-acceptance.</p>
+				</li>
+			</ul>
+			<hr class="mt-0">
+			<p class="text-center"><a href="#0" class="text-decoration-none">View Yoga Class Schedule</a></p>
+		{{> aem-show-hide-end }}
+		{{> aem-show-hide-start(headingTxt:'Cycle Classes',id:'CycleClasses') }}
+			<ul class="list-four-column list-unstyled">
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/sol.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Guided</h4>
+					<p>This dynamic yoga class takes you through a guided flow of poses, synchronizing your breath with traditional yoga movements.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/flow.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Vinyasa</h4>
+					<p>Dynamic and challenging, this class synchronizes breath and builds strength through continuous flow-style movement.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/root.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Fundamentals</h4>
+					<p>For everyone from beginners who’ve never done yoga to athletes looking to deepen their understanding of the body with long-held, classic poses.</p>
+				</li>
+				<li>
+					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/surrender.svg" alt="" class="img-fluid mb-2">
+					<h4 class="h5 mb-2">Yin</h4>
+					<p>In this class, you’ll hold passive yoga poses for a period of time to strengthen flexibility and mobility while practicing self-acceptance.</p>
+				</li>
+			</ul>
+			<hr class="mt-0">
+			<p class="text-center"><a href="#0" class="text-decoration-none">View Cycle Class Schedule</a></p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(layoutVertical?:true, shadedBG?:true, eyebrowTxt:'Expert Instruction', headingTxt:'Whatever your goal, let’s get there together.', bodyTxt:'Whether you like the support of a small group or prefer a one-on-one training experience, you’ll discover just what you’re looking for.', lgImgFirst?:true, contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/reformer-16x9.jpg', imgOneLG:'/images/tiles/reformer-4x3.jpg', imgTwoXS:'/images/tiles/reformer-inuse-16x9.jpg', imgTwoLG:'/images/tiles/reformer-inuse-tall.jpg')}}
 		<p>TO DO Hide/Show</p>

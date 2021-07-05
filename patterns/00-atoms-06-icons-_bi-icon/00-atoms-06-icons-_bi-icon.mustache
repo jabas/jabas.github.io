@@ -1,0 +1,8 @@
+{{# size }}
+<svg class="bi bi-{{name}} {{#middle?}}align-middle{{/middle?}}" width="{{size}}" height="{{size}}" aria-label="{{ariaLabel}}">
+{{/ size}}
+{{^ size }}
+<svg class="bi bi-{{name}} {{#middle?}}align-middle{{/middle?}}" width="1em" height="1em" aria-label="{{ariaLabel}}">
+{{/ size}}
+	<use xlink:href="/images/core-ui/bootstrap-icons.svg#{{name}}"/>
+</svg>

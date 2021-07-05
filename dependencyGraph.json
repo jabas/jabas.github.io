@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1625504976401,
+  "timestamp": 1625521894554,
   "graph": {
     "options": {
       "directed": true,
@@ -118,6 +118,14 @@
         "v": "00-atoms/06-icons/02-social-link.mustache",
         "value": {
           "compileState": "clean"
+        }
+      },
+      {
+        "v": "00-atoms/06-icons/_bi-icon.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/03-aem-07-collapse-_show-hide-start/03-aem-07-collapse-_show-hide-start.rendered.html",
+          "lineagePattern": "aem-show-hide-start"
         }
       },
       {
@@ -411,7 +419,7 @@
         }
       },
       {
-        "v": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "v": "03-aem/04-lists/03-feature-icon-list.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
@@ -419,7 +427,7 @@
         }
       },
       {
-        "v": "03-aem/04-icon-lists/01-action-icon-list.mustache",
+        "v": "03-aem/04-lists/04-action-icon-list.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
@@ -450,6 +458,28 @@
       },
       {
         "v": "03-aem/06-tiles/_tile-layout-start.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
+        }
+      },
+      {
+        "v": "03-aem/07-collapse/00-show-hide.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/07-collapse/_show-hide-end.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
+        }
+      },
+      {
+        "v": "03-aem/07-collapse/_show-hide-start.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
@@ -503,6 +533,12 @@
         "value": {
           "compileState": null
         }
+      },
+      {
+        "v": "03-aem/04-lists/02-multi-column-list.mustache",
+        "value": {
+          "compileState": "clean"
+        }
       }
     ],
     "edges": [
@@ -514,6 +550,11 @@
       {
         "v": "00-atoms/06-icons/00-lifetime-icons.mustache",
         "w": "00-atoms/06-icons/_lti-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "00-atoms/06-icons/01-bootstrap-icons.mustache",
+        "w": "00-atoms/06-icons/_bi-icon.mustache",
         "value": {}
       },
       {
@@ -672,6 +713,21 @@
         "value": {}
       },
       {
+        "v": "03-aem/07-collapse/_show-hide-start.mustache",
+        "w": "00-atoms/06-icons/_bi-icon.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/07-collapse/00-show-hide.mustache",
+        "w": "03-aem/07-collapse/_show-hide-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/07-collapse/00-show-hide.mustache",
+        "w": "03-aem/07-collapse/_show-hide-end.mustache",
+        "value": {}
+      },
+      {
         "v": "04-templates/00-home.mustache",
         "w": "02-organisms/00-header/00-header-prospect.mustache",
         "value": {}
@@ -723,7 +779,7 @@
       },
       {
         "v": "04-templates/00-home.mustache",
-        "w": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "w": "03-aem/04-lists/03-feature-icon-list.mustache",
         "value": {}
       },
       {
@@ -733,7 +789,7 @@
       },
       {
         "v": "04-templates/00-home.mustache",
-        "w": "03-aem/04-icon-lists/01-action-icon-list.mustache",
+        "w": "03-aem/04-lists/04-action-icon-list.mustache",
         "value": {}
       },
       {
@@ -813,12 +869,22 @@
       },
       {
         "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/07-collapse/_show-hide-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/07-collapse/_show-hide-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
         "w": "03-aem/06-tiles/_tile-layout-end.mustache",
         "value": {}
       },
       {
         "v": "04-templates/02-location-detail.mustache",
-        "w": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "w": "03-aem/04-lists/03-feature-icon-list.mustache",
         "value": {}
       },
       {
@@ -964,6 +1030,16 @@
       {
         "v": "05-pages/02-new-hope-location.mustache",
         "w": "03-aem/06-tiles/_tile-layout-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/07-collapse/_show-hide-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/07-collapse/_show-hide-end.mustache",
         "value": {}
       },
       {

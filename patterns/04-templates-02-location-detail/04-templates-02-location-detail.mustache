@@ -6,22 +6,34 @@
 		<p class="text-center">TO DO: Navigation Element</p>
 	{{> aem-chapter-end }}
 	{{> aem-tile-layout-start(removeTopPadding?:true, contentLast?:true, addContent?: true)}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Show/Hide',id:'Example1') }}
+			<p>{{excerpt.long}}</p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(shadedBG?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Show/Hide',id:'Example2') }}
+			<p>{{excerpt.long}}</p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(layoutVertical?:true, contentLast?:true, addContent?: true)}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Show/Hide',id:'Example3') }}
+			<p>{{excerpt.long}}</p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(shadedBG?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Show/Hide',id:'Example4') }}
+			<p>{{excerpt.long}}</p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(layoutVertical?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Show/Hide',id:'Example5') }}
+			<p>{{excerpt.long}}</p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(shadedBG?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		<p>TO DO Hide/Show</p>
+		{{> aem-show-hide-start(headingTxt:'Show/Hide',id:'Example6') }}
+			<p>{{excerpt.long}}</p>
+		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-chapter-start(headingTxt:'Integer feugiat sapien', bodyTxt:'Sed eget sapien ullamcorper, tincidunt ante sed, varius tellus. Aliquam nec varius urna. Donec tempor posuere nisl, nec euismod lacus ultrices et. Nunc eleifend fringilla leo at tempor. Vestibulum id tortor id erat tempus semper. Aliquam venenatis nisi velit, ac commodo arcu blandit at. Duis malesuada erat pellentesque lacus accumsan, vel laoreet mauris mattis.', navOne: 'Navigation #1', navTwo:'Navigation #2')}}
 		{{> aem-feature-icon-list }}
