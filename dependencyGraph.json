@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1625261639674,
+  "timestamp": 1625453606793,
   "graph": {
     "options": {
       "directed": true,
@@ -235,6 +235,14 @@
         }
       },
       {
+        "v": "03-aem/00-heroes/03-location-hero.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
+          "lineagePattern": "templates-location-detail"
+        }
+      },
+      {
         "v": "03-aem/00-text/00-text-columns.mustache",
         "value": {
           "compileState": "clean"
@@ -406,8 +414,8 @@
         "v": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/04-templates-00-home/04-templates-00-home.rendered.html",
-          "lineagePattern": "templates-home"
+          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
+          "lineagePattern": "templates-location-detail"
         }
       },
       {
@@ -427,6 +435,28 @@
         }
       },
       {
+        "v": "03-aem/06-tiles/00-tile-trio.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-aem/06-tiles/_tile-layout-end.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
+          "lineagePattern": "templates-location-detail"
+        }
+      },
+      {
+        "v": "03-aem/06-tiles/_tile-layout-start.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/04-templates-02-location-detail/04-templates-02-location-detail.rendered.html",
+          "lineagePattern": "templates-location-detail"
+        }
+      },
+      {
         "v": "04-templates/00-home.mustache",
         "value": {
           "compileState": "clean"
@@ -434,6 +464,12 @@
       },
       {
         "v": "04-templates/01-lead-form.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -620,6 +656,16 @@
         "value": {}
       },
       {
+        "v": "03-aem/06-tiles/00-tile-trio.mustache",
+        "w": "03-aem/06-tiles/_tile-layout-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/06-tiles/00-tile-trio.mustache",
+        "w": "03-aem/06-tiles/_tile-layout-end.mustache",
+        "value": {}
+      },
+      {
         "v": "04-templates/00-home.mustache",
         "w": "02-organisms/00-header/00-header-prospect.mustache",
         "value": {}
@@ -730,6 +776,36 @@
         "value": {}
       },
       {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "02-organisms/00-header/00-header-prospect.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/00-heroes/03-location-hero.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/01-sticky-promo/_sticky-promo.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/02-chapter/_chapter-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/02-chapter/_chapter-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "02-organisms/01-footer/00-footer.mustache",
+        "value": {}
+      },
+      {
         "v": "05-pages/00-prospect-home.mustache",
         "w": "02-organisms/00-header/00-header-prospect.mustache",
         "value": {}
@@ -827,6 +903,31 @@
       {
         "v": "05-pages/01-guest-pass.mustache",
         "w": "02-organisms/01-footer/00-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/06-tiles/_tile-layout-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/06-tiles/_tile-layout-end.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/04-icon-lists/00-feature-icon-list.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-start.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/02-chapter/_chapter-break-end.mustache",
         "value": {}
       }
     ]
