@@ -1,0 +1,52 @@
+<div class="hero hero-center">
+	<div class="hero-media">
+		{{# imgXS }}
+			<picture>
+				<source srcset="{{imgLG}}" media="(min-width: 992px)">
+				<source srcset="{{imgSM}}" media="(min-width: 576px)">
+				<img src="{{imgXS}}" alt="" class="img-fluid">
+			</picture>
+		{{/ imgXS }}
+		{{^ imgXS }}
+		<picture>
+			<source srcset="https://via.placeholder.com/1620x540?text=3:1" media="(min-width: 992px)">
+			<source srcset="https://via.placeholder.com/992x558?text=16:9" media="(min-width: 576px)">
+			<img src="https://via.placeholder.com/576?text=1:1" alt="" class="img-fluid">
+		</picture>
+		{{/ imgXS }}
+	</div>
+	<div class="container">
+		<div class="hero-content text-center">
+			<h1 class="{{headingClass}}">
+				{{# locationName }} {{{locationName}}} {{/ locationName }}
+				{{^ locationName }} Life Time Lipsum {{/ locationName }}
+			</h1>
+			<ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3 row-gap-2 small">
+				<li class="w-100">
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'geo-alt', size:'1rem', cssClass:'align-middle me-1') }}
+						{{#address}}{{{address}}}{{/address}}
+						{{^address}}1234 Main St N, Anytown, MN 55555{{/address}}
+					</a>
+				</li>
+				<li>
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'telephone', size:'1rem', cssClass:'align-middle me-1') }}
+						{{#phone}}{{{phone}}}{{/phone}}
+						{{^phone}}651-555-1234{{/phone}}
+					</a>
+				</li>
+				<li>
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'clock', size:'1rem', cssClass:'align-middle me-1') }} Club Hours
+					</a>
+				</li>
+				<li>
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'calendar-week', size:'1rem', cssClass:'align-middle me-1') }} Class Schedule
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

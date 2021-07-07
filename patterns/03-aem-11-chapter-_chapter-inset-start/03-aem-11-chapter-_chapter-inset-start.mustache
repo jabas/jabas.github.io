@@ -1,0 +1,37 @@
+<div class="container">
+	<div class=" {{wrapStyle}} px-2 pt-5 pb-2 px-sm-5 px-lg-7 pt-lg-7 pb-lg-4 mb-5 mb-lg-7">
+		{{# headingTxt }}
+		<div class="row">
+			<div class="col-12 col-md-8 offset-md-2 col-xxl-6 offset-xxl-3 text-center">
+					<h2 class="{{headClass}}">{{{headingTxt}}}</h2>
+					{{# shortRule? }}
+					<hr class="hr-short">
+					{{/ shortRule? }}
+				{{# bodyTxt }}
+					<p class="{{bodyClass}}">{{{bodyTxt}}}</p>
+				{{/ bodyTxt }}
+				{{# navOne }}
+					<ul class="nav nav-underlined justify-content-center mb-3">
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navOne}}}</a>
+						</li>
+						{{# navTwo }}
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navTwo}}}</a>
+						</li>
+						{{/ navTwo }}
+						{{# navThree }}
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navThree}}}</a>
+						</li>
+						{{/ navThree }}
+						{{# navFour }}
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navFour}}}</a>
+						</li>
+						{{/ navFour }}
+					</ul>
+				{{/ navOne }}
+			</div>
+		</div>
+		{{/ headingTxt }}
