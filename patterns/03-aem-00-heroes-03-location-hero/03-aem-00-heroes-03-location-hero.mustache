@@ -21,7 +21,32 @@
 				{{# locationName }} {{{locationName}}} {{/ locationName }}
 				{{^ locationName }} Life Time Lipsum {{/ locationName }}
 			</h1>
-			<p>TO DO: Icon Links</p>
+			<ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3 row-gap-2 small">
+				<li class="w-100">
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'geo-alt', size:'1rem', cssClass:'align-middle me-1') }}
+						{{#address}}{{{address}}}{{/address}}
+						{{^address}}1234 Main St N, Anytown, MN 55555{{/address}}
+					</a>
+				</li>
+				<li>
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'telephone', size:'1rem', cssClass:'align-middle me-1') }}
+						{{#phone}}{{{phone}}}{{/phone}}
+						{{^phone}}651-555-1234{{/phone}}
+					</a>
+				</li>
+				<li>
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'clock', size:'1rem', cssClass:'align-middle me-1') }} Club Hours
+					</a>
+				</li>
+				<li>
+					<a href="#0" class="text-decoration-none">
+						{{> atoms-bi-icon(name:'calendar-week', size:'1rem', cssClass:'align-middle me-1') }} Class Schedule
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>

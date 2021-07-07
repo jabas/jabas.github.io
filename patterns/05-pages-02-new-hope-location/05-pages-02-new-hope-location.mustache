@@ -1,12 +1,12 @@
 {{> organisms-header-prospect }}
 <main>
-	{{> aem-location-hero(locationName:'Life Time New&nbsp;Hope', imgXS:'https://www.lifetime.life/content/dam/ltp/images/locations/specific-club/mn-new-hope/mkin20314486-new-hope-hero-xs.jpg', imgSM:'https://www.lifetime.life/content/dam/ltp/images/locations/specific-club/mn-new-hope/mkin20314486-new-hope-hero-m.jpg', imgLG:'https://www.lifetime.life/content/dam/ltp/images/locations/specific-club/mn-new-hope/mkin20314486-new-hope-hero-xl.jpg') }}
+	{{> aem-location-hero(locationName:'Life Time New&nbsp;Hope', imgXS:'https://www.lifetime.life/content/dam/ltp/images/locations/specific-club/mn-new-hope/mkin20314486-new-hope-hero-xs.jpg', imgSM:'https://www.lifetime.life/content/dam/ltp/images/locations/specific-club/mn-new-hope/mkin20314486-new-hope-hero-m.jpg', imgLG:'https://www.lifetime.life/content/dam/ltp/images/locations/specific-club/mn-new-hope/mkin20314486-new-hope-hero-xl.jpg', address:'4239 Winnetka Ave N, New Hope, MN 55428', phone:'&lpar;763&rpar; 971-0404') }}
 	{{> aem-sticky-promo(style:"stickybar-primary",inverseBtns:true,CTATxt:"New Beginnings Are Waiting", btn1Txt:"Build and Price", btn2Txt: "Free Pass") }}
 	{{> aem-chapter-start(headingTxt:'It’s All Possible Here', shortRule?:true, bodyTxt:'Welcome to Life Time New Hope. More than a gym, it’s a luxury athletic resort located between Highway 169 and Highway 100. Here you’ll find an expansive fitness floor, group fitness studios, dedicated kids spaces, a full-service spa — 44,000 stunning square feet, all dedicated to the pursuit of healthy living.', navOne: 'View Membership Options')}}
 		<p class="text-center">TO DO: Navigation Element</p>
 	{{> aem-chapter-end }}
 	{{> aem-tile-layout-start(removeTopPadding?:true, eyebrowTxt:'Spaces & Amenities', headingTxt:'Designed to inspire. Ready for action.', bodyTxt:'From whirlpools to weight machines, it’s all here to help you reach your healthy-living goals — whatever they may be.', lgImgFirst?:true, contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/classes-16x9.jpg', imgOneLG:'/images/tiles/classes-4x3.jpg', imgTwoXS:'/images/tiles/spaces-16x9.jpg', imgTwoLG:'/images/tiles/spaces-wide.jpg')}}
-		{{> aem-show-hide-start(headingTxt:'Spaces & Amenities Details',id:'SpacesAmenities') }}
+		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Spaces & Amenities Details',id:'SpacesAmenities') }}
 			<ul class="list-three-column list-bulleted">
 				<li>Cardio and Weight Machines</li>
 				<li>Free Weights</li>
@@ -25,7 +25,8 @@
 		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(shadedBG?:true, layoutVertical?:true, eyebrowTxt:'Group Training', headingTxt:'A fitness community like no other.', bodyTxt:'Progressive programs. Certified trainers. Unlimited classes. Access to more clubs. Group training provides the structure you need to reach your goals — whether you’re just getting started or have been training for years. <strong>And now it’s included when you choose a Signature Membership.</strong>', contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/treadmill-16x9.jpg', imgOneLG:'/images/tiles/treadmill-4x3.jpg', imgTwoXS:'/images/tiles/training-16x9.jpg', imgTwoLG:'/images/tiles/training-tall.jpg')}}
-		{{> aem-show-hide-start(headingTxt:'Group Training Details',id:'GroupTraining') }}
+		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Group Training Details',id:'GroupTraining') }}
+
 			<ul class="list-three-column list-unstyled">
 				<li>
 					<h4 class="h5 mb-2">GTX Conditioning</h4>
@@ -53,7 +54,8 @@
 		{{> aem-show-hide-end }}
 	{{> aem-tile-layout-end(addContent?: true) }}
 	{{> aem-tile-layout-start(eyebrowTxt:'Dynamic Classes', headingTxt:'Find your new favorite here.', bodyTxt:'Keep your workouts fun and fresh with a wide variety of classes — yoga, cardio, strength, conditioning and more. Even better? They’re all included with membership.', linkOne:'View Full Class Schedule', lgImgFirst?:true, contentLast?:true, addContent?: true, imgOneXS:'/images/tiles/yoga-16x9.jpg', imgOneLG:'/images/tiles/yoga-4x3.jpg', imgTwoXS:'/images/tiles/weightroom-16x9.jpg', imgTwoLG:'/images/tiles/weightroom-wide.jpg')}}
-		{{> aem-show-hide-start(headingTxt:'Studio Classes',id:'StudioClasses') }}
+		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Studio Classes',id:'StudioClasses') }}
+
 			<ul class="list-three-column list-unstyled">
 				<li>
 					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/xtreme.svg" alt="" class="img-fluid mb-2">
@@ -81,10 +83,11 @@
 					<p>This strength-building and muscle toning class features a series of familiar fitness-floor exercises and training methods in a pulse-pounding, chest-thumping format.</p>
 				</li>
 			</ul>
+
 			<hr class="mt-0">
 			<p class="text-center"><a href="#0" class="text-decoration-none">View Full Class Schedule</a></p>
 		{{> aem-show-hide-end }}
-		{{> aem-show-hide-start(headingTxt:'Yoga Classes',id:'YogaClasses') }}
+		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Yoga Classes',id:'YogaClasses') }}
 			<ul class="list-four-column list-unstyled">
 				<li>
 					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/sol.svg" alt="" class="img-fluid mb-2">
@@ -110,7 +113,7 @@
 			<hr class="mt-0">
 			<p class="text-center"><a href="#0" class="text-decoration-none">View Yoga Class Schedule</a></p>
 		{{> aem-show-hide-end }}
-		{{> aem-show-hide-start(headingTxt:'Cycle Classes',id:'CycleClasses') }}
+		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Cycle Classes',id:'CycleClasses') }}
 			<ul class="list-four-column list-unstyled">
 				<li>
 					<img src="https://www.lifetime.life/content/dam/ltp/images/locations/template/logos/sol.svg" alt="" class="img-fluid mb-2">
