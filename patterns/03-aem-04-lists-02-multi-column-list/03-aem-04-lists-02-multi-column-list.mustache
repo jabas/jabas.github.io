@@ -1,15 +1,6 @@
 <div class="container py-3">
-	<ul class="list-two-column list-bulleted">
-		{{# listItems.six }}
-		<li>{{headline.medium}}</li>
-		{{/ listItems.six }}
-	</ul>
-	<ul class="list-three-column list-unstyled">
-		{{# listItems.seven }}
-		<li>
-			<h4 class="h5 mb-2">{{headline.medium}}</h4>
-			<p>{{excerpt.long}}</p>
-		</li>
-		{{/ listItems.seven }}
-	</ul>
+	{{#examples}}
+		<h5 class="mt-3">{{category}}</h5>
+		{{> aem-multi-col-list }}
+	{{/examples}}
 </div>

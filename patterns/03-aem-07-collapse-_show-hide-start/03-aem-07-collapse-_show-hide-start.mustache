@@ -8,7 +8,7 @@
 		</div>
 		<a role="button" data-bs-toggle="collapse" href="#{{id}}" class="col px-3 pt-3 flex-grow-0 text-decoration-none">{{> atoms-bi-icon(name:'chevron-down', size:'1.25rem', cssClass:'align-middle') }}</a>
 	</div>
-	<div class="collapse" id="{{id}}">
+	<div class="collapse{{#visuallyHidden?}} collapse-visually-hidden{{/visuallyHidden?}}" id="{{id}}">
 		<div class="px-3">
 			<hr class="mt-0">
 			

@@ -3,38 +3,19 @@
 	{{> aem-location-hero }}
 	{{> aem-sticky-promo(style:"stickybar-primary",inverseBtns:true,CTATxt:"Ultricies vehicula lorem bibendum un pharetra.", btn1Txt:"Button 1", btn2Txt: "Button 2") }}
 	{{> aem-chapter-start(headingTxt:'Etiam pulvinar ullamcorper lorem', shortRule?:true, bodyTxt:'Ut eu arcu dignissim, blandit nisl vel, vulputate augue. Praesent nec sem mattis, malesuada diam ac, scelerisque dui. Praesent vestibulum laoreet neque eu molestie. Nulla tempor tellus tempor tellus laoreet viverra. Ut efficitur sapien eu scelerisque auctor. Duis id rutrum nisi.', navOne: 'Navigation #1', navTwo:'Navigation #2')}}
-		<p class="text-center">TO DO: Navigation Element</p>
+		{{#pageNav}}
+			{{> aem-tab-nav }}
+		{{/pageNav}}
 	{{> aem-chapter-end }}
-	{{> aem-tile-layout-start(removeTopPadding?:true, contentLast?:true, addContent?: true)}}
-		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Show/Hide',id:'Example1') }}
-			<p>{{excerpt.long}}</p>
-		{{> aem-show-hide-end }}
-	{{> aem-tile-layout-end(addContent?: true) }}
-	{{> aem-tile-layout-start(shadedBG?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Show/Hide',id:'Example2') }}
-			<p>{{excerpt.long}}</p>
-		{{> aem-show-hide-end }}
-	{{> aem-tile-layout-end(addContent?: true) }}
-	{{> aem-tile-layout-start(layoutVertical?:true, contentLast?:true, addContent?: true)}}
-		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Show/Hide',id:'Example3') }}
-			<p>{{excerpt.long}}</p>
-		{{> aem-show-hide-end }}
-	{{> aem-tile-layout-end(addContent?: true) }}
-	{{> aem-tile-layout-start(shadedBG?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Show/Hide',id:'Example4') }}
-			<p>{{excerpt.long}}</p>
-		{{> aem-show-hide-end }}
-	{{> aem-tile-layout-end(addContent?: true) }}
-	{{> aem-tile-layout-start(layoutVertical?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Show/Hide',id:'Example5') }}
-			<p>{{excerpt.long}}</p>
-		{{> aem-show-hide-end }}
-	{{> aem-tile-layout-end(addContent?: true) }}
-	{{> aem-tile-layout-start(shadedBG?:true, lgImgFirst?:true, contentLast?:true, addContent?: true)}}
-		{{> aem-show-hide-start(uppercase?:true, headingTxt:'Show/Hide',id:'Example6') }}
-			<p>{{excerpt.long}}</p>
-		{{> aem-show-hide-end }}
-	{{> aem-tile-layout-end(addContent?: true) }}
+	{{# tileSections }}
+		{{> aem-tile-layout-start }}
+			{{# showHide }}
+			{{> aem-show-hide-start }}
+				<p>{{excerpt.long}}</p>
+			{{> aem-show-hide-end }}
+			{{/ showHide }}
+		{{> aem-tile-layout-end }}
+	{{/ tileSections }}
 	{{> aem-chapter-start(headingTxt:'Integer feugiat sapien', bodyTxt:'Sed eget sapien ullamcorper, tincidunt ante sed, varius tellus. Aliquam nec varius urna. Donec tempor posuere nisl, nec euismod lacus ultrices et. Nunc eleifend fringilla leo at tempor. Vestibulum id tortor id erat tempus semper. Aliquam venenatis nisi velit, ac commodo arcu blandit at. Duis malesuada erat pellentesque lacus accumsan, vel laoreet mauris mattis.', navOne: 'Navigation #1', navTwo:'Navigation #2')}}
 		{{> aem-feature-icon-list }}
 	{{> aem-chapter-end }}
