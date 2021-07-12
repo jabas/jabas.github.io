@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1626103712713,
+  "timestamp": 1626107374975,
   "graph": {
     "options": {
       "directed": true,
@@ -148,8 +148,8 @@
         "v": "00-atoms/06-icons/_bi-icon.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-aem-09-heroes-03-location-hero/03-aem-09-heroes-03-location-hero.rendered.html",
-          "lineagePattern": "aem-location-hero"
+          "lineagePath": "../../patterns/03-aem-13-instagram-feed-00-instagram-feed/03-aem-13-instagram-feed-00-instagram-feed.rendered.html",
+          "lineagePattern": "aem-instagram-feed"
         }
       },
       {
@@ -587,6 +587,14 @@
         }
       },
       {
+        "v": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-02-new-hope-location/05-pages-02-new-hope-location.rendered.html",
+          "lineagePattern": "pages-new-hope-location"
+        }
+      },
+      {
         "v": "04-templates/00-home.mustache",
         "value": {
           "compileState": "clean"
@@ -919,6 +927,11 @@
       {
         "v": "03-aem/12-club-highlight/00-hero-version.mustache",
         "w": "03-aem/12-club-highlight/_club-highlight.mustache",
+        "value": {}
+      },
+      {
+        "v": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
+        "w": "00-atoms/06-icons/_bi-icon.mustache",
         "value": {}
       },
       {
@@ -1294,6 +1307,16 @@
       {
         "v": "05-pages/02-new-hope-location.mustache",
         "w": "02-organisms/01-footer/00-footer.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/02-new-hope-location.mustache",
+        "w": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
         "value": {}
       }
     ]
