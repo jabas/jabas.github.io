@@ -3,13 +3,13 @@
 
 {{# tag }}<{{{tag}}} class="{{hClass}}{{#uppercase?}} text-uppercase text-space-wide{{/uppercase?}}">{{/ tag }}
 {{^ tag }}<h1 class="{{hClass}}{{#uppercase?}} text-uppercase text-space-wide{{/uppercase?}}">{{/ tag }}
-	{{# image }}
+	{{# hImage }}
 		{{> aem-img }}
-	{{/ image }}
-	{{^ image }}
+	{{/ hImage }}
+	{{^ hImage }}
 		{{# text }}{{{ text }}}{{/ text }}
 		{{^ text }}Lorem ipsum dolor{{/ text }}
-	{{/ image }}
+	{{/ hImage }}
 {{# tag }}</{{{tag}}}>{{/ tag }}
 {{^ tag }}</h1>{{/ tag }}
 
