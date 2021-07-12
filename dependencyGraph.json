@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1626111574450,
+  "timestamp": 1626114129665,
   "graph": {
     "options": {
       "directed": true,
@@ -1111,6 +1111,11 @@
       },
       {
         "v": "04-templates/02-location-detail.mustache",
+        "w": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
+        "value": {}
+      },
+      {
+        "v": "04-templates/02-location-detail.mustache",
         "w": "02-organisms/01-footer/00-footer.mustache",
         "value": {}
       },
@@ -1306,17 +1311,12 @@
       },
       {
         "v": "05-pages/02-new-hope-location.mustache",
-        "w": "02-organisms/01-footer/00-footer.mustache",
+        "w": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
         "value": {}
       },
       {
         "v": "05-pages/02-new-hope-location.mustache",
-        "w": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
-        "value": {}
-      },
-      {
-        "v": "04-templates/02-location-detail.mustache",
-        "w": "03-aem/13-instagram-feed/00-instagram-feed.mustache",
+        "w": "02-organisms/01-footer/00-footer.mustache",
         "value": {}
       }
     ]
