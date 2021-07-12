@@ -1,9 +1,9 @@
 {{# inRow }}
-<div class="col">
-	<div class="card h-100">
+<div class="col{{#shortRow?}} col-md-6 col-lg-5 col-xxl-4{{/shortRow?}}">
+	<div class="card h-100{{#hideBorder?}} border-0{{/hideBorder?}}">
 {{/ inRow }}
 {{^ inRow }}
-	<div class="card">
+	<div class="card{{#hideBorder?}} border-0{{/hideBorder?}}">
 {{/ inRow }}
 		{{# isBillboard }}
 		<div class="row g-0">

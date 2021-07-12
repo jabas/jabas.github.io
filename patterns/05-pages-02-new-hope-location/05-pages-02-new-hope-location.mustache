@@ -72,7 +72,12 @@
 		{{> aem-chapter-break-end }}
 	{{> aem-chapter-end }}
 	{{> aem-chapter-start(bgClass: 'bg-light', headingTxt:'Two Ways To Get Started')}}
-		<p>TO DO Membership Options</p>
+		{{> aem-chapter-break-start }}
+			{{> aem-card-row-start(shortRow?: true) }}
+				{{> aem-feature-card(inRow:true, shortRow?: true, hideBorder?:true, cardTitle:'Compare Memberships', cardText:'Our membership options give you what you need to keep moving in the right direction. Discover the one that’s right for you.', linkOne:'Explore Membership Options') }}
+				{{> aem-feature-card(inRow:true, shortRow?: true, hideBorder?:true, cardTitle:'Visit The Club', cardText:'Let’s get to know each other. Come explore our beautiful spaces, discover our best programs and enjoy a great workout.', linkOne:'Request Guest Pass') }}
+			{{> aem-card-row-end }}
+		{{> aem-chapter-break-end }}
 		{{> aem-chapter-break-start(headingTxt:'Still have questions? We can help.', bodyTxt:'<a href="#0">Request more information</a> or call &lpar;763&rpar; 971-0404.') }}
 		{{> aem-chapter-break-end }}
 	{{> aem-chapter-end }}

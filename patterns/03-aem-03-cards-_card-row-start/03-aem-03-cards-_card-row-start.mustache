@@ -1,1 +1,6 @@
-<div class="row row-gap-3 row-cols-1 {{#colMD}}row-cols-md-{{colMD}}{{/colMD}} {{#colLG}}row-cols-lg-{{colLG}}{{/colLG}} {{#colXL}}row-cols-xl-{{colXL}}{{/colXL}} {{#colXXL}}row-cols-xxl-{{colXXL}}{{/colXXL}} {{#reduceGutter}}g-{{reduceGutter}}-2{{/reduceGutter}} mb-3">
+{{^ shortRow? }}
+	<div class="row row-gap-3 row-cols-1 {{#colMD}}row-cols-md-{{colMD}}{{/colMD}} {{#colLG}}row-cols-lg-{{colLG}}{{/colLG}} {{#colXL}}row-cols-xl-{{colXL}}{{/colXL}} {{#colXXL}}row-cols-xxl-{{colXXL}}{{/colXXL}} {{#reduceGutter}}g-{{reduceGutter}}-2{{/reduceGutter}} mb-3">
+{{/ shortRow? }}
+{{# shortRow? }}
+	<div class="row row-gap-3 justify-content-center mb-3">
+{{/ shortRow? }}
