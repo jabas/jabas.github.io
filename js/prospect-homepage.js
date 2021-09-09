@@ -1,21 +1,13 @@
 (function() {
-	var intersectionOptions = {
-		root: null,  // use the viewport
-		rootMargin: '0px',
-		threshold: 0.02
-	}
-
-	function intersectionCallback(entries, observer) {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				header.classList.remove('filled');
-				unitsEl.classList.remove('zone-active');
-			} else {
-				header.classList.add('filled');
-				unitsEl.classList.add('zone-active');
-			}
+	var video = document.getElementById("bannerVideo");
+	if (video) {
+		video.addEventListener('ended', function(){
+			video.currentTime = 2.8;
+			video.play();
 		});
 	}
+})();
+(function() {
 
 	function openMosaic(event) {
 		if(!document.querySelector('.frame-selected')) {
@@ -64,14 +56,93 @@
 		}, 1000);
 	}
 
-	var observer = new IntersectionObserver(intersectionCallback, intersectionOptions);
+	var mosaic = document.querySelector('.mosaic');
+	var frames = document.querySelectorAll('.frame');
+
+	for (let i = 0; i < frames.length; i++) {
+		frames[i].addEventListener('click', openMosaic);
+	}
+
+	var body = document.querySelector('body');
+	var modalBg = document.createElement('div');
+	var closeBtn = document.getElementById("mosaicClose");
+	modalBg.classList.add('modal-backdrop', 'fade');
+	modalBg.addEventListener('click', closeMosaic);
+	closeBtn.addEventListener('click', closeMosaic);
+})();
+(function() {
+	function beganScroll(entries, observer) {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				header.classList.remove('header-mini');
+			} else {
+				header.classList.add('header-mini');
+			}
+		});
+	}
+
+	function exitedBanner(entries, observer) {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				header.classList.add('filled');
+			} else {
+				header.classList.remove('filled');
+			}
+		});
+	}
+
+	var header = document.querySelector('#headerNav');
+	var banner = document.querySelector('#mainBanner');
+	var ciElem = document.querySelector('#companiesInside');
+
+	var beganScrollOpts = {
+		root: null,
+		rootMargin: '0px',
+		threshold: 1
+	}
+
+	var exitedBannerOpts = {
+		root: null,
+		rootMargin: '0px',
+		threshold: 0.02
+	}
+
+	var beganScrollObserver = new IntersectionObserver(beganScroll, beganScrollOpts);
+	var exitedBannerObserver = new IntersectionObserver(exitedBanner, exitedBannerOpts);
+
+	if (banner) {
+		beganScrollObserver.observe(banner);
+	}
+
+	if (ciElem) {
+		exitedBannerObserver.observe(ciElem);
+	}
+})();
+(function() {
+	var intersectionOptions = {
+		root: null,  // use the viewport
+		rootMargin: '0px',
+		threshold: 0.02
+	}
+
+	function enteredZone(entries, observer) {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				unitsEl.classList.remove('zone-active');
+			} else {
+				unitsEl.classList.add('zone-active');
+			}
+		});
+	}
+
+	var enteredZoneObserver = new IntersectionObserver(enteredZone, intersectionOptions);
 
 	var banner = document.querySelector('#mainBanner');
 	var header = document.querySelector('#headerNav');
 	var unitsEl = document.querySelector('#businessUnits');
 
 	if (banner) {
-		observer.observe(banner);
+		enteredZoneObserver.observe(banner);
 	}
 
 	var mosaic = document.querySelector('.mosaic');
