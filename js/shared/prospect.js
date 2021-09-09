@@ -17,10 +17,45 @@
 		});
 	}
 
+	function chooseMosaic(event) {
+		var elClasses = event.target.classList;
+		var current = document.querySelector('.frame-selected')
+		var selected = '';
+		for (let i = 0; i < elClasses.length; i++) {
+			let className = elClasses[i];
+			if (className.startsWith('frame-') && className !== 'frame-selected') {
+				selected = className.replace('frame-', '');
+			}
+		}
+		if (current) {
+			current.classList.remove('frame-selected');
+		}
+		event.target.classList.add('frame-selected');
+
+		for (let i = 0; i < mosaic.classList.length; i++) {
+			let className = mosaic.classList[i];
+			if (className.startsWith('selected-')) {
+				mosaic.classList.remove(className);
+			}
+		}
+		mosaic.classList.add('selected-' + selected);
+		mosaic.classList.add('selection-active');
+	}
+
 	var observer = new IntersectionObserver(intersectionCallback, intersectionOptions);
 
 	var banner = document.querySelector('#mainBanner');
 	var header = document.querySelector('#headerNav');
 	var unitsEl = document.querySelector('#businessUnits');
-	observer.observe(banner);
+
+	if (banner) {
+		observer.observe(banner);
+	}
+
+	var mosaic = document.querySelector('.mosaic');
+	var frames = document.querySelectorAll('.frame');
+
+	for (let i = 0; i < frames.length; i++) {
+		frames[i].addEventListener('click', chooseMosaic);
+	}
 })();

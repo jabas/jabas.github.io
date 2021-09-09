@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1630986926524,
+  "timestamp": 1631193610835,
   "graph": {
     "options": {
       "directed": true,
@@ -8,6 +8,40 @@
       "compound": false
     },
     "nodes": [
+      {
+        "v": "00-structure/00-header.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-00-prospect-homepage/05-pages-00-prospect-homepage.rendered.html",
+          "lineagePattern": "pages-prospect-homepage"
+        }
+      },
+      {
+        "v": "00-structure/01-footer.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/05-pages-00-prospect-homepage/05-pages-00-prospect-homepage.rendered.html",
+          "lineagePattern": "pages-prospect-homepage"
+        }
+      },
+      {
+        "v": "01-zones/00-zone-banner.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-zones/01-zone-units.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "01-zones/02-zone-ci.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
       {
         "v": "05-pages/00-prospect-homepage.mustache",
         "value": {
@@ -27,6 +61,32 @@
         }
       }
     ],
-    "edges": []
+    "edges": [
+      {
+        "v": "01-zones/00-zone-banner.mustache",
+        "w": "00-structure/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/01-zone-units.mustache",
+        "w": "00-structure/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/02-zone-ci.mustache",
+        "w": "00-structure/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/00-prospect-homepage.mustache",
+        "w": "00-structure/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "05-pages/00-prospect-homepage.mustache",
+        "w": "00-structure/01-footer.mustache",
+        "value": {}
+      }
+    ]
   }
 }
