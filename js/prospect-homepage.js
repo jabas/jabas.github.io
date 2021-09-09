@@ -61,7 +61,7 @@
 		setTimeout(function(){
 			body.removeChild(modalBg);
 			current.style.zIndex = null;
-		}, 500);
+		}, 1000);
 	}
 
 	var observer = new IntersectionObserver(intersectionCallback, intersectionOptions);
