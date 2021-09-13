@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1631566393177,
+  "timestamp": 1631574017437,
   "graph": {
     "options": {
       "directed": true,
@@ -49,11 +49,43 @@
         }
       },
       {
+        "v": "01-zones/_athletic-resorts.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-zones-01-zone-units/01-zones-01-zone-units.rendered.html",
+          "lineagePattern": "zones-zone-units"
+        }
+      },
+      {
         "v": "01-zones/_banner-animation.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-zones-00-zone-banner/01-zones-00-zone-banner.rendered.html",
           "lineagePattern": "zones-zone-banner"
+        }
+      },
+      {
+        "v": "01-zones/_digital.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-zones-01-zone-units/01-zones-01-zone-units.rendered.html",
+          "lineagePattern": "zones-zone-units"
+        }
+      },
+      {
+        "v": "01-zones/_living.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-zones-01-zone-units/01-zones-01-zone-units.rendered.html",
+          "lineagePattern": "zones-zone-units"
+        }
+      },
+      {
+        "v": "01-zones/_work.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-zones-01-zone-units/01-zones-01-zone-units.rendered.html",
+          "lineagePattern": "zones-zone-units"
         }
       },
       {
@@ -89,6 +121,26 @@
       {
         "v": "01-zones/01-zone-units.mustache",
         "w": "00-structure/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/01-zone-units.mustache",
+        "w": "01-zones/_athletic-resorts.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/01-zone-units.mustache",
+        "w": "01-zones/_digital.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/01-zone-units.mustache",
+        "w": "01-zones/_living.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/01-zone-units.mustache",
+        "w": "01-zones/_work.mustache",
         "value": {}
       },
       {
