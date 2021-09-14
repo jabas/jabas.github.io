@@ -1,10 +1,13 @@
 (function() {
 	function beganScroll(entries, observer) {
 		entries.forEach(entry => {
+			console.log(entry);
 			if (entry.isIntersecting) {
 				header.classList.remove('header-mini');
+				header.classList.remove('filled-mobile');
 			} else {
 				header.classList.add('header-mini');
+				header.classList.add('filled-mobile');
 			}
 		});
 	}
@@ -25,8 +28,8 @@
 
 	var beganScrollOpts = {
 		root: null,
-		rootMargin: '0px',
-		threshold: 1
+		rootMargin: '-80px',
+		threshold: [0, 0.5, 0.75, 1]
 	}
 
 	var exitedBannerOpts = {
