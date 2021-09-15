@@ -1,8 +1,14 @@
 (function() {
-	var intersectionOptions = {
+	var enteredZoneOpts = {
 		root: null,  // use the viewport
 		rootMargin: '0px',
 		threshold: 0.30
+	}
+
+	var unitAnimOpts = {
+		root: null,  // use the viewport
+		rootMargin: '-40px',
+		threshold: 0.02
 	}
 
 	function enteredZone(entries, observer) {
@@ -15,7 +21,25 @@
 		});
 	}
 
+	function unitAnimation(entries, observer) {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('unit-animate-in');
+			}
+		});
+	}
+
 	var unitsEl = document.querySelector('#businessUnits');
-	var enteredZoneObserver = new IntersectionObserver(enteredZone, intersectionOptions);
+	var contentEls = document.querySelectorAll('.unit-animated');
+
+	var enteredZoneObserver = new IntersectionObserver(enteredZone, enteredZoneOpts);
+	var unitAnimationObserver = new IntersectionObserver(unitAnimation, unitAnimOpts);
+
 	enteredZoneObserver.observe(unitsEl);
+
+	contentEls.forEach((item) => {
+		if (item) {
+			unitAnimationObserver.observe(item);
+		}
+	});
 })();

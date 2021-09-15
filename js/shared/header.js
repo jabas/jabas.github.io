@@ -1,7 +1,6 @@
 (function() {
 	function beganScroll(entries, observer) {
 		entries.forEach(entry => {
-			console.log(entry);
 			if (entry.isIntersecting) {
 				header.classList.remove('header-mini');
 				header.classList.remove('filled-mobile');
