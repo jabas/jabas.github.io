@@ -14,7 +14,7 @@
 		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
 		<meta name="theme-color" content="#ffffff">
 
-		<link id="pagestyle" rel="stylesheet" href="/css/prospect-homepage.css?1631771757110" media="all" />
+		<link id="pagestyle" rel="stylesheet" href="/css/prospect-homepage.css?1631807358537" media="all" />
 
 
 		<!-- pass additional files to page --><!-- pass additional js files to page -->
@@ -27,8 +27,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1631771757110" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1631771757110" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1631807358537" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1631807358537" media="all" />
 
 		<!-- End Pattern Lab -->
 	</head>
@@ -832,15 +832,18 @@
 			<animate id="logoIn" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
 			<animate id="logoOut" begin="5.75s" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</use>
-		<circle fill="none" stroke="#FFFFFF" stroke-dasharray="0 1244.07069" transform="rotate(90, 496, 249)" cx="249" cy="249" r="198"><!--circum: 1244.07069-->
+		<circle opacity="0.25"
+		fill="none" stroke="#FFFFFF" stroke-dasharray="0 1244.07069" transform="rotate(90, 496, 249)" cx="249" cy="249" r="198"><!--circum: 1244.07069-->
 			<animate id="drawOuter" begin="logoIn.begin" attributeName="stroke-dasharray" from="0 1244.07069" to="996.93207 0" fill="freeze" dur="2s" attributeType="XML" />
 			<animateTransform begin="drawOuter.begin" attributeName="transform" type="rotate" from="90, 249, 249" to="270, 249, 249" fill="freeze" dur="2s" attributeType="XML" />
+			<animate begin="drawOuter.begin" attributeName="opacity" from="0.25" to="1" fill="freeze" dur="0.75s" attributeType="XML" />
 			<animate id="outerShrink" begin="drawOuter.begin+1.5s" attributeName="r" from="198" to="110" fill="freeze" dur="1.5s" attributeType="XML" />
 			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</circle>
-		<circle fill="none" stroke="#FFFFFF" stroke-dasharray="0 1165.53087" stroke-dashoffset="1165.53087" transform="rotate(90, 249, 249)" cx="249" cy="249" r="185.5"><!--circum: 1165.53087-->
+		<circle opacity="0.25" fill="none" stroke="#FFFFFF" stroke-dasharray="0 1165.53087" stroke-dashoffset="1165.53087" transform="rotate(90, 249, 249)" cx="249" cy="249" r="185.5"><!--circum: 1165.53087-->
 			<animate id="drawInner" begin="drawOuter.begin+0.05s" attributeName="stroke-dasharray" from="0 1165.53087" to="994.83767 0" fill="freeze" dur="2s" attributeType="XML" />
 			<animateTransform begin="drawInner.begin" attributeName="transform" type="rotate" from="90, 249, 249" to="270, 249, 249" fill="freeze" dur="2s" attributeType="XML" />
+			<animate begin="drawInner.begin" attributeName="opacity" from="0.25" to="1" fill="freeze" dur="0.75s" attributeType="XML" />
 			<animate id="innerShrink" begin="outerShrink.begin" attributeName="r" from="185.5" to="104" fill="freeze" dur="1.5s" attributeType="XML" />
 			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</circle>
@@ -849,44 +852,52 @@
 			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(0.7071 -0.7071 -0.7071 -0.7071 355.353 355.353)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;24; -12;-7;0;-30; -60;-120;-160;-160; -160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;85; 90;73;69;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- E -->
-			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(4.489659e-11 -1 -1 -4.489659e-11 399.4059 249)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(4.489659e-11 -1 -1 -4.489659e-11 399.4059 249)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;0; -12;-51;-120;-175; -235;-395;-600;-800; -1000;-1000;-1000;-1000" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;52; 65;83;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- NE -->
-			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-0.7071 -0.7071 -0.7071 0.7071 355.353 142.647)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(-0.7071 -0.7071 -0.7071 0.7071 355.353 142.647)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-12; -25;-18;0;0; 0;0;0;0; -30;-60;-120;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;90; 90;81;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- N -->
-			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-1 0 0 1 249 98.5941)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(-1 0 0 1 249 98.5941)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-10; -25;-18;0;0; 0;0;0;-30; -60;-120;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;85; 90;81;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- NW -->
-			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-0.7071 0.7071 0.7071 0.7071 142.647 142.647)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(-0.7071 0.7071 0.7071 0.7071 142.647 142.647)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-12; -20;-15;0;0; 0;0;-30;-60; -120;-160;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;90; 94;82;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- W -->
-			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-1.346899e-10 1 1 1.346899e-10 98.5941 249)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(-1.346899e-10 1 1 1.346899e-10 98.5941 249)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;0; -9;-58;-120;-175; -230;-395;-600;-800; -1000;-1000;-1000;-1000" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;52; 73;85;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- SW -->
-			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(0.7071 0.7071 0.7071 -0.7071 142.647 355.353)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(0.7071 0.7071 0.7071 -0.7071 142.647 355.353)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-12; -20;-10;0;0; 0;-30;-60;-120; -160;-160;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;90; 90;87;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
 			<!-- S -->
-			<line fill="none"  x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(1 0 0 -1 249 399.4059)">
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(1 0 0 -1 249 399.4059)">
 				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-10; -16;-8;0;0; -30;-60;-120;-160; -160;-160;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
 				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;85; 85;78;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animateTransform id="lineRotation" begin="drawInner.begin+1.25s" attributeName="transform" type="skewX" values="0;15;0" additive="sum" fill="freeze" dur="1.5s" attributeType="XML" />
 			</line>
-			<animate begin="drawInner.begin" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateTransform begin="drawInner.begin" attributeName="transform" type="rotate" from="-20, 249, 249" to="0, 249, 249" fill="freeze" dur="1.75s" calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
+			<animate begin="drawInner.begin" attributeName="opacity" from="0" to="1" fill="freeze" dur="0.75s" attributeType="XML" />
+			<animateTransform begin="drawInner.begin" attributeName="transform" type="rotate" from="-20, 249, 249" to="360, 249, 249" fill="freeze" dur="2.75s" calcMode="spline" keySplines="0.49 0 0.73 0.5" keyTimes="0;1" attributeType="XML" />
 			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</g>
 	</g>
@@ -965,10 +976,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1631771757110">
+<script id="pl-js-polyfill-insert-1631807358537">
   (function() {
     if (self != top) {
-      var cb = '1631771757110';
+      var cb = '1631807358537';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -978,10 +989,10 @@
   })();
 </script>
 
-<script id="pl-js-insert-1631771757110">
+<script id="pl-js-insert-1631807358537">
   (function() {
     if (self != top) {
-      var cb = '1631771757110';
+      var cb = '1631807358537';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
