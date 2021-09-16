@@ -591,9 +591,6 @@
 				c-0.89,0.041-1.695-0.077-2.418-0.356c-0.724-0.279-1.349-0.677-1.876-1.193s-0.936-1.132-1.225-1.845s-0.434-1.493-0.434-2.34
 				v-8.525h-1.953V7.874H41.167z"/>
 		</symbol>
-		<symbol  id="innerCircle" viewBox="-186 -186 372 372">
-			<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="0" cy="0" r="185.5"/>
-		</symbol>
 		<symbol  id="isA" viewBox="-22.521 -11.284 45.042 22.567">
 			<path id="isA_2_" d="M-20.568,11.284V8.153h-1.953v3.131H-20.568z M-20.568,5.146V-10.85h-1.953V5.146H-20.568z
 				 M-6.99,2.031c-0.228,0.444-0.532,0.811-0.915,1.101C-8.287,3.42-8.726,3.632-9.222,3.767c-0.496,0.134-1.023,0.201-1.581,0.201
@@ -629,197 +626,157 @@
 				c0.434-0.146,0.878-0.217,1.333-0.217c0.744,0,1.457,0.113,2.139,0.341c0.682,0.227,1.276,0.558,1.783,0.992
 				c0.506,0.434,0.909,0.961,1.209,1.58c0.299,0.62,0.449,1.323,0.449,2.108v2.542H18.739z"/>
 		</symbol>
-		<symbol  id="outerCircle" viewBox="-198.5 -198.5 397 397">
-			<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="0" cy="0" r="198"/>
-		</symbol>
 	</defs>
 </svg>
-<svg class="d-lg-none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 498 498" enable-background="new 0 0 498 498" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 498 498" enable-background="new 0 0 498 498" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
 	<!-- Healthy Way of Life is a Perspective  -->
-	<g fill="#FFFFFF">
+	<g class="d-none" fill="#FFFFFF">
 		<use xlink:href="#Healthy" opacity="0" width="176.523" height="48.816" x="-88.261" y="-24.408" transform="matrix(1 0 0 -1 168.1497 149.6897)" display="inline" overflow="visible">
-			<animate id="healthyInMb" begin="0s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="healthyInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="healthyOutMb" begin="healthyInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="healthyOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="healthyIn" begin="0s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion  begin="healthyIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="healthyOut" begin="healthyIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="healthyOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 		<use xlink:href="#Way" opacity="0" width="264.505" height="48.816" x="-132.253" y="-24.408" transform="matrix(1 0 0 -1 285.7395 221.6897)" display="inline" overflow="visible">
-			<animate id="wayInMb" begin="healthyIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="wayInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="wayOutMb" begin="wayInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="wayOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="wayIn" begin="healthyIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion  begin="wayIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="wayOut" begin="wayIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="wayOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 		<use xlink:href="#isA" opacity="0" width="45.042" height="22.567" x="-22.521" y="-11.284" transform="matrix(1 0 0 -1 216.7639 282.2856)" display="inline" overflow="visible">
-			<animate id="isInMb" begin="wayInMb.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="isInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="isOutMb" begin="isInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="isOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="isIn" begin="wayIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion  begin="isIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="isOut" begin="isIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="isOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 		<use xlink:href="#Perspective" opacity="0" width="276.654" height="48.816" x="-138.327" y="-24.408" transform="matrix(1 0 0 -1 251.0803 341.6895)" display="inline" overflow="visible">
-			<animate id="perspectiveInMb" begin="isInMb.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="perspectiveInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="perspectiveOutMb" begin="perspectiveInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="perspectiveOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="perspectiveIn" begin="isIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion  begin="perspectiveIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="perspectiveOut" begin="perspectiveIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="perspectiveOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 	</g>
 	<!-- That Encompasses All Aspects of your Well-Being -->
-	<g fill="#FFFFFF">
+	<g class="d-none" fill="#FFFFFF">
 		<use xlink:href="#Encompasses" opacity="0" width="265.109" height="28.023" x="-132.555" y="-14.012" transform="matrix(1 0 0 -1 199.5547 145.9448)" display="inline" overflow="visible">
-			<animate id="encompassInMb" begin="perspectiveOutMb.end" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="encompassInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="encompassOutMb" begin="encompassInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="encompassOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="encompassIn" begin="perspectiveOut.end" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion  begin="encompassIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="encompassOut" begin="encompassIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="encompassOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 		<use xlink:href="#Aspects" opacity="0" width="267.459" height="48.816" x="-133.729" y="-24.408" transform="matrix(1 0 0 -1 294.0117 213.6975)" display="inline" overflow="visible">
-			<animate id="aspectsInMb" begin="encompassInMb.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="aspectsInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="aspectsOutMb" begin="aspectsInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="aspectsOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="aspectsIn" begin="encompassIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion  begin="aspectsIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="aspectsOut" begin="aspectsIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="aspectsOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 		<use xlink:href="#Your" opacity="0" width="94.549" height="28.023" x="-47.275" y="-14.012" transform="matrix(1 0 0 -1 267.3289 271.4453)" display="inline" overflow="visible">
-			<animate id="yourInMb" begin="aspectsInMb.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion begin="yourInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="yourOutMb" begin="yourInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="yourOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="yourIn" begin="aspectsIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion begin="yourIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="yourOut" begin="yourIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="yourOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 		<use xlink:href="#Wellbeing" opacity="0"  width="255.526" height="49.627" x="-127.763" y="-24.813" transform="matrix(1 0 0 -1 237.4868 333.3213)" display="inline" overflow="visible">
-			<animate id="wellbeingInMb" begin="yourInMb.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion begin="wellbeingInMb.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="wellbeingOutMb" begin="wellbeingInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="wellbeingOutMb.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
+			<animate id="wellbeingIn" begin="yourIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateMotion begin="wellbeingIn.begin" path="M-40,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML"/>
+			<animate id="wellbeingOut" begin="wellbeingIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
+			<animateMotion begin="wellbeingOut.begin" path="M0,0h40" dur="1.5s"calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
 		</use>
 	</g>
 	<!-- Logo Animations -->
 	<g>
 		<use xlink:href="#LTLogo" opacity="0" width="105" height="23.333" x="-52.5" y="-11.667" transform="matrix(1 0 0 -1 249 249)" overflow="visible">
-			<animate id="logoInMb" begin="wellbeingOutMb.end+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animate id="logoOutMb" begin="logoInMb.end+2s" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="logoIn" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="logoOut" begin="5.75s" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</use>
 		<circle fill="none" stroke="#FFFFFF" stroke-dasharray="0 1244.07069" transform="rotate(90, 496, 249)" cx="249" cy="249" r="198"><!--circum: 1244.07069-->
-			<animate id="outerShrinkMb" begin="wellbeingOutMb.begin+0.2s" attributeName="r" from="198" to="110" fill="freeze" dur="3s" attributeType="XML" />
-			<animateTransform begin="outerShrinkMb.begin" attributeName="transform" type="rotate" from="90, 249, 249" to="270, 249, 249" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="outerShrinkMb.begin" attributeName="stroke-dasharray" from="0 1244.07069" to="996.93207 0" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="logoOutMb.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="drawOuter" begin="logoIn.begin" attributeName="stroke-dasharray" from="0 1244.07069" to="996.93207 0" fill="freeze" dur="2s" attributeType="XML" />
+			<animateTransform begin="drawOuter.begin" attributeName="transform" type="rotate" from="90, 249, 249" to="270, 249, 249" fill="freeze" dur="2s" attributeType="XML" />
+			<animate id="outerShrink" begin="drawOuter.begin+1.5s" attributeName="r" from="198" to="110" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</circle>
 		<circle fill="none" stroke="#FFFFFF" stroke-dasharray="0 1165.53087" stroke-dashoffset="1165.53087" transform="rotate(90, 249, 249)" cx="249" cy="249" r="185.5"><!--circum: 1165.53087-->
-			<animate id="innerShrinkMb" begin="outerShrinkMb.begin+0.05s" attributeName="r" from="185.5" to="104" fill="freeze" dur="3s" attributeType="XML" />
-			<animateTransform begin="innerShrinkMb.begin" attributeName="transform" type="rotate" from="90, 249, 249" to="270, 249, 249" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="innerShrinkMb.begin" attributeName="stroke-dasharray" from="0 1165.53087" to="994.83767 0" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="logoOutMb.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="drawInner" begin="drawOuter.begin+0.05s" attributeName="stroke-dasharray" from="0 1165.53087" to="994.83767 0" fill="freeze" dur="2s" attributeType="XML" />
+			<animateTransform begin="drawInner.begin" attributeName="transform" type="rotate" from="90, 249, 249" to="270, 249, 249" fill="freeze" dur="2s" attributeType="XML" />
+			<animate id="innerShrink" begin="outerShrink.begin" attributeName="r" from="185.5" to="104" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
 		</circle>
+		<g opacity="0" stroke="#FFFFFF" transform="rotate(-20,249,249)">
+			<!-- SE (denotes where ends) -->
+			<line fill="none" x1="0" y1="0" x2="0" y2="0" transform="matrix(0.7071 -0.7071 -0.7071 -0.7071 355.353 355.353)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;24; -12;-7;0;-30; -60;-120;-160;-160; -160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;85; 90;73;69;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- E -->
+			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(4.489659e-11 -1 -1 -4.489659e-11 399.4059 249)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;0; -12;-51;-120;-175; -235;-395;-600;-800; -1000;-1000;-1000;-1000" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;52; 65;83;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- NE -->
+			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-0.7071 -0.7071 -0.7071 0.7071 355.353 142.647)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-12; -25;-18;0;0; 0;0;0;0; -30;-60;-120;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;90; 90;81;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- N -->
+			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-1 0 0 1 249 98.5941)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-10; -25;-18;0;0; 0;0;0;-30; -60;-120;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;85; 90;81;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- NW -->
+			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-0.7071 0.7071 0.7071 0.7071 142.647 142.647)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-12; -20;-15;0;0; 0;0;-30;-60; -120;-160;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;90; 94;82;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- W -->
+			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(-1.346899e-10 1 1 1.346899e-10 98.5941 249)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;0; -9;-58;-120;-175; -230;-395;-600;-800; -1000;-1000;-1000;-1000" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;52; 73;85;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- SW -->
+			<line fill="none" x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(0.7071 0.7071 0.7071 -0.7071 142.647 355.353)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-12; -20;-10;0;0; 0;-30;-60;-120; -160;-160;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;90; 90;87;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<!-- S -->
+			<line fill="none"  x1="0" y1="-4.886" x2="0" y2="4.886" transform="matrix(1 0 0 -1 249 399.4059)">
+				<animate begin="drawInner.begin" attributeName="y1" values="0;18;42;55; 64;64;52;-10; -16;-8;0;0; -30;-60;-120;-160; -160;-160;-160;-160" fill="freeze" dur="4.75s" attributeType="XML"/>
+				<animate begin="drawInner.begin" attributeName="y2" values="0;44;68;81; 85;85;85;85; 85;78;72;72; 72;72;72;72; 72;72;72;72" fill="freeze" dur="4.75s" attributeType="XML"/>
+			</line>
+			<animate begin="drawInner.begin" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animateTransform begin="drawInner.begin" attributeName="transform" type="rotate" from="-20, 249, 249" to="0, 249, 249" fill="freeze" dur="1.75s" calcMode="spline" keySplines="0.42 0 0.58 1" keyTimes="0;1" attributeType="XML" />
+			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
+		</g>
 	</g>
 	<!-- Move. Connect. Live. Work.-->
-	<g fill="#FFFFFF">
+	<g class="d-lg-none" fill="#FFFFFF">
 		<use xlink:href="#Move" opacity="0" width="162.954" height="46.522" x="-81.477" y="-23.261" transform="matrix(1.323 0 0 -1.323 249 87.5805)" overflow="visible">
-			<animate id="moveInMb" begin="logoOutMb.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="moveIn" begin="logoOut.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
 		</use>
 		<use xlink:href="#Connect" opacity="0" width="252.481" height="47.48" x="-126.241" y="-23.74" transform="matrix(1.323 0 0 -1.323 249 195.1935)" overflow="visible">
-			<animate id="connectInMb" begin="moveInMb.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="connectIn" begin="moveIn.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
 		</use>
 		<use xlink:href="#Live" opacity="0" width="120.969" height="46.522" x="-60.484" y="-23.261" transform="matrix(1.323 0 0 -1.323 249 302.8065)" overflow="visible">
-			<animate id="liveInMb" begin="connectInMb.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+			<animate id="liveIn" begin="connectIn.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
 		</use>
 		<use xlink:href="#Work" opacity="0" width="161.102" height="46.522" x="-80.551" y="-23.261" transform="matrix(1.323 0 0 -1.323 249 410.4195)" overflow="visible">
 			<animate id="workIn" begin="liveIn.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
 		</use>
-		<animateTransform begin="moveInMb.begin" attributeName="transform" type="scale" from="1" to="0.8" additive="sum" dur="5s" fill="freeze" attributeType="XML" />
-		<animateTransform begin="moveInMb.begin" attributeName="transform" type="translate" from="0, 0" to="61.5, 53.3359" additive="sum" dur="5s" fill="freeze" attributeType="XML" />
-	</g>
-</svg>
-<!-- desktop animation -->
-<svg class="d-none d-lg-block" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 992 498" enable-background="new 0 0 992 498" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
-<!-- Healthy Way of Life is a Perspective  -->
-	<g fill="#FFFFFF">
-		<use xlink:href="#Healthy" opacity="0" width="176.523" height="48.816" x="-88.261" y="-24.408" transform="matrix(1 0 0 -1 415.1497 149.6897)" overflow="visible">
-			<animate id="healthyIn" begin="0s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="healthyIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="healthyOut" begin="healthyIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="healthyOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-		<use xlink:href="#Way" opacity="0" width="264.505" height="48.816" x="-132.253" y="-24.408" transform="matrix(1 0 0 -1 532.7394 221.6897)" overflow="visible">
-			<animate id="wayIn" begin="healthyIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="wayIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="wayOut" begin="wayIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="wayOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-		<use xlink:href="#isA" opacity="0" width="45.042" height="22.567" x="-22.521" y="-11.284" transform="matrix(1 0 0 -1 463.7639 282.2856)" overflow="visible">
-			<animate id="isIn" begin="wayIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="isIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="isOut" begin="isIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="isOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-		<use xlink:href="#Perspective" opacity="0" width="276.654" height="48.816" x="-138.327" y="-24.408" transform="matrix(1 0 0 -1 498.0803 341.6895)" overflow="visible">
-			<animate id="perspectiveIn" begin="isIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="perspectiveIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="perspectiveOut" begin="perspectiveIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="perspectiveOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-	</g>
-
-	<!-- That Encompasses All Aspects of your Well-Being -->
-	<g fill="#FFFFFF">
-		<use xlink:href="#Encompasses" opacity="0" width="265.109" height="28.023" x="-132.555" y="-14.012" transform="matrix(1 0 0 -1 446.5547 145.9448)" display="inline" overflow="visible">
-			<animate id="encompassIn" begin="perspectiveOut.end" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="encompassIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="encompassOut" begin="encompassIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="encompassOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-		<use xlink:href="#Aspects" opacity="0" width="267.459" height="48.816" x="-133.729" y="-24.408" transform="matrix(1 0 0 -1 541.0117 213.6975)" display="inline" overflow="visible">
-			<animate id="aspectsIn" begin="encompassIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion  begin="aspectsIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="aspectsOut" begin="aspectsIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="aspectsOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-		<use xlink:href="#Your" opacity="0" width="94.549" height="28.023" x="-47.275" y="-14.012" transform="matrix(1 0 0 -1 514.3289 271.4453)" display="inline" overflow="visible">
-			<animate id="yourIn" begin="aspectsIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion begin="yourIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="yourOut" begin="yourIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="yourOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-		<use xlink:href="#Wellbeing" opacity="0" width="255.526" height="49.627" x="-127.763" y="-24.813" transform="matrix(1 0 0 -1 484.4868 333.3213)" display="inline" overflow="visible">
-			<animate id="wellbeingIn" begin="yourIn.begin+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animateMotion begin="wellbeingIn.begin" path="M-40,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML"/>
-			<animate id="wellbeingOut" begin="wellbeingIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze"dur="1.5s" attributeType="XML" />
-			<animateMotion begin="wellbeingOut.begin" path="M0,0h40" dur="1.5s" calcMode="spline" keySplines="0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1 ; 0.42 0 0.58 1" keyTimes="0;0.2;0.4;0.6;1" attributeType="XML" />
-		</use>
-	</g>
-
-	<!-- Logo Animations -->
-	<g>
-		<use xlink:href="#LTLogo" opacity="0" width="105" height="23.333" x="-52.5" y="-11.667" transform="matrix(1 0 0 -1 496 249)" display="inline" overflow="visible">
-			<animate id="logoIn" begin="wellbeingOut.end+0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-			<animate id="logoOut" begin="logoIn.end+2s" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
-		</use>
-		<!-- outer circle -->
-		<circle fill="none" stroke="#FFFFFF" stroke-dasharray="0 1244.07069" transform="rotate(90, 496, 249)" cx="496" cy="249" r="198"><!--circum: 1244.07069-->
-			<animate id="outerShrink" begin="wellbeingOut.begin+0.2s" attributeName="r" from="198" to="110" fill="freeze" dur="3s" attributeType="XML" />
-			<animateTransform begin="outerShrink.begin" attributeName="transform" type="rotate" from="90, 496, 249" to="270, 496, 249" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="outerShrink.begin" attributeName="stroke-dasharray" from="0 1244.07069" to="996.93207 0" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
-		</circle>
-		<!-- inner circle -->
-		<circle fill="none" stroke="#FFFFFF" stroke-dasharray="0 1165.53087" stroke-dashoffset="1165.53087" transform="rotate(90, 496, 249)" cx="496" cy="249" r="185.5"><!--circum: 1165.53087-->
-			<animate id="innerShrink" begin="outerShrink.begin+0.05s" attributeName="r" from="185.5" to="104" fill="freeze" dur="3s" attributeType="XML" />
-			<animateTransform begin="innerShrink.begin" attributeName="transform" type="rotate" from="90, 496, 249" to="270, 496, 249" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="innerShrink.begin" attributeName="stroke-dasharray" from="0 1165.53087" to="994.83767 0" fill="freeze" dur="2s" attributeType="XML" />
-			<animate begin="logoOut.begin" attributeName="opacity" from="1" to="0" fill="freeze" dur="1.5s" attributeType="XML" />
-		</circle>
-	</g>
-	<!-- Move. Connect. Live. Work.-->
-	<g fill="#FFFFFF">
-		<use xlink:href="#Move" opacity="0" width="162.954" height="46.522" x="-81.477" y="-23.261" transform="matrix(1 0 0 -1 183.5573 246.4031)" overflow="visible">
-			<animate id="moveIn" begin="logoOut.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-		</use>
-		<use xlink:href="#Connect" opacity="0" width="252.481" height="47.48" x="-126.241" y="-23.74" transform="matrix(1 0 0 -1 420.2235 245.9238)" overflow="visible">
-			<animate id="connectIn" begin="moveIn.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-		</use>	
-		<use xlink:href="#Live" opacity="0" width="120.969" height="46.522" x="-60.484" y="-23.261" transform="matrix(1 0 0 -1 638.069 246.4031)" overflow="visible">
-			<animate id="liveIn" begin="connectIn.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-		</use>
-		<use xlink:href="#Work" opacity="0" width="161.102" height="46.522" x="-80.551" y="-23.261" transform="matrix(1 0 0 -1 805.6234 246.4031)" overflow="visible">
-			<animate id="workIn" begin="liveIn.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
-		</use>
 		<animateTransform begin="moveIn.begin" attributeName="transform" type="scale" from="1" to="0.8" additive="sum" dur="5s" fill="freeze" attributeType="XML" />
-		<animateTransform begin="moveIn.begin" attributeName="transform" type="translate" from="0, 0" to="125.456, 65.53" additive="sum" dur="5s" fill="freeze" attributeType="XML" />
+		<animateTransform begin="moveIn.begin" attributeName="transform" type="translate" from="0, 0" to="61.5, 53.3359" additive="sum" dur="5s" fill="freeze" attributeType="XML" />
+	</g>
+	<g class="d-none d-lg-inline" opacity="0" fill="#FFFFFF"><!-- desktop version -->
+		<use xlink:href="#Move" opacity="0.25" width="162.954" height="46.522" x="-81.477" y="-23.261" transform="matrix(1 0 0 -1 -63.4427 246.4031)" overflow="visible">
+			<animate id="moveIn" begin="logoOut.end-0.2s" attributeName="opacity" from="0.25" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+		</use>
+		<use xlink:href="#Connect" opacity="0.25" width="252.481" height="47.48" x="-126.241" y="-23.74" transform="matrix(1 0 0 -1 173.2235 245.9238)" overflow="visible">
+			<animate id="connectIn" begin="moveIn.end-0.2s" attributeName="opacity" from="0.25" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+		</use>	
+		<use xlink:href="#Live" opacity="0.25" width="120.969" height="46.522" x="-60.484" y="-23.261" transform="matrix(1 0 0 -1 391.069 246.4031)" overflow="visible">
+			<animate id="liveIn" begin="connectIn.end-0.2s" attributeName="opacity" from="0.25" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+		</use>
+		<use xlink:href="#Work" opacity="0.25" width="161.102" height="46.522" x="-80.551" y="-23.261" transform="matrix(1 0 0 -1 558.6234 246.4031)" overflow="visible">
+			<animate id="workIn" begin="liveIn.end-0.2s" attributeName="opacity" from="0.25" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
+		</use>
+		<animate begin="logoOut.end-0.2s" attributeName="opacity" from="0" to="1" fill="freeze" dur="1.5s" attributeType="XML" />
 	</g>
 </svg>

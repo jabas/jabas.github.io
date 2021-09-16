@@ -2,10 +2,21 @@
 	{{> structure-header }}
 {{/ isStandalone }}
 <div id="mainBanner" class="zone-banner">
-	<video class="banner-video" preload autoplay muted loop playsinline poster="">
-		<source src="/images/prospect/cloud-loop.mp4" type="video/mp4">
+	<video id="videoLoop" class="banner-video" preload autoplay muted loop playsinline poster="">
+		<source id="mp4Video" src="/images/prospect/cloud-loop.mp4" type="video/mp4">
 	</video>
 	<div class="banner-content text-center">
 		{{> zones-banner-animation }}
 	</div>
 </div>
+{{! 
+<script type="text/javascript">
+	var videocontainer = document.getElementById('videoLoop');
+	var videosource = document.getElementById('mp4Video');
+	console.log(window.innerWidth + ' by ' + window.innerHeight);
+	if (window.innerWidth >= window.innerHeight) {
+		console.log('entered');
+		videosource.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
+		videocontainer.load();
+	}
+</script> }}
