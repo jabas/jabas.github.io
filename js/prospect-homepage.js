@@ -10,8 +10,10 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
+	var isLandscape = false;
 
-	if (window.innerWidth >= window.innerHeight) {
+	if (isLandscape) {
+		console.log('landscape=' + isLandscape)
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
@@ -19,7 +21,7 @@
 	function forceVidPlay() {
 		video.play();
 	}
-	document.body.addEventListener('click', forceVidPlay, { once: true });
+
 	video.addEventListener('suspend', () => {
 		document.body.addEventListener('click', forceVidPlay, { once: true });
 		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
