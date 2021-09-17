@@ -10,10 +10,9 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
-	var isLandscape = false;
+	var isLandscape = window.innerWidth >= window.innerHeight;
 
 	if (isLandscape) {
-		console.log('landscape=' + isLandscape)
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
