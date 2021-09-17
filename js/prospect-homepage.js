@@ -13,6 +13,7 @@
 	var isLandscape = window.innerWidth >= window.innerHeight;
 
 	if (isLandscape) {
+		video.classList.add('banner-landscape');
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
