@@ -10,24 +10,35 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
+	var isLandscape = window.innerWidth >= window.innerHeight;
 
-	if (window.innerWidth >= window.innerHeight) {
+	if (isLandscape) {
+		video.classList.add('banner-landscape');
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
-	document.body.addEventListener('click touchstart', () => {
-		console.log(event);
+
+	function forceVidPlay() {
 		video.play();
-	}, { once: true });
+	}
+
+	function triggerTextAnim() {
+		console.log(video.currentTime);
+	}
+
 	video.addEventListener('suspend', () => {
-		document.body.addEventListener('click ontouchstart', () => {
-			video.play();
-		}, { once: true });
+		document.body.addEventListener('click', forceVidPlay, { once: true });
+		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
 	});
+    
     video.addEventListener('play', () => {
     	logoAnimation.beginElement();
     }, { once: true });
+    
+    video.addEventListener('timeupdate', triggerTextAnim);
+	
 	video.addEventListener('ended', () => {
+		video.removeEventListener('timeupdate', triggerTextAnim);
 		video.currentTime = 7.0;
 		video.play();
 	});

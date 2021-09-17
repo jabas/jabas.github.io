@@ -11,6 +11,11 @@
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
 	var isLandscape = window.innerWidth >= window.innerHeight;
+	var headingEl = document.getElementById('bannerHeading');
+	var moveEl = document.getElementById('bannerMove');
+	var connectEl = document.getElementById('bannerConnect');
+	var liveEl = document.getElementById('bannerLive');
+	var workEl = document.getElementById('bannerWork');
 
 	if (isLandscape) {
 		video.classList.add('banner-landscape');
@@ -22,14 +27,35 @@
 		video.play();
 	}
 
+	function triggerTextAnim() {
+		var time = video.currentTime;
+		
+		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+			headingEl.classList.add('head-animate-in');
+		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
+			moveEl.classList.add('span-animate-in');
+		} else if ( time >= 12.39 && !connectEl.classList.contains('span-animate-in') ) {
+			connectEl.classList.add('span-animate-in');
+		} else if (time >= 16.40 && !liveEl.classList.contains('span-animate-in') ) {
+			liveEl.classList.add('span-animate-in');
+		} else if (time >= 20.36 && !workEl.classList.contains('span-animate-in') ) {
+			workEl.classList.add('span-animate-in');
+		} 
+	}
+
 	video.addEventListener('suspend', () => {
 		document.body.addEventListener('click', forceVidPlay, { once: true });
 		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
 	});
+    
     video.addEventListener('play', () => {
     	logoAnimation.beginElement();
     }, { once: true });
+    
+    video.addEventListener('timeupdate', triggerTextAnim);
+	
 	video.addEventListener('ended', () => {
+		video.removeEventListener('timeupdate', triggerTextAnim);
 		video.currentTime = 7.0;
 		video.play();
 	});
