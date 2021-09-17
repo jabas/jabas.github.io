@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" version="1.1">
+  <title>
+    checkmark-circle
+  </title>
+  <desc>
+    Checkmark Circle Icon
+  </desc>
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-2.000000, -2.000000)" fill="#76bd23">
+      <path d="M10 18C14.42 18 18 14.42 18 10 18 5.58 14.42 2 10 2 5.58 2 2 5.58 2 10 2 14.42 5.58 18 10 18ZM9.54 14L6.29 10.97C5.92 10.62 5.9 10.04 6.24 9.67 6.58 9.29 7.15 9.27 7.52 9.61L9.21 11.19 12.34 6.41C12.62 5.99 13.18 5.87 13.6 6.15 14.01 6.43 14.12 7.01 13.85 7.43L9.54 14"/>
+    </g>
+  </g>
+</svg>

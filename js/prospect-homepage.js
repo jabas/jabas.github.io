@@ -7,13 +7,30 @@
 	// 	let vh = window.innerHeight * 0.01;
 	// 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 	// });
-	// var video = document.getElementById("bannerVideo");
-	// if (video) {
-	// 	video.addEventListener('ended', function(){
-	// 		video.currentTime = 2.8;
-	// 		video.play();
-	// 	});
-	// }
+	var video = document.getElementById('videoLoop');
+	var source = document.getElementById('mp4Video');
+	var logoAnimation = document.getElementById('logoIn');
+
+	if (window.innerWidth >= window.innerHeight) {
+		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
+		video.load();
+	}
+
+	function forceVidPlay() {
+		video.play();
+	}
+	document.body.addEventListener('click', forceVidPlay, { once: true });
+	video.addEventListener('suspend', () => {
+		document.body.addEventListener('click', forceVidPlay, { once: true });
+		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
+	});
+    video.addEventListener('play', () => {
+    	logoAnimation.beginElement();
+    }, { once: true });
+	video.addEventListener('ended', () => {
+		video.currentTime = 7.0;
+		video.play();
+	});
 })();
 (function() {
 
