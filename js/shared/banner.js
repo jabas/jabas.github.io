@@ -3,6 +3,7 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
+	var navLogo = document.getElementById('headerLogo');
 	var headingEl = document.getElementById('bannerHeading');
 	var moveEl = document.getElementById('bannerMove');
 	var connectEl = document.getElementById('bannerConnect');
@@ -40,6 +41,7 @@
 		var time = video.currentTime;
 		
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
 		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
 			moveEl.classList.add('span-animate-in');
@@ -53,6 +55,7 @@
 	}
 
     video.addEventListener('play', () => {
+    	navLogo.classList.remove('header-logo-show');
     	logoAnimation.beginElement();
     }, { once: true });
     
@@ -67,26 +70,25 @@
 	});
 
 	// scroll away button
-
-	function SmoothVerticalScrolling(e, time, where) {
-    var eTop = e.getBoundingClientRect().top;
-    var eAmt = eTop / 100;
-    var curTime = 0;
-    while (curTime <= time) {
-        window.setTimeout(SVS_B, curTime, eAmt, where);
-        curTime += time / 100;
-    }
-}
-
-function SVS_B(eAmt, where) {
-    if(where == "center" || where == "")
-        window.scrollBy(0, eAmt / 2);
-    if (where == "top")
-        window.scrollBy(0, eAmt);
-}
-
 	scrollBtn.addEventListener('click', () => {
-		var el = document.getElementById('businessUnits');
-	    SmoothVerticalScrolling(el, 275, "top");
+		var currentPos = window.pageYOffset;
+		var pos = document.getElementById('businessUnits').getBoundingClientRect().top;
+		var start = null;
+		var time = 15;
+
+		window.requestAnimationFrame(function step(currentTime) {
+			start = !start ? currentTime : start;
+			var progress = currentTime - start;
+			if (currentPos < pos) {
+				window.scrollTo(0, ((pos - currentPos) * progress / time) + currentPos);
+			} else {
+				window.scrollTo(0, currentPos - ((currentPos - pos) * progress / time));
+			}
+			if (progress < time) {
+				window.requestAnimationFrame(step);
+			} else {
+				window.scrollTo(0, pos);
+			}
+		});
 	});
 })();

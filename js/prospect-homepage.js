@@ -3,6 +3,7 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
+	var navLogo = document.getElementById('headerLogo');
 	var headingEl = document.getElementById('bannerHeading');
 	var moveEl = document.getElementById('bannerMove');
 	var connectEl = document.getElementById('bannerConnect');
@@ -40,6 +41,7 @@
 		var time = video.currentTime;
 		
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
 		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
 			moveEl.classList.add('span-animate-in');
@@ -53,6 +55,7 @@
 	}
 
     video.addEventListener('play', () => {
+    	navLogo.classList.remove('header-logo-show');
     	logoAnimation.beginElement();
     }, { once: true });
     
