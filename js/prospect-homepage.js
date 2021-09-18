@@ -1,33 +1,42 @@
 (function() {
-	//adjustable 100vh to account for mobile chrome
-	let vh = window.innerHeight * 0.01;
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-	// window.addEventListener('resize', () => {
-	// 	let vh = window.innerHeight * 0.01;
-	// 	document.documentElement.style.setProperty('--vh', `${vh}px`);
-	// });
+	// dom elements
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
-	var isLandscape = window.innerWidth >= window.innerHeight;
 	var headingEl = document.getElementById('bannerHeading');
 	var moveEl = document.getElementById('bannerMove');
 	var connectEl = document.getElementById('bannerConnect');
 	var liveEl = document.getElementById('bannerLive');
 	var workEl = document.getElementById('bannerWork');
+	var ctaEl = document.getElementById('bannerCta');
+	var scrollBtn = document.getElementById('bannerScroll');
 
+	// future dynamic vars	
+	var vh = window.innerHeight * 0.01,
+		isLandscape = window.innerWidth >= window.innerHeight;
+
+	//set height based on browser chrome
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+	// switch out video if landscape page
 	if (isLandscape) {
 		video.classList.add('banner-landscape');
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
-
+	
+	// force video to play on touch if suspended
 	function forceVidPlay() {
 		video.play();
 	}
 
-	function triggerTextAnim() {
+	video.addEventListener('suspend', () => {
+		document.body.addEventListener('click', forceVidPlay, { once: true });
+		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
+	});
+ 
+ 	// animation triggers
+ 	function triggerTextAnim() {
 		var time = video.currentTime;
 		
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
@@ -43,11 +52,6 @@
 		} 
 	}
 
-	video.addEventListener('suspend', () => {
-		document.body.addEventListener('click', forceVidPlay, { once: true });
-		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
-	});
-    
     video.addEventListener('play', () => {
     	logoAnimation.beginElement();
     }, { once: true });
@@ -55,9 +59,34 @@
     video.addEventListener('timeupdate', triggerTextAnim);
 	
 	video.addEventListener('ended', () => {
+		headingEl.classList.add('head-animate-grow');
+		ctaEl.classList.add('banner-cta-animate');
 		video.removeEventListener('timeupdate', triggerTextAnim);
 		video.currentTime = 7.0;
 		video.play();
+	});
+
+	// scroll away button
+	scrollBtn.addEventListener('click', () => {
+		var currentPos = window.pageYOffset;
+		var pos = document.getElementById('businessUnits').getBoundingClientRect().top;
+		var start = null;
+		var time = 15;
+
+		window.requestAnimationFrame(function step(currentTime) {
+			start = !start ? currentTime : start;
+			var progress = currentTime - start;
+			if (currentPos < pos) {
+				window.scrollTo(0, ((pos - currentPos) * progress / time) + currentPos);
+			} else {
+				window.scrollTo(0, currentPos - ((currentPos - pos) * progress / time));
+			}
+			if (progress < time) {
+				window.requestAnimationFrame(step);
+			} else {
+				window.scrollTo(0, pos);
+			}
+		});
 	});
 })();
 (function() {
