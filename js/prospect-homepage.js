@@ -1,5 +1,6 @@
 (function() {
 	// dom elements
+	var banner = document.querySelector('#mainBanner');
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
@@ -21,7 +22,7 @@
 
 	// switch out video if landscape page
 	if (isLandscape) {
-		video.classList.add('banner-landscape');
+		banner.classList.add('banner-landscape');
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
@@ -41,6 +42,7 @@
 		var time = video.currentTime;
 		
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+			video.pause();
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
 		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
