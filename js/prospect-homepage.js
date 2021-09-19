@@ -42,7 +42,6 @@
 		var time = video.currentTime;
 		
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
-			video.pause();
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
 		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
