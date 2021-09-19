@@ -1,6 +1,6 @@
 (function() {
 	// dom elements
-	var banner = document.querySelector('#mainBanner');
+	var banner = document.getElementById('mainBanner');
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
@@ -11,7 +11,6 @@
 	var liveEl = document.getElementById('bannerLive');
 	var workEl = document.getElementById('bannerWork');
 	var ctaEl = document.getElementById('bannerCta');
-	var scrollBtn = document.getElementById('bannerScroll');
 
 	// future dynamic vars	
 	var vh = window.innerHeight * 0.01,
@@ -69,30 +68,7 @@
 		video.removeEventListener('timeupdate', triggerTextAnim);
 		video.currentTime = 7.0;
 		video.play();
-	});
-
-	// scroll away button
-	scrollBtn.addEventListener('click', () => {
-		var currentPos = window.pageYOffset;
-		var pos = document.getElementById('businessUnits').getBoundingClientRect().top;
-		var start = null;
-		var time = 15;
-
-		window.requestAnimationFrame(function step(currentTime) {
-			start = !start ? currentTime : start;
-			var progress = currentTime - start;
-			if (currentPos < pos) {
-				window.scrollTo(0, ((pos - currentPos) * progress / time) + currentPos);
-			} else {
-				window.scrollTo(0, currentPos - ((currentPos - pos) * progress / time));
-			}
-			if (progress < time) {
-				window.requestAnimationFrame(step);
-			} else {
-				window.scrollTo(0, pos);
-			}
-		});
-	});
+	});	
 })();
 (function() {
 
