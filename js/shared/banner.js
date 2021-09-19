@@ -1,5 +1,6 @@
 (function() {
 	// dom elements
+	var banner = document.querySelector('#mainBanner');
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
@@ -21,7 +22,8 @@
 
 	// switch out video if landscape page
 	if (isLandscape) {
-		video.classList.add('banner-landscape');
+		banner.classList.add('banner-landscape');
+		banner.setAttribute('poster', '/images/prospect/lt-banner-landscape.jpg')
 		source.setAttribute('src', '/images/prospect/lt-banner-landscape.mp4');
 		video.load();
 	}
