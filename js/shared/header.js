@@ -4,9 +4,13 @@
 			if (entry.isIntersecting) {
 				header.classList.remove('header-mini');
 				header.classList.remove('filled-mobile');
+				video.play();
 			} else {
 				header.classList.add('header-mini');
 				header.classList.add('filled-mobile');
+				if (mainHeading.classList.contains('head-animate-grow')) {
+					video.pause();
+				}
 			}
 		});
 	}
@@ -24,6 +28,8 @@
 	var header = document.querySelector('#headerNav');
 	var banner = document.querySelector('#mainBanner');
 	var ciElem = document.querySelector('#companiesInside');
+	var mainHeading = document.getElementById('bannerHeading');
+	var video = document.getElementById('videoLoop');
 
 	var beganScrollOpts = {
 		root: null,

@@ -40,7 +40,11 @@
  	// animation triggers
  	function triggerTextAnim() {
 		var time = video.currentTime;
-		
+
+		if (document.querySelector('#headerNav').classList.contains('header-mini')) {
+			video.pause();
+		}
+
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');

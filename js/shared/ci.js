@@ -1,14 +1,31 @@
 (function() {
 	let ordinal;
+	const anchors = document.querySelectorAll('.bubble-anchor');
 	const mosaic = document.querySelector('.mosaic');
+	const heading = document.querySelector('.ci-leadin');
+	const modalBg = document.createElement('div');
+	const closeBtn = document.getElementById("mosaicClose");
+
+	var headingAnimOpts = {
+		root: null,  // use the viewport
+		rootMargin: '-40px',
+		threshold: 0.02
+	}
 
 	function openMosaic(event) {
 		event.preventDefault();
 		ordinal = this.getAttribute('data-frame');
-		var videoId = this.getAttribute('data-video-id');
-		var target = document.querySelector('.frame-' + ordinal);
+		const target = document.querySelector('.frame-' + ordinal);
+		const vidWrap = document.querySelector('.video-' + ordinal);
+		const vidPlayer = document.querySelector('.video-' + ordinal + ' video');
 		mosaic.classList.add('selected-' + ordinal, 'selection-active');
 		target.classList.add('frame-selected');
+
+		target.addEventListener('transitionend', () => {
+			vidWrap.classList.add('video-active');
+			vidPlayer.play();
+			vidPlayer.addEventListener('ended', closeMosaic);
+		}, {once: true});
 
 		switch (ordinal) {
 			case 'northwest':
@@ -59,15 +76,15 @@
 	}
 
 	function closeMosaic() {
-		var current = document.querySelector('.frame-selected');
-		current.style.zIndex = 1050;
-		current.classList.remove('frame-selected');
-		for (let i = 0; i < mosaic.classList.length; i++) {
-			let className = mosaic.classList[i];
-			if (className.startsWith('selected-')) {
-				mosaic.classList.remove(className);
-			}
-		}
+		var currentFrame = document.querySelector('.frame-selected');
+		var currentVidWrap = document.querySelector('.video-active');
+		var currentVid = document.querySelector('.video-' + ordinal + ' video');
+		currentFrame.style.zIndex = 1050;
+		currentFrame.classList.remove('frame-selected');
+		currentVidWrap.classList.remove('video-active');
+		currentVid.pause();
+		currentVid.removeEventListener('ended', closeMosaic);
+		mosaic.classList.remove('selected-' + ordinal, 'selection-active');
 		
 		switch (ordinal) {
 			case 'northwest':
@@ -116,32 +133,38 @@
 		}
 
 		mosaic.classList.remove('selection-active');
-		removeBackdrop(current);
+		removeBackdrop();
 	}
 
 	function addBackdrop() {
-		// body.appendChild(modalBg);
-		// modalBg.offsetHeight; // force repaint
-		// modalBg.classList.add('show');
+		mosaic.appendChild(modalBg);
+		modalBg.offsetHeight; // force repaint
+		modalBg.classList.add('show');
 	}
 
-	function removeBackdrop(current) {
-		// modalBg.classList.remove('show');
-		// setTimeout(function(){
-		// 	body.removeChild(modalBg);
-		// 	current.style.zIndex = null;
-		// }, 1000);
+	function removeBackdrop() {
+		modalBg.classList.remove('show');
+		setTimeout(function(){
+			mosaic.removeChild(modalBg);
+		}, 1000);
 	}
 
-	var anchors = document.querySelectorAll('.bubble-anchor');
+	function headingAnimation(entries, observer) {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('ci-leadin-animate-in');
+			}
+		});
+	}
+
+	var headingAnimationObserver = new IntersectionObserver(headingAnimation, headingAnimOpts);
+	headingAnimationObserver.observe(heading);
+
 
 	for (let i = 0; i < anchors.length; i++) {
 		anchors[i].addEventListener('click', openMosaic);
 	}
 
-	var body = document.querySelector('body');
-	var modalBg = document.createElement('div');
-	var closeBtn = document.getElementById("mosaicClose");
 	modalBg.classList.add('modal-backdrop', 'fade');
 	modalBg.addEventListener('click', closeMosaic);
 	closeBtn.addEventListener('click', closeMosaic);

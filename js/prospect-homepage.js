@@ -40,7 +40,12 @@
  	// animation triggers
  	function triggerTextAnim() {
 		var time = video.currentTime;
-		
+
+		if (document.querySelector('#headerNav').classList.contains('header-mini')) {
+			video.currentTime = 7.0;
+			video.pause();
+		}
+
 		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
@@ -74,8 +79,15 @@
 	let ordinal;
 	const anchors = document.querySelectorAll('.bubble-anchor');
 	const mosaic = document.querySelector('.mosaic');
+	const heading = document.querySelector('.ci-leadin');
 	const modalBg = document.createElement('div');
 	const closeBtn = document.getElementById("mosaicClose");
+
+	var headingAnimOpts = {
+		root: null,  // use the viewport
+		rootMargin: '-80px',
+		threshold: 0.02
+	}
 
 	function openMosaic(event) {
 		event.preventDefault();
@@ -214,7 +226,17 @@
 		}, 1000);
 	}
 
-	
+	function headingAnimation(entries, observer) {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('ci-leadin-animate-in');
+			}
+		});
+	}
+
+	var headingAnimationObserver = new IntersectionObserver(headingAnimation, headingAnimOpts);
+	headingAnimationObserver.observe(heading);
+
 
 	for (let i = 0; i < anchors.length; i++) {
 		anchors[i].addEventListener('click', openMosaic);
@@ -230,9 +252,13 @@
 			if (entry.isIntersecting) {
 				header.classList.remove('header-mini');
 				header.classList.remove('filled-mobile');
+				video.play();
 			} else {
 				header.classList.add('header-mini');
 				header.classList.add('filled-mobile');
+				if (mainHeading.classList.contains('head-animate-grow')) {
+					video.pause();
+				}
 			}
 		});
 	}
@@ -250,6 +276,8 @@
 	var header = document.querySelector('#headerNav');
 	var banner = document.querySelector('#mainBanner');
 	var ciElem = document.querySelector('#companiesInside');
+	var mainHeading = document.getElementById('bannerHeading');
+	var video = document.getElementById('videoLoop');
 
 	var beganScrollOpts = {
 		root: null,
