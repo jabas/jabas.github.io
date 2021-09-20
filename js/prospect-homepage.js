@@ -71,64 +71,155 @@
 	});	
 })();
 (function() {
+	let ordinal;
+	const anchors = document.querySelectorAll('.bubble-anchor');
+	const mosaic = document.querySelector('.mosaic');
+	const modalBg = document.createElement('div');
+	const closeBtn = document.getElementById("mosaicClose");
 
 	function openMosaic(event) {
-		if(!document.querySelector('.frame-selected')) {
-			var elClasses = event.target.classList;
-			var current = document.querySelector('.frame-selected');
-			var selected = '';
-			for (let i = 0; i < elClasses.length; i++) {
-				let className = elClasses[i];
-				if (className.startsWith('frame-') && className !== 'frame-selected') {
-					selected = className.replace('frame-', '');
-				}
-			}
-			event.target.classList.add('frame-selected');
+		event.preventDefault();
+		ordinal = this.getAttribute('data-frame');
+		const target = document.querySelector('.frame-' + ordinal);
+		const vidWrap = document.querySelector('.video-' + ordinal);
+		const vidPlayer = document.querySelector('.video-' + ordinal + ' video');
+		mosaic.classList.add('selected-' + ordinal, 'selection-active');
+		target.classList.add('frame-selected');
 
-			
-			mosaic.classList.add('selected-' + selected, 'selection-active');
-			addBackdrop();
+		target.addEventListener('transitionend', () => {
+			vidWrap.classList.add('video-active');
+			vidPlayer.play();
+			vidPlayer.addEventListener('ended', closeMosaic);
+		}, {once: true});
+
+		switch (ordinal) {
+			case 'northwest':
+				// nw has no play change
+				document.getElementById('nAnimHide').beginElement();
+				document.getElementById('swAnimHide').beginElement();
+				document.getElementById('sAnimHide').beginElement();
+				document.getElementById('seAnimHide').beginElement();
+				break;
+			case 'north':
+				document.getElementById('nAnimPlay').beginElement();
+				document.getElementById('nwAnimHide').beginElement();
+				document.getElementById('swAnimHide').beginElement();
+				document.getElementById('sAnimHide').beginElement();
+				document.getElementById('seAnimHide').beginElement();
+				break;
+			case 'center':
+				// center has no play or hide change
+				document.getElementById('nwAnimHide').beginElement();
+				document.getElementById('nAnimHide').beginElement();
+				document.getElementById('swAnimHide').beginElement();
+				document.getElementById('sAnimHide').beginElement();
+				document.getElementById('seAnimHide').beginElement();
+				break;
+			case 'southeast':
+				document.getElementById('seAnimPlay').beginElement();
+				document.getElementById('nwAnimHide').beginElement();
+				document.getElementById('nAnimHide').beginElement();
+				document.getElementById('swAnimHide').beginElement();
+				document.getElementById('sAnimHide').beginElement();
+				break;
+			case 'south':
+				document.getElementById('sAnimPlay').beginElement();
+				document.getElementById('nwAnimHide').beginElement();
+				document.getElementById('nAnimHide').beginElement();
+				document.getElementById('swAnimHide').beginElement();
+				document.getElementById('seAnimHide').beginElement();
+				break;
+			case 'southwest':
+				// sw has no play state
+				document.getElementById('nwAnimHide').beginElement();
+				document.getElementById('nAnimHide').beginElement();
+				document.getElementById('sAnimHide').beginElement();
+				document.getElementById('seAnimHide').beginElement();
+				break;
 		}
+		addBackdrop();
 	}
 
 	function closeMosaic() {
-		var current = document.querySelector('.frame-selected');
-		current.style.zIndex = 1050;
-		current.classList.remove('frame-selected');
-		for (let i = 0; i < mosaic.classList.length; i++) {
-			let className = mosaic.classList[i];
-			if (className.startsWith('selected-')) {
-				mosaic.classList.remove(className);
-			}
+		var currentFrame = document.querySelector('.frame-selected');
+		var currentVidWrap = document.querySelector('.video-active');
+		var currentVid = document.querySelector('.video-' + ordinal + ' video');
+		currentFrame.style.zIndex = 1050;
+		currentFrame.classList.remove('frame-selected');
+		currentVidWrap.classList.remove('video-active');
+		currentVid.pause();
+		currentVid.removeEventListener('ended', closeMosaic);
+		mosaic.classList.remove('selected-' + ordinal, 'selection-active');
+		
+		switch (ordinal) {
+			case 'northwest':
+				// nw has no play change
+				document.getElementById('nAnimHideReturn').beginElement();
+				document.getElementById('swAnimHideReturn').beginElement();
+				document.getElementById('sAnimHideReturn').beginElement();
+				document.getElementById('seAnimHideReturn').beginElement();
+				break;
+			case 'north':
+				document.getElementById('nAnimPlayReturn').beginElement();
+				document.getElementById('nwAnimHideReturn').beginElement();
+				document.getElementById('swAnimHideReturn').beginElement();
+				document.getElementById('sAnimHideReturn').beginElement();
+				document.getElementById('seAnimHideReturn').beginElement();
+				break;
+			case 'center':
+				// center has no play or hide change
+				document.getElementById('nwAnimHideReturn').beginElement();
+				document.getElementById('nAnimHideReturn').beginElement();
+				document.getElementById('swAnimHideReturn').beginElement();
+				document.getElementById('sAnimHideReturn').beginElement();
+				document.getElementById('seAnimHideReturn').beginElement();
+				break;
+			case 'southeast':
+				document.getElementById('seAnimPlayReturn').beginElement();
+				document.getElementById('nwAnimHideReturn').beginElement();
+				document.getElementById('nAnimHideReturn').beginElement();
+				document.getElementById('swAnimHideReturn').beginElement();
+				document.getElementById('sAnimHideReturn').beginElement();
+				break;
+			case 'south':
+				document.getElementById('sAnimPlayReturn').beginElement();
+				document.getElementById('nwAnimHideReturn').beginElement();
+				document.getElementById('nAnimHideReturn').beginElement();
+				document.getElementById('swAnimHideReturn').beginElement();
+				document.getElementById('seAnimHideReturn').beginElement();
+				break;
+			case 'southwest':
+				// sw has no play state
+				document.getElementById('nwAnimHideReturn').beginElement();
+				document.getElementById('nAnimHideReturn').beginElement();
+				document.getElementById('sAnimHideReturn').beginElement();
+				document.getElementById('seAnimHideReturn').beginElement();
+				break;
 		}
+
 		mosaic.classList.remove('selection-active');
-		removeBackdrop(current);
+		removeBackdrop();
 	}
 
 	function addBackdrop() {
-		body.appendChild(modalBg);
+		mosaic.appendChild(modalBg);
 		modalBg.offsetHeight; // force repaint
 		modalBg.classList.add('show');
 	}
 
-	function removeBackdrop(current) {
+	function removeBackdrop() {
 		modalBg.classList.remove('show');
 		setTimeout(function(){
-			body.removeChild(modalBg);
-			current.style.zIndex = null;
+			mosaic.removeChild(modalBg);
 		}, 1000);
 	}
 
-	var mosaic = document.querySelector('.mosaic');
-	var frames = document.querySelectorAll('.frame');
+	
 
-	for (let i = 0; i < frames.length; i++) {
-		frames[i].addEventListener('click', openMosaic);
+	for (let i = 0; i < anchors.length; i++) {
+		anchors[i].addEventListener('click', openMosaic);
 	}
 
-	var body = document.querySelector('body');
-	var modalBg = document.createElement('div');
-	var closeBtn = document.getElementById("mosaicClose");
 	modalBg.classList.add('modal-backdrop', 'fade');
 	modalBg.addEventListener('click', closeMosaic);
 	closeBtn.addEventListener('click', closeMosaic);

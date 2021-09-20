@@ -5,14 +5,37 @@
 {{^ isStandalone }}
 	<div id="companiesInside" class="zone-ci">
 {{/ isStandalone }}
-	<div class="mosaic d-none d-lg-block">
-		<div class="frame frame-center" style="background-image: url('/images/prospect/tennis.jpg'); background-position: 40% top;"></div>
-		<div class="frame frame-north" style="background-image: url('/images/prospect/kids.jpg'); background-position: left top;"></div>
-		<div class="frame frame-east" style="background-image: url('/images/prospect/run.jpg'); background-position: 70% top;"></div>
-		<div class="frame frame-southeast" style="background-image: url('/images/prospect/classes.jpg'); background-position: 20% top;"></div>
-		<div class="frame frame-south" style="background-image: url('/images/prospect/lifespa.jpg'); background-position: 60% top;"></div>
-		<div class="frame frame-southwest" style="background-image: url('/images/prospect/training.jpg'); background-position: right top;"></div>
-		<div class="frame frame-northwest" style="background-image: url('/images/prospect/swim.jpg'); background-position: right top;"></div>
-		<button id="mosaicClose" type="button" class="btn-close text-reset" aria-label="Close"></button>
+		<div class="bubble-wrap d-none d-lg-block">
+			{{> zones-bubble-background }}
+			<div class="mosaic">
+				<div class="mosaic-frame frame-center" style="background-image: url('/images/prospect/mosaic-tennis.jpg'); background-position: 40% top;"></div>
+				<div class="mosaic-frame frame-north" style="background-image: url('/images/prospect/mosaic-kids.jpg'); background-position: right top;"></div>
+				<div class="mosaic-frame frame-east" style="background-image: url('/images/prospect/mosaic-poolside.jpg'); background-position: center bottom;"></div>
+				<div class="mosaic-frame frame-southeast" style="background-image: url('/images/prospect/mosaic-studio.jpg'); background-position: 20% top;"></div>
+				<div class="mosaic-frame frame-south" style="background-image: url('/images/prospect/mosaic-lifespa.jpg'); background-position: 45% top;"></div>
+				<div class="mosaic-frame frame-southwest" style="background-image: url('/images/prospect/mosaic-training.jpg'); background-position: 10% top;"></div>
+				<div class="mosaic-frame frame-northwest" style="background-image: url('/images/prospect/mosaic-swim.jpg'); background-position: right top;"></div>
+
+				<div class="mosaic-video video-center ratio">
+					<video data-video-id="6272706813001" data-account="5121028912001" data-player="ryt7Y2djx" data-embed="default" data-application-id class="embed-responsive-item video-js" controls ></video>
+				</div>
+				<div class="mosaic-video video-north ratio">
+					<video data-video-id="6272704909001" data-account="5121028912001" data-player="ryt7Y2djx" data-embed="default" data-application-id class="embed-responsive-item video-js" controls ></video>
+				</div>
+				<div class="mosaic-video video-southeast ratio">
+					<video data-video-id="6272704240001" data-account="5121028912001" data-player="ryt7Y2djx" data-embed="default" data-application-id class="embed-responsive-item video-js" controls ></video>
+				</div>
+				<div class="mosaic-video video-south ratio">
+					<video data-video-id="6272706615001" data-account="5121028912001" data-player="ryt7Y2djx" data-embed="default" data-application-id class="embed-responsive-item video-js" controls ></video>
+				</div>
+				<div class="mosaic-video video-southwest ratio">
+					<video data-video-id="6272704246001" data-account="5121028912001" data-player="ryt7Y2djx" data-embed="default" data-application-id class="embed-responsive-item video-js" controls ></video>
+				</div>
+				<div class="mosaic-video video-northwest ratio">
+					<video data-video-id="6272704243001" data-account="5121028912001" data-player="ryt7Y2djx" data-embed="default" data-application-id class="embed-responsive-item video-js" controls ></video>
+				</div>
+
+				<button id="mosaicClose" type="button" class="btn-close text-reset" aria-label="Close"></button>
+			</div>
+		</div>
 	</div>
-</div>
