@@ -8,7 +8,7 @@
 
 	var headingAnimOpts = {
 		root: null,  // use the viewport
-		rootMargin: '-80px',
+		rootMargin: '-40px',
 		threshold: 0.02
 	}
 

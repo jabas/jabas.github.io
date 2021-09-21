@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="234" height="32" viewBox="0 0 234 32" preserveAspectRatio="none">
+	<rect x="0" y="0" width="100%" height="100%" clip-path="url(#clip-path6)" style='fill: url("#fill10");'></rect>
+	<defs>
+		<linearGradient id="fill10">
+			<stop offset="0.599964" stop-color="#e8e8e8" stop-opacity="1">
+				<animate attributeName="offset" values="-2; -2; 1" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate>
+			</stop>
+			<stop offset="1.59996" stop-color="#cccccc" stop-opacity="1">
+				<animate attributeName="offset" values="-1; -1; 2" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate>
+			</stop>
+			<stop offset="2.59996" stop-color="#e8e8e8" stop-opacity="1">
+				<animate attributeName="offset" values="0; 0; 3" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate>
+			</stop>
+		</linearGradient>
+		<clipPath id="clip-path6">
+			<circle cx="13" cy="17" r="12"/>
+			<rect x="39" y="8" width="195" height="18"/>
+		</clipPath>
+	</defs>
+</svg>
