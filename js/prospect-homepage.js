@@ -100,58 +100,66 @@
 		mosaic.classList.add('selected-' + ordinal, 'selection-active');
 		target.classList.add('frame-selected');
 
-		target.addEventListener('transitionend', () => {
+		if (this.hasAttribute('data-is-mobile')) {
 			vidWrap.classList.add('video-active');
 			vidPlayer.play();
 			vidPlayer.addEventListener('ended', closeMosaic);
-		}, {once: true});
+			addBackdrop('body');
+		} else {
+			target.addEventListener('transitionend', () => {
+				vidWrap.classList.add('video-active');
+				vidPlayer.play();
+				vidPlayer.addEventListener('ended', closeMosaic);
+			}, {once: true});
 
-		switch (ordinal) {
-			case 'northwest':
-				// nw has no play change
-				document.getElementById('nAnimHide').beginElement();
-				document.getElementById('swAnimHide').beginElement();
-				document.getElementById('sAnimHide').beginElement();
-				document.getElementById('seAnimHide').beginElement();
-				break;
-			case 'north':
-				document.getElementById('nAnimPlay').beginElement();
-				document.getElementById('nwAnimHide').beginElement();
-				document.getElementById('swAnimHide').beginElement();
-				document.getElementById('sAnimHide').beginElement();
-				document.getElementById('seAnimHide').beginElement();
-				break;
-			case 'center':
-				// center has no play or hide change
-				document.getElementById('nwAnimHide').beginElement();
-				document.getElementById('nAnimHide').beginElement();
-				document.getElementById('swAnimHide').beginElement();
-				document.getElementById('sAnimHide').beginElement();
-				document.getElementById('seAnimHide').beginElement();
-				break;
-			case 'southeast':
-				document.getElementById('seAnimPlay').beginElement();
-				document.getElementById('nwAnimHide').beginElement();
-				document.getElementById('nAnimHide').beginElement();
-				document.getElementById('swAnimHide').beginElement();
-				document.getElementById('sAnimHide').beginElement();
-				break;
-			case 'south':
-				document.getElementById('sAnimPlay').beginElement();
-				document.getElementById('nwAnimHide').beginElement();
-				document.getElementById('nAnimHide').beginElement();
-				document.getElementById('swAnimHide').beginElement();
-				document.getElementById('seAnimHide').beginElement();
-				break;
-			case 'southwest':
-				// sw has no play state
-				document.getElementById('nwAnimHide').beginElement();
-				document.getElementById('nAnimHide').beginElement();
-				document.getElementById('sAnimHide').beginElement();
-				document.getElementById('seAnimHide').beginElement();
-				break;
+			switch (ordinal) {
+				case 'northwest':
+					// nw has no play change
+					document.getElementById('nAnimHide').beginElement();
+					document.getElementById('swAnimHide').beginElement();
+					document.getElementById('sAnimHide').beginElement();
+					document.getElementById('seAnimHide').beginElement();
+					break;
+				case 'north':
+					document.getElementById('nAnimPlay').beginElement();
+					document.getElementById('nwAnimHide').beginElement();
+					document.getElementById('swAnimHide').beginElement();
+					document.getElementById('sAnimHide').beginElement();
+					document.getElementById('seAnimHide').beginElement();
+					break;
+				case 'center':
+					// center has no play or hide change
+					document.getElementById('nwAnimHide').beginElement();
+					document.getElementById('nAnimHide').beginElement();
+					document.getElementById('swAnimHide').beginElement();
+					document.getElementById('sAnimHide').beginElement();
+					document.getElementById('seAnimHide').beginElement();
+					break;
+				case 'southeast':
+					document.getElementById('seAnimPlay').beginElement();
+					document.getElementById('nwAnimHide').beginElement();
+					document.getElementById('nAnimHide').beginElement();
+					document.getElementById('swAnimHide').beginElement();
+					document.getElementById('sAnimHide').beginElement();
+					break;
+				case 'south':
+					document.getElementById('sAnimPlay').beginElement();
+					document.getElementById('nwAnimHide').beginElement();
+					document.getElementById('nAnimHide').beginElement();
+					document.getElementById('swAnimHide').beginElement();
+					document.getElementById('seAnimHide').beginElement();
+					break;
+				case 'southwest':
+					// sw has no play state
+					document.getElementById('nwAnimHide').beginElement();
+					document.getElementById('nAnimHide').beginElement();
+					document.getElementById('sAnimHide').beginElement();
+					document.getElementById('seAnimHide').beginElement();
+					break;
+			}
+			addBackdrop('mosaic');
 		}
-		addBackdrop();
+		
 	}
 
 	function closeMosaic() {
@@ -215,8 +223,12 @@
 		removeBackdrop();
 	}
 
-	function addBackdrop() {
-		mosaic.appendChild(modalBg);
+	function addBackdrop(location) {
+		if (location === 'body') {
+			document.body.appendChild(modalBg);
+		} else {
+			mosaic.appendChild(modalBg);
+		}
 		modalBg.offsetHeight; // force repaint
 		modalBg.classList.add('show');
 	}
@@ -224,7 +236,7 @@
 	function removeBackdrop() {
 		modalBg.classList.remove('show');
 		setTimeout(function(){
-			mosaic.removeChild(modalBg);
+			modalBg.parentElement.removeChild(modalBg);
 		}, 1000);
 	}
 
