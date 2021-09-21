@@ -62,6 +62,9 @@
 	}
 
     video.addEventListener('play', () => {
+    	vh = window.innerHeight * 0.01;
+    	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
     	if (video.currentTime < 7.0) {
     		navLogo.classList.remove('header-logo-show');
     		logoAnimation.beginElement();
