@@ -34,6 +34,7 @@
 	}
 
 	video.addEventListener('suspend', () => {
+		banner.offsetHeight; // redraw 
 		document.body.addEventListener('click', forceVidPlay, { once: true });
 		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
 	});
@@ -62,6 +63,7 @@
 	}
 
     video.addEventListener('play', () => {
+    	banner.offsetHeight; // redraw 
     	if (video.currentTime < 7.0) {
     		navLogo.classList.remove('header-logo-show');
     		logoAnimation.beginElement();

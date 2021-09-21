@@ -13,10 +13,11 @@
 	var ctaEl = document.getElementById('bannerCta');
 
 	// future dynamic vars	
-	var vh = window.innerHeight * 0.01,
-		isLandscape = window.innerWidth >= window.innerHeight;
+	
+	var isLandscape = window.innerWidth >= window.innerHeight;
 
 	//set height based on browser chrome
+	var vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 	// switch out video if landscape page
@@ -33,6 +34,7 @@
 	}
 
 	video.addEventListener('suspend', () => {
+		banner.offsetHeight; // redraw 
 		document.body.addEventListener('click', forceVidPlay, { once: true });
 		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
 	});
@@ -61,6 +63,7 @@
 	}
 
     video.addEventListener('play', () => {
+    	banner.offsetHeight; // redraw 
     	if (video.currentTime < 7.0) {
     		navLogo.classList.remove('header-logo-show');
     		logoAnimation.beginElement();
