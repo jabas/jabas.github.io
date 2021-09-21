@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1632198395508,
+  "timestamp": 1632206000135,
   "graph": {
     "options": {
       "directed": true,
@@ -66,6 +66,14 @@
       },
       {
         "v": "01-zones/_bubble-background.mustache",
+        "value": {
+          "compileState": "clean",
+          "lineagePath": "../../patterns/01-zones-02-zone-ci/01-zones-02-zone-ci.rendered.html",
+          "lineagePattern": "zones-zone-ci"
+        }
+      },
+      {
+        "v": "01-zones/_bubble-mobile.mustache",
         "value": {
           "compileState": "clean",
           "lineagePath": "../../patterns/01-zones-02-zone-ci/01-zones-02-zone-ci.rendered.html",
@@ -154,6 +162,11 @@
       {
         "v": "01-zones/02-zone-ci.mustache",
         "w": "00-structure/00-header.mustache",
+        "value": {}
+      },
+      {
+        "v": "01-zones/02-zone-ci.mustache",
+        "w": "01-zones/_bubble-mobile.mustache",
         "value": {}
       },
       {
