@@ -61,8 +61,10 @@
 	}
 
     video.addEventListener('play', () => {
-    	navLogo.classList.remove('header-logo-show');
-    	logoAnimation.beginElement();
+    	if (video.currentTime < 7.0) {
+    		navLogo.classList.remove('header-logo-show');
+    		logoAnimation.beginElement();
+    	}
     }, { once: true });
     
     video.addEventListener('timeupdate', triggerTextAnim);
