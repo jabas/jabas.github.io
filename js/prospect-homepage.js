@@ -13,10 +13,11 @@
 	var ctaEl = document.getElementById('bannerCta');
 
 	// future dynamic vars	
-	var vh = window.innerHeight * 0.01,
-		isLandscape = window.innerWidth >= window.innerHeight;
+	
+	var isLandscape = window.innerWidth >= window.innerHeight;
 
 	//set height based on browser chrome
+	var vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 	// switch out video if landscape page
