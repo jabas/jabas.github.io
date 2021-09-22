@@ -4,6 +4,8 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
+	var logoFadeOut = document.getElementById('logoOut');
+	var isLogoFaded = false;
 	var navLogo = document.getElementById('headerLogo');
 	var headingEl = document.getElementById('bannerHeading');
 	var moveEl = document.getElementById('bannerMove');
@@ -19,6 +21,9 @@
 	//set height based on browser chrome
 	var vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	if (banner.innerHeight === undefined) {
+		banner.classList.add('force-banner-height');
+	}
 
 	// switch out video if landscape page
 	if (isLandscape) {
@@ -47,7 +52,10 @@
 			video.pause();
 		}
 
-		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+		if (time >= 6.60 && !isLogoFaded) {
+			logoFadeOut.beginElement();
+			isLogoFaded = true;
+		} else if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
 		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
