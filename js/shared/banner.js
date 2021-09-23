@@ -18,17 +18,6 @@
 	
 	var isLandscape = window.innerWidth >= window.innerHeight;
 
-	// video timing vars
-	var animTiming = {
-		logoFade: 6.60,
-		loopStart: 7.00,
-		headingIn: 7.04,
-		moveFrame: 8.29,
-		connectFrame: 12.39,
-		liveFrame: 16.40,
-		workFrame: 20.36
-	};
-
 	//set height based on browser chrome
 	var vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -59,25 +48,25 @@
 		var time = video.currentTime;
 
 		if (banner.classList.contains('banner-frozen')) { // assigned in header.js
-			video.currentTime = animTiming.loopStart;
+			video.currentTime = 7.0;
 			video.pause();
 		}
 
-		if (time >= animTiming.logoFade && !isLogoFaded) {
+		if (time >= 6.60 && !isLogoFaded) {
 			logoFadeOut.beginElement();
 			isLogoFaded = true;
-		} else if ( time >= animTiming.headingIn && !headingEl.classList.contains('head-animate-in') ) {
+		} else if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
-		} else if ( time >= animTiming.moveFrame && !moveEl.classList.contains('span-animate-in') ) {
+		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
 			moveEl.classList.add('span-animate-in');
-		} else if ( time >= animTiming.connectFrame && !connectEl.classList.contains('span-animate-in') ) {
+		} else if ( time >= 12.39 && !connectEl.classList.contains('span-animate-in') ) {
 			connectEl.classList.add('span-animate-in');
 			moveEl.classList.add('span-animate-hold');
-		} else if (time >= animTiming.liveFrame && !liveEl.classList.contains('span-animate-in') ) {
+		} else if (time >= 16.40 && !liveEl.classList.contains('span-animate-in') ) {
 			liveEl.classList.add('span-animate-in');
 			connectEl.classList.add('span-animate-hold');
-		} else if (time >= animTiming.workFrame && !workEl.classList.contains('span-animate-in') ) {
+		} else if (time >= 20.36 && !workEl.classList.contains('span-animate-in') ) {
 			workEl.classList.add('span-animate-in');
 			liveEl.classList.add('span-animate-hold');
 		}
@@ -87,7 +76,7 @@
     	vh = window.innerHeight * 0.01;
     	document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    	if (video.currentTime < animTiming.loopStart) {
+    	if (video.currentTime < 7.0) {
     		navLogo.classList.remove('header-logo-show');
     		logoAnimation.beginElement();
     	}
@@ -102,7 +91,7 @@
 		liveEl.classList.remove('span-animate-hold');
 		ctaEl.classList.add('banner-cta-animate');
 		video.removeEventListener('timeupdate', triggerTextAnim);
-		video.currentTime = animTiming.loopStart;
+		video.currentTime = 7.0;
 		video.play();
 	});	
 })();
