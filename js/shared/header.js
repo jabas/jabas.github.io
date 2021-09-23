@@ -41,7 +41,7 @@
 	var exitedBannerOpts = {
 		root: null,
 		rootMargin: '0px',
-		threshold: 0.99
+		threshold: 0.85
 	}
 
 	var beganScrollObserver = new IntersectionObserver(beganScroll, beganScrollOpts);

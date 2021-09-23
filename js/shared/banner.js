@@ -46,6 +46,7 @@
  	// animation triggers
  	function triggerTextAnim() {
 		var time = video.currentTime;
+		console.log(time);
 
 		if (banner.classList.contains('banner-frozen')) { // assigned in header.js
 			video.currentTime = 7.0;
