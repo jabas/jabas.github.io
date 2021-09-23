@@ -52,21 +52,20 @@
 			video.pause();
 		}
 
-		if (time >= 6.60 && !isLogoFaded) {
+		if (time >= 6.10 && !isLogoFaded) {
 			logoFadeOut.beginElement();
 			isLogoFaded = true;
 		} else if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
-		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
 			moveEl.classList.add('span-animate-in');
-		} else if ( time >= 12.39 && !connectEl.classList.contains('span-animate-in') ) {
+		} else if ( time >= 11.07 && !connectEl.classList.contains('span-animate-in') ) {
 			connectEl.classList.add('span-animate-in');
 			moveEl.classList.add('span-animate-hold');
-		} else if (time >= 16.40 && !liveEl.classList.contains('span-animate-in') ) {
+		} else if (time >= 15.09 && !liveEl.classList.contains('span-animate-in') ) {
 			liveEl.classList.add('span-animate-in');
 			connectEl.classList.add('span-animate-hold');
-		} else if (time >= 20.36 && !workEl.classList.contains('span-animate-in') ) {
+		} else if (time >= 19.06 && !workEl.classList.contains('span-animate-in') ) {
 			workEl.classList.add('span-animate-in');
 			liveEl.classList.add('span-animate-hold');
 		}
