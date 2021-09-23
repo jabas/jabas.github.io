@@ -2,12 +2,11 @@
 	function beganScroll(entries, observer) {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-				header.classList.remove('header-mini');
-				header.classList.remove('filled-mobile');
+				banner.classList.remove('banner-frozen');
 				video.play();
 			} else {
-				header.classList.add('header-mini');
-				header.classList.add('filled-mobile');
+				
+				banner.classList.add('banner-frozen');
 				if (mainHeading.classList.contains('head-animate-grow')) {
 					video.pause();
 				}
@@ -18,9 +17,11 @@
 	function exitedBanner(entries, observer) {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-				header.classList.add('filled');
-			} else {
 				header.classList.remove('filled');
+				header.classList.remove('header-mini');
+			} else {
+				header.classList.add('filled');
+				header.classList.add('header-mini');
 			}
 		});
 	}
@@ -40,7 +41,7 @@
 	var exitedBannerOpts = {
 		root: null,
 		rootMargin: '0px',
-		threshold: 0.02
+		threshold: 0.99
 	}
 
 	var beganScrollObserver = new IntersectionObserver(beganScroll, beganScrollOpts);
@@ -51,6 +52,6 @@
 	}
 
 	if (ciElem) {
-		exitedBannerObserver.observe(ciElem);
+		exitedBannerObserver.observe(banner);
 	}
 })();

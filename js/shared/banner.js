@@ -4,6 +4,8 @@
 	var video = document.getElementById('videoLoop');
 	var source = document.getElementById('mp4Video');
 	var logoAnimation = document.getElementById('logoIn');
+	var logoFadeOut = document.getElementById('logoOut');
+	var isLogoFaded = false;
 	var navLogo = document.getElementById('headerLogo');
 	var headingEl = document.getElementById('bannerHeading');
 	var moveEl = document.getElementById('bannerMove');
@@ -16,9 +18,23 @@
 	
 	var isLandscape = window.innerWidth >= window.innerHeight;
 
+	// video timing vars
+	var animTiming = {
+		logoFade: 6.60,
+		loopStart: 7.00,
+		headingIn: 7.04,
+		moveFrame: 8.29,
+		connectFrame: 12.39,
+		liveFrame: 16.40,
+		workFrame: 20.36
+	};
+
 	//set height based on browser chrome
 	var vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	if (banner.innerHeight === undefined) {
+		banner.classList.add('force-banner-height');
+	}
 
 	// switch out video if landscape page
 	if (isLandscape) {
@@ -34,7 +50,6 @@
 	}
 
 	video.addEventListener('suspend', () => {
-		banner.offsetHeight; // redraw 
 		document.body.addEventListener('click', forceVidPlay, { once: true });
 		document.body.addEventListener('touchstart', forceVidPlay, { once: true });
 	});
@@ -43,28 +58,36 @@
  	function triggerTextAnim() {
 		var time = video.currentTime;
 
-		if (document.querySelector('#headerNav').classList.contains('header-mini')) {
-			video.currentTime = 7.0;
+		if (banner.classList.contains('banner-frozen')) { // assigned in header.js
+			video.currentTime = animTiming.loopStart;
 			video.pause();
 		}
 
-		if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+		if (time >= animTiming.logoFade && !isLogoFaded) {
+			logoFadeOut.beginElement();
+			isLogoFaded = true;
+		} else if ( time >= animTiming.headingIn && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
-		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
+		} else if ( time >= animTiming.moveFrame && !moveEl.classList.contains('span-animate-in') ) {
 			moveEl.classList.add('span-animate-in');
-		} else if ( time >= 12.39 && !connectEl.classList.contains('span-animate-in') ) {
+		} else if ( time >= animTiming.connectFrame && !connectEl.classList.contains('span-animate-in') ) {
 			connectEl.classList.add('span-animate-in');
-		} else if (time >= 16.40 && !liveEl.classList.contains('span-animate-in') ) {
+			moveEl.classList.add('span-animate-hold');
+		} else if (time >= animTiming.liveFrame && !liveEl.classList.contains('span-animate-in') ) {
 			liveEl.classList.add('span-animate-in');
-		} else if (time >= 20.36 && !workEl.classList.contains('span-animate-in') ) {
+			connectEl.classList.add('span-animate-hold');
+		} else if (time >= animTiming.workFrame && !workEl.classList.contains('span-animate-in') ) {
 			workEl.classList.add('span-animate-in');
-		} 
+			liveEl.classList.add('span-animate-hold');
+		}
 	}
 
     video.addEventListener('play', () => {
-    	banner.offsetHeight; // redraw 
-    	if (video.currentTime < 7.0) {
+    	vh = window.innerHeight * 0.01;
+    	document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    	if (video.currentTime < animTiming.loopStart) {
     		navLogo.classList.remove('header-logo-show');
     		logoAnimation.beginElement();
     	}
@@ -74,9 +97,12 @@
 	
 	video.addEventListener('ended', () => {
 		headingEl.classList.add('head-animate-grow');
+		moveEl.classList.remove('span-animate-hold');
+		connectEl.classList.remove('span-animate-hold');
+		liveEl.classList.remove('span-animate-hold');
 		ctaEl.classList.add('banner-cta-animate');
 		video.removeEventListener('timeupdate', triggerTextAnim);
-		video.currentTime = 7.0;
+		video.currentTime = animTiming.loopStart;
 		video.play();
 	});	
 })();

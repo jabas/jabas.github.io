@@ -18,6 +18,17 @@
 	
 	var isLandscape = window.innerWidth >= window.innerHeight;
 
+	// video timing vars
+	var animTiming = {
+		logoFade: 5.80,
+		loopStart: 7.04,
+		headingIn: 6.99,
+		moveFrame: 6.99,
+		connectFrame: 11.00,
+		liveFrame: 15.01,
+		workFrame: 19.02
+	};
+
 	//set height based on browser chrome
 	var vh = window.innerHeight * 0.01;
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -47,33 +58,46 @@
  	function triggerTextAnim() {
 		var time = video.currentTime;
 
-		if (document.querySelector('#headerNav').classList.contains('header-mini')) {
-			video.currentTime = 7.0;
+		if (banner.classList.contains('banner-frozen')) { // assigned in header.js
+			video.currentTime = animTiming.loopStart;
 			video.pause();
 		}
 
-		if (time >= 6.60 && !isLogoFaded) {
+		if (time >= animTiming.logoFade && !isLogoFaded) {
 			logoFadeOut.beginElement();
 			isLogoFaded = true;
-		} else if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
+		} 
+		
+		if ( time >= animTiming.headingIn && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
-		} else if ( time >= 8.29 && !moveEl.classList.contains('span-animate-in') ) {
+		}
+		
+		if ( time >= animTiming.moveFrame && !moveEl.classList.contains('span-animate-in') ) {
 			moveEl.classList.add('span-animate-in');
-		} else if ( time >= 12.39 && !connectEl.classList.contains('span-animate-in') ) {
-			connectEl.classList.add('span-animate-in');
-		} else if (time >= 16.40 && !liveEl.classList.contains('span-animate-in') ) {
-			liveEl.classList.add('span-animate-in');
-		} else if (time >= 20.36 && !workEl.classList.contains('span-animate-in') ) {
-			workEl.classList.add('span-animate-in');
 		} 
+		
+		if ( time >= animTiming.connectFrame && !connectEl.classList.contains('span-animate-in') ) {
+			connectEl.classList.add('span-animate-in');
+			moveEl.classList.add('span-animate-hold');
+		}
+
+		if (time >= animTiming.liveFrame && !liveEl.classList.contains('span-animate-in') ) {
+			liveEl.classList.add('span-animate-in');
+			connectEl.classList.add('span-animate-hold');
+		}
+
+		if (time >= animTiming.workFrame && !workEl.classList.contains('span-animate-in') ) {
+			workEl.classList.add('span-animate-in');
+			liveEl.classList.add('span-animate-hold');
+		}
 	}
 
     video.addEventListener('play', () => {
     	vh = window.innerHeight * 0.01;
     	document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    	if (video.currentTime < 7.0) {
+    	if (video.currentTime < animTiming.loopStart) {
     		navLogo.classList.remove('header-logo-show');
     		logoAnimation.beginElement();
     	}
@@ -83,9 +107,12 @@
 	
 	video.addEventListener('ended', () => {
 		headingEl.classList.add('head-animate-grow');
+		moveEl.classList.remove('span-animate-hold');
+		connectEl.classList.remove('span-animate-hold');
+		liveEl.classList.remove('span-animate-hold');
 		ctaEl.classList.add('banner-cta-animate');
 		video.removeEventListener('timeupdate', triggerTextAnim);
-		video.currentTime = 7.0;
+		video.currentTime = animTiming.loopStart;
 		video.play();
 	});	
 })();
@@ -96,6 +123,11 @@
 	const heading = document.querySelector('.ci-leadin');
 	const modalBg = document.createElement('div');
 	const closeBtn = document.getElementById("mosaicClose");
+	const bubbleMobile = document.querySelector('.bubble-stack');
+	const mobileAnim = document.getElementById("mobileBubbles");
+	const desktopAnim = document.getElementById("desktopBubbles");
+	const mobileAnimStarted = false;
+	const desktopAnimStarted = false;
 
 	var headingAnimOpts = {
 		root: null,  // use the viewport
@@ -256,6 +288,13 @@
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add('ci-leadin-animate-in');
+				if (window.getComputedStyle(bubbleMobile).display  === 'none' && !desktopAnimStarted) {
+					desktopAnim.beginElement();
+					desktopAnimStarted = true;
+				} else if (!mobileAnimStarted) {
+					mobileAnim.beginElement();
+					mobileAnimStarted = true;
+				}
 			}
 		});
 	}
@@ -276,12 +315,11 @@
 	function beganScroll(entries, observer) {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-				header.classList.remove('header-mini');
-				header.classList.remove('filled-mobile');
+				banner.classList.remove('banner-frozen');
 				video.play();
 			} else {
-				header.classList.add('header-mini');
-				header.classList.add('filled-mobile');
+				
+				banner.classList.add('banner-frozen');
 				if (mainHeading.classList.contains('head-animate-grow')) {
 					video.pause();
 				}
@@ -292,9 +330,11 @@
 	function exitedBanner(entries, observer) {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-				header.classList.add('filled');
-			} else {
 				header.classList.remove('filled');
+				header.classList.remove('header-mini');
+			} else {
+				header.classList.add('filled');
+				header.classList.add('header-mini');
 			}
 		});
 	}
@@ -314,7 +354,7 @@
 	var exitedBannerOpts = {
 		root: null,
 		rootMargin: '0px',
-		threshold: 0.02
+		threshold: 0.99
 	}
 
 	var beganScrollObserver = new IntersectionObserver(beganScroll, beganScrollOpts);
@@ -325,7 +365,7 @@
 	}
 
 	if (ciElem) {
-		exitedBannerObserver.observe(ciElem);
+		exitedBannerObserver.observe(banner);
 	}
 })();
 (function() {
