@@ -46,7 +46,6 @@
  	// animation triggers
  	function triggerTextAnim() {
 		var time = video.currentTime;
-		console.log(time);
 
 		if (banner.classList.contains('banner-frozen')) { // assigned in header.js
 			video.currentTime = 7.0;
@@ -56,7 +55,7 @@
 		if (time >= 5.80 && !isLogoFaded) {
 			logoFadeOut.beginElement();
 			isLogoFaded = true;
-		} else if ( time >= 7.0 && !headingEl.classList.contains('head-animate-in') ) {
+		} else if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
 			navLogo.classList.add('header-logo-show');
 			headingEl.classList.add('head-animate-in');
 			moveEl.classList.add('span-animate-in');
