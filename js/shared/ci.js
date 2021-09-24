@@ -5,6 +5,11 @@
 	const heading = document.querySelector('.ci-leadin');
 	const modalBg = document.createElement('div');
 	const closeBtn = document.getElementById("mosaicClose");
+	const bubbleMobile = document.querySelector('.bubble-stack');
+	const mobileAnim = document.getElementById("mobileBubbles");
+	const desktopAnim = document.getElementById("desktopBubbles");
+	const mobileAnimStarted = false;
+	const desktopAnimStarted = false;
 
 	var headingAnimOpts = {
 		root: null,  // use the viewport
@@ -165,6 +170,13 @@
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add('ci-leadin-animate-in');
+				if (window.getComputedStyle(bubbleMobile).display  === 'none' && !desktopAnimStarted) {
+					desktopAnim.beginElement();
+					desktopAnimStarted = true;
+				} else if (!mobileAnimStarted) {
+					mobileAnim.beginElement();
+					mobileAnimStarted = true;
+				}
 			}
 		});
 	}
