@@ -104,8 +104,8 @@
 	const bubbleMobile = document.querySelector('.bubble-stack');
 	const mobileAnim = document.getElementById("mobileBubbles");
 	const desktopAnim = document.getElementById("desktopBubbles");
-	const mobileAnimStarted = false;
-	const desktopAnimStarted = false;
+	let mobileAnimStarted = false;
+	let desktopAnimStarted = false;
 
 	var headingAnimOpts = {
 		root: null,  // use the viewport
