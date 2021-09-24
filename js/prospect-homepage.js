@@ -52,7 +52,7 @@
 			video.pause();
 		}
 
-		if (time >= 6.10 && !isLogoFaded) {
+		if (time >= 5.80 && !isLogoFaded) {
 			logoFadeOut.beginElement();
 			isLogoFaded = true;
 		} else if ( time >= 7.04 && !headingEl.classList.contains('head-animate-in') ) {
