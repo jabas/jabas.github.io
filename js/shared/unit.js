@@ -15,6 +15,7 @@
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				unitsEl.classList.add('zone-active');
+				unitsEl.classList.add('arrow-active');
 			} else {
 				unitsEl.classList.remove('zone-active');
 			}

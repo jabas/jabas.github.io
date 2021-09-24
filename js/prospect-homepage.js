@@ -95,15 +95,19 @@
 	});	
 })();
 (function() {
-	let ordinal;
+	
+
+	const ciZone = document.getElementById('companiesInside');
 	const anchors = document.querySelectorAll('.bubble-anchor');
 	const mosaic = document.querySelector('.mosaic');
 	const heading = document.querySelector('.ci-leadin');
 	const modalBg = document.createElement('div');
 	const closeBtn = document.getElementById("mosaicClose");
 	const bubbleMobile = document.querySelector('.bubble-stack');
-	const mobileAnim = document.getElementById("mobileBubbles");
-	const desktopAnim = document.getElementById("desktopBubbles");
+	const mobileAnim = document.getElementById('mobileBubbles');
+	const desktopAnim = document.getElementById('desktopBubbles');
+
+	let ordinal;
 	let mobileAnimStarted = false;
 	let desktopAnimStarted = false;
 
@@ -266,6 +270,7 @@
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				entry.target.classList.add('ci-leadin-animate-in');
+				ciZone.classList.add('arrow-active');
 				if (window.getComputedStyle(bubbleMobile).display  === 'none' && !desktopAnimStarted) {
 					desktopAnim.beginElement();
 					desktopAnimStarted = true;
@@ -363,6 +368,7 @@
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
 				unitsEl.classList.add('zone-active');
+				unitsEl.classList.add('arrow-active');
 			} else {
 				unitsEl.classList.remove('zone-active');
 			}
