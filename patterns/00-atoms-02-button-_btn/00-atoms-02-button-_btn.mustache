@@ -1,0 +1,6 @@
+{{#href}}
+<a href="{{href}}" class="btn btn-{{#outlineBtn?}}outline-{{/outlineBtn?}}{{btnColor}}{{#smallBtn?}} btn-sm{{/smallBtn?}}" aria-label="{{btnAria}}">{{{btnTxt}}}</a>
+{{/href}}
+{{^href}}
+<button class="btn btn-{{#outlineBtn?}}outline-{{/outlineBtn?}}{{btnColor}}{{#smallBtn?}} btn-sm{{/smallBtn?}}" aria-label="{{btnAria}}">{{{btnTxt}}}</button>
+{{/href}}

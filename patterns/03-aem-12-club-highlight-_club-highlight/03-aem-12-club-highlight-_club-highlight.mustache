@@ -1,0 +1,85 @@
+{{# useBillboard? }}{{! billboard start }}
+{{# inRow }}
+<div class="col mb-3">
+	<div class="card h-100">
+{{/ inRow }}
+{{^ inRow }}
+	<div class="card">
+{{/ inRow }}
+
+		<div class="row g-0">
+			<div class="col-lg-7 order-lg-last">
+				{{# image }}
+					<img src="{{image}}" class="card-img-top" alt="">
+				{{/ image }}
+				{{^ image }}
+					<img src="https://via.placeholder.com/992x558?text=16:9" class="card-img-top" alt="">
+				{{/ image }}
+				
+			</div>
+			<div class="col-lg-5 align-self-lg-center">
+				<div class="card-body p-3 p-lg-4 p-xl-6">
+
+{{/ useBillboard? }}{{! end billboard start}}
+{{^ useBillboard? }}{{! hero start}}
+<div class="hero hero-overlay">
+	<div class="hero-media">
+		{{# imgXS }}
+			<picture>
+				<source srcset="{{imgLG}}" media="(min-width: 992px)">
+				<source srcset="{{imgSM}}" media="(min-width: 576px)">
+				<img src="{{imgXS}}" alt="" class="img-fluid">
+			</picture>
+		{{/ imgXS }}
+		{{^ imgXS }}
+		<picture>
+			<source srcset="https://via.placeholder.com/1620x540?text=3:1" media="(min-width: 992px)">
+			<source srcset="https://via.placeholder.com/992x558?text=16:9" media="(min-width: 576px)">
+			<img src="https://via.placeholder.com/576?text=1:1" alt="" class="img-fluid">
+		</picture>
+		{{/ imgXS }}
+	</div>
+	<div class="container">
+		<div class="hero-content hero-content-semi-trans">
+{{/ useBillboard? }}{{! end hero start}}
+
+{{!- shared content }}
+			<div class="h6 mb-1">Find Your Life Time</div>
+			<h2>
+				{{# headingTxt }} {{{headingTxt}}} {{/ headingTxt }}
+				{{^ headingTxt }} Life Time Location {{/ headingTxt }}
+			</h2>
+			<div class="mb-3">
+				<a href="#0" class="btn btn-primary btn-block-sm">See Club Details</a>
+			</div>
+			<h3 class="h5 mb-1">Other Locations</h3>
+			<ul class="list-bulleted">
+				<li><a href="#0">
+					{{# optionOne }} {{{optionOne}}} {{/ optionOne }}
+					{{^ optionOne }} Life Time Option 1 {{/ optionOne }}
+				</a></li>
+				<li><a href="#0">
+					{{# optionTwo }} {{{optionTwo}}} {{/ optionTwo }}
+					{{^ optionTwo }} Life Time Option 2 {{/ optionTwo }}
+				</a></li>
+				<li><a href="#0">
+					{{# optionThree }} {{{optionThree}}} {{/ optionThree }}
+					{{^ optionThree }} Life Time Option 3 {{/ optionThree }}
+				</li>
+			</ul>
+			<p><a href="#0">View All Locations</a></p>
+{{! end shared content}}
+{{# useBillboard? }}{{! billboard end }}
+				</div>{{!-- end .col --}}
+			</div>{{!-- end .row --}}
+		</div>{{!-- end .card --}}
+	</div>
+{{# inRow }}
+</div>
+{{/ inRow }}
+{{/ useBillboard? }}{{! end billboard end }}
+{{^ useBillboard? }}{{! hero end }}
+		</div>{{! end .hero-content}}
+	</div>{{! end .container}}
+</div>{{! end .hero}}
+{{/ useBillboard? }}{{! end hero end }}

@@ -1,0 +1,13 @@
+<ul class="list-unstyled row row-cols-1 {{#colMD}}row-cols-md-{{colMD}}{{/colMD}} {{#colLG}}row-cols-lg-{{colLG}}{{/colLG}} {{#colXL}}row-cols-xl-{{colXL}}{{/colXL}} {{#colXXL}}row-cols-xxl-{{colXXL}}{{/colXXL}} mb-0" data-masonry='{"percentPosition": true, "transitionDuration": 0, "horizontalOrder": true }'>
+	{{#items}}
+	<li class="col">
+		{{#image}}
+			{{> aem-img }}
+		{{/image}}
+		{{#heading}}
+			{{> atoms-heading}}
+		{{/heading}}
+		<p>{{{itemTxt}}}</p>
+	</li>
+	{{/items}}
+</ul>

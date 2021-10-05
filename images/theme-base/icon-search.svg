@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" version="1.1">
+  <title>
+    icon-search
+  </title>
+  <desc>
+    Search Icon
+  </desc>
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g transform="translate(-465.000000, -1462.000000)">
+      <g transform="translate(466.000000, 1463.000000)">
+        <path d="M12.26 2.1C9.46-0.7 4.91-0.7 2.1 2.1 -0.7 4.91-0.7 9.46 2.1 12.26 4.91 15.07 9.46 15.07 12.26 12.27 15.07 9.46 15.07 4.91 12.26 2.1L12.26 2.1ZM13.4 15.74L15.74 13.4 20.58 18.23C21.14 18.8 21.14 19.72 20.57 20.29L20.29 20.57C19.72 21.14 18.8 21.14 18.23 20.58L13.4 15.74 13.4 15.74ZM15.12 14.34L14.34 15.12 11.84 12.62 12.62 11.83 15.12 14.34" stroke="#FFFFFF"/>
+      </g>
+    </g>
+  </g>
+</svg>
