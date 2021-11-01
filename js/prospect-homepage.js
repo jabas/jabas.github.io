@@ -72,13 +72,8 @@
 
 	logoAnimation.addEventListener('beginEvent', () => {
 		isLogoAnimated = true;
-		console.log('animating');
 	});
 
-	video.addEventListener('canplaythrough', () => {
-	  video.play();
-	});
-    
     video.addEventListener('play', () => {
     	vh = window.innerHeight * 0.01;
     	document.documentElement.style.setProperty('--vh', `${vh}px`);
