@@ -1,0 +1,10 @@
+{{^smallBtn?}}
+<div class="d-flex gap-2 {{#alignCenter?}}justify-content-center{{/alignCenter?}}{{#alignRight?}}justify-content-end{{/alignRight?}} mb-3">
+{{/smallBtn?}}
+{{#smallBtn?}}
+<div class="d-flex gap-1 {{#alignCenter?}}justify-content-center{{/alignCenter?}}{{#alignRight?}}justify-content-end{{/alignRight?}} mb-3">
+{{/smallBtn?}}
+	{{#btns}}
+		{{> atoms-btn}}
+	{{/btns}}
+</div>

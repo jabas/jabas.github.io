@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/core4-ui-system.css?1636644076875" media="all" />
+
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1636644076875" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1636644076875" media="all" />
+
+		<!-- End Pattern Lab -->
+	</head>
+	<body class="body ">
+
+<!-- Start of Pattern -->
+<div class="container">
+	<h3>Base Heading Options</h3>
+	<div class="row row-cols-1 row-cols-md-2 row-cols-md-3 row-gap-3">
+		<div class="col">
+			<label class="form-label" for="tag">Tag</label>
+			<select class="form-select" name="tag" id="tag">
+				<option value="h1">h1</option>
+				<option value="h2">h2</option>
+				<option value="h3">h3</option>
+				<option value="h4">h4</option>
+				<option value="h5">h5</option>
+				<option value="h5">h5</option>
+			</select>
+		</div>
+		<div class="col">
+			<label class="form-label" for="style">Style Class</label>
+			<select class="form-select" name="style" id="style">
+				<option value="">None</option>
+				<option value="h1">.h1</option>
+				<option value="h2">.h2</option>
+				<option value="h3">.h3</option>
+				<option value="h4">.h4</option>
+				<option value="h5">.h5</option>
+				<option value="h5">.h5</option>
+			</select>
+		</div>
+		<div class="col">
+			<label class="form-label" for="margin">Margin Below</label>
+			<select class="form-select" name="margin" id="margin">
+				<option value="mb-0">None</option>
+				<option value="mb-1">Extra Small (8px)</option>
+				<option value="mb-2">Small (16px)</option>
+				<option value="mb-3" selected>Normal (24px)</option>
+				<option value="mb-4">Large (32px)</option>
+				<option value="mb-5">Extra Large (40px)</option>
+			</select>
+		</div>
+		<div class="col">
+			<label class="form-label" for="textalign">Text Alignment</label>
+			<select class="form-select" name="textalign" id="textalign">
+				<option value="">Left</option>
+				<option value="text-center">Center</option>
+				<option value="text-end">Right</option>
+			</select>
+		</div>
+	</div>
+</div>
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"atoms","patternSubtype":"heading"},"patternExtension":"mustache","patternName":"Heading Options","patternPartial":"atoms-heading-options","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1636644076875">
+  (function() {
+    if (self != top) {
+      var cb = '1636644076875';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1636644076875">
+  (function() {
+    if (self != top) {
+      var cb = '1636644076875';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="/js/vendor/popper.min.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="/js/core4-ui-system.js"></script>
+	<!-- pass additional js files to page -->
+
+	</body>
+</html>

@@ -1,0 +1,42 @@
+{{# removeTopPadding? }}
+<div id="{{id}}" class="pb-2 pb-lg-4 {{bgClass}}">
+{{/ removeTopPadding? }}
+{{^ removeTopPadding? }}
+<div id="{{id}}" class="pt-5 pb-2 pt-lg-7 pb-lg-4 {{bgClass}}">
+{{/ removeTopPadding? }}
+	<div class="container">
+		{{# headingTxt }}
+		<div class="row">
+			<div class="col-12 col-md-8 offset-md-2 col-xxl-6 offset-xxl-3 text-center">
+				<h2 class="{{headClass}}">{{{headingTxt}}}</h2>
+				{{# shortRule? }}
+				<hr class="hr-short">
+				{{/ shortRule? }}
+				{{# bodyTxt }}
+					<p class="{{bodyClass}}">{{{bodyTxt}}}</p>
+				{{/ bodyTxt }}
+				{{# navOne }}
+					<ul class="nav nav-underlined justify-content-center mb-3">
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navOne}}}</a>
+						</li>
+						{{# navTwo }}
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navTwo}}}</a>
+						</li>
+						{{/ navTwo }}
+						{{# navThree }}
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navThree}}}</a>
+						</li>
+						{{/ navThree }}
+						{{# navFour }}
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{{navFour}}}</a>
+						</li>
+						{{/ navFour }}
+					</ul>
+				{{/ navOne }}
+			</div>
+		</div>
+		{{/ headingTxt }}
