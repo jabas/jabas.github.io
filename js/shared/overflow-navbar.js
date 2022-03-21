@@ -41,6 +41,7 @@
 		if (last) {
 			space = navbar.clientWidth - (last.offsetLeft + last.offsetWidth);
 		}
+		console.log(space);
 		return space;
 	}
 
@@ -55,7 +56,7 @@
 			removeItems(navbar);
 		} else if (overLength > 0) {
 
-			const first = overList.firstChild;
+			const first = overList.firstElementChild;
 			const returnSize = parseInt(first.dataset.returnSize);
 			const overflowSize = overflow.offsetWidth;
 
@@ -74,10 +75,9 @@
 		oddman.dataset.returnSize = oddman.offsetWidth;
 		oddman.classList.remove('nav-item');
 
-		overList.insertBefore(oddman, overList.firstChild);
-		
-		oddman.firstChild.classList.remove('nav-link');
-		oddman.firstChild.classList.add('dropdown-item');
+		overList.insertBefore(oddman, overList.firstElementChild);
+		oddman.firstElementChild.classList.remove('nav-link');
+		oddman.firstElementChild.classList.add('dropdown-item');
 		overflow.classList.remove('d-none');
 
 		// continue until spacing is available
@@ -87,8 +87,8 @@
 	}
  
 	function returnItem(nav, overflow, overList) {
-		const oddman = overList.firstChild;
-		const oddmanLink = oddman.firstChild;
+		const oddman = overList.firstElementChild;
+		const oddmanLink = oddman.firstElementChild;
 
 		oddmanLink.classList.remove('dropdown-item');
 		oddmanLink.classList.add('nav-link');
@@ -106,7 +106,7 @@
 		if (overList.children.length === 0) {
 			overflow.classList.add('d-none');
 		} else {
-			while( evalRemainingSpace(navbar) > parseInt(overList.firstChild.dataset.returnSize) ) {
+			while( evalRemainingSpace(navbar) > parseInt(overList.firstElementChild.dataset.returnSize) ) {
 				evalItemPlacement(navbar);
 			}
 		}
@@ -130,7 +130,10 @@
 		initOverflow(navbars[i]);		
 	}
 
-	// listen for navs added after page load
+	// event trigger to initialize
+	document.body.addEventListener('initOverflowNav', function (event) {
+		initOverflow(event.target);
+	});
 
 	// adjust initalized navs on resize
 	let timeout;

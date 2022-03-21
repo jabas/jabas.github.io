@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1647892964090,
+  "timestamp": 1647893208252,
   "graph": {
     "options": {
       "directed": true,
@@ -44,6 +44,12 @@
       },
       {
         "v": "01-templates/00-tm-hub-page.mustache",
+        "value": {
+          "compileState": "clean"
+        }
+      },
+      {
+        "v": "03-dynamic/00-dynamic-header.mustache",
         "value": {
           "compileState": "clean"
         }
