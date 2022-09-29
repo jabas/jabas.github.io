@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": 1664460497575,
+  "timestamp": 1664465636634,
   "graph": {
     "options": {
       "directed": true,
@@ -339,9 +339,7 @@
       {
         "v": "00-elements/12-images-video/02-hero-banner.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-09-banners-00-jumbotron/01-components-09-banners-00-jumbotron.rendered.html",
-          "lineagePattern": "components-jumbotron"
+          "compileState": "clean"
         }
       },
       {
@@ -355,25 +353,19 @@
       {
         "v": "00-elements/12-images-video/04-billboard-img.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-09-banners-07-billboard-layered/01-components-09-banners-07-billboard-layered.rendered.html",
-          "lineagePattern": "components-billboard-layered"
+          "compileState": "clean"
         }
       },
       {
         "v": "00-elements/12-images-video/05-billboard-img-sm.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-09-banners-08-billboard-video/01-components-09-banners-08-billboard-video.rendered.html",
-          "lineagePattern": "components-billboard-video"
+          "compileState": "clean"
         }
       },
       {
         "v": "00-elements/12-images-video/06-billboard-img-lg.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-09-banners-06-billboard-sizes/01-components-09-banners-06-billboard-sizes.rendered.html",
-          "lineagePattern": "components-billboard-sizes"
+          "compileState": "clean"
         }
       },
       {
@@ -848,524 +840,6 @@
       },
       {
         "v": "00-elements/20-media/00-media.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/00-buttons/00-button-action-groups.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/00-buttons/01-button-wrapper.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/00-buttons/02-button-groups.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/00-buttons/03-button-responsive.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/00-buttons/04-responsive-btn-group.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-09-banners-01-ci-banner/02-patterns-09-banners-01-ci-banner.rendered.html",
-          "lineagePattern": "patterns-ci-banner"
-        }
-      },
-      {
-        "v": "01-components/01-tooltips/00-tooltips.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/01-tooltips/01-toggletips.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/02-modals/00-modals.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/02-modals/01-modal-demo.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/03-messaging/00-global-notifications.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/03-messaging/01-inline-alerts.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/00-nav.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/01-nav-options.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/02-dropdowns.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/02-nav-tabs.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/03-nav-underlined.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/04-nav-buttons.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/05-navbar.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/06-breadcrumbs.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/07-pagination.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_lths-navigation-authenticated.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_lths-navigation-guest.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_lths-navigation-nonmember.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_lths-navigation-unauthenticated.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_mylt-navigation-alpha.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_mylt-navigation-authenticated.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_mylt-navigation-final.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_mylt-navigation-states.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_nav-btns-list.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-04-navigation-04-nav-buttons/01-components-04-navigation-04-nav-buttons.rendered.html",
-          "lineagePattern": "components-nav-buttons"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_nav-btns-reversed.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-04-navigation-04-nav-buttons/01-components-04-navigation-04-nav-buttons.rendered.html",
-          "lineagePattern": "components-nav-buttons"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_nav-btns-sizes.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-04-navigation-04-nav-buttons/01-components-04-navigation-04-nav-buttons.rendered.html",
-          "lineagePattern": "components-nav-buttons"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_nav-btns-stacked-sm.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-04-navigation-04-nav-buttons/01-components-04-navigation-04-nav-buttons.rendered.html",
-          "lineagePattern": "components-nav-buttons"
-        }
-      },
-      {
-        "v": "01-components/04-navigation/_nav-btns.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-04-navigation-04-nav-buttons/01-components-04-navigation-04-nav-buttons.rendered.html",
-          "lineagePattern": "components-nav-buttons"
-        }
-      },
-      {
-        "v": "01-components/05-collapse/00-collapse.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/05-collapse/01-collapse-drawers.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/05-collapse/02-truncate.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/05-collapse/03-show-hide.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/05-collapse/04-nested-collpase.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/06-scroll-to/00-scroll-to.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/07-loaders/00-spin-js.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/07-loaders/01-image-spinner.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/08-gauges/00-member-stat-gauge.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/08-gauges/01-empty-gauge-with-button.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/00-jumbotron.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/01-split-banners.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/01-split-fix-left.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/02-billboard.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/03-billboard-variations.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/04-billboard-content-placement.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/05-billboard-image-placement.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/06-billboard-sizes.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/07-billboard-layered.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-banners/08-billboard-video.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-heros/00-hero-cutout.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-heros/01-hero-overlay.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-heros/02-hero-carousel.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/09-heros/03-hero-video.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/10-blocks/00-divided-grid.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/10-blocks/01-basic-cta-break.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/11-tiletrios/01-tiletrios.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/12-heading-groups/00-cta-header-h1.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/12-heading-groups/01-cta-header-h2.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-content-lead-ins-_00-ci-landing/03-templates-content-lead-ins-_00-ci-landing.rendered.html",
-          "lineagePattern": "templates-ci-landing"
-        }
-      },
-      {
-        "v": "01-components/13-icon-containers/00-icon-anchor-card.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-07-internal-navigation-00-icon-anchor-menu/02-patterns-07-internal-navigation-00-icon-anchor-menu.rendered.html",
-          "lineagePattern": "patterns-icon-anchor-menu"
-        }
-      },
-      {
-        "v": "01-components/13-icon-containers/01-svg-icon-wrap-club.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-08-contact-blocks-00-contact-info-club/02-patterns-08-contact-blocks-00-contact-info-club.rendered.html",
-          "lineagePattern": "patterns-contact-info-club"
-        }
-      },
-      {
-        "v": "01-components/13-icon-containers/_svg-icon-wrap-hours.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-08-contact-blocks-_contact-info-relations/02-patterns-08-contact-blocks-_contact-info-relations.rendered.html",
-          "lineagePattern": "patterns-contact-info-relations"
-        }
-      },
-      {
-        "v": "01-components/13-icon-containers/_svg-icon-wrap-leaders.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-08-contact-blocks-00-contact-info-club/02-patterns-08-contact-blocks-00-contact-info-club.rendered.html",
-          "lineagePattern": "patterns-contact-info-club"
-        }
-      },
-      {
-        "v": "01-components/13-icon-containers/_svg-icon-wrap-location.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-08-contact-blocks-00-contact-info-club/02-patterns-08-contact-blocks-00-contact-info-club.rendered.html",
-          "lineagePattern": "patterns-contact-info-club"
-        }
-      },
-      {
-        "v": "01-components/13-icon-containers/_svg-icon-wrap-phone.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/02-patterns-08-contact-blocks-_contact-info-relations/02-patterns-08-contact-blocks-_contact-info-relations.rendered.html",
-          "lineagePattern": "patterns-contact-info-relations"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/00-carousel.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/01-carousel-dash.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/02-card-carousel.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/_carousel-card.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-14-carousel-02-card-carousel/01-components-14-carousel-02-card-carousel.rendered.html",
-          "lineagePattern": "components-card-carousel"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/_carousel-dashed-brick-dark.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-14-carousel-01-carousel-dash/01-components-14-carousel-01-carousel-dash.rendered.html",
-          "lineagePattern": "components-carousel-dash"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/_carousel-dashed-brick-light.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-14-carousel-01-carousel-dash/01-components-14-carousel-01-carousel-dash.rendered.html",
-          "lineagePattern": "components-carousel-dash"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/_carousel-dashed-dark-controls.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-14-carousel-01-carousel-dash/01-components-14-carousel-01-carousel-dash.rendered.html",
-          "lineagePattern": "components-carousel-dash"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/_carousel-dashed-light-controls.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-14-carousel-01-carousel-dash/01-components-14-carousel-01-carousel-dash.rendered.html",
-          "lineagePattern": "components-carousel-dash"
-        }
-      },
-      {
-        "v": "01-components/14-carousel/_carousel-dashed.mustache",
-        "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/01-components-14-carousel-01-carousel-dash/01-components-14-carousel-01-carousel-dash.rendered.html",
-          "lineagePattern": "components-carousel-dash"
-        }
-      },
-      {
-        "v": "01-components/15-lazyload/00-many-images.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/15-lazyload/01-srcset.mustache",
-        "value": {
-          "compileState": "clean"
-        }
-      },
-      {
-        "v": "01-components/15-lazyload/02-picture-element.mustache",
         "value": {
           "compileState": "clean"
         }
@@ -1898,8 +1372,8 @@
         "v": "02-patterns/04-card-variations/_feature-card-1x1-img.mustache",
         "value": {
           "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-content-lead-ins-_00-ci-landing/03-templates-content-lead-ins-_00-ci-landing.rendered.html",
-          "lineagePattern": "templates-ci-landing"
+          "lineagePath": "../../patterns/02-patterns-05-feature-card-sets-00-feature-card-groups/02-patterns-05-feature-card-sets-00-feature-card-groups.rendered.html",
+          "lineagePattern": "patterns-feature-card-groups"
         }
       },
       {
@@ -1987,9 +1461,7 @@
       {
         "v": "02-patterns/09-banners/01-ci-banner.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-content-lead-ins-_00-ci-landing/03-templates-content-lead-ins-_00-ci-landing.rendered.html",
-          "lineagePattern": "templates-ci-landing"
+          "compileState": "clean"
         }
       },
       {
@@ -2779,17 +2251,13 @@
       {
         "v": "03-templates/content-lead-ins/00-events-block.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-content-lead-ins-_00-ci-landing/03-templates-content-lead-ins-_00-ci-landing.rendered.html",
-          "lineagePattern": "templates-ci-landing"
+          "compileState": "clean"
         }
       },
       {
         "v": "03-templates/content-lead-ins/01-blog-block.mustache",
         "value": {
-          "compileState": "clean",
-          "lineagePath": "../../patterns/03-templates-content-lead-ins-_00-ci-landing/03-templates-content-lead-ins-_00-ci-landing.rendered.html",
-          "lineagePattern": "templates-ci-landing"
+          "compileState": "clean"
         }
       },
       {
@@ -4191,116 +3659,6 @@
         "value": {}
       },
       {
-        "v": "01-components/04-navigation/04-nav-buttons.mustache",
-        "w": "01-components/04-navigation/_nav-btns.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/04-navigation/04-nav-buttons.mustache",
-        "w": "01-components/04-navigation/_nav-btns-list.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/04-navigation/04-nav-buttons.mustache",
-        "w": "01-components/04-navigation/_nav-btns-stacked-sm.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/04-navigation/04-nav-buttons.mustache",
-        "w": "01-components/04-navigation/_nav-btns-reversed.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/04-navigation/04-nav-buttons.mustache",
-        "w": "01-components/04-navigation/_nav-btns-sizes.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/00-jumbotron.mustache",
-        "w": "00-elements/12-images-video/02-hero-banner.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/01-split-banners.mustache",
-        "w": "00-elements/12-images-video/03-background-banner.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/01-split-fix-left.mustache",
-        "w": "00-elements/12-images-video/03-background-banner.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/02-billboard.mustache",
-        "w": "00-elements/12-images-video/04-billboard-img.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/03-billboard-variations.mustache",
-        "w": "00-elements/12-images-video/04-billboard-img.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/04-billboard-content-placement.mustache",
-        "w": "00-elements/12-images-video/04-billboard-img.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/05-billboard-image-placement.mustache",
-        "w": "00-elements/12-images-video/04-billboard-img.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/06-billboard-sizes.mustache",
-        "w": "00-elements/12-images-video/05-billboard-img-sm.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/06-billboard-sizes.mustache",
-        "w": "00-elements/12-images-video/06-billboard-img-lg.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/07-billboard-layered.mustache",
-        "w": "00-elements/12-images-video/04-billboard-img.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/09-banners/08-billboard-video.mustache",
-        "w": "00-elements/12-images-video/05-billboard-img-sm.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/14-carousel/01-carousel-dash.mustache",
-        "w": "01-components/14-carousel/_carousel-dashed.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/14-carousel/01-carousel-dash.mustache",
-        "w": "01-components/14-carousel/_carousel-dashed-light-controls.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/14-carousel/01-carousel-dash.mustache",
-        "w": "01-components/14-carousel/_carousel-dashed-dark-controls.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/14-carousel/01-carousel-dash.mustache",
-        "w": "01-components/14-carousel/_carousel-dashed-brick-light.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/14-carousel/01-carousel-dash.mustache",
-        "w": "01-components/14-carousel/_carousel-dashed-brick-dark.mustache",
-        "value": {}
-      },
-      {
-        "v": "01-components/14-carousel/02-card-carousel.mustache",
-        "w": "01-components/14-carousel/_carousel-card.mustache",
-        "value": {}
-      },
-      {
         "v": "02-patterns/00-header/member-partials/_nav-member-mobile-bar.mustache",
         "w": "00-elements/12-images-video/00-logo-xs.mustache",
         "value": {}
@@ -4566,46 +3924,6 @@
         "value": {}
       },
       {
-        "v": "02-patterns/07-internal-navigation/00-icon-anchor-menu.mustache",
-        "w": "01-components/13-icon-containers/00-icon-anchor-card.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/00-contact-info-club.mustache",
-        "w": "01-components/13-icon-containers/01-svg-icon-wrap-club.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/00-contact-info-club.mustache",
-        "w": "01-components/13-icon-containers/_svg-icon-wrap-phone.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/00-contact-info-club.mustache",
-        "w": "01-components/13-icon-containers/_svg-icon-wrap-hours.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/00-contact-info-club.mustache",
-        "w": "01-components/13-icon-containers/_svg-icon-wrap-location.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/00-contact-info-club.mustache",
-        "w": "01-components/13-icon-containers/_svg-icon-wrap-leaders.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/_contact-info-relations.mustache",
-        "w": "01-components/13-icon-containers/_svg-icon-wrap-phone.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/08-contact-blocks/_contact-info-relations.mustache",
-        "w": "01-components/13-icon-containers/_svg-icon-wrap-hours.mustache",
-        "value": {}
-      },
-      {
         "v": "02-patterns/09-banners/00-club-banner-prospect.mustache",
         "w": "00-elements/12-images-video/03-background-banner.mustache",
         "value": {}
@@ -4618,11 +3936,6 @@
       {
         "v": "02-patterns/09-banners/01-ci-banner.mustache",
         "w": "00-elements/12-images-video/03-background-banner.mustache",
-        "value": {}
-      },
-      {
-        "v": "02-patterns/09-banners/01-ci-banner.mustache",
-        "w": "01-components/00-buttons/04-responsive-btn-group.mustache",
         "value": {}
       },
       {
@@ -5383,46 +4696,6 @@
       {
         "v": "03-templates/content-lead-ins/01-blog-block.mustache",
         "w": "03-templates/content-lead-ins/_blog-block-card.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "02-patterns/00-header/00-header-member.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "02-patterns/09-banners/01-ci-banner.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "02-patterns/04-card-variations/_feature-card-1x1-img.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "01-components/12-heading-groups/01-cta-header-h2.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "03-templates/content-lead-ins/00-events-block.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "03-templates/news/00-news-block.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "03-templates/content-lead-ins/01-blog-block.mustache",
-        "value": {}
-      },
-      {
-        "v": "03-templates/content-lead-ins/_00-ci-landing.mustache",
-        "w": "02-patterns/01-footer/00-mylt-footer.mustache",
         "value": {}
       },
       {
