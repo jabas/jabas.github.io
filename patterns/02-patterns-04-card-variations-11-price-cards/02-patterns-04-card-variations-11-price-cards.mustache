@@ -1,0 +1,19 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+			<div class="card-price-group">
+				{{> patterns-price-card }}
+			</div>
+
+			<h5 class="m-t-3">Example</h5>
+			<div class="card-price-group">
+				{{> patterns-price-card(styleModifier: "card-highlight", cardTitle: "Monthly", cardDescription: "Recurring month-to-month membership.*", badge: false, priceDescriptor: "Starting at", priceFull: "$79 per month", price: "79", priceFootnote: "Joining fees apply", cta: "See <span class='sr-only'>Monthly Membership</span> Join Offers", disclaimer: "<a href='#'>Clubs I Can Access</a>") }}
+			</div>
+
+			<h5 class="m-t-3">Example with Custom Price Content</h5>
+			<div class="card-price-group">
+				{{> patterns-price-card(cardTitle: "Day Pass", cardDescription: "Full club access for the day.", badge: false, priceGroup: false, priceModifier: "price-lockup-sm b-t b-b p-t-sm m-b-4", priceGroupCustom: true, priceCustom: "<form class='text-xs-left'><fieldset class='form-group'><legend class='sr-only'>Day Pass Options</legend><label class='c-input c-radio m-r-0'><input name='pass-prices' type='radio' aria-label='$25 for 1 pass'><span class='c-indicator'></span><span class='currency' aria-hidden='true'>$</span><span class='value' aria-hidden='true'>25</span><span class='unit' aria-hidden='true'> / 1 pass</span></label><label class='c-input c-radio m-r-0'><input name='pass-prices' type='radio' aria-label='$125 for 5 passes'><span class='c-indicator'></span><span class='currency' aria-hidden='true'>$</span><span class='value' aria-hidden='true'>125</span><span class='unit' aria-hidden='true'> / 5 passes</span></label></fieldset></form>", cta: "Select", disclaimer: false) }}
+			</div>
+		</div>
+	</div>
+</div>

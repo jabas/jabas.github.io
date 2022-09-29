@@ -1,0 +1,87 @@
+{{> patterns-header-prospect(removeJoinLink:true) }}
+<main class="page-content main-mylt bg-gray-12 omsc-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div id="omscSummary" class="omsc-summary">
+					{{> templates-membership-summary }}
+				</div>
+				<div class="content-section text-xs-center">
+					<h1 class="h2 m-b-1">Add Members</h1>
+					<p>Add additional members to your account that will be enjoying the Life Time experience!</p>
+				</div>
+				<div id="omscAddMembers">
+					<div class="omsc-add-members">
+						<div class="content-section-x-pad b-a b-rounded-lg box-shadow bg-white m-b-2">
+							<div class="row row-xs-center">
+								<div class="col-xs-5">
+									<h2 class="h4 m-b-0" aria-hidden="true">Adults</h2>
+									<p class="m-b-0 text-gray-3 small-responsive" aria-hidden="true">Ages 14 and above</p>
+								</div>
+								<div class="col-xs-7 p-l-0 text-xs-right">
+									<fieldset class="input-counter-wrap">
+										<label class="sr-only" for="adultMembers">Number of adults, age 14 and up, maximum 6</label>
+										<div class="input-counter-focus-help text-xs-center small font-weight-bold m-b-xs fade" data-target="#adultMembers" aria-hidden="true">Max. 6</div>
+										<div class="input-group input-counter input-counter-lg input-counter-center">
+											<span class="input-group-btn">
+												<button class="btn btn-input-wide" disabled="" tabindex="-1" data-count="less">
+													<span class="ico-minus-sm"></span>
+													<span class="sr-only">Remove One</span>
+												</button>
+											</span>
+											<input id="adultMembers" class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" data-counter-min="1" data-counter-max="6" value="1">
+											<span class="input-group-btn">
+												<button class="btn btn-input-wide" tabindex="-1" data-count="more">
+													<span class="ico-plus-sm"></span>
+													<span class="sr-only">Add One</span>
+												</button>
+											</span>
+										</div>
+									</fieldset>
+								</div>
+							</div>
+							<hr>
+							<div class="row row-xs-center m-b-2">
+								<div class="col-xs-5">
+									<h2 class="h4 m-b-0" aria-hidden="true">Juniors</h2>
+									<p class="m-b-0 text-gray-3 small-responsive" aria-hidden="true">Ages 13 and under</p>
+								</div>
+								<div class="col-xs-7 p-l-0 text-xs-right">
+									<fieldset class="input-counter-wrap">
+										<label class="sr-only" for="juniorMembers">Number of juniors, age 13 and under, maximum 6</label>
+										<div class="input-counter-focus-help text-xs-center small font-weight-bold m-b-xs fade" data-target="#juniorMembers" aria-hidden="true">Max. 6</div>
+										<div class="input-group input-counter input-counter-lg input-counter-center">
+											<span class="input-group-btn">
+												<button class="btn btn-input-wide" disabled="" tabindex="-1" data-count="less">
+													<span class="ico-minus-sm"></span>
+													<span class="sr-only">Remove One</span>
+												</button>
+											</span>
+											<input id="juniorMembers" class="form-control" type="text" inputmode="numeric" pattern="[0-9]*" data-counter-min="0" data-counter-max="6" value="0">
+											<span class="input-group-btn">
+												<button class="btn btn-input-wide" tabindex="-1" data-count="more">
+													<span class="ico-plus-sm"></span>
+													<span class="sr-only">Add One</span>
+												</button>
+											</span>
+										</div>
+									</fieldset>
+								</div>
+								<div class="col-xs-12 p-t-sm">
+									<p class="m-b-0 small-responsive">Juniors do not have access to Apple Valley</p>
+								</div>
+							</div>
+						</div>
+						<div class="omsc-nav">
+							<div class="btn-wrap text-xs-right">
+								<a href="{{ link.templates-add-interests }}" class="btn btn-primary">Move Forward</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}
+{{> templates-moxie-example }}

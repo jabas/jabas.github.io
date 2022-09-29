@@ -1,0 +1,588 @@
+<header class="header">
+	<a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	<div class="header-mobile-bar">
+		<div class="header-nav-toggle">
+			<button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="header-brand-mobile">
+			<a href="#"><img src="/images/theme-base/life-time-logo-xs.svg" alt="Life Time logo"></a>
+		</div>
+		<div class="header-utility-mobile">
+			<nav aria-label="Utility Navigation">
+				<ul class="nav nav-right nav-neutral">
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz"></span><span class="sr-only">Account</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="#">
+					<img src="/images/theme-base/life-time-logo-sm.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="header-utility">
+			<nav class="header-utility-major" aria-label="Utility">
+	<ul class="nav nav-inverse">
+		<li class="nav-item">
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Account</a>
+		</li>
+	</ul>
+</nav>
+		</div>
+	</div>
+	<div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+	<div class="dropdown-arrow"></div>
+	<div class="dropdown-menu dropdown-menu-right">
+		<a class="dropdown-item" href="#">View Account</a>
+		<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro">
+			<span class="text-muted">Not Joshua? </span><a class="link-reversed-white" href="#">Log Out</a>
+		</p>
+	</div>
+</div>
+
+</header>
+<main>
+	<div class="container p-y-2">
+		<h1 class="h-static m-b-0">Notification Administration</h1>
+	</div>
+	<div class="b-y bg-gray-12">
+		<form>
+			<div class="container">
+				<div class="row p-y-sm">
+					<div class="col-xs-12 col-md-5 p-y-sm">
+						<div class="form-group m-b-0">
+							<label for="club">Show Notifications For</label>
+							<select name="club" id="club" class="c-select">
+								<option value="">Select an option...</option>
+								<option value="" disabled>&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</option>
+								<option value="All">All Locations</option>
+								<option value="Multiple">Select Locations</option>
+								<option value="" disabled>&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;</option>
+								<option value="151" selected>Chanhassen</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-7 p-y-sm">
+						<fieldset class="form-group m-b-0">
+							<legend class="m-b-sm">Channel(s)</legend>
+							<label for="cbWeb" class="c-input c-checkbox">
+								<input id="cbWeb" type="checkbox" checked>
+								<span class="c-indicator"></span>
+								Web
+							</label>
+							<label for="cbApp" class="c-input c-checkbox">
+								<input id="cbApp" type="checkbox" checked>
+								<span class="c-indicator"></span>
+								App
+							</label>
+							<label for="cbEmail" class="c-input c-checkbox">
+								<input id="cbEmail" type="checkbox" checked>
+								<span class="c-indicator"></span>
+								Email
+							</label>
+							<label for="cbPush" class="c-input c-checkbox">
+								<input id="cbPush" type="checkbox" checked>
+								<span class="c-indicator"></span>
+								Push
+							</label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="p-y-sm">
+					<label for="onlyUser" class="c-input c-checkbox">
+						<input id="onlyUser" type="checkbox">
+						<span class="c-indicator"></span>
+						Show only my notifications
+					</label>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="container content-mt">
+		<h2 class="h3 h-static m-b-grid">Pending</h2>
+	</div>
+	<div class="container edge-md-down">
+		<div class="row hidden-md-down p-x-grid m-t-grid">
+			<div class="col-lg-2">
+				<div class="h-th m-b-sm">Activates</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="h-th m-b-sm">Title</div>
+			</div>
+			<div class="col-lg-3 text-lg-right">
+				<div class="h-th m-b-sm">Channel(s)</div>
+			</div>
+		</div>
+		<ul class="list-unstyled b-b">
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm">10&#x2F;28&#x2F;20 10:33am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<p class="m-b-sm micro">Web, App</p>
+		</div>
+		<div class="col-xs-12 small hidden-lg-up">
+			<span class="badge badge-pill badge-info m-b-1">8 Locations</span>
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div class="row small">
+		<div class="col-xs-12 col-lg-10">
+			<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+						<dd class="col-xs-12 col-lg-8">Select Locations <a href="#locationsModalEntry1" data-toggle="modal">(8)</a></dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+				<div class="small hidden-md-down m-b-1"><span class="badge badge-pill badge-info">8 Locations</span></div>
+			<div class="m-b-sm">
+				<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-trash"></span> Delete</button>
+				<button type="button" class="btn btn-link btn-link-simple btn-sm"><span class="ico-edit-sm"></span> Edit</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="locationsModalEntry1" tabindex="-1" role="dialog" aria-labelledby="locationsModalLabelEntry1" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title" id="locationsModalLabelEntry1">Impacted Locations</h5>
+				</div>
+				<div class="modal-body">
+					<ul class="small m-b-0">
+						<li>Chanhassen - MN</li>
+						<li>Coon Rapids - MN</li>
+						<li>Crosstown (Eden Prairie) - MN</li>
+						<li>Eagan - MN</li>
+						<li>Eden Prairie Athletic - MN</li>
+						<li>Edina at Southdale - MN</li>
+						<li>Fridley - MN</li>
+						<li>Highland Park - MN</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm">10&#x2F;28&#x2F;20 10:33am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<p class="m-b-sm micro">Web, App, Email, Push</p>
+		</div>
+		<div class="col-xs-12 small hidden-lg-up">
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div class="row small">
+		<div class="col-xs-12 col-lg-10">
+			<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+								<dd class="col-xs-12 col-lg-8">Facility Access Impacted</dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+			<div class="m-b-sm">
+				<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-trash"></span> Delete</button>
+				<button type="button" class="btn btn-link btn-link-simple btn-sm"><span class="ico-edit-sm"></span> Edit</button>
+			</div>
+		</div>
+	</div>
+</li>
+		</ul>
+	</div>
+	<div class="container content-mt">
+		<h2 class="h3 h-static m-b-grid">Active</h2>
+	</div>
+	<div class="container edge-md-down">
+		<div class="row hidden-md-down p-x-grid m-t-grid">
+			<div class="col-lg-2">
+				<div class="h-th m-b-sm">Activated</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="h-th m-b-sm">Title</div>
+			</div>
+			<div class="col-lg-3 text-lg-right">
+				<div class="h-th m-b-sm">Channel(s)</div>
+			</div>
+		</div>
+		<ul class="list-unstyled b-b">
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm">10&#x2F;28&#x2F;20 10:33am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<p class="m-b-sm micro">Web, App</p>
+		</div>
+		<div class="col-xs-12 small hidden-lg-up">
+			<span class="badge badge-pill badge-info m-b-1">All Locations</span>
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div class="row small">
+		<div class="col-xs-12 col-lg-10">
+			<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+						<dd class="col-xs-12 col-lg-8">All Locations</dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+				<div class="small hidden-md-down m-b-1"><span class="badge badge-pill badge-info">All Locations</span></div>
+			<div class="m-b-sm">
+				<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-trash"></span> Delete</button>
+				<button type="button" class="btn btn-link btn-link-simple btn-sm"><span class="ico-edit-sm"></span> Edit</button>
+			</div>
+		</div>
+	</div>
+</li>
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm">10&#x2F;28&#x2F;20 10:33am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<p class="m-b-sm micro">Web, App, Email, Push</p>
+		</div>
+		<div class="col-xs-12 small hidden-lg-up">
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div class="row small">
+		<div class="col-xs-12 col-lg-10">
+			<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+								<dd class="col-xs-12 col-lg-8">Facility Access Impacted</dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+			<div class="m-b-sm">
+				<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-trash"></span> Delete</button>
+				<button type="button" class="btn btn-link btn-link-simple btn-sm"><span class="ico-edit-sm"></span> Edit</button>
+			</div>
+		</div>
+	</div>
+</li>
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm">10&#x2F;28&#x2F;20 10:33am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<p class="m-b-sm micro">Web, App, Email, Push</p>
+		</div>
+		<div class="col-xs-12 small hidden-lg-up">
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div class="row small">
+		<div class="col-xs-12 col-lg-10">
+			<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+								<dd class="col-xs-12 col-lg-8">Facility Access Impacted</dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+			<div class="m-b-sm">
+				<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-trash"></span> Delete</button>
+				<button type="button" class="btn btn-link btn-link-simple btn-sm"><span class="ico-edit-sm"></span> Edit</button>
+			</div>
+		</div>
+	</div>
+</li>
+		</ul>
+	</div>
+	<div class="container content-mt">
+		<h2 class="h3 h-static m-b-grid">Completed/Deleted</h2>
+	</div>
+	<div class="b-t b-b-lg bg-gray-12">
+		<div class="container">
+			<div class="row row-sm-baseline row-md-bottom p-y-sm">
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-y-sm">
+					<div class="form-group m-b-0">
+						<label for="startDate">Range Start</label>
+						<div class="date-nav">
+							<button class="btn btn-input datepicker-trigger">
+								<span class="flex-container">
+									<span class="btn-icon-text">10/22/19 10:33am</span><span class="ico-calendar"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-y-sm">
+					<div class="form-group m-b-0">
+						<label for="startDate">Range End</label>
+						<div class="date-nav">
+							<button class="btn btn-input datepicker-trigger">
+								<span class="flex-container">
+									<span class="btn-icon-text">12/25/20 10:33am</span><span class="ico-calendar"></span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 p-t-sm p-b-1">
+					<label for="excludeDeleted" class="c-input c-checkbox">
+						<input id="excludeDeleted" type="checkbox">
+						<span class="c-indicator"></span>
+						Exclude deleted
+					</label>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+	<div class="container">
+		<p class="micro m-y-grid" aria-hidden="true"><span class="ico-alert icon-adjust-horiz text-danger"></span>: Denotes deleted items</p>
+	</div>
+	<div class="container edge-md-down">
+		<div class="row hidden-md-down p-x-grid m-t-grid">
+			<div class="col-lg-2">
+				<div class="h-th m-b-sm">Last Active</div>
+			</div>
+			<div class="col-lg-7">
+				<div class="h-th m-b-sm">Title</div>
+			</div>
+			<div class="col-lg-3 text-lg-right">
+				<div class="h-th m-b-sm">Channel(s)</div>
+			</div>
+		</div>
+		<ul class="list-unstyled b-b">
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm"><span class="sr-only">Deleted</span><span class="ico-alert icon-adjust-horiz text-danger"></span> 12&#x2F;25&#x2F;20 10:30am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<a href="#collapseEntry6" class="pull-xs-right m-l-1" style="margin-top:-3px" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseEntry6" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>More Details</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Less Details</span>"><span class='ico-arrow-down'></span><span class='sr-only'>More Details</span></a>
+			<p class="m-b-sm micro">Web, App, Email, Push</p>
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div id="collapseEntry6" class="small collapse fade">
+		<div class="row">
+			<div class="col-xs-12 col-lg-10">
+				<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+						<dd class="col-xs-12 col-lg-8">Facility Access Impacted</dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+				<div class="m-b-sm">
+					<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-export"></span> Restore</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			<li class="b-t p-t-grid p-x-grid p-b-sm bg-striped-alt">
+	<div class="row row-xs-baseline">
+		<div class="col-xs-6 col-lg-2">
+			<p class="small m-b-sm">12&#x2F;25&#x2F;20 10:30am</p>
+		</div>
+		<div class="col-xs-6 col-lg-3 col-lg-last text-xs-right">
+			<a href="#collapseEntry7" class="pull-xs-right m-l-1" style="margin-top:-3px" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseEntry7" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>More Details</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Less Details</span>"><span class='ico-arrow-down'></span><span class='sr-only'>More Details</span></a>
+			<p class="m-b-sm micro">Web, App, Email, Push</p>
+		</div>
+		<div class="col-xs-12 col-lg-7">
+			<p class="text-gray-4 font-weight-bold m-b-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus.</p>
+		</div>
+	</div>
+	<div id="collapseEntry7" class="small collapse fade">
+		<div class="row">
+			<div class="col-xs-12 col-lg-10">
+				<p class="m-b-grid">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et neque sagittis neque gravida facilisis. Ut tincidunt risus quis facilisis vestibulum. Integer eu purus eu nisl feugiat sagittis sit amet et lorem. Nunc at magna a elit semper luctus et tincidunt enim. Vestibulum iaculis elit ac lorem hendrerit lobortis. Fusce vitae dui non massa sodales suscipit vel ullamcorper erat. Aliquam amet.</p>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Type</dt>
+						<dd class="col-xs-12 col-lg-8">Facility Access Impacted</dd>
+						<dt class="col-xs-12 col-lg-4">Deactivates</dt>
+						<dd class="col-xs-12 col-lg-8">12/25/20 10:30pm</dd>
+					</dl>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<dl class="dl-horizontal m-b-0">
+						<dt class="col-xs-12 col-lg-4">Created</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+						<dt class="col-xs-12 col-lg-4">Last Updated</dt>
+						<dd class="col-xs-12 col-lg-8">e136141 at 9/22/20 1:34pm</dd>
+					</dl>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-2 col-lg-first text-xs-right text-lg-left">
+				<div class="m-b-sm">
+					<button type="button" class="btn btn-link btn-link-simple btn-sm m-r-xs"><span class="ico-export"></span> Restore</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+		</ul>
+	</div>
+</main>
+<footer class="footer-mylt" role="contentinfo">
+	<div class="p-wrap">
+		<nav aria-label="Footer">
+			<div class="footer-social">
+				<ul>
+					<li><a href="http://www.facebook.com/lifetimefitness" rel="noreferrer" title="Facebook"><span class="ico-facebook"></span><span class="sr-only">Facebook</span></a></li>
+					<li><a href="http://instagram.com/lifetime.life" rel="noreferrer" title="Instagram"><span class="ico-instagram"></span><span class="sr-only">Instagram</span></a></li>
+					<li><a href="http://www.youtube.com/mylifetimefitness" rel="noreferrer" title="YouTube"><span class="ico-youtube"></span><span class="sr-only">YouTube</span></a></li>
+					<li><a href="http://www.twitter.com/lifetimefitness" rel="noreferrer" title="Twitter"><span class="ico-twitter"></span><span class="sr-only">Twitter</span></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-navigation">
+				<ul>
+					<li><a href="http://news.lifetime.life/">About</a></li>
+					<li><a href="http://news.lifetime.life/">Newsroom</a></li>
+					<li><a href="https://www.mylt.life/faq.html">Help &amp; FAQs</a></li>
+					<li><a href="https://careers.lifetime.life/">Careers</a></li>
+					<li><a href="https://www.lifetime.life/media.html">Advertise with Us</a></li>
+					<li><a href="https://www.lifetime.life/corporate-wellness.html">Corporate Wellness</a></li>
+					<li><a href="https://www.lifetime.life/life-time-construction.html">Life Time Construction</a></li>
+					<li><a href="http://news.lifetime.life/corporate-social-responsibility">Sustainability</a></li>
+					<li><a href="https://www.mylt.life/clubs.go/contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-legal">
+				<ul>
+					<li><a href="https://www.mylt.life/policy/privacy-policy.html">Privacy Policy</a></li>
+					<li><a href="https://www.mylt.life/policy/terms-of-use.html">Terms of Use</a></li>
+					<li><a href="https://www.mylt.life/policy/guest-and-club-policy.html">Club Policies</a></li>
+					<li><a href="https://www.mylt.life/policy/accessibility.html">Accessibility Policy</a></li>
+					<li><a href="https://www.mylt.life/policy/ca-privacy-policy.html">CA Privacy Rights</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<p class="copyright"><span>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Life Time, Inc. All rights reserved.</span></p>
+	</div>
+</footer>

@@ -1,0 +1,75 @@
+{{> patterns-header-member }}
+<main>
+	<div class="content-section text-xs-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<h1>Meet our Personal Trainers</h1>
+					<p>115-190 Character Count - Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-gray-12 p-t-2 p-b-1 b-y">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4 m-b-1">
+					{{> templates-bios-focus-multiselect }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container p-t-sm">
+		<div class="row">
+			<div class="col-xs-12 col-md-9 p-t-sm">
+				<div class="chiclets-label hidden-md-up">Filtered By:</div>
+				<div class="chiclets-scroller-sm">
+					<div class="chiclets-container">
+						<div class="chiclets-label hidden-sm-down">Filtered By:</div>
+						<button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Weight Loss<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button>
+						<button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Weight Training<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button>
+						<button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Morning<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-3 p-t-sm">
+				<select name="sortBy" id="sortBy" class="c-select pull-md-right" style="max-width:11rem;margin:0.1875rem 0;">
+					<option selected>Name A-Z</option>
+					<option>Name Z-A</option>
+					<option>Price: Low - High</option>
+					<option>Price: High - Low</option>
+				</select>
+			</div>
+
+		</div>
+	</div>
+	<div class="content-section container">
+
+		{{^bioListResults}}
+			<div class="text-xs-center text-gray-5 center-block" style="max-width: 16.5rem;">
+				<p class="large">Sorry, no results currently match your search criteria.</p>
+				<p class="small">Please refine your filters and try again.</p>
+			</div>
+		{{/bioListResults}}
+
+		{{#bioListResults}}
+			<div class="card-deck card-deck-three-up">
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"male",name:"David F.",style:"Champion") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"female",name:"Nastassia S.",style:"Motivator") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"female",name:"Susan L.",style:"Educator") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"male",name:"Cole L.",style:"Cheerleader") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"male",name:"Kameron J.",style:"Drill Sergeant") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"female",name:"Amy A.",style:"Taskmaster") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"male",name:"Justin R.",style:"Motivator") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"female",name:"Dana M.",style:"Cheerleader") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"male",name:"Corey G.",style:"Counselor") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"female",name:"Lain L.",style:"Taskmaster") }}
+				{{> templates-bios-result-card(addClass:"text-xs-center",gender:"male",name:"Daniel M.",style:"Zen Master") }}
+			</div>
+		{{/bioListResults}}
+
+	</div>
+
+</main>
+{{> patterns-mylt-footer }}

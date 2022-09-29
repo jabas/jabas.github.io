@@ -1,0 +1,32 @@
+{{> patterns-header-member }}
+<main>
+
+	<div class="content-section container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<h1 class="h2">Your Reservation is Complete.</h1>
+				<p><strong>Thank you!</strong> An email has been sent to <a href="#0">[emailaddress@email.com]</a>. To view your transaction history, go to <a href="#0">My Account</a>.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-section bg-gray-12 b-t">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					{{> templates-esr-registration-card(headingClass:'h3',price:'$10.00',participants:'John',calendarBtn:true) }}
+					{{> templates-esr-registration-card(headingClass:'h3',price:'$10.00',participants:'Cindy',calendarBtn:true) }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-lg-right">
+				<div class="btn-wrap">
+					<button class="btn btn-primary-outline">View All Reservations</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}

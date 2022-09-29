@@ -1,0 +1,38 @@
+{{> templates-tmhub-header }}
+<main>
+	<div class="bg-gray-12 p-t-3 p-b-1 b-b">
+		<div class="container">
+			<img src="/images/placeholder/tmh-location-selector.svg" alt="" class="pull-xs-left m-r-2 m-b-2">
+			<div class="text-hide-overflow">
+				<p class="m-b-grid">Start by choosing your club location:</p>
+			</div>
+			<select class="c-select m-b-2" style="max-width:24rem;">
+				<option>Select one</option>
+				<optgroup label="Texas">
+					<option selected>Club Location</option>
+				</optgroup>
+			</select>
+		</div>
+	</div>
+	{{> templates-reopen-page-heading(club:"Club Location") }}
+	{{> templates-reopen-status-select(includeDate:true) }}
+	<div class="container p-y-grid">
+		<h2 class="h3 h-static m-b-grid">Category Status</h2>
+		<p class="small m-b-grid p-b-grid b-b">The current status for each available category at this club are listed below. Click any entry to update the status or supporting links, or to access the subcategories under each category.</p>
+		<ul class="list-bulleted">
+			{{> templates-reopen-status-li(title:"Category 1",status:"Open") }}
+			{{> templates-reopen-status-li(title:"Category 2",status:"Open With Limitations") }}
+			{{> templates-reopen-status-li(title:"Category 3",status:"Open, Reservation Required") }}
+			{{> templates-reopen-status-li(title:"Category 4",status:"Coming Soon") }}
+			{{> templates-reopen-status-li(title:"Category 5",status:"Closed") }}
+		</ul>
+		<h3 class="h6 m-b-grid">Not Available at this Location</h3>
+		<ul class="list-bulleted">
+			<li><a href="#">Category 6</a></li>
+			<li><a href="#">Category 7</a></li>
+			<li><a href="#">Category 8</a></li>
+			<li><a href="#">Category 9</a></li>
+		</ul>
+	</div>
+</main>
+{{> templates-tmhub-footer }}

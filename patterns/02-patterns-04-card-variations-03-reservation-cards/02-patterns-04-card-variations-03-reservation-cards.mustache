@@ -1,0 +1,278 @@
+<div class="container m-t-2">
+	<div class="row">
+		<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+			<h2>Reservation Cards</h2>
+			<p>Reservation cards can be created via two different markups. <em>Standard markup</em> is supported via <code>theme-mylt/_card.scss</code>, and represents the way these cards function within the reservation tool. <em>Notecard markup</em> is intended to demonstrate the framework tools built into <code>theme-base/_card-notecard.scss</code> and the addition of color classes via <code>theme-base/_card-suits.scss</code> if you wish to recreate the look of these cards for other use cases.</p>
+			<p>Please note that margins have switched to be entirely margin-bottom based for consistency in the <em>Notecard</em> version. I've used margin-bottom on the headings to equalize this difference in these examples.</p>
+
+			<h5 class="m-t-3">Closed/Unavailable/Reservation</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<div class="card card-facility card-reservation is-unavailable"></div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<div class="card card-notecard card-block bg-gray-12"></div>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Available Card (Call to Reserve)</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="tel:+1-952-380-0303" aria-label="call 9 5 2, 3 8 0, 0 3 0 3" class="card card-facility card-reservation is-available">
+					<p class="card-title">Call to Reserve</p>
+					<p class="card-text"><span class="ico-phone-sm"></span>(952) 380-0303</p>
+				</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="tel:+1-952-380-0303" aria-label="call 9 5 2, 3 8 0, 0 3 0 3" class="card card-notecard text-xs-center p-x-sm p-t-grid p-b-1">
+						<p class="text-truncate small text-gray-4 m-b-0">Call to Reserve</p>
+						<p class="nano m-b-0"><span class="ico-phone-sm"></span>(952) 380-0303</p>
+					</a>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Open Activity Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-open">
+						<p class="card-title">Open Activity</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Open Activity</p>
+					</a>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Multiple Open Activities Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-open">
+						<p class="card-title">Open Activities <span class="count" >(3)</span></p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Open Activities <span class="card-link">(3)</span></p>
+					</a>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Multiple Activities Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-multiple">
+						<p class="card-title">Multiple Activities <span class="count" >(3)</span></p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-green text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Multiple Activities <span class="card-link">(3)</span></p>
+					</a>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Reservable: Unauthenticated (log in to reserve)</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-reservable">
+						<p class="card-title">Reserve</p>
+						<p class="card-time">4:30<span class="time-ampm"> PM</span></p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard text-xs-center p-x-sm p-y-grid">
+						<p class="card-link text-truncate small m-b-0">Reserve</p>
+					</a>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Reservable: Authenticated</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-reservable is-authenticated">
+						<p class="card-title">Reserve</p>
+						<p class="card-time">4:30<span class="time-ampm"> PM</span></p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard text-xs-center p-x-sm p-y-grid">
+						<p class="card-link text-truncate small m-b-0">4:30<span class="time-ampm"> PM</span></p>
+					</a>
+				</div>
+			</div>
+
+			<h5 class="m-t-3">Your Reservation</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<div class="card card-facility card-reservation is-your-reservation">
+						<p class="card-title">Reserved</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<div class="card card-notecard bg-gray-4 b-clr-gray-4 text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small m-b-0 text-white">Reserved</p>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Class Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-class">
+						<p class="card-title">Class</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-blue text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Class</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Class Card with Fee</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-class has-fee">
+						<p class="card-title">Class</p>
+						<span class="card-price"><span class="ico-cost-sm"></span><span class="sr-only">Paid Class</span></span>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-notecard-icon card-suit-blue text-xs-center p-x-sm p-y-grid">
+						<span class="mylt-green ico-cost-sm"></span>
+						<p class="text-truncate small text-gray-4 m-b-0">Class</p>
+						<p class="sr-only">Paid class</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Tournament Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-tournament">
+						<p class="card-title">Tournament</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-yellow text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Tournament</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Camp Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-camp">
+						<p class="card-title">Camp</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-orange text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Camp</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Event Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-event">
+						<p class="card-title">Event</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-purple text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Event</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Private Event Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-private">
+						<p class="card-title">Private Event</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-aqua text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Private Event</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">Assessment Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-assessment">
+						<p class="card-title">Assessment</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-blue text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">Assessment</p>
+					</a>
+				</div>
+			</div>
+			<br>
+
+			<h5 class="m-t-3">League Card</h5>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h6 class="m-y-sm">Standard</h6>
+					<a href="#" class="card card-facility card-reservation is-league">
+						<p class="card-title">League</p>
+					</a>
+				</div>
+				<div class="col-xs-12 col-md-6 p-b-5">
+					<h6 class="m-y-sm">Notecard</h6>
+					<a href="#" class="card card-notecard card-suit-yellow text-xs-center p-x-sm p-y-grid">
+						<p class="text-truncate small text-gray-4 m-b-0">League</p>
+					</a>
+				</div>
+			</div>
+			<br>
+		</div>
+
+	</div>
+</div>

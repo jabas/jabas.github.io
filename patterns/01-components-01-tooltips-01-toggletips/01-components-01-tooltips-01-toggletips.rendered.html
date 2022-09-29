@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<div class="container m-t-2">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h5 class="m-b-2">Toggletip</h5>
+			<p>Multiple toggletips can be in the same block container. You need info <span data-toggletip data-char="i" data-position="top" data-btn-label="get info">A short tip.</span> consectetur adipisicing elit. Placeat reprehenderit, deserunt laborum est suscipit ipsam, sapiente necessitatibus fuga laboriosam rerum, consectetur provident. Something to watch for <span data-toggletip data-char="!" data-position="bottom" data-btn-label="alert">Testing another instance. This tooltip is placed below if possible without cropping.</span> quia eveniet. Vero repellendus quas culpa commodi eum.</p>
+
+			<p>Maybe you need further explanation on this. <span data-toggletip data-char="?" data-position="top" data-btn-label="get an explanation">Here&rsquo;s a longer tooltip to test placement depending on the amount of content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sequi adipisci veritatis, hic non inventore eligendi quidem corrupti? Distinctio, autem, obcaecati? Velit consequatur eum enim iure, voluptate odio, hic perferendis?</span> Toggletips can be placed at any point within the parent content.</p>
+			
+			<p class="toggletip">Toggletips can be placed inside inline elements such as <code>&lt;span&gt;</code>, but then the <code>.toggletip</code> class needs to be added to a parent block-level element for positioning. <span>Span <span data-toggletip data-char="?" data-position="top" data-btn-label="get an explanation">Explanation text can be quite long. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span> here.</span> The JavaScipt will only add the <code>.toggletip</code> class to its parent if it doesn't find it on any of its ancestors.</p>
+
+			<p class="small">Here&rsquo;s a toggletip in a small block of text. <span data-toggletip data-char="i" data-position="bottom" data-btn-label="get info">Another short tip.</span></p>
+		</div>
+	</div>
+</div>
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Toggletips are created by adding <code>data-toggletip</code> to an element. The element will function as normative content in the instance that javascript is turned off. Acceptable elements include <code>span</code>, <code>div</code>, and <code>p</code>.</p>\n<p>Toggletips can be placed inside inline elements such as <code>span</code>, but then the <code>.toggletip</code> class needs to be added to a parent block-level element for positioning. The JavaScript will only add the <code>.toggletip</code> class to its parent if it doesn't find it on any of its ancestors.&lt;/p&gt;</p>\n<p>Toggletips are opened when clicking or tapping on the generated button. Likewise they are closed when clicking or tapping outside of the toggletip. Clicking or tapping the button on a toggletip that is already open will simply refresh it.</p>\n<p>Links and text formatting will not work in the toggletip (links should be avoided anyway because the tooltip itself should not be focusable).</p>\n<h5>Configuration</h5>\n<p>Options should be set on the HTML element itself, including:</p>\n<ul>\n<li><strong>data-toggletip (required)</strong>: without this the content will appear as its normal element state</li>\n<li><strong>data-char</strong>: Can be <code>'i'</code>, <code>'?'</code>, or <code>!'</code>. These cannot be combined. The default is <code>i</code>.</li>\n<li><strong>data-position</strong>: <code>'top'</code> or <code>'bottom'</code></li>\n<li><strong>data-btn-label</strong>: will become the <code>aria-label</code> on the generated button</li>\n</ul>\n<p><strong>Note:</strong> Toggletips leverage edge detection and will adjust accordingly to the viewport. This means that a toggletip position set to <code>top</code> may actually appear on the bottom if the top edge will not be visible off the top edge of the viewport, and vice versa.</p>\n","patternBreadcrumb":{"patternType":"components","patternSubtype":"tooltips"},"patternExtension":"mustache","patternName":"Toggletips","patternPartial":"components-toggletips","patternState":"","patternEngineName":"mustache","extraOutput":{"status":"inreview"}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

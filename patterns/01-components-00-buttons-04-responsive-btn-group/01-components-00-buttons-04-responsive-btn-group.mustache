@@ -1,0 +1,46 @@
+<div class="btn-resp-wrap">
+	{{# respBtnGroup.visible.classes }}
+	<div class="btn-resp btn-resp-widen">
+		<a href="#" class="btn-resp-xs">
+			<span class="ico-calendar"></span>
+			<p>Class Schedules</p>
+		</a>
+	</div>
+	{{/ respBtnGroup.visible.classes }}
+	{{# respBtnGroup.visible.address }}
+	<div class="btn-resp btn-resp-text">
+		<a href="#" class="btn-resp-xs">
+			<span class="ico-map-marker"></span>
+			<p>Directions</p>
+		</a>
+		<div class="btn-resp-md">
+			<span class="ico-map-marker"></span>
+			<p>{{{ club.address }}}</p>
+		</div>
+	</div>
+	{{/ respBtnGroup.visible.address }}
+	{{# respBtnGroup.visible.phone }}
+	<div class="btn-resp btn-resp-text">
+		<a href="tel:+1-952-380-0303" aria-label="call 9 5 2, 3 8 0, 0 3 0 3" class="btn-resp-xs">
+			<span class="ico-phone-sm"></span>
+			<p>Call</p>
+		</a>
+		<div class="btn-resp-md">
+			<span class="ico-phone-sm"></span>
+			<p>{{ club.phone }}</p>
+		</div>
+	</div>
+	{{/ respBtnGroup.visible.phone }}
+	{{# respBtnGroup.visible.hours }}
+	<div class="btn-resp btn-resp-text">
+		<a href="#" class="btn-resp-xs">
+			<span class="ico-clock"></span>
+			<p>Hours</p>
+		</a>
+		<div class="btn-resp-md">
+			<span class="ico-clock"></span>
+			<p><a href="#">All hours for this club</a></p>
+		</div>
+	</div>
+	{{/ respBtnGroup.visible.hours }}
+</div>

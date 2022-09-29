@@ -1,0 +1,138 @@
+<form>
+	<div class="radio">
+		<label for="rad1">
+			<input id="rad1" name="radio" type="radio" checked>
+			Option 1
+		</label>
+	</div>
+	<div class="radio">
+		<label for="rad2">
+			<input id="rad2" name="radio" type="radio">
+			Option 2
+		</label>
+	</div>
+	<div class="radio">
+		<label for="rad3">
+			<input id="rad3" name="radio" type="radio">
+			Option 3 with a longer label that could wrap
+		</label>
+	</div>
+	<div class="radio">
+		<label for="rad4">
+			<input id="rad4" name="radio" type="radio">
+			<strong>Option 4 with a longer label</strong> that wraps that wraps lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo et magnis dis parturient montes, nascetur ridiculus mus.
+		</label>
+	</div>
+	<div class="radio disabled">
+		<label for="rad5">
+			<input id="rad5" name="radioed" type="radio" disabled>
+			Disabled
+		</label>
+	</div>
+	<div class="radio disabled">
+		<label for="rad6">
+			<input id="rad6" name="radioed" type="radio" disabled checked>
+			Checked and Disabled
+		</label>
+	</div>
+	<div class="radio has-danger">
+		<label for="rad7">
+			<input id="rad7" name="radioed" type="radio">
+			Radio with error state
+		</label>
+	</div>
+</form>
+
+<hr>
+
+<form>
+	<label for="inlineRadio1" class="radio-inline">
+		<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+	</label>
+	<label for="inlineRadio2" class="radio-inline">
+		<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+	</label>
+	<label for="inlineRadio3" class="radio-inline">
+		<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+	</label>
+</form>
+
+<hr>
+
+<form>
+	<fieldset class="form-group form-group-spacer">
+		<label for="cRadio1" class="c-input c-radio">
+			<input id="cRadio1" name="radio" type="radio">
+			<span class="c-indicator"></span>
+			Toggle this custom radio
+		</label>
+		<label for="cRadio2" class="c-input c-radio">
+			<input id="cRadio2" name="radio" type="radio">
+			<span class="c-indicator"></span>
+			Or toggle this other custom radio
+		</label>
+	</fieldset>
+	<fieldset class="form-group form-group-spacer">
+		<label for="cRadio3" class="c-input c-radio-sm">
+			<input id="cRadio3" name="radio" type="radio">
+			<span class="c-indicator"></span>
+			Toggle this custom radio
+		</label>
+		<label for="cRadio4" class="c-input c-radio-sm">
+			<input id="cRadio4" name="radio" type="radio">
+			<span class="c-indicator"></span>
+			Or toggle this other custom radio
+		</label>
+	</fieldset>
+</form>
+
+<hr>
+
+<form class="c-inputs-stacked">
+	<fieldset class="form-group form-group-spacer">
+		<label for="radioStacked1" class="c-input c-radio">
+			<input id="radioStacked1" name="radio-stacked" type="radio">
+			<span class="c-indicator"></span>
+			Toggle this custom radio
+		</label>
+		<label for="radioStacked2" class="c-input c-radio">
+			<input id="radioStacked2" name="radio-stacked" type="radio">
+			<span class="c-indicator"></span>
+			Or toggle this other custom radio
+		</label>
+	</fieldset>
+</form>
+
+<hr>
+
+<form>
+	<fieldset class="form-group form-group-spacer">
+		<label for="dRadio1" class="c-input c-radio">
+			<input id="dRadio1" name="radio" type="radio">
+			<span class="c-indicator"></span>
+			This one can be checked
+		</label>
+		<label for="dRadio2" class="c-input c-radio disabled">
+			<input id="dRadio2" name="radio" type="radio" disabled>
+			<span class="c-indicator"></span>
+			But this one is disabled
+		</label>
+	</fieldset>
+</form>
+
+<hr>
+
+<form>
+	<fieldset class="form-group form-group-spacer has-danger">
+		<label for="errRadio1" class="c-input c-radio">
+			<input id="errRadio1" name="radio" type="radio">
+			<span class="c-indicator"></span>
+			Danger/Error Radio
+		</label>
+		<label for="errRadio2" class="c-input c-radio">
+			<input id="errRadio2" name="radio" type="radio" checked>
+			<span class="c-indicator"></span>
+			Danger/Error Radio (Checked)
+		</label>
+	</fieldset>
+</form>

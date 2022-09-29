@@ -1,0 +1,1094 @@
+<main id="maincontent" class="page-main"> <a id="contentarea" tabindex="-1"></a>  <div class="page-title-wrapper"><h1 class="page-title"><span class="base" data-ui-id="page-title-wrapper">Shopping Cart</span></h1></div><div class="page messages"> <div data-placeholder="messages"></div> <div data-bind="scope: 'messages'"><!-- ko if: cookieMessages && cookieMessages.length > 0 --><!-- /ko --><!-- ko if: messages().messages && messages().messages.length > 0 --><!-- /ko --></div></div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="ANBj5OgPrzxdJW6H"> <div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;"><script>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud\/"};</script><!-- ko template: getTemplate() -->
+
+
+<!-- /ko --></div>    <script type="text/javascript">
+    (function e() {
+        var e = document.createElement("script");
+        e.type = "text/javascript", e.async = true, e.src = "//staticw2.yotpo.com/gaIXAPDkGDrRdzE65MvAQo9R641zX3sJFcrBmofV/widget.js ";
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e, t)
+    })();</script>   <div class="cart-container">
+
+<div class="cart-summary" style="top: 0px;"><strong class="summary title">Summary</strong>
+    <div id="block-shipping" class="block shipping" data-collapsible="true" role="tablist">
+        <div class="title" data-role="title" aria-controls="block-summary" role="tab" aria-selected="false" aria-expanded="false" tabindex="0"><strong id="block-shipping-heading" role="heading" aria-level="2">Estimate Shipping and Tax</strong></div><div id="block-summary" data-bind="scope:'block-summary'" class="content" data-role="content" aria-labelledby="block-shipping-heading" role="tabpanel" aria-hidden="true" style="display: none;"><!-- ko template: getTemplate() -->
+<!-- ko foreach: {data: elems, as: 'element'} -->
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<form method="post" id="shipping-zip-form">
+    <fieldset class="fieldset estimate">
+        <legend class="legend">
+            <span data-bind="text: isVirtual ? $t('Estimate Tax') : $t('Estimate Shipping and Tax') ">Estimate Shipping and Tax</span>
+        </legend>
+        <p class="field note" data-bind="text: isVirtual ? $t('Enter your billing address to get a tax estimate.') : $t('Enter your destination to get a shipping estimate.')">Enter your destination to get a shipping estimate.</p>
+        <!-- ko foreach: getRegion('address-fieldsets') -->
+        <!-- ko template: getTemplate() -->
+<!-- ko foreach: {data: elems, as: 'element'} -->
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<div class="field" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.country_id">
+
+    <label class="label" data-bind="attr: { for: element.uid }" for="QPGXT7N">
+        <!-- ko if: element.label -->
+        <span data-bind="i18n: element.label">Country</span>
+        <!-- /ko -->
+    </label>
+
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+        <!-- ko ifnot: element.hasAddons() -->
+            <!-- ko template: element.elementTmpl -->
+<select class="select" data-bind="
+    attr: {
+        name: inputName,
+        id: uid,
+        disabled: disabled,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        placeholder: placeholder
+    },
+    hasFocus: focused,
+    optgroup: options,
+    value: value,
+    optionsCaption: caption,
+    optionsValue: 'value',
+    optionsText: 'label',
+    optionsAfterRender: function(option, item) {
+        if (item &amp;&amp; item.disabled) {
+            ko.applyBindingsToNode(option, {attr: {disabled: true}}, item);
+        }
+    }" name="country_id" id="QPGXT7N" aria-invalid="false"><option value=""> </option><option data-title="United States" value="US">United States</option></select>
+<!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: element.hasAddons() --><!-- /ko -->
+
+        <!-- ko if: element.tooltip --><!-- /ko -->
+
+        <!-- ko if: element.notice --><!-- /ko -->
+
+        <!-- ko if: element.error() --><!-- /ko -->
+
+        <!-- ko if: element.warn() --><!-- /ko -->
+    </div>
+</div>
+<!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<div class="field" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.region_id">
+
+    <label class="label" data-bind="attr: { for: element.uid }" for="T64DB0P">
+        <!-- ko if: element.label -->
+        <span data-bind="i18n: element.label">State/Province</span>
+        <!-- /ko -->
+    </label>
+
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+        <!-- ko ifnot: element.hasAddons() -->
+            <!-- ko template: element.elementTmpl -->
+<select class="select" data-bind="
+    attr: {
+        name: inputName,
+        id: uid,
+        disabled: disabled,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        placeholder: placeholder
+    },
+    hasFocus: focused,
+    optgroup: options,
+    value: value,
+    optionsCaption: caption,
+    optionsValue: 'value',
+    optionsText: 'label',
+    optionsAfterRender: function(option, item) {
+        if (item &amp;&amp; item.disabled) {
+            ko.applyBindingsToNode(option, {attr: {disabled: true}}, item);
+        }
+    }" name="region_id" id="T64DB0P" aria-invalid="false"><option value="">Please select a region, state or province.</option><option data-title="Alabama" value="1">Alabama</option><option data-title="Alaska" value="2">Alaska</option><option data-title="American Samoa" value="3">American Samoa</option><option data-title="Arizona" value="4">Arizona</option><option data-title="Arkansas" value="5">Arkansas</option><option data-title="Armed Forces Africa" value="6">Armed Forces Africa</option><option data-title="Armed Forces Americas" value="7">Armed Forces Americas</option><option data-title="Armed Forces Canada" value="8">Armed Forces Canada</option><option data-title="Armed Forces Europe" value="9">Armed Forces Europe</option><option data-title="Armed Forces Middle East" value="10">Armed Forces Middle East</option><option data-title="Armed Forces Pacific" value="11">Armed Forces Pacific</option><option data-title="California" value="12">California</option><option data-title="Colorado" value="13">Colorado</option><option data-title="Connecticut" value="14">Connecticut</option><option data-title="Delaware" value="15">Delaware</option><option data-title="District of Columbia" value="16">District of Columbia</option><option data-title="Federated States Of Micronesia" value="17">Federated States Of Micronesia</option><option data-title="Florida" value="18">Florida</option><option data-title="Georgia" value="19">Georgia</option><option data-title="Guam" value="20">Guam</option><option data-title="Hawaii" value="21">Hawaii</option><option data-title="Idaho" value="22">Idaho</option><option data-title="Illinois" value="23">Illinois</option><option data-title="Indiana" value="24">Indiana</option><option data-title="Iowa" value="25">Iowa</option><option data-title="Kansas" value="26">Kansas</option><option data-title="Kentucky" value="27">Kentucky</option><option data-title="Louisiana" value="28">Louisiana</option><option data-title="Maine" value="29">Maine</option><option data-title="Marshall Islands" value="30">Marshall Islands</option><option data-title="Maryland" value="31">Maryland</option><option data-title="Massachusetts" value="32">Massachusetts</option><option data-title="Michigan" value="33">Michigan</option><option data-title="Minnesota" value="34">Minnesota</option><option data-title="Mississippi" value="35">Mississippi</option><option data-title="Missouri" value="36">Missouri</option><option data-title="Montana" value="37">Montana</option><option data-title="Nebraska" value="38">Nebraska</option><option data-title="Nevada" value="39">Nevada</option><option data-title="New Hampshire" value="40">New Hampshire</option><option data-title="New Jersey" value="41">New Jersey</option><option data-title="New Mexico" value="42">New Mexico</option><option data-title="New York" value="43">New York</option><option data-title="North Carolina" value="44">North Carolina</option><option data-title="North Dakota" value="45">North Dakota</option><option data-title="Northern Mariana Islands" value="46">Northern Mariana Islands</option><option data-title="Ohio" value="47">Ohio</option><option data-title="Oklahoma" value="48">Oklahoma</option><option data-title="Oregon" value="49">Oregon</option><option data-title="Palau" value="50">Palau</option><option data-title="Pennsylvania" value="51">Pennsylvania</option><option data-title="Puerto Rico" value="52">Puerto Rico</option><option data-title="Rhode Island" value="53">Rhode Island</option><option data-title="South Carolina" value="54">South Carolina</option><option data-title="South Dakota" value="55">South Dakota</option><option data-title="Tennessee" value="56">Tennessee</option><option data-title="Texas" value="57">Texas</option><option data-title="Utah" value="58">Utah</option><option data-title="Vermont" value="59">Vermont</option><option data-title="Virgin Islands" value="60">Virgin Islands</option><option data-title="Virginia" value="61">Virginia</option><option data-title="Washington" value="62">Washington</option><option data-title="West Virginia" value="63">West Virginia</option><option data-title="Wisconsin" value="64">Wisconsin</option><option data-title="Wyoming" value="65">Wyoming</option></select>
+<!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: element.hasAddons() --><!-- /ko -->
+
+        <!-- ko if: element.tooltip --><!-- /ko -->
+
+        <!-- ko if: element.notice --><!-- /ko -->
+
+        <!-- ko if: element.error() --><!-- /ko -->
+
+        <!-- ko if: element.warn() --><!-- /ko -->
+    </div>
+</div>
+<!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<div class="field" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.region" style="display: none;">
+
+    <label class="label" data-bind="attr: { for: element.uid }" for="PWIFTTF">
+        <!-- ko if: element.label -->
+        <span data-bind="i18n: element.label">State/Province</span>
+        <!-- /ko -->
+    </label>
+
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+        <!-- ko ifnot: element.hasAddons() -->
+            <!-- ko template: element.elementTmpl -->
+<input class="input-text" type="text" data-bind="
+    value: value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" name="region" aria-invalid="false" id="PWIFTTF">
+<!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: element.hasAddons() --><!-- /ko -->
+
+        <!-- ko if: element.tooltip --><!-- /ko -->
+
+        <!-- ko if: element.notice --><!-- /ko -->
+
+        <!-- ko if: element.error() --><!-- /ko -->
+
+        <!-- ko if: element.warn() --><!-- /ko -->
+    </div>
+</div>
+<!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<div class="field" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses" name="shippingAddress.postcode">
+
+    <label class="label" data-bind="attr: { for: element.uid }" for="YN5BUBC">
+        <!-- ko if: element.label -->
+        <span data-bind="i18n: element.label">Zip/Postal Code</span>
+        <!-- /ko -->
+    </label>
+
+    <div class="control" data-bind="css: {'_with-tooltip': element.tooltip}">
+        <!-- ko ifnot: element.hasAddons() -->
+            <!-- ko template: element.elementTmpl -->
+<input class="input-text" type="text" data-bind="
+    value: value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    attr: {
+        name: inputName,
+        placeholder: placeholder,
+        'aria-describedby': getDescriptionId(),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" name="postcode" aria-invalid="false" id="YN5BUBC">
+<!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: element.hasAddons() --><!-- /ko -->
+
+        <!-- ko if: element.tooltip --><!-- /ko -->
+
+        <!-- ko if: element.notice --><!-- /ko -->
+
+        <!-- ko if: element.error() --><!-- /ko -->
+
+        <!-- ko if: element.warn() --><!-- /ko -->
+    </div>
+</div>
+<!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+<!-- /ko -->
+        <!--/ko-->
+    </fieldset>
+</form>
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<form id="co-shipping-method-form" data-bind="blockLoader: isLoading, visible: isVisible()" class="">
+    <p class="field note" data-bind="visible: (shippingRates().length <= 0)" style="display: none;">
+        <!-- ko text: $t('Sorry, no quotes are available for this order at this time')-->Sorry, no quotes are available for this order at this time<!-- /ko -->
+    </p>
+    <fieldset class="fieldset rate" data-bind="visible: (shippingRates().length > 0)" style="">
+        <dl class="items methods" data-bind="foreach: shippingRateGroups">
+            <dt class="item-title"><span data-bind="text: $data">United Parcel Service</span></dt>
+            <dd class="item-options" data-bind="foreach: { data:$parent.getRatesForGroup($data), as: 'method' }">
+                <div data-bind="css: {'field item': available, 'message error': !available} " class="field item">
+                    <!-- ko ifnot: (available) --><!-- /ko -->
+                    <!-- ko if: (available) -->
+                    <div class="custom-radio">
+                        <input type="radio" class="radio" data-bind="
+                                click: $parents[1].selectShippingMethod,
+                                checked: $parents[1].selectedShippingMethod,
+                                attr: {
+                                        value: carrier_code + '_' + method_code,
+                                        id: 's_method_' + carrier_code + '_' + method_code
+                                        }
+                                " value="ups_GND" id="s_method_ups_GND" name="ko_unique_3">
+                        <label class="label" data-bind="attr: {for: 's_method_' + carrier_code + '_' + method_code}" for="s_method_ups_GND">
+                            <span><!-- ko text: $data.method_title -->Ground<!-- /ko --></span>
+                            <!-- ko foreach: element.getRegion('price') --><!-- ko template: getTemplate() -->
+<!-- ko if:  isDisplayShippingPriceExclTax -->
+<span class="price"><span class="price" data-bind="text: getFormattedPrice(method.price_excl_tax)">$9.90</span></span>
+<!-- /ko -->
+<!-- ko ifnot: isDisplayShippingPriceExclTax --><!-- /ko -->
+<!-- ko if:  (isDisplayShippingBothPrices && (method.price_excl_tax != method.price_incl_tax))--><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+                        </label>
+                    </div>
+                    <!-- /ko -->
+                </div>
+            
+                <div data-bind="css: {'field item': available, 'message error': !available} " class="field item">
+                    <!-- ko ifnot: (available) --><!-- /ko -->
+                    <!-- ko if: (available) -->
+                    <div class="custom-radio">
+                        <input type="radio" class="radio" data-bind="
+                                click: $parents[1].selectShippingMethod,
+                                checked: $parents[1].selectedShippingMethod,
+                                attr: {
+                                        value: carrier_code + '_' + method_code,
+                                        id: 's_method_' + carrier_code + '_' + method_code
+                                        }
+                                " value="ups_2DA" id="s_method_ups_2DA" name="ko_unique_4">
+                        <label class="label" data-bind="attr: {for: 's_method_' + carrier_code + '_' + method_code}" for="s_method_ups_2DA">
+                            <span><!-- ko text: $data.method_title -->2nd Day Air<!-- /ko --></span>
+                            <!-- ko foreach: element.getRegion('price') --><!-- ko template: getTemplate() -->
+<!-- ko if:  isDisplayShippingPriceExclTax -->
+<span class="price"><span class="price" data-bind="text: getFormattedPrice(method.price_excl_tax)">$24.31</span></span>
+<!-- /ko -->
+<!-- ko ifnot: isDisplayShippingPriceExclTax --><!-- /ko -->
+<!-- ko if:  (isDisplayShippingBothPrices && (method.price_excl_tax != method.price_incl_tax))--><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+                        </label>
+                    </div>
+                    <!-- /ko -->
+                </div>
+            </dd>
+        </dl>
+    </fieldset>
+</form>
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+<!-- /ko --></div></div>  <div id="cart-totals" class="cart-totals" data-bind="scope:'block-totals'"><!-- ko template: getTemplate() -->
+<div class="table-wrapper" data-bind="blockLoader: isLoading">
+    <table class="data table totals">
+        <caption class="table-caption" data-bind="text: $t('Total')">Total</caption>
+        <tbody>
+        <!-- ko foreach: elems() -->
+            <!-- ko template: getTemplate() -->
+<!-- ko if: isBothPricesDisplayed() --><!-- /ko -->
+<!-- ko if: !isBothPricesDisplayed() && isIncludingTaxDisplayed() --><!-- /ko -->
+<!-- ko if: !isBothPricesDisplayed() && !isIncludingTaxDisplayed() -->
+<tr class="totals sub">
+    <th data-bind="i18n: title" class="mark" scope="row">Subtotal</th>
+    <td class="amount">
+        <span class="price" data-bind="text: getValue(), attr: {'data-th': title}" data-th="Subtotal">$39.99</span>
+    </td>
+</tr>
+<!-- /ko -->
+<!-- /ko -->
+        
+            <!-- ko template: getTemplate() -->
+<!-- ko if: isCalculated() && quoteIsVirtual == 0 --><!-- /ko -->
+<!-- /ko -->
+        
+            <!-- ko template: getTemplate() -->
+<!-- ko foreach: {data: elems, as: 'element'} -->
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko if: isDisplayed() -->
+<tr class="totals">
+    <th colspan="1" style="" class="mark" scope="row">
+        <span class="title" data-bind="text: getTitle()">Discount (10% off Daily Essentials)</span>
+        <span class="discount coupon" data-bind="text: getCouponLabel()"></span>
+    </th>
+    <td class="amount" data-bind="attr: {'data-th': title}" data-th="Discount">
+        <span><span class="price" data-bind="text: getValue()">-$4.00</span></span>
+    </td>
+</tr>
+<!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko if: isAvailable() --><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko if: isAvailable() --><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko if: isAvailable() --><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko if: isAvailable() --><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko if: isAvailable() --><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+<!-- /ko -->
+        
+            <!-- ko template: getTemplate() -->
+
+<!-- ko if: ifShowValue() && !ifShowDetails() -->
+<tr class="totals-tax">
+    <th data-bind="text: title" class="mark" colspan="1" scope="row">Tax</th>
+    <td data-bind="attr: {'data-th': title}" class="amount" data-th="Tax">
+        <span class="price" data-bind="text: getValue()">$0.00</span>
+    </td>
+</tr>
+<!-- /ko -->
+<!-- ko if: ifShowValue() && ifShowDetails() --><!-- /ko -->
+<!-- /ko -->
+        
+            <!-- ko template: getTemplate() -->
+<!-- ko if: isTaxDisplayedInGrandTotal && isDisplayed() --><!-- /ko -->
+<!-- ko if: !isTaxDisplayedInGrandTotal && isDisplayed() -->
+<tr class="grand totals">
+    <th class="mark" scope="row">
+        <strong data-bind="i18n: title">Order Total</strong>
+    </th>
+    <td data-bind="attr: {'data-th': title}" class="amount" data-th="Order Total">
+        <strong><span class="price" data-bind="text: getValue()">$35.99</span></strong>
+    </td>
+</tr>
+<!-- /ko -->
+<!-- /ko -->
+        <!-- /ko -->
+        </tbody>
+    </table>
+</div>
+<!-- /ko --></div>    <ul class="checkout methods items checkout-methods-items">  <li class="item">  <button type="button" data-role="proceed-to-checkout" title="Proceed to Checkout" class="action primary checkout"><span>Proceed to Checkout</span></button> </li>        <li class="item">  </li>  </ul></div>   <form action="https://integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud/checkout/cart/updatePost/" method="post" id="form-validate" class="form form-cart"><input name="form_key" type="hidden" value="ANBj5OgPrzxdJW6H">
+
+<div class="cart table-wrapper">
+    <ul id="shopping-cart-table" class="cart items data">
+        <li class="cart item">
+            <div class="item-info">
+                <a href="#0" title="Men's Daily Multivitamin AM/PM (Demo)" tabindex="-1" class="product-image">
+                    <span class="product-image-container">
+                        <img src="https://placehold.it/400x400/2a2a4e/AAA.jpg?text=Product+Image" alt="">
+                    </span>
+                </a>
+                <div class="product">
+                    <div class="product-info">
+                        <div class="product-item-name">
+                            <a href="#0">PULSE PRO Leg Rehab and Recovery System - Short</a>
+                        </div>
+                        <dl class="item-options"> 
+                            <dt>Size</dt><dd> Short - 5’4” and under </dd>
+                        </dl>
+                    </div>
+                    <div class="qty-controls">
+                        <div class="fieldset qty">
+                            <div class="field qty">
+                                <label class="label" for="cart-744-qty">
+                                    <span>Qty</span>
+                                </label>
+                                <div class="control qty">
+                                    <select id="cart-744-qty" name="cart[744][qty]" class="qty">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-toolbar">
+                            <a href="#0" title="Remove item" class="action action-delete">
+                                <span>Remove</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-info">
+                    <div class="price-subtotal price">
+                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                            <span class="cart-price">
+                                <span class="price">$2,995.00</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="price-login">
+                        <a href="#0">Log In</a> for Member Price
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="cart item">
+            <div class="item-info">
+                <a href="#0" title="Men's Daily Multivitamin AM/PM (Demo)" tabindex="-1" class="product-image">
+                    <span class="product-image-container">
+                        <img src="https://placehold.it/400x400/2a2a4e/AAA.jpg?text=Product+Image" alt="">
+                    </span>
+                </a>
+                <div class="product">
+                    <div class="product-info">
+                        <div class="product-item-name">
+                            <a href="#0">Men’s Daily Multivitamin AM/PM</a>
+                        </div>
+                        <div class="product-delivery">
+                            <div class="custom-radio">
+                                <input id="rOnce" name="autoship" type="radio" class="radio" />
+                                <label for="rOnce">One-time purchase</label>
+                            </div>
+                            <div class="custom-radio">
+                                <input id="rAuto" name="autoship" type="radio" class="radio" checked/>
+                                <label for="rAuto">Autoship - 10% discount</label>
+                                <div class="field-tooltip toggle">
+                                    <span class="field-tooltip-action action-help" tabindex="0" role="button"></span>
+                                    <div class="field-tooltip-content">We'll send your order confirmation here.</div>
+                                </div>
+                            </div>
+                            <div class="fieldset freq">
+                                <div class="field">
+                                    <label class="label" for="cart-744-freq">
+                                        <span>Deliver</span>
+                                    </label>
+                                    <div class="control">
+                                        <select id="cart-744-freq" name="cart[744][freq]">
+                                            <option value="1">Every month</option>
+                                            <option value="2">Every 2 months</option>
+                                            <option value="2">Every 3 months</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qty-controls">
+                        <div class="fieldset qty">
+                            <div class="field qty">
+                                <label class="label" for="cart-744-qty">
+                                    <span>Qty</span>
+                                </label>
+                                <div class="control qty">
+                                    <select id="cart-744-qty" name="cart[744][qty]" class="qty">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-toolbar">
+                            <a href="#0" title="Remove item" class="action action-delete">
+                                <span>Remove</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-info">
+                    <div class="price-subtotal price">
+                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                            <span class="cart-price">
+                                <span class="price">$36.00</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="price-breakdown">
+                        <div class="price-nonmember">Non-Member Price $39.99 </div>
+                        <div class="price-discount">Autoship 10% Discount -$3.99</div>
+                    </div>
+                    <div class="price-login">
+                        <a href="#0">Log In</a> for Member Price
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="cart item">
+            <div class="item-info">
+                <a href="#0" title="Men's Daily Multivitamin AM/PM (Demo)" tabindex="-1" class="product-image">
+                    <span class="product-image-container">
+                        <img src="https://placehold.it/400x400/2a2a4e/AAA.jpg?text=Product+Image" alt="">
+                    </span>
+                </a>
+                <div class="product">
+                    <div class="product-info">
+                        <div class="product-item-name">
+                            <a href="#0">PULSE PRO Leg Rehab and Recovery System - Short</a>
+                        </div>
+                        <dl class="item-options"> 
+                            <dt>Size</dt><dd> Short - 5’4” and under </dd>
+                        </dl>
+                    </div>
+                    <div class="qty-controls">
+                        <div class="fieldset qty">
+                            <div class="field qty">
+                                <label class="label" for="cart-744-qty">
+                                    <span>Qty</span>
+                                </label>
+                                <div class="control qty">
+                                    <select id="cart-744-qty" name="cart[744][qty]" class="qty">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="actions-toolbar">
+                            <a href="#0" title="Remove item" class="action action-delete">
+                                <span>Remove</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-info">
+                    <div class="price-subtotal price">
+                        Non-Member Price
+                        <span class="price-excluding-tax" data-label="Excl. Tax">
+                            <span class="cart-price">
+                                <span class="price">$2,995.00</span>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="price-login">
+                        <a href="#0">Log In</a> for Member Price
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="cart main actions">
+    <a class="action continue button button-link" href="#0" title="Continue Shopping"><span>Continue Shopping</span></a> 
+    <button type="submit" name="update_cart_action" value="update_qty" title="Update Shopping Cart" class="action update button button-primary-outline"><span>Update Shopping Cart</span></button>
+</div>
+
+
+
+
+</form> <div id="gift-options-cart" data-bind="scope:'giftOptionsCart'"><!-- ko template: getTemplate() -->
+<!-- ko if: isActive() || hasActiveOptions() --><!-- /ko -->
+<!-- /ko --><script>
+        window.giftOptionsConfig = {"giftMessage":{"itemLevel":{"744":[]}},"isItemLevelGiftOptionsEnabled":false,"priceFormat":{"pattern":"$%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"storeCode":"default","isCustomerLoggedIn":true,"formKey":"ANBj5OgPrzxdJW6H","baseUrl":"https:\/\/integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud\/","giftWrapping":{"canDisplayGiftWrapping":true,"designCollectionCount":0,"allowForOrder":false,"allowForItems":false,"giftWrappingAvailable":true,"spacerSrc":"https:\/\/integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud\/static\/version1548237714\/frontend\/Lifetime\/default\/en_US\/images\/spacer.gif","displayWrappingBothPrices":false,"displayCardBothPrices":false,"displayGiftWrappingInclTaxPrice":false,"displayCardInclTaxPrice":false,"designsInfo":[],"itemsInfo":{"744":{"is_available":false}},"isAllowPrintedCard":false,"isAllowGiftReceipt":false,"cardInfo":[],"appliedWrapping":[],"appliedPrintedCard":null,"appliedGiftReceipt":null},"quoteId":null};</script></div> </div>  <div class="product-details-container">  </div> </div></div></main>
+
+
+<div class="container">
+    <h2>Code Breakdown</h2>
+    <h4>HTML</h4>
+    <p>To accomodate the styles, this markup is switched from being a <code>table</code> element, with repeated <code>tbody</code>s to a <code>ul</code> element with repeated <code>li</code>s. I tried to maintain naming as much as possible, but many elements had to move to account for layout changes.</p>
+    <pre><code class="language-html" style="box-shadow:none;">
+&lt;div class="cart table-wrapper">
+    &lt;ul id="shopping-cart-table" class="cart items data">
+        &lt;li class="cart item">
+            &lt;div class="item-info">
+                &lt;a href="#0" title="Men's Daily Multivitamin AM/PM (Demo)" tabindex="-1" class="product-image">
+                    &lt;span class="product-image-container">
+                        &lt;img src="https://placehold.it/400x400/2a2a4e/AAA.jpg?text=Product+Image" alt="">
+                    &lt;/span>
+                &lt;/a>
+                &lt;div class="product">
+                    &lt;div class="product-info">
+                        &lt;div class="product-item-name">
+                            &lt;a href="#0">PULSE PRO Leg Rehab and Recovery System - Short&lt;/a>
+                        &lt;/div>
+                        &lt;dl class="item-options"> 
+                            &lt;dt>Size&lt;/dt>&lt;dd> Short - 5’4” and under &lt;/dd>
+                        &lt;/dl>
+                    &lt;/div>
+                    &lt;div class="qty-controls">
+                        &lt;div class="fieldset qty">
+                            &lt;div class="field qty">
+                                &lt;label class="label" for="cart-744-qty">
+                                    &lt;span>Qty&lt;/span>
+                                &lt;/label>
+                                &lt;div class="control qty">
+                                    &lt;select id="cart-744-qty" name="cart[744][qty]" class="qty">
+                                        &lt;option value="1">1&lt;/option>
+                                        &lt;option value="2">2&lt;/option>
+                                        &lt;option value="3">3&lt;/option>
+                                        &lt;option value="4">4&lt;/option>
+                                        &lt;option value="5">5&lt;/option>
+                                        &lt;option value="6">6&lt;/option>
+                                        &lt;option value="7">7&lt;/option>
+                                        &lt;option value="8">8&lt;/option>
+                                        &lt;option value="9">9&lt;/option>
+                                        &lt;option value="10">10&lt;/option>
+                                    &lt;/select>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="actions-toolbar">
+                            &lt;a href="#0" title="Remove item" class="action action-delete">
+                                &lt;span>Remove&lt;/span>
+                            &lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="price-info">
+                    &lt;div class="price-subtotal price">
+                        &lt;span class="price-excluding-tax" data-label="Excl. Tax">
+                            &lt;span class="cart-price">
+                                &lt;span class="price">$2,995.00&lt;/span>
+                            &lt;/span>
+                        &lt;/span>
+                    &lt;/div>
+                    &lt;div class="price-login">
+                        &lt;a href="#0">Log In&lt;/a> for Member Price
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/li>
+        &lt;li class="cart item">
+            &lt;div class="item-info">
+                &lt;a href="#0" title="Men's Daily Multivitamin AM/PM (Demo)" tabindex="-1" class="product-image">
+                    &lt;span class="product-image-container">
+                        &lt;img src="https://placehold.it/400x400/2a2a4e/AAA.jpg?text=Product+Image" alt="">
+                    &lt;/span>
+                &lt;/a>
+                &lt;div class="product">
+                    &lt;div class="product-info">
+                        &lt;div class="product-item-name">
+                            &lt;a href="#0">Men’s Daily Multivitamin AM/PM&lt;/a>
+                        &lt;/div>
+                        &lt;div class="product-delivery">
+                            &lt;div class="custom-radio">
+                                &lt;input id="rOnce" name="autoship" type="radio" class="radio" />
+                                &lt;label for="rOnce">One-time purchase&lt;/label>
+                            &lt;/div>
+                            &lt;div class="custom-radio">
+                                &lt;input id="rAuto" name="autoship" type="radio" class="radio" checked/>
+                                &lt;label for="rAuto">Autoship - 10% discount&lt;/label>
+                                &lt;div class="field-tooltip toggle">
+                                    &lt;span class="field-tooltip-action action-help" tabindex="0" role="button">&lt;/span>
+                                    &lt;div class="field-tooltip-content">We'll send your order confirmation here.&lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="fieldset freq">
+                                &lt;div class="field">
+                                    &lt;label class="label" for="cart-744-freq">
+                                        &lt;span>Deliver&lt;/span>
+                                    &lt;/label>
+                                    &lt;div class="control">
+                                        &lt;select id="cart-744-freq" name="cart[744][freq]">
+                                            &lt;option value="1">Every month&lt;/option>
+                                            &lt;option value="2">Every 2 months&lt;/option>
+                                            &lt;option value="2">Every 3 months&lt;/option>
+                                        &lt;/select>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="qty-controls">
+                        &lt;div class="fieldset qty">
+                            &lt;div class="field qty">
+                                &lt;label class="label" for="cart-744-qty">
+                                    &lt;span>Qty&lt;/span>
+                                &lt;/label>
+                                &lt;div class="control qty">
+                                    &lt;select id="cart-744-qty" name="cart[744][qty]" class="qty">
+                                        &lt;option value="1">1&lt;/option>
+                                        &lt;option value="2">2&lt;/option>
+                                        &lt;option value="3">3&lt;/option>
+                                        &lt;option value="4">4&lt;/option>
+                                        &lt;option value="5">5&lt;/option>
+                                        &lt;option value="6">6&lt;/option>
+                                        &lt;option value="7">7&lt;/option>
+                                        &lt;option value="8">8&lt;/option>
+                                        &lt;option value="9">9&lt;/option>
+                                        &lt;option value="10">10&lt;/option>
+                                    &lt;/select>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="actions-toolbar">
+                            &lt;a href="#0" title="Remove item" class="action action-delete">
+                                &lt;span>Remove&lt;/span>
+                            &lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="price-info">
+                    &lt;div class="price-subtotal price">
+                        &lt;span class="price-excluding-tax" data-label="Excl. Tax">
+                            &lt;span class="cart-price">
+                                &lt;span class="price">$36.00&lt;/span>
+                            &lt;/span>
+                        &lt;/span>
+                    &lt;/div>
+                    &lt;div class="price-breakdown">
+                        &lt;div class="price-nonmember">Non-Member Price $39.99 &lt;/div>
+                        &lt;div class="price-discount">Autoship 10% Discount -$3.99&lt;/div>
+                    &lt;/div>
+                    &lt;div class="price-login">
+                        &lt;a href="#0">Log In&lt;/a> for Member Price
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/li>
+        &lt;li class="cart item">
+            &lt;div class="item-info">
+                &lt;a href="#0" title="Men's Daily Multivitamin AM/PM (Demo)" tabindex="-1" class="product-image">
+                    &lt;span class="product-image-container">
+                        &lt;img src="https://placehold.it/400x400/2a2a4e/AAA.jpg?text=Product+Image" alt="">
+                    &lt;/span>
+                &lt;/a>
+                &lt;div class="product">
+                    &lt;div class="product-info">
+                        &lt;div class="product-item-name">
+                            &lt;a href="#0">PULSE PRO Leg Rehab and Recovery System - Short&lt;/a>
+                        &lt;/div>
+                        &lt;dl class="item-options"> 
+                            &lt;dt>Size&lt;/dt>&lt;dd> Short - 5’4” and under &lt;/dd>
+                        &lt;/dl>
+                    &lt;/div>
+                    &lt;div class="qty-controls">
+                        &lt;div class="fieldset qty">
+                            &lt;div class="field qty">
+                                &lt;label class="label" for="cart-744-qty">
+                                    &lt;span>Qty&lt;/span>
+                                &lt;/label>
+                                &lt;div class="control qty">
+                                    &lt;select id="cart-744-qty" name="cart[744][qty]" class="qty">
+                                        &lt;option value="1">1&lt;/option>
+                                        &lt;option value="2">2&lt;/option>
+                                        &lt;option value="3">3&lt;/option>
+                                        &lt;option value="4">4&lt;/option>
+                                        &lt;option value="5">5&lt;/option>
+                                        &lt;option value="6">6&lt;/option>
+                                        &lt;option value="7">7&lt;/option>
+                                        &lt;option value="8">8&lt;/option>
+                                        &lt;option value="9">9&lt;/option>
+                                        &lt;option value="10">10&lt;/option>
+                                    &lt;/select>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="actions-toolbar">
+                            &lt;a href="#0" title="Remove item" class="action action-delete">
+                                &lt;span>Remove&lt;/span>
+                            &lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="price-info">
+                    &lt;div class="price-subtotal price">
+                        Non-Member Price
+                        &lt;span class="price-excluding-tax" data-label="Excl. Tax">
+                            &lt;span class="cart-price">
+                                &lt;span class="price">$2,995.00&lt;/span>
+                            &lt;/span>
+                        &lt;/span>
+                    &lt;/div>
+                    &lt;div class="price-login">
+                        &lt;a href="#0">Log In&lt;/a> for Member Price
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
+    </code></pre>
+
+    <h4>CSS</h4>
+    <p><strong>Important to note:</strong> this SCSS is written as an override to what exists currently in the styles. When adapting this, some of this will mean you need to delete existing LESS code instead of adding to it. The finished output should match what appears here, however. This now uses flexbox css for layout.</p>
+    <p>Also, not being familar with their codebase, I opted to keep the level of selector depth present in the existing LESS, which has longer selectors than I'd prefer.</p>
+    <pre><code class="language-scss" style="box-shadow:none;">
+//  Products table
+.cart.table-wrapper {
+    .items {
+        > .item {
+            width: 100%;
+            padding: 24px 0;
+            font-size: 14px;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            .item-info {
+                display: flex;
+                align-items: baseline;
+            }
+
+            .product-image {
+                display: initial;
+            }
+
+            .product-image {
+                align-self: flex-start;
+            }
+
+            .product-image-container,
+            .product {
+                margin-right: 24px;
+            }
+
+            .product {
+                flex: 4 0 0;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: baseline;
+            }
+
+            .price-info {
+                flex: 3 0 0;
+                text-align: right;
+            }
+
+            .product-info {
+                flex: 1 0 0;
+            }
+
+            .product-item-name {
+                height: auto;
+                font-weight: normal;
+                display: block;
+                hyphens: manual;
+                line-height: normal;
+            }
+
+            .item-options,
+            .product-delivery {
+                margin-top: 12px;
+                margin-bottom: 0;
+            }
+
+            .item-options dt,
+            .item-options dd {
+                font-size: 14px;
+            }
+
+            .custom-radio {
+                display: block;
+                margin: 0;
+                padding-left: 24px;
+
+                + .custom-radio {
+                    margin-top: 4px;
+                }
+
+                label {
+                    font-size: 14px;
+                    margin-left: -24px;
+
+                    &::before {
+                        top: 5px;
+                    }
+
+                    &::after {
+                        top: 10px;
+                    }
+                }
+            }
+
+            .fieldset .field {
+                margin-bottom: 0;
+
+                label {
+                    margin-bottom: 4px;
+                }
+                
+                select {
+                    width: auto;
+                }
+            }
+
+            .fieldset.freq {
+                padding: 12px 0 0 30px;
+            }
+
+            .field-tooltip.toggle {
+                position: static;
+                display: inline-block;
+                vertical-align: text-top;
+                height: 20px;
+            }
+
+            .field-tooltip-action {
+                font-size: 20px;
+            }
+
+            .field-tooltip-action.action-help::before {
+                font-family: 'mylt-icons' !important;
+                content: '\e604';
+            }
+
+            .qty-controls {
+                margin-left: 24px;
+
+                .actions-toolbar {
+                    min-height: 0;
+                    margin-top: 8px;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+
+                    .action {
+                        margin-bottom: 0;
+
+                        &.action-delete {
+                            position: static;
+
+                            &::after {
+                                display: none;
+                            }
+
+                            span {
+                                position: static;
+                                width: auto;
+                                height: auto;
+                                margin: 0;
+                                clip: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .price-subtotal {
+                line-height: normal;
+                margin-bottom: 4px;
+            }
+
+            .price-including-tax, .price-excluding-tax {
+                font-size: 16px;
+                display: inline;
+                line-height: normal;
+            }
+
+            .price-discount {
+                font-style: italic;
+            }
+
+            .price-login {
+                margin-top: 4px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .cart.table-wrapper {
+        .items {
+            > .item {
+                .product-image-container {
+                    width: 64px;
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .cart.table-wrapper {
+        .items {
+            > .item {
+                .item-info {
+                    flex-wrap: wrap;
+                }
+                
+                .product {
+                    margin-right: 0;
+                }
+
+                .price-info {
+                    margin-top: 24px;
+                    flex: 1 0 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cart.table-wrapper {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cart.table-wrapper {
+        .items {
+            > .item {
+                .product {
+                    flex-wrap: wrap;
+                }
+
+                .product-info {
+                    flex: 1 0 100%;
+                }
+
+                .qty-controls {
+                    margin: 12px 0 0;
+                    width: 100%;
+
+                    .fieldset,
+                    .actions-toolbar {
+                        display: inline-block;
+                    }
+
+                    .fieldset {
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+    </code></pre>
+</div>
+
+<footer class="page-footer"><div class="footer content"><div class="footer__links"><div class="footer__content clearfix">
+<div class="footer__right">
+<ul class="reset-list list-inline footer__social">
+<li><a title="Facebook" href="http://www.facebook.com/lifetimefitness" target="_blank"> <span class="mylt-icon-facebook icon-social-link"></span><span class="sr-only">Facebook</span> </a></li>
+<li><a title="Instagram" href="http://instagram.com/lifetime.life" target="_blank"> <span class="mylt-icon-instagram icon-social-link"></span><span class="sr-only">Instagram</span> </a></li>
+<li><a title="YouTube" href="http://www.youtube.com/mylifetimefitness" target="_blank"> <span class="mylt-icon-youtube icon-social-link"></span><span class="sr-only">YouTube</span> </a></li>
+<li><a title="Twitter" href="http://www.twitter.com/lifetimefitness" target="_blank"> <span class="mylt-icon-twitter icon-social-link"></span><span class="sr-only">Twitter</span> </a></li>
+</ul>
+</div>
+<div class="footer__left">
+<ul class="footer__navigation reset-list list-inline">
+<li><a href="https://integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud/#/">Life Time Member Site</a></li>
+<li><a href="https://integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud/#/">Our Promise</a></li>
+<li><a href="https://integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud/contact">Contact Us</a></li>
+<li><a href="https://integration-5ojmyuq-jrpjbczhk7hgg.us-3.magentosite.cloud/help-and-faqs/">Terms of Service</a></li>
+</ul>
+<ul class="reset-list footer__legal list-inline">
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">CA Privacy Rights</a></li>
+<li><a href="#">Accessibility</a></li>
+</ul>
+</div>
+</div></div>  <div class="footer__copyright"><p>Copyright © 2013-present Magento, Inc. All rights reserved.</p></div></div></footer>       </div>

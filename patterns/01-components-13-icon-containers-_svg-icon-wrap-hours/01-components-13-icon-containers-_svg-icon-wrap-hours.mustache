@@ -1,0 +1,22 @@
+<div class="svg-icon-wrap">
+	<span class="svg-icon">
+		<svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 28 28">
+			<path fill="none" stroke="currentColor" stroke-miterlimit="10" d="M27,14c0,7.2-5.8,13-13,13S1,21.2,1,14S6.8,1,14,1S27,6.8,27,14z M13.5,6v8.5H20"/>
+		</svg>
+	</span>
+{{# useLink }}
+	<p class="small"><a href="#">View All Hours</a></p>
+{{/ useLink }}
+{{^ useLink }}
+	<p class="small m-b-0">Mon <span class="time-to">to</span> Thurs 
+		<time class="time-start">8:00 <span class="time-ampm">AM</span></time>
+		<span class="time-to">to</span>
+		<time class="time-end">8:00 <span class="time-ampm">PM</span></time>
+	</p>
+	<p class="small">Fri 
+		<time class="time-start">8:00 <span class="time-ampm">AM</span></time>
+		<span class="time-to">to</span>
+		<time class="time-end">6:00 <span class="time-ampm">PM</span></time>
+	</p>
+{{/ useLink }}
+</div>

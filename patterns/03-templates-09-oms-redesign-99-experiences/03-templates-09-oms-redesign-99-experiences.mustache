@@ -1,0 +1,95 @@
+{{> patterns-header-prospect(removeJoinLink:true) }}
+<main class="page-content main-mylt bg-gray-12 omsc-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div id="omscSummary" class="omsc-summary">
+					{{> templates-membership-summary }}
+				</div>
+				<div class="content-section text-xs-center">
+					<h1 class="h2 m-b-1">Make the most out of your memberships!</h1>
+					<p>Choose one of these optional exclusive experience packages.</p>
+				</div>
+				<div id="omscExpPackages" class="omsc-exp-packages">
+					<div class="row">
+						<div class="col-xs-12 p-x-sm">
+							{{#hasRecommended}}
+							<ul class="list-unstyled card-deck m-b-0 p-t-2">
+							{{/hasRecommended}}
+							{{^hasRecommended}}
+							<ul class="list-unstyled m-b-0 card-deck">
+							{{/hasRecommended}}
+
+								{{#experienceOptions}}
+								<li class="card card-product b-rounded-lg box-shadow m-x-sm m-b-grid">
+									{{#isRecommended}}
+									<div class="badge badge-secondary badge-card">Recommended For You</div>
+									{{/isRecommended}}
+									<div class="card-col">
+										<div class="card-block">
+											<p class="h2 h-static m-b-xs">{{name}}</p>
+											<p class="small m-y-xs">For Adults</p>
+											<p class="m-b-0"><a href="#{{id}}Modal" role="button" data-anchor-button="true" data-toggle="modal">View More Details</a></p>
+											{{!-- modal --}}
+											<div class="modal fade" id="{{id}}Modal" tabindex="-1" role="dialog" aria-labelledby="{{id}}Label" aria-hidden="true">
+												<div class="modal-dialog" role="document">
+													<div class="modal-content b-rounded-lg">
+														<div class="modal-header p-b-0">
+															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true" class="ico-close"></span>
+															</button>
+														</div>
+														<div class="modal-body small-responsive">
+															<h2 id="{{id}}Label" class="h-static m-b-sm">{{name}} Package</h2>
+															<p class="h4 h-static m-b-2">For Adults</p>
+															<h3 class="h5">In euismod arcu nec vulputate consectetur</h3>
+															<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet tellus non libero mattis, sed porttitor est semper. Cras non imperdiet lorem, quis suscipit nisi. Suspendisse lectus quam, consectetur non dapibus eget, tincidunt ut metus. Praesent a iaculis nunc. Cras id quam nec purus molestie pellentesque quis sit amet lacus.</p>
+															<h3 class="h5">Duis finibus elit non volutpat ultricies</h3>
+															<p>Donec sed mollis est. Curabitur at felis ut velit vestibulum tincidunt quis sit amet lorem. Morbi arcu nulla, ultrices eu maximus ut, aliquet et mauris. Sed at euismod nisi. Fusce faucibus ante sed condimentum malesuada. Fusce vel facilisis massa. Mauris tempus ligula leo, quis tristique est pharetra et. Integer ac iaculis felis. Morbi in volutpat arcu, a lobortis diam.</p>
+															<h3 class="h5">Maecenas et lectus tincidunt, dignissim dolor a, malesuada justo</h3>
+															<p>Aliquam erat volutpat. Nam auctor aliquet magna. Duis at velit justo. Suspendisse potenti. Aenean in commodo mi, sed pharetra felis. Duis vitae mauris tempor, facilisis velit non, mattis nisl. Morbi efficitur urna vitae rhoncus facilisis. Nunc a velit et libero condimentum sagittis eu at enim. In hac habitasse platea dictumst.</p>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-link p-r-0" data-dismiss="modal">Close</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											{{!-- END modal --}}
+										</div>
+										<div class="card-footer">
+											<div class="card-text">
+												<div class="display-number display-number-sm text-gray-3">
+													<span class="sr-only">$ {{price}}</span>
+													<div aria-hidden="true">
+														<span class="display-number-sup">$</span><span class="display-number-value">{{price}}</span><span class="display-number-sup">.00</span>
+													</div>
+												</div>
+												<div class="small font-weight-light">(${{value}} value)</div>
+											</div>
+											<div class="btn-wrap m-b-0">
+												<a href="{{ link.templates-full-summary }}" class="btn btn-primary" aria-label="Select {{name}} Package">Select Package</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								{{/experienceOptions}}
+							</ul>
+						</div>
+					</div>
+					<div class="omsc-nav">
+						<div class="btn-wrap text-xs-right">
+							<a href="{{ link.templates-full-summary }}" class="btn">Skip <span class="omsc-hidden-xxs">This</span> Step</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-section small p-t-0 link-underlined">
+					<p>* Not valid at all locations. Other exclusions apply.</p>
+					<p>* Membership dues, levels, fees, benefits, services and amenities vary by club and are subject to change at any time. Other terms and conditions apply. Swim lessons only applicable with junior on membership and at <a href="#0">participating clubs.</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}
+{{> templates-moxie-example }}

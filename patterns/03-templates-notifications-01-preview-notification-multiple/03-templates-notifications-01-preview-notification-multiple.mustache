@@ -1,0 +1,119 @@
+{{> templates-bios-admin-header }}
+<main>
+	<div class="content-section-xs container">
+		<ol class="list-ordered centered mylt-gray-4 m-b-0">
+			<li>Create Notification <a href="#0" class="small">Edit <span class="sr-only">Notification</span></a></li>
+		</ol>
+	</div>
+	<div class="container">
+		<hr class="b-thick b-clr-gray-4 m-t-0">
+		<h1 class="h-scaled text-xs-center p-t-1"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">2</span>Review & Submit</h1>
+	</div>
+	<div class="container content-section b-y">
+		<p>You are previewing
+			{{#isMultiple}}
+				a <span class="font-weight-bold">Select Locations</span>
+			{{/isMultiple}}
+			{{#isAll}}
+				an <span class="font-weight-bold">All Locations</span>
+			{{/isAll}}
+			{{^isMultiple}}
+				{{^isAll}}
+					a <span class="font-weight-bold">Full Club Closure</span>
+				{{/isAll}}
+			{{/isMultiple}}
+		notification.</p>
+		<p>Please review your notification content and key details prior to publishing. <strong>Your notification has not yet been delivered.</strong></p>
+	</div>
+	<div class="alert alert-icon alert-danger alert-notification alert-dismissible m-b-0">
+		<div class="container">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close" disabled>
+				<span aria-hidden="true">×</span>
+			</button>
+			<p class="font-weight-bold">Sample Title</p>
+			<p>This is a notification about something going terribly wrong. You should probably check into it.</p>
+			<p class="micro">{{clubText}} – A few seconds ago</p>
+		</div>
+	</div>
+	<div class="container content-section m-b-2">
+		<div class="card card-index">
+			<span class="ico-club"></span>
+			<div class="card-header">
+				<h5 class="card-title">Member Website & Mobile App</h5>
+			</div>
+			<div class="card-block">
+				<ul class="list-bulleted">
+					<li>Display on webpages and in-app for <span class="font-weight-bold">
+						{{#isMultiple}}
+							<a href="#locationsModal" data-toggle="modal">8 Locations</a>
+						{{/isMultiple}}
+						{{#isAll}}
+							All Locations
+						{{/isAll}}
+						{{^isMultiple}}
+							{{^isAll}}
+								{{clubText}}
+							{{/isAll}}
+						{{/isMultiple}}
+						</span> begins on <span class="font-weight-bold">Saturday, November 30, 2019 at 12:30am</span></li>
+					<li>Display ends on <span class="font-weight-bold">Wednesday, December 25, 2019 at 10:00pm</span></li>
+				</ul>
+			</div>
+		</div>
+		{{^isMultiple}}
+			{{^isAll}}
+				<div class="card card-index">
+					<span class="ico-mail"></span>
+					<div class="card-header">
+						<h5 class="card-title">Direct Email</h5>
+					</div>
+					<div class="card-block">
+						<ul class="list-bulleted">
+							<li>Email will be delivered to members of <span class="font-weight-bold">{{clubText}}</span> on <span class="font-weight-bold">Saturday, November 30, 2019 at 12:30am</span></li>
+							<li>Email will only be delivered to:
+								<ul>
+									<li><span class="font-weight-bold">Female</span> members</li>
+									<li>Who have <span class="font-weight-bold">at least one child on their account</span></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			{{/isAll}}
+		{{/isMultiple}}
+		<div class="btn-wrap text-xs-center p-t-1">
+			<button class="btn btn-link">Edit Notification</button>
+			<button class="btn btn-primary">Create & Publish</button>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="locationsModal" tabindex="-1" role="dialog" aria-labelledby="locationsModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title" id="locationsModalLabel">Impacted Locations</h5>
+				</div>
+				<div class="modal-body">
+					<ul class="small m-b-0">
+						<li>Chanhassen - MN</li>
+						<li>Coon Rapids - MN</li>
+						<li>Crosstown (Eden Prairie) - MN</li>
+						<li>Eagan - MN</li>
+						<li>Eden Prairie Athletic - MN</li>
+						<li>Edina at Southdale - MN</li>
+						<li>Fridley - MN</li>
+						<li>Highland Park - MN</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}

@@ -1,0 +1,58 @@
+<header class="header"> <a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+    <div class="header-mobile-bar">
+        <div class="header-nav-toggle">
+            <button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="navigation"> <span class="navbar-toggler-icon"></span> </button>
+        </div>
+        <div class="header-brand-mobile">
+            <a href="/member.html"> <img src="/images/placeholder/lt-dashboard.png" alt="Life Time"> </a>
+        </div>
+        <div class="header-utility-mobile">
+            <nav aria-label="Utility Navigation">
+                <ul class="nav nav-right nav-neutral">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"> <span class="ico-user icon-adjust-horiz"></span> <span class="sr-only js-login-label">account navigation</span> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--*/ for rare mobile */-->
+    </div>
+    <div id="headerNav" class="header-nav">
+        <div data-navbar-overflow="#primaryNav" class="header-primary navbar navbar-collapse js-ltnav-primary navbar-overflow">
+            <div class="navbar-brand header-hide-mobile">
+                <a href="/member.html"><img src="/images/placeholder/lt-dashboard.png" alt="Life Time"></a>
+            </div>
+            <nav aria-label="Primary Navigation">
+                <ul id="primaryNav" class="nav nav-neutral">
+                    <li class="nav-item"><a href="#0" class="nav-link ">New Members</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link ">Personal Training</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link ">Search All Members</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link active">Location Management</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-utility">
+            <nav aria-label="Utility Navigation" class="header-utility-minor">
+                <ul class="nav nav-inverse"></ul>
+            </nav>
+            <nav aria-label="Utility Navigation" class="header-utility-major">
+                <ul class="nav nav-inverse">
+                    <li class="nav-item"><a href="#" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span> <span data-profile="" data-profile-property="employeeDetails.firstName" aria-describedby="account-nav-description" class="js-login-label">Joshua</span> <span id="account-nav-description" class="sr-only">account navigation</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav aria-label="Navigation to Other Life Time Properties" class="header-global">
+            <ul class="nav dropdown dropdown-inverse">
+                <li class="nav-item "><a href="/member.html" class=" nav-link active ">HUB</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+        <div class="dropdown-arrow"></div>
+        <div class="dropdown-menu dropdown-menu-right">
+            <p class="m-b-1 hidden-xs-up js-anonymous">
+                <a class="js-login-link btn btn-primary btn-sm btn-block"> </a>
+            </p>
+            <p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro hidden-xs-up js-anonymous"> <span class="text-muted">New member? <a class="link-reversed-white">Create Account</a></span> </p> <a class="dropdown-item micro " href="/member/bios-admin/manage-profile.html"> My Bio </a> <a class="dropdown-item micro js-logout-link" href="#"> Log Out </a> </div>
+    </div>
+</header>

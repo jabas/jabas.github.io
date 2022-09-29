@@ -1,0 +1,25 @@
+<header class="header">
+	<a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	{{> patterns-nav-prospect-mobile-bar }}
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse" data-navbar-overflow="#primaryNav">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="#">
+					{{^ useRestyle }}
+					{{> elements-logo }}
+					{{/ useRestyle }}
+					{{# useRestyle }}
+					<img src="/images/theme-base/lt-athletic-resorts-wide.svg" alt="">
+					{{/ useRestyle }}
+				</a>
+			</div>
+			{{> patterns-nav-prospect-primary-links }}
+		</div>
+		<div class="header-utility">
+			{{> patterns-nav-prospect-major-utility }}
+		</div>
+		{{> patterns-nav-global }}
+	</div>
+	{{> patterns-nav-prospect-account-dropdown }}
+	{{> patterns-nav-prospect-locations }}
+</header>

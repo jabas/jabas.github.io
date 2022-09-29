@@ -1,0 +1,24 @@
+
+<div class="container">
+	<h5 class="m-b-2">Basic Card</h5>
+	<div class="card card-feature" style="max-width: 32em;">
+		<div class="card-img-top">
+			<img src="/images/placeholder/card-img-cap.png" alt="Card image cap">
+		</div>
+		<div class="card-block">
+		  <h3 class="card-title">Card Title</h3>
+		  <p class="card-text">This card has a little different styling to present a feature (note: this does not mean <em>featured</em>).</p>
+		  <p class="btn-wrap">
+		  	<a href="#" class="btn btn-primary-outline btn-sm">Call to Action</a>
+		  	<a href="#" class="btn btn-primary-outline btn-sm">Long Call to Action</a>
+		  	<a href="#" class="btn btn-primary-outline btn-sm">Call to Action</a>
+		  </p>
+		</div>
+	</div>
+	<h5 class="m-b-2">1x1 Image</h5>
+	{{> patterns-feature-card-1x1-img(soloStyles:"style='max-width: 32rem;'")}}
+	<h5 class="m-b-2">16x9 Image</h5>
+	{{> patterns-feature-card-16x9-img(soloStyles:"style='max-width: 32rem;'")}}
+	<h5 class="m-b-2">No Image</h5>
+	{{> patterns-feature-card-no-img(soloStyles:"style='max-width: 32rem;'")}}
+</div>

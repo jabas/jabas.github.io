@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<h5>Static Example</h5>
+<p>A rendered modal with header, body, and set of actions in the footer.</p>
+
+<div class="modal" style="position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: 1; display: block;">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h5 class="modal-title">Modal Title</h5>
+			</div>
+			<div class="modal-body">
+				<p>Modal content&hellip;</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save Changes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<h5>Inverse Header</h5>
+<div class="modal" style="position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: 1; display: block;">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-header-inverse">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h5 class="modal-title">Modal Title</h5>
+			</div>
+			<div class="modal-body">
+				<p>Modal content&hellip;</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save Changes</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>\n<p>Content within modals can be formatted the same as non-modal content, even leveraging the grid for layout (read below).</p>\n<p>A <code>.modal-title</code> is not required within the body of the modal.</p>\n<h5>MULTIPLE OPEN MODALS NOT SUPPORTED</h5>\n<p>Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.</p>\n<h5>MODAL MARKUP PLACEMENT</h5>\n<p>Always try to place a modal’s HTML code in a top-level position in your document to avoid other components affecting the modal’s appearance and/or functionality.</p>\n<h5>MOBILE DEVICE CAVEATS</h5>\n<p>There are some caveats regarding using modals on mobile devices. See <a href=\"http://v4-alpha.getbootstrap.com/getting-started/browsers-devices/#modals-navbars-and-virtual-keyboards\">Bootstrap’s browser support docs</a> for details.</p>\n<h5>MAKE MODALS ACCESSIBLE</h5>\n<p>Be sure to add <code>role=&quot;dialog&quot;</code> and <code>aria-labelledby=&quot;...&quot;</code>, referencing the modal title, to <code>.modal</code>, and <code>role=&quot;document&quot;</code> to the <code>.modal-dialog</code> itself.</p>\n<p>Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>.</p>\n<h5>EMBEDDING YOUTUBE VIDEOS</h5>\n<p>Embedding YouTube videos in modals requires additional JavaScript not in Bootstrap to automatically stop playback and more. <a href=\"https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal\">See this helpful Stack Overflow post</a> for more information.</p>\n<h5>Optional Sizes</h5>\n<p>Modals have two optional sizes, available via modifier classes to be placed on a <code>.modal-dialog</code>.</p>\n<h5>Inverse Header</h5>\n<p>Add <code>.modal-header-inverse</code> to <code>.modal-header</code> to inverse the modal header and title.</p>\n<h5>Remove Animation</h5>\n<p>For modals that simply appear rather than fade in to view, remove the <code>.fade</code> class from your modal markup.</p>\n<h5>Using the Grid System</h5>\n<p>To take advantage of the Bootstrap grid system within a modal, just nest <code>.container-fluid</code> within the <code>.modal-body</code> and then use the normal grid system classes within this container.</p>\n<h5>Varying Modal Content Based on Trigger Button</h5>\n<p>Have a bunch of buttons that all trigger the same modal, just with slightly different contents? Use <code>event.relatedTarget</code> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_data_attributes\">HTML <code>data-*</code> attributes</a> (possibly <a href=\"https://api.jquery.com/data/\">via jQuery</a>) to vary the contents of the modal depending on which button was clicked. See the Modal Events docs for details on <code>relatedTarget</code>. <a href=\"http://v4-alpha.getbootstrap.com/components/modal/#varying-modal-content-based-on-trigger-button\">See the Bootstrap Docs</a> for an example.</p>\n<h5>Modals with Dynamic Heights</h5>\n<p>If the height of a modal changes while it is open, you should call <code>$('#myModal').data('bs.modal').handleUpdate()</code> to readjust the modal’s position in case a scrollbar appears.</p>\n<h3>Usage</h3>\n<p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.modal-open</code> to the <code>&lt;body&gt;</code> to override default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>\n<h5>Via data attributes</h5>\n<p>Activate a modal without writing JavaScript. Set <code>data-toggle=&quot;modal&quot;</code> on a controller element, like a button, along with a <code>data-target=&quot;#foo&quot;</code> or <code>href=&quot;#foo&quot;</code> to target a specific modal to toggle.</p>\n<pre><code>&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Launch modal&lt;/button&gt;\n</code></pre>\n<h5>Via Javascript</h5>\n<p>Call a modal with id myModal with a single line of JavaScript:</p>\n<pre><code>$('#myModal').modal(options)\n</code></pre>\n<h5>Options</h5>\n<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in `data-backdrop</p>\n<table>\n<thead>\n<tr>\n<th>Name</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>backdrop</td>\n<td>boolean or the string <code>'static'</code></td>\n<td>true</td>\n<td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>\n</tr>\n<tr>\n<td>keyboard</td>\n<td>boolean</td>\n<td>true</td>\n<td>Closes the modal when escape key is pressed.</td>\n</tr>\n<tr>\n<td>show</td>\n<td>boolean</td>\n<td>true</td>\n<td>Shows the modal when initialized.</td>\n</tr>\n</tbody>\n</table>\n<h5>Methods</h5>\n<p><code>.modal(options)</code></p>\n<p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>\n<pre><code>$('#myModal').modal('toggle')\n</code></pre>\n<p><code>.modal('show')</code></p>\n<p>Manually opens a modal. Returns to the caller before the modal has actually been shown (i.e. before the <code>shown.bs.modal</code> event occurs).</p>\n<pre><code>$('#myModal').modal('show')\n</code></pre>\n<p><code>.modal('hide')</code></p>\n<p>Manually hides a modal. Returns to the caller before the modal has actually been hidden (i.e. before the <code>hidden.bs.modal</code> event occurs).</p>\n<pre><code>$('#myModal').modal('hide')\n</code></pre>\n<h5>Events</h5>\n<p>Bootstrap’s modal class exposes a few events for hooking into modal functionality. All modal events are fired at the modal itself (i.e. at the <code>&lt;div class=&quot;modal&quot;&gt;</code>).</p>\n<table>\n<thead>\n<tr>\n<th>Event Type</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show.bs.modal</td>\n<td>This event fires immediately when the <code>show</code> instance method is called. If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>\n</tr>\n<tr>\n<td>shown.bs.modal</td>\n<td>This event is fired when the modal has been made visible to the user (will wait for CSS transitions to complete). If caused by a click, the clicked element is available as the <code>relatedTarget</code> property of the event.</td>\n</tr>\n<tr>\n<td>hide.bs.modal</td>\n<td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>\n</tr>\n<tr>\n<td>hidden.bs.modal</td>\n<td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>\n</tr>\n<tr>\n<td>loaded.bs.modal</td>\n<td>This event is fired when the modal has loaded content using the <code>remote</code> option.</td>\n</tr>\n</tbody>\n</table>\n<pre><code>$('#myModal').on('hidden.bs.modal', function (e) {\n\t// do something...\n})\n</code></pre>\n","patternBreadcrumb":{"patternType":"components","patternSubtype":"modals"},"patternExtension":"mustache","patternName":"Modals","patternPartial":"components-modals","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

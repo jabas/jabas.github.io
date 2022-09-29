@@ -1,0 +1,69 @@
+<div class="sg-body-simulator">
+
+<main class="login-main">
+	<div class="login-backdrop bg-cover bg-cover-center" style="background-image: url('/images/placeholder/login-background.jpg');"></div>
+	<div class="login-panel container">
+		<div class="row">
+			<div class="col-xs-12 mylt-bg-gray-4 p-y-2 text-xs-center">
+				<img src="/images/theme-base/life_time_logo_footer.svg" alt="Life Time Fitness">
+			</div>
+		</div>
+		<div class="login-panel-inner p-t-3 p-b-1">
+			<div class="alert alert-danger alert-icon small">
+				<p><strong>It looks like you’re browsing privately.</strong><br/>In order to log in to the site you must have private browsing turned off. Please check your settings and try again.</p>
+			</div>
+			<p class="text-xs-center mylt-gray-4 m-b-sm"><strong>Log in to Continue</strong></p>
+			<form>
+				<div class="form-group has-danger">
+					<label for="account-username">Username, Email or Member ID</label>
+					<input id="account-username" class="form-control input-icon input-icon-username form-control-danger" type="text" aria-required="true" autocorrect="off" autocapitalize="none" spellcheck="false" autofocus>
+					<span class="label-help">This field is required.</span>
+				</div>
+				<div class="form-group has-danger">
+					<label for="account-password">Password</label>
+					<input id="account-password" class="form-control input-icon input-icon-password form-control-danger" type="password" aria-required="true">
+					<span class="label-help">This field is required.</span>
+				</div>
+				<div class="form-group">
+					<label for="showpassword" class="c-input c-checkbox-sm">
+						<input id="showpassword" type="checkbox" onchange="document.getElementById('account-password').type = this.checked ? 'text' : 'password'">
+						<span class="c-indicator"></span>
+						Show password
+					</label>
+				</div>
+				<div class="btn-wrap text-xs-center m-t-1">
+					<button type="submit" id="showLoginLoad" class="btn btn-primary btn-block">Log In</button>
+				</div>
+				<p class="small text-xs-center">Forgot your <a class="link-underlined" href="#" title="Forgot username?">username</a> or <a class="link-underlined" href="#" title="Forgot password?">password</a>?</p>
+			</form>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 mylt-bg-gray-12 p-t-2 small text-xs-center"><p><a class="link-underlined" href="#">Create Account</a></p></div>
+		</div>
+		<div class="login-loading loading-spinner fade"></div>
+	</div>
+</main>
+<footer class="footer-mylt" role="contentinfo">
+	<div class="p-wrap">
+		<nav>
+			<div class="footer-navigation">
+				<ul>
+					<li><a href="">Help & FAQs</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-legal">
+				<ul>
+					<li><a href="#">Guest &amp; Club Policies</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Accessibility Policy</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<p class="copyright"><span>&copy; 2016 Life Time Fitness, Inc. All rights reserved.</span></p>
+	</div>
+</footer>
+
+</div>

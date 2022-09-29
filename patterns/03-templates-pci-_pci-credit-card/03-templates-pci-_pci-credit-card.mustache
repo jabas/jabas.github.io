@@ -1,0 +1,36 @@
+<div class="b-t p-t-grid">
+	<div class="row row-xs-baseline">
+		<div class="col-xs-12 col-sm-9 p-b-grid">
+			<span class="ico-cc-{{ccType}} selected pull-xs-left m-r-grid"></span>
+			<div class="text-hide-overflow">
+				{{# labelText }}
+					{{labelText}}&nbsp;&nbsp;
+				{{/ labelText }}
+				************{{ccNumber}}
+			</div>
+		</div>
+		{{# showUsers }}
+		<div class="col-xs-12 col-sm-last p-b-sm">
+			<fieldset class="form-group">
+				<legend class="m-b-sm">Authorized Users</legend>
+				<label for="user1" class="c-input c-checkbox-sm has-value">
+					<input id="user1" type="checkbox" checked disabled>
+					<span class="c-indicator"></span>
+					Elizabeth Duncan
+				</label>
+				<label for="user2" class="c-input c-checkbox-sm has-value">
+					<input id="user2" type="checkbox" disabled>
+					<span class="c-indicator"></span>
+					Reid Harstad
+				</label>
+			</fieldset>
+		</div>
+		{{/ showUsers }}
+		<div class="col-xs-12 col-sm-3 p-l-0 text-xs-right p-b-grid">
+			<a href="#" class="d-inline-block">Edit</a>
+			{{^ hideRemove }}
+			<a href="#" class="d-inline-block p-l-sm">Remove</a>
+			{{/ hideRemove }}
+		</div>
+	</div>
+</div>

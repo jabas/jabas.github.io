@@ -1,0 +1,529 @@
+{{> patterns-header-member }}
+<main class="main-mylt" id="main-content" role="main">
+    <div class="js-geolocation hide"></div>
+    <div class="js-alert-notification"></div>
+    <div class="content-section p-b-0">
+        <div class="row p-b-0">
+            <div class="col-xs-10 col-xs-offset-1">
+                <p class="micro"><a href="/live.html" aria-label="go back to live streaming club list"><strong><span class="ico-arrow-left-sm"></span>Main</strong></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="content-section p-t-0">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xs-12 col-lg-8 col-lg-offset-2 text-xs-center">
+                    <h1 class="h5 m-b-sm text-uppercase">Welcome to Life Time Live<br />
+                    </h1>
+                    <h2 class="m-b-sm" style="text-align: center;">Chanhassen <span class="badge badge-pill badge-default text-uppercase" style="vertical-align: 0.3em;font-size: 50.0%;">Now Streaming</span></h2>
+                    <p class="cq-text-placeholder-ipe" data-emptytext="Text"></p>
+                    <p>Enjoying live classes? <a class="link-underlined analytics-link" href="https://www.surveymonkey.com/r/7GD9KTT?mem_id=%5bmem_id_value&amp;fbclid=IwAR0_uFeiyNrYoRnaW0NuuvIStucf4Etsc60-W7wS_oTP_8F1GkTsa1evDqw">Opt in</a> to support your favorite performers and classes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section p-t-0 m-t-0">
+        <div class="row m-x-0   p-t-0  bg-white">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1 edge-xs-up">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered embed-responsive-item" tabindex="0"></video>
+                    <div id="liveLoadError" class="embed-responsive-item bg-cover hidden-xs-up" style="z-index:2; background-image: url(https://my.lifetime.life/content/dam/mylt/images/live/live-streaming-key.jpg)">
+                      <div class="p-a-grid text-xs-center bg-light-semi-trans" style="position: absolute; left:50%; top:50%; width: calc(100% - 2rem);max-width:24rem; transform: translate(-50%,-50%);">
+                        <p class="small m-b-0">
+                          Sorry, there is no class livestreaming at the moment. We're either having technical difficulties, or have turned off the stream between classes. Please check the <a href="#upcoming">schedule</a> below or refresh to try again. This page will automatically refresh in 60 seconds.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+                <style>
+                    .amp-default-skin .vjs-progress-control {
+                        display: none !important;
+                    }
+                    .amp-default-skin .vjs-time-control {
+                        visibility: hidden;
+                    }
+                    .amp-default-skin .amp-content-title {
+                        top:  auto;
+                        bottom:  -webkit-calc(0.03em);
+                        bottom:  calc(0.03em);
+                    }
+                    .amp-default-skin.vjs-user-inactive .vjs-playing .amp-content-title {
+                        display: block !important;
+                    }
+                    .amp-default-skin .amp-logo>div,
+                    .amp-default-skin .amp-logo>span {
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126px' height='28px' viewBox='0 0 126 28'%3E%3Cpath fill='%23FFFFFF' d='M7,21h7v7H0V0h7V21z M15,28h7V0h-7V28z M56,7h4v21h7V7h4V0H56V7z M23,28h7V17h6v-6h-6V7h7V0H23V28z M38,28 h14v-7h-7v-4h6v-6h-6V7h7V0H38V28z M106,28h14v-7h-7v-4h6v-6h-6V7h7V0h-14V28z M72,28h7V0h-7V28z M92.5,14L90.4,0H80v28h7V12.6 L89.8,28h5.5L98,12.6V28h7V0H94.6L92.5,14z M126,2.5c0,1.4-1.1,2.5-2.5,2.5S121,3.9,121,2.5c0-1.4,1.1-2.5,2.5-2.5S126,1.1,126,2.5z M125.6,2.5c0-1.1-1-2.1-2.1-2.1s-2.1,1-2.1,2.1c0,1.1,0.9,2.1,2.1,2.1S125.6,3.6,125.6,2.5z M123.9,2.7l0.8,1.3h-0.5l-0.8-1.3H123 V4h-0.5V1h1.1c0.3,0,0.6,0.1,0.8,0.2c0.2,0.1,0.3,0.3,0.3,0.6c0,0.3-0.1,0.5-0.2,0.6C124.3,2.6,124.1,2.6,123.9,2.7z M123.8,2.3 c0.1,0,0.2,0,0.2-0.1c0.1,0,0.1-0.1,0.2-0.1c0-0.1,0.1-0.2,0.1-0.3c0-0.1,0-0.2-0.1-0.2c0-0.1-0.1-0.1-0.1-0.1 c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.2,0-0.2,0H123v0.9h0.5C123.6,2.3,123.7,2.3,123.8,2.3z'/%3E%3C/svg%3E");
+                        height: 28px;
+                    }
+                </style>
+                <script>
+                    window.addEventListener('DOMContentLoaded', function() {
+                        var azureLsOptions = {
+                            "nativeControlsForTouch": false,
+                            "logo": { "enabled": true },
+                            controls: true,
+                            autoplay: true,
+                            width: "640",
+                            height: "400",
+                            poster: "https://my.lifetime.life/content/dam/mylt/images/live/live-streaming-key.jpg",
+                            cea708CaptionsSettings: { enabled: true, srclang: 'en', label: 'Live CC' },
+                            imsc1CaptionsSettings: [{ "label": "English", "srclang": "en-US" }]
+                        }
+                        $.getJSON( "https://ltottprodampsa.blob.core.windows.net/streams/playback-endpoints/clubs/249.json", function(json) {
+                            console.log( "success: " + json.default );
+                            if (json.default.length > 0) {
+                                myPlayer = amp("azuremediaplayer", azureLsOptions);
+                                myPlayer.src([{
+                                    "src": json.default,
+                                    "type": "application/vnd.ms-sstr+xml"
+                                }]);
+                                myPlayer.addEventListener('error', function() {
+                                    $('#liveLoadError').removeClass('hidden-xs-up');
+                                });
+                            } else {
+                                $('#liveLoadError').removeClass('hidden-xs-up');
+                            }
+                        })
+                        .fail(function(jqxhr, textStatus, error) {
+                           console.log( "Request Failed: " + textStatus + ", " + error );
+                           $('#liveLoadError').removeClass('hidden-xs-up');
+                        });
+                    });
+                </script>
+                <div class="container ">
+                    <div class="row p-t-2">
+                        <div class="col-xs-12 p-b-2">
+                            <p class="small" id="errorMessage" style="text-align: center;">If it’s time for class to start and you still see an error message, just refresh your page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section hide">
+        <div class="row m-x-0  m-t-0 m-b-3 p-t-0  bg-white">
+            <div class="col-xs-12 col-lg-7 edge-xs-up   p-y-0 ">
+                <img alt="XTREME Live Stream Class " src="/content/dam/mylt/images/live/gfin20321900-LiveStream-socialshare-thumbnail-xtreme%20(1).jpg" srcset="/content/dam/mylt/images/live/gfin20321900-LiveStream-socialshare-thumbnail-xtreme (1).jpg.transform/r479/img.jpg 479w, /content/dam/mylt/images/live/gfin20321900-LiveStream-socialshare-thumbnail-xtreme (1).jpg.transform/r767/img.jpg 767w, /content/dam/mylt/images/live/gfin20321900-LiveStream-socialshare-thumbnail-xtreme (1).jpg.transform/r959/img.jpg 959w, /content/dam/mylt/images/live/gfin20321900-LiveStream-socialshare-thumbnail-xtreme (1).jpg.transform/r1199/img.jpg 1199w, /content/dam/mylt/images/live/gfin20321900-LiveStream-socialshare-thumbnail-xtreme (1).jpg 1289w" class="cq-dd-image" />
+            </div>
+            <div class="col-xs-12 col-lg-5  m-t-1 p-x-2 col-xs-center">
+                <div class="container ">
+                    <div class="row p-y-2">
+                        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                            <h2 class="h5 m-b-2"><em>We're sorry, our live class has been canceled due to technical difficulties. We'll provide a new date and time as soon as we can. </em></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-section mylt-bg-gray-12">
+        <div class="container ">
+            <div class="row p-t-2 p-b-3">
+                <div class="col-xs-12">
+                    <h2 id="upcoming" class="h4">Upcoming Live-Streaming Classes</h2>
+                </div>
+                <div class="col-xs-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#WednesdayNovember2575d1" aria-expanded="false" aria-controls="WednesdayNovember2575d1" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Content</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Content</span>" role="button">
+                                        <span class="ico-arrow-down"></span><span class="sr-only">Show Content</span>
+                                        <span class="sr-only">Hide Content</span>
+                                    </a>
+                                    <h3 class="h5 m-b-2 text-hide-overflow" data-toggle="collapse" data-target="#WednesdayNovember2575d1" aria-expanded="false" aria-controls="WednesdayNovember2575d1">Wednesday, November 25</h3>
+                                </div>
+                            </div>
+                            <div id="WednesdayNovember2575d1" class="collapse fade" aria-expanded="false">
+                                <hr class="m-t-0" />
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small p-t-4 p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">6:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Kettlebell Kombine<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Bethany K.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/kettlebell-kombine.html">Kettlebell Kombine Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">8:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">SHRED</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Shannon S.<br />
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">9:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Dance Jam<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nikki N.<br />
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">10:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Kettlebell Kombine<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Shannon S.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/kettlebell-kombine.html">Kettlebell Kombine Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small  p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">11:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Warrior Sculpt<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Suzanne G.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/sculpt.html">Warrior Sculpt Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">12:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">FLOW<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rosa</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/flow.html">FLOW Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">4:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">ROOT</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rosa</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/root.html">ROOT Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">5:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">EDG<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Lindsay L.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/indoor-cycle/edg.html">EDG Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small  p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">6:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Ashtanga</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Adam L.<br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#ThursdayNovember266d58" aria-expanded="false" aria-controls="ThursdayNovember266d58" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Content</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Content</span>" role="button">
+                                        <span class="ico-arrow-down"></span><span class="sr-only">Show Content</span>
+                                        <span class="sr-only">Hide Content</span>
+                                    </a>
+                                    <h3 class="h5 m-b-2 text-hide-overflow" data-toggle="collapse" data-target="#ThursdayNovember266d58" aria-expanded="false" aria-controls="ThursdayNovember266d58">Thursday, November 26</h3>
+                                </div>
+                            </div>
+                            <div id="ThursdayNovember266d58" class="collapse fade" aria-expanded="false">
+                                <hr class="m-t-0" />
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small p-t-4 p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">7:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">FLOW<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rosa</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/flow.html">FLOW Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">8:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">EDG</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Lindsay L.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/indoor-cycle/edg.html">EDG Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">9:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">XTREME</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nastassia S.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/xtreme.html">XTREME Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">10:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Warrior Sculpt<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Alissa G.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/sculpt.html">Warrior Sculpt Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small  p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">11:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Dance Jam<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nikki N.<br />
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">12:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">SURRENDER<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rosa</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/surrender.html">SURRENDER Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#FridayNovember27419c" aria-expanded="false" aria-controls="FridayNovember27419c" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Content</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Content</span>" role="button">
+                                        <span class="ico-arrow-down"></span><span class="sr-only">Show Content</span>
+                                        <span class="sr-only">Hide Content</span>
+                                    </a>
+                                    <h3 class="h5 m-b-2 text-hide-overflow" data-toggle="collapse" data-target="#FridayNovember27419c" aria-expanded="false" aria-controls="FridayNovember27419c">Friday, November 27</h3>
+                                </div>
+                            </div>
+                            <div id="FridayNovember27419c" class="collapse fade" aria-expanded="false">
+                                <hr class="m-t-0" />
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small p-t-4 p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">7:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">ROOT</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Dena B.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/root.html">ROOT Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">8:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Pilates Fusion<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Karen V.<br />
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">9:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Warrior Sculpt<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Suzanne G.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/sculpt.html">Warrior Sculpt Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">10:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Barbell Strength<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nikki N.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/barbell-strength.html">Barbell Strength Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small  p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">11:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">FLOW<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Dena B.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/flow.html">FLOW Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">12:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">XTREME</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nastassia S.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/xtreme.html">XTREME Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">5:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">FLOW<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rosa</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/flow.html">FLOW Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#SaturdayNovember2843e9" aria-expanded="false" aria-controls="SaturdayNovember2843e9" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Content</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Content</span>" role="button">
+                                        <span class="ico-arrow-down"></span><span class="sr-only">Show Content</span>
+                                        <span class="sr-only">Hide Content</span>
+                                    </a>
+                                    <h3 class="h5 m-b-2 text-hide-overflow" data-toggle="collapse" data-target="#SaturdayNovember2843e9" aria-expanded="false" aria-controls="SaturdayNovember2843e9">Saturday, November 28</h3>
+                                </div>
+                            </div>
+                            <div id="SaturdayNovember2843e9" class="collapse fade" aria-expanded="false">
+                                <hr class="m-t-0" />
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small p-t-4 p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">7:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">FLOW<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Dena B.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/flow.html">FLOW Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">8:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">XTREME</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nastassia S.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/xtreme.html">XTREME Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">9:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">EDG</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Lindsay L.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/indoor-cycle/edg.html">EDG Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">10:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">SURRENDER<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Lindsay L.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/surrender.html">SURRENDER Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small  p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">11:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Warrior Sculpt<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Alissa G.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/sculpt.html">Warrior Sculpt Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">12:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Dance Jam<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nikki N.<br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#SundayNovember29aa07" aria-expanded="false" aria-controls="SundayNovember29aa07" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Content</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Content</span>" role="button">
+                                        <span class="ico-arrow-down"></span><span class="sr-only">Show Content</span>
+                                        <span class="sr-only">Hide Content</span>
+                                    </a>
+                                    <h3 class="h5 m-b-2 text-hide-overflow" data-toggle="collapse" data-target="#SundayNovember29aa07" aria-expanded="false" aria-controls="SundayNovember29aa07">Sunday, November 29</h3>
+                                </div>
+                            </div>
+                            <div id="SundayNovember29aa07" class="collapse fade" aria-expanded="false">
+                                <hr class="m-t-0" />
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small p-t-4 p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">8:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">EDG</p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Kristin P.</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/indoor-cycle/edg.html">EDG Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">9:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">FLOW<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rosa</p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/yoga/flow.html">FLOW Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">10:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Barbell Strength<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Nikki N.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/barbell-strength.html">Barbell Strength Class Details</a></p>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">11:00 <span class="time-ampm">AM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Warrior Sculpt<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Suzanne G.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/sculpt.html">Warrior Sculpt Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container ">
+                                    <div class="row divided-grid  text-xs-center small  p-b-2">
+                                        <div class="col-xs-12 col-md-3">
+                                            <p style="text-align: center;">12:00 <span class="time-ampm">PM CT</span></p>
+                                            <p class="lead mylt-black m-b-sm" style="text-align: center;">Kettlebell Kombine<br />
+                                            </p>
+                                            <p class="small m-b-sm" style="text-align: center;">45 min.</p>
+                                            <p class="small" style="text-align: center;">Rachel D.<br />
+                                            </p>
+                                            <p class="small" style="text-align: center;"><a href="/clubs/mn/chanhassen/fitness-classes/studio/kettlebell-kombine.html">Kettlebell Kombine Class Details</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{> patterns-mylt-footer }}

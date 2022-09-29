@@ -1,0 +1,76 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+			<h1 class="h2 h-static">Send a Message</h1>
+			<p class="small m-b-0">We’ll do our best to respond within 24 hours. All fields required.</p>
+			<form>
+				<div class="form-group">
+					<label for="firstName">First Name</label>
+					<input id="firstName" type="text" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="lastName">Last Name</label>
+					<input id="lastName" type="text" class="form-control" />
+				</div>
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input id="email" type="email" class="form-control" />
+				</div>
+				<div class="form-group form-group-spacer">
+					<label for="phone">Phone Number</label>
+					<input id="phone" type="tel" class="form-control" />
+				</div>
+				<fieldset class="form-group">
+					<legend>Are you a Life Time Member?</legend>
+					<label for="isMember" class="c-input c-radio">
+						<input id="isMember" name="member" type="radio">
+						<span class="c-indicator"></span>
+						Yes
+					</label>
+					<label for="notMember" class="c-input c-radio">
+						<input id="notMember" name="member" type="radio">
+						<span class="c-indicator"></span>
+						No
+					</label>
+				</fieldset>
+				<div class="form-group">
+					<label for="recipient">Select the club that will receive your message</label>
+					<select id="recipient" class="c-select">
+						<option value="">Select a Recipient</option>
+						<option value="Chanhassen" selected>Chanhassen</option>
+						<option value="Plymouth">Plymouth</option>
+						<option value="New Hope">New Hope</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="relates">This relates to...</label>
+					<select id="relates" class="c-select">
+						<option value="">This relates to...</option>
+						<option value="Chanhassen">Chanhassen</option>
+						<option value="Plymouth">Plymouth</option>
+						<option value="New Hope">New Hope</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="subject">Message Subject</label>
+					<input id="subject" type="text" data-toggle="tooltip" data-trigger="focus" data-placement="bottom" title="This is what will appear in the subject line of the email sent to the club." class="form-control" />
+				</div>
+				<div class="form-group form-group-spacer">
+					<label for="message">Message</label>
+					<textarea id="message" rows="8" maxlength="1000" data-charcount="#charCount" class="form-control" aria-describedby="charCount"></textarea>
+					<span id="charCount" class="label-help" aria-live="polite"></span>
+				</div>
+				<div class="form-group form-group-spacer">
+					<label for="contactMe" class="c-input c-checkbox-sm">
+						<input id="contactMe" type="checkbox">
+						<span class="c-indicator"></span>
+						I agree to be contacted by a Life Time representative.
+					</label>
+				</div>
+				<div class="btn-wrap text-xs-right">
+					<button type="submit" class="btn btn-primary">Send Message</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

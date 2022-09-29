@@ -1,0 +1,45 @@
+<div class="container">
+	<h5 class="m-t-4">Solid Backgrounds</h5>
+	<div class="sg-palette">
+		{{> elements-sg-bg-swatch(cssClass:"bg-primary") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-secondary") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-success") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-info") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-warning") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-danger") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-black") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-1") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-2") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-3") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-4") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-5") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-6") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-7") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-8") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-9") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-10") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-11") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-gray-12") }}
+		{{> elements-sg-bg-swatch(cssClass:"bg-white") }}
+	</div>
+	<h5 class="m-t-4">Transparent Backgrounds</h5>
+	<div class="content-section bg-cover" style="background-image:url('/images/styleguide/a11y-team.jpg');">
+		<div class="sg-palette m-b-2">
+			<div class="sg-swatch hidden-md-down"></div>
+			{{> elements-sg-bg-swatch(cssClass:"bg-dark-trans") }}
+			{{> elements-sg-bg-swatch(cssClass:"bg-dark-semi-trans") }}
+			{{> elements-sg-bg-swatch(cssClass:"bg-light-trans") }}
+			{{> elements-sg-bg-swatch(cssClass:"bg-light-semi-trans") }}
+		</div>
+	</div>
+	<h5 class="m-t-4">Background Removal for Mobile</h5>
+	<div class="content-section bg-primary m-b-4">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 m-b-2">
+				<div class="bg-light-trans bg-0-sm-down p-a-3">
+					<h2 class="m-b-0">The background color on this block will disappear in the SM and XS breakpoints.</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

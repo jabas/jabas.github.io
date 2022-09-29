@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/theme-prospect.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+	<header class="header">
+	<a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	<div class="header-mobile-bar">
+	<div class="header-nav-toggle">
+		<button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div class="header-brand-mobile">
+		<a role="button" class="d-inline-block" data-toggle="collapse" href="#prospectLocations" aria-expanded="false" aria-controls="prospectLocations">
+			<img src="/images/theme-base/life-time-logo-xs.svg" alt="">
+			<div class="dropdown-toggle m-t-xs">Locations</div>
+		</a>
+	</div>
+	<div class="header-utility-mobile">
+		<nav aria-label="Utility Navigation">
+			<ul class="nav nav-right nav-neutral">
+				<li class="nav-item dropdown dropdown-inverse">
+					<a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz"></span><span class="sr-only">Account</span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse" data-navbar-overflow="#primaryNav">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="#">
+					<img src="/images/theme-base/life-time-logo-sm.svg" alt="">
+				</a>
+			</div>
+			<nav aria-label="Primary Navigation">
+	<ul id="primaryNav" class="nav nav-neutral">
+		<li class="nav-item">
+			<a href="#prospectLocations" data-toggle="collapse" aria-expanded="false" aria-controls="prospectLocations" class="nav-link dropdown-toggle">Locations</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Membership</a>
+			<div class="dropdown-arrow"></div>
+			<div class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li>
+						<a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Membership Options</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Benefits</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Monthly Membership</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Signature Membership</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">One-Day Membership</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Schedule A Tour</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Kids & Family</a>
+			<div class="dropdown-arrow"></div>
+			<div class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li>
+						<a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Play Area</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Events</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Classes</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Birthday Parties</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Camps</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Sports & Fitness</a>
+					</li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#0">All Kids & Family</a>
+			</div>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Training</a>
+			<div class="dropdown-arrow"></div>
+			<div class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li>
+						<a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Small Group Training</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Personal Training</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Pilates</a>
+					</li>
+					<li>
+						<a class="dropdown-item " href="#0">Virtual Training</a>
+					</li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#0">All Training</a>
+			</div>
+		</li>
+		<li class="nav-item"><a href="#" class="nav-link">Classes</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Active Older Adults</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Sports</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Spa</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Cafe</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Spaces & Amenities</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Health & Wellness</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Life Time Digital</a></li>
+	</ul>
+</nav>
+		</div>
+		<div class="header-utility">
+			<nav class="header-utility-major" aria-label="Utility">
+	<ul class="nav nav-inverse">
+		<li class="nav-item dropdown dropdown-inverse">
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Account</a>
+		</li>
+	</ul>
+</nav>
+		</div>
+		<nav class="header-global" aria-label="Other Life Time Properties">
+	<ul class="nav dropdown dropdown-inverse">
+		<li class="nav-item"><a class="nav-link " href="#">Join</a></li>
+		<li class="nav-item"><a class="nav-link " href="#">Members</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">Experience Life</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">Living</a></li>
+		<li class="nav-item"><a class="nav-link " href="#">Store</a></li>
+		
+		<li class="nav-item">
+			<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="More sites"><span class="hidden-lg-up">More sites</span></a>
+			<div class="dropdown-menu dropdown-menu-right">
+				<ul class="list-unstyled">
+					<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Sport</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Athletic Events</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Foundation</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Academy</a></li>
+					<li><a class="dropdown-item" href="#0">Culture of Inclusion</a></li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<p>
+					<img src="/images/theme-base/life-time-app-icon.svg" alt="Life Time App Icon" class="header-global-logo">
+				</p>
+				<div class="text-hide-overflow">
+					<div class="dropdown-header">Life Time Member App</div>
+					<ul class="list-unstyled">
+						<li><a class="dropdown-item" href="#"><img src="/images/theme-base/app-download-app-store.svg" alt=""><span class="sr-only">Download on the App Store</span></a></li>
+						<li><a class="dropdown-item" href="#"><img src="/images/theme-base/app-download-google-play.svg" alt=""><span class="sr-only">Get it on Google Play</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+
+
+
+	</div>
+	<div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+	<div class="dropdown-arrow"></div>
+	<div class="dropdown-menu dropdown-menu-right">
+		<a class="dropdown-item micro" href="#">Continue to Member Site</a>
+		<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro">
+			<span class="text-muted">Not a member? </span><a class="link-reversed-white" href="#">Join</a>
+		</p>
+		<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro">
+			<span class="text-muted">New member? </span><a class="link-reversed-white" href="#">Create Account</a>
+		</p>
+	</div>
+</div>
+
+	<div class="header-collapse collapse" id="prospectLocations" aria-expanded="false" tabindex="-1">
+	<div class="club-global-locate header-collapse-content">
+		<a href="#prospectLocations" data-toggle="collapse" role="button" aria-label="Close Locations Panel" class="club-locate-close hidden-md-down d-inline-block p-x-grid p-y-sm" aria-expanded="false"><span class="ico-close-sm icon-adjust-horiz icon-adjust-vert"></span></a>
+		<div class="container small m-x-0">
+			<div class="row">
+				<div id="prospectGeolocation" class="col-xs-12 col-lg-4 col-xl-3 b-b b-b-lg-0">
+					<p id="prospectCurrentLoc" class="m-y-grid">
+						<a href="#0">Edina at Southdale</a>  (0.0 miles)
+					</p>
+                    <div class="nano text-gray-4 font-weight-bold m-b-1">Other Locations</div>
+					<ul id="prospectNearbyLoc" class="list-unstyled m-b-grid">
+						<li class="m-b-sm">
+							<a href="#0">Life Time Work Edina at Southdale</a>  (0.0 miles)
+						</li>
+						<li class="m-b-sm">
+							<a href="#0">Bloomington North</a>  (2.3 miles)
+						</li>
+						<li class="m-b-sm">
+							<a href="#0">Life Time Winter Park (Eden Prairie)</a>  (4 miles)
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-lg-4 b-l-lg">
+					<p class="font-italic m-y-grid"><a href="#0">New Clubs Coming Soon!</a></p>
+                    <form>
+						<fieldset>
+							<legend class="sr-only">Location Search Field:</legend>
+							<label for="clubsearch">Find a Location <span class="sr-only">With City, State or Zip Code</span></label>
+							<div class="input-group">
+								<div class="form-input-action">
+									<input id="clubsearch" class="js-omnibox-input form-control" type="text" placeholder="City, State or Zip Code" name="query" data-di-id="#clubsearch">
+									<button type="button" class="form-input-btn form-input-clear" data-target="#clubsearch">
+										<span class="ico-delete"></span>
+										<span class="sr-only">Clear Search Text</span>
+									</button>
+									<span class="label-help-error js-omnibox-error hide"></span>
+								</div>
+								<span class="input-group-btn">
+									<button class="btn btn-primary js-omnibox-action">
+										<span class="ico-search"></span>
+										<span class="sr-only">Search</span>
+									</button>
+								</span>
+							</div>
+						</fieldset>
+                    </form>
+                    <p class="m-t-sm m-b-grid"><a href="#0" data-di-id="di-id-56f1dae1-877fda22">View All Locations</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+
+	<main class="page-content main-mylt national">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="content-section-xs">
+						<ol class="list-ordered centered mylt-gray-4 m-b-0">
+							<li>I’m ready to join <strong>[clubname]</strong> <a href="" class="small">Edit <span class="sr-only">Location</span></a></li>
+							<li>with a <strong>[membership type]</strong> <a href="&#x2F;patterns&#x2F;03-templates-oms-00-oms-membership-options&#x2F;03-templates-oms-00-oms-membership-options.rendered.html" class="small">Edit <span class="sr-only">Membership Option</span></a></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<hr class="b-thick b-clr-gray-4 m-t-0">
+					<h1 class="h-scaled text-xs-center p-t-1"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">3</span>Build Membership</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-lg-10 col-lg-offset-1 col-xl-8 col-xl-offset-0">
+					<hr class="hidden-xl-up">
+					<h2 class="h-static">Add Members</h2>
+					<div class="form-group">
+						<div class="row row-xs-bottom">
+							<div class="col-xs-12 col-sm-6">
+								<label for="customSelect" class="has-value">Members Age 14+</label>
+								<select id="customSelect" class="c-select m-b-2">
+									<option selected="">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<label for="customSelect" class="has-value">Juniors Age 13 and Under</label>
+								<select id="customSelect" class="c-select m-b-2">
+									<option selected="">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<h2 class="h-static">Choose a Join <span class="text-nowrap">Package <a class="m-l-sm" href="#" data-toggle="tooltip" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat ipsum ac gravida commodo. Pellentesque a rutrum magna."><span class="ico-info"></span><span class="sr-only">More information</span></a></span></h2>
+					<div tabindex="0" role="button" class="card oms-dogear oms-dogear-active" aria-labelledby="standardHead">
+						<span class="oms-dogear-indicator"></span>
+						<div class="card-block">
+							<h3 class="oms-price-head oms-price-pad" id="standardHead">Standard Enrollment Package</h3>
+							<div class="oms-pricing">
+								<div class="oms-price">
+									<span class="sr-only">$ 0 and 00</span>
+									<span aria-hidden="true"><sup class="small">$&thinsp;</sup><span class="oms-price-value">XXX.</span><sup class="small">00</sup></sup>
+								</div>
+								<div class="small oms-price-foot">
+									<span class="sr-only">joining fees asterisk. — Offer expires February 29, 2020 11:59 PM CST. Not valid at all locations. Other exclusions apply.</span>
+									<div aria-hidden="true">Joining Fees<sup>*</sup></div>
+									<div class="font-italic">$100 value</div>
+								</div>
+							</div>
+							<p class="oms-price-pad">Start your membership strong with a one-on-one session with a Personal Trainer and more.</p>
+							<p><a href="#">View Details <span class="ico-arrow-down-sm"></span></a></p>
+						</div>
+					</div>
+					<p class="h3 h-static m-b-2">Upgrade to one of our specialty packages, tailored to specific interests and goals.</p>
+					<div class="card-deck">
+
+							<div tabindex="0" role="button" class="card oms-dogear" aria-labelledby="privateHead">
+								<span class="oms-dogear-indicator"></span>
+								<div class="card-block">
+									<h3 class="oms-price-head oms-price-pad oms-price-hgt" id="privateHead">Private Training Package</h3>
+									<div class="oms-pricing">
+										<div class="oms-price">
+											<span class="sr-only">$ 0 and 00</span>
+											<span aria-hidden="true"><sup class="small">$&thinsp;</sup><span class="oms-price-value">XXX.</span><sup class="small">00</sup></sup>
+										</div>
+										<div class="small oms-price-foot">
+											<span class="sr-only">joining fees asterisk. — Offer expires February 29, 2020 11:59 PM CST. Not valid at all locations. Other exclusions apply.</span>
+											<div aria-hidden="true">Joining Fees<sup>*</sup></div>
+											<div class="font-italic">$100 value</div>
+										</div>
+									</div>
+									<p>Gain a wealth of knowledge and jump start your results with this immersive experience.</p>
+									<p><a href="#">View Details <span class="ico-arrow-down-sm"></span></a></p>
+								</div>
+							</div>
+
+
+							<div tabindex="0" role="button" class="card oms-dogear" aria-labelledby="groupHead">
+								<span class="oms-dogear-indicator"></span>
+								<div class="card-block">
+									<h3 class="oms-price-head oms-price-pad oms-price-hgt" id="groupHead">Group Training Package</h3>
+									<div class="oms-pricing">
+										<div class="oms-price">
+											<span class="sr-only">$ 0 and 00</span>
+											<span aria-hidden="true"><sup class="small">$&thinsp;</sup><span class="oms-price-value">XXX.</span><sup class="small">00</sup></sup>
+										</div>
+										<div class="small oms-price-foot">
+											<span class="sr-only">joining fees asterisk. — Offer expires February 29, 2020 11:59 PM CST. Not valid at all locations. Other exclusions apply.</span>
+											<div aria-hidden="true">Joining Fees<sup>*</sup></div>
+											<div class="font-italic">$100 value</div>
+										</div>
+									</div>
+									<p>Start your membership strong with the energy of a community and the power of knowledge.</p>
+									<p><a href="#">View Details <span class="ico-arrow-down-sm"></span></a></p>
+								</div>
+							</div>
+
+							<div tabindex="0" role="button" class="card oms-dogear" aria-labelledby="familyHead">
+								<span class="oms-dogear-indicator"></span>
+								<div class="card-block">
+									<h3 class="oms-price-head oms-price-pad oms-price-hgt" id="familyHead">Family Package</h3>
+									<div class="oms-pricing">
+										<div class="oms-price">
+											<span class="sr-only">$ 0 and 00</span>
+											<span aria-hidden="true"><sup class="small">$&thinsp;</sup><span class="oms-price-value">XXX.</span><sup class="small">00</sup></sup>
+										</div>
+										<div class="small oms-price-foot">
+											<span class="sr-only">joining fees asterisk. — Offer expires February 29, 2020 11:59 PM CST. Not valid at all locations. Other exclusions apply.</span>
+											<div aria-hidden="true">Joining Fees<sup>*</sup></div>
+											<div class="font-italic">$100 value</div>
+										</div>
+									</div>
+									<p>From swim lessons to spa services, there’s something amazing for every member of the family.</p>
+									<p><a href="#">View Details <span class="ico-arrow-down-sm"></span></a></p>
+								</div>
+							</div>
+
+							<div tabindex="0" role="button" class="card oms-dogear" aria-labelledby="tennisHead">
+								<span class="oms-dogear-indicator"></span>
+								<div class="card-block">
+									<h3 class="oms-price-head oms-price-pad oms-price-hgt" id="tennisHead">Tennis Package</h3>
+									<div class="oms-pricing">
+										<div class="oms-price">
+											<span class="sr-only">$ 0 and 00</span>
+											<span aria-hidden="true"><sup class="small">$&thinsp;</sup><span class="oms-price-value">XXX.</span><sup class="small">00</sup></sup>
+										</div>
+										<div class="small oms-price-foot">
+											<span class="sr-only">joining fees asterisk. — Offer expires February 29, 2020 11:59 PM CST. Not valid at all locations. Other exclusions apply.</span>
+											<div aria-hidden="true">Joining Fees<sup>*</sup></div>
+											<div class="font-italic">$100 value</div>
+										</div>
+									</div>
+									<p>From swim lessons to spa services, there’s something amazing for every member of the family.</p>
+									<p><a href="#">View Details <span class="ico-arrow-down-sm"></span></a></p>
+								</div>
+							</div>
+
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-5 col-xl-4 p-x-grid col-stretch-section col-md-last">
+					<div class="content-section container b-l-XS-0 b-l-xl p-y-0 p-r-0 edge-l-md-down">
+						<div class="container p-r-0 edge-l-md-down">
+							<p><a href="#">View Your Club Access</a></p>
+							<table class="table table-sm m-b-1">
+								<caption class="h5 m-b-sm">Members on Account</caption>
+								<tbody>
+									<tr>
+										<td>Primary Member</td>
+										<td class="text-xs-right">$89.00</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm m-b-1">
+								<caption class="h5 m-b-sm">Monthly Membership Dues</caption>
+								<tbody>
+									<tr>
+										<td>Due at the beginning of each month</td>
+										<td class="text-xs-right pricing">
+											<span class="currency">$</span>
+											<span class="value">XXX.</span>
+											<span class="cents">00</span>
+											<span class="tax">(plus tax)</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm m-b-1">
+								<caption class="h5  m-b-1">Due Today</caption>
+								<tbody>
+									<tr>
+										<td>April Dues</td>
+										<td class="text-xs-right">$89.00</td>
+									</tr>
+									<tr>
+										<td><em>Prorated for April</em></td>
+										<td class="text-xs-right"><em>-$8.32</em></td>
+									</tr>
+									<tr>
+										<td>Joining Fees</td>
+										<td class="text-xs-right">$79.00</td>
+									</tr>
+									<tr>
+										<td><strong>Total</strong></td>
+										<td class="text-xs-right"><strong>$159.68</strong> (plus tax)</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="&#x2F;patterns&#x2F;03-templates-oms-02-oms-member-info&#x2F;03-templates-oms-02-oms-member-info.rendered.html" class="btn btn-primary btn-block m-b-2">Continue to Member Info</a>
+							<div class="m-b-1">
+								<img src="/images/theme-base/icon-secure-checkout.svg" alt="">
+								<span class="small">&nbsp;<strong>Secure Checkout</strong></span>
+							</div>
+							<p class="small m-b-sm">Questions about joining online? <a href="#" target="_blank" class="link-underlined">Read the FAQs</a> or call Membership Sales at <a href="tel:+1-800-741-4109" aria-label="call 1, 800, 7 4 1, 4 1 0 9" class="link-underlined text-nowrap">1-800-741-4109</a></p>
+						</div>
+						<hr class="hidden-md-up">
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-0 col-md-6 col-lg-5 col-lg-offset-1 col-xl-8 col-xl-offset-2 col-xl-last text-xs-center text-md-left text-xl-center">
+					<div class="m-t-2 hidden-lg-down"></div>
+					<p class="micro m-b-0">Membership dues, levels, fees, benefits, services and amenities vary by club and are subject to change at any time (except membership dues during an annual membership’s initial term). Other terms and conditions apply. </p>
+<p class="micro m-b-sm">*Offer expires [Month DD, YYYY]. Not valid at all locations. Other exclusions apply.</p>
+<div id="membershipTerms" class="collapse">
+	<p id="referenceMonthly" class="micro m-b-sm">Monthly memberships are month-to-month access memberships that continue until canceled upon 30 days’ advance written notice. <a class="sr-only" href="#referenceMonthly-ref" aria-label="Back to monthly membership details">↩</a></p>
+	<p id="referenceAnnual" class="micro m-b-sm">Annual memberships, also known as Loyalty memberships, are access memberships with an initial term of 11 months up to one year which automatically convert to a month-to-month access membership unless canceled upon 30 days’ advance written notice before the end of the initial term. <a class="sr-only" href="#referenceAnnual-ref" aria-label="Back to annual membership details">↩</a></p>
+	<p id="referenceDayPass" class="micro">Day pass memberships are memberships that allow the purchase of passes in various increments that permit access to one club on one calendar day during a specified period of time. <a class="sr-only" href="#referenceDayPass-ref" aria-label="Back to day pass details">↩</a></p>
+</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<hr class="b-thick">
+					<div class="h2 h-static text-xs-center text-disabled m-b-0"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">4</span>Member Info</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<hr class="b-thick">
+					<div class="h2 h-static text-xs-center text-disabled m-b-2"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">5</span>Payment</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer-mylt" role="contentinfo">
+	<div class="p-wrap">
+		<nav aria-label="Footer">
+			<div class="footer-social">
+				<ul>
+					<li><a href="http://www.facebook.com/lifetimefitness" rel="noreferrer" title="Facebook"><span class="ico-facebook"></span><span class="sr-only">Facebook</span></a></li>
+					<li><a href="http://instagram.com/lifetime.life" rel="noreferrer" title="Instagram"><span class="ico-instagram"></span><span class="sr-only">Instagram</span></a></li>
+					<li><a href="http://www.youtube.com/mylifetimefitness" rel="noreferrer" title="YouTube"><span class="ico-youtube"></span><span class="sr-only">YouTube</span></a></li>
+					<li><a href="http://www.twitter.com/lifetimefitness" rel="noreferrer" title="Twitter"><span class="ico-twitter"></span><span class="sr-only">Twitter</span></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-navigation">
+				<ul>
+					<li><a href="http://news.lifetime.life">About</a></li>
+					<li><a href="http://news.lifetime.life">Newsroom</a></li>
+					<li><a href="http://careers.lifetime.life">Careers</a></li>
+					<li><a href="https://www.lifetime.life/media.html">Advertise with Us</a></li>
+					<li><a href="https://www.lifetime.life/corporate-wellness.html">Corporate Wellness</a></li>
+					<li><a href="https://www.lifetime.life/life-time-construction.html">Life Time Construction</a></li>
+					<li><a href="http://news.lifetime.life/corporate-social-responsibility">Sustainability</a></li>
+					<li><a href="https://www.lifetime.life/contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-legal">
+				<ul>
+					<li><a href="https://www.mylt.life/policy/privacy-policy.html">Privacy Policy</a></li>
+					<li><a href="https://www.mylt.life/policy/terms-of-use.html">Terms of Use</a></li>
+					<li><a href="https://www.mylt.life/policy/guest-and-club-policy.html">Club Policies</a></li>
+					<li><a href="https://www.mylt.life/policy/accessibility.html">Accessibility Policy</a></li>
+					<li><a href="https://www.mylt.life/policy/ca-privacy-policy.html">CA Privacy Rights</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<p class="copyright"><span>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Life Time, Inc. All rights reserved.</span></p>
+	</div>
+</footer>
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"patterns-header-prospect","lineagePath":"../../patterns/02-patterns-00-header-01-header-prospect/02-patterns-00-header-01-header-prospect.rendered.html"},{"lineagePattern":"templates-online-joins-legal-noTerms","lineagePath":"../../patterns/03-templates-oms/partials-_online-joins-legal-noTerms/03-templates-oms/partials-_online-joins-legal-noTerms.rendered.html"},{"lineagePattern":"patterns-prospect-footer","lineagePath":"../../patterns/02-patterns-01-footer-01-prospect-footer/02-patterns-01-footer-01-prospect-footer.rendered.html"}],"lineage":[{"lineagePattern":"patterns-header-prospect","lineagePath":"../../patterns/02-patterns-00-header-01-header-prospect/02-patterns-00-header-01-header-prospect.rendered.html"},{"lineagePattern":"templates-online-joins-legal-noTerms","lineagePath":"../../patterns/03-templates-oms/partials-_online-joins-legal-noTerms/03-templates-oms/partials-_online-joins-legal-noTerms.rendered.html"},{"lineagePattern":"patterns-prospect-footer","lineagePath":"../../patterns/02-patterns-01-footer-01-prospect-footer/02-patterns-01-footer-01-prospect-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"oms"},"patternExtension":"mustache","patternName":"Oms Join Offers","patternPartial":"templates-oms-join-offers","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

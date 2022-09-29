@@ -1,0 +1,50 @@
+{{> templates-tmhub-header }}
+<main>
+	{{> templates-reopen-page-heading(club:"Dallas - Highland Park",category:"LifeCafe") }}
+	<form>
+		<div class="bg-gray-12 b-y p-y-sm m-b-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4 p-y-sm">
+						<div class="form-group">
+							<label for="clubStatus">Current Status</label>
+							<select class="c-select">
+								<option>Open</option>
+								<option selected>Open With Limitations</option>
+								<option>Open, Reservation Required</option>
+								<option>Coming Soon</option>
+								<option>Closed</option>
+								<option>Not Available At This Location</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container p-y-grid">
+			<h2 class="h3 h-static m-b-grid">Supporting Links</h2>
+			<p class="small m-b-0 p-b-grid b-b">Select the supporting links you wish to include with this category. Entries using the "AEM Default" option need no further input. All other entries require either the specific URL or email to be used.</p>
+			{{> templates-reopen-supporting-link(title:"FAQ",id:"FAQ",checked:true) }}
+			{{> templates-reopen-supporting-link(title:"Menu",id:"Menu",checked:true) }}
+			{{> templates-reopen-supporting-link(title:"Order LifeCafe",id:"Order",checked:true) }}
+		</div>
+		{{> templates-reopen-notes }}
+		<div class="container p-y-grid">
+			<h2 class="h3 h-static m-b-grid">Subcategory Status</h2>
+			<p class="small m-b-grid p-b-grid b-b">The current status for each available subcategory for this category are listed below. Click any entry to update the status or supporting links.</p>
+			<ul class="list-bulleted">
+				{{> templates-reopen-status-li(title:"Outdoor Pool Bistro",status:"Closed") }}
+				{{> templates-reopen-status-li(title:"LifeCafe Experience",status:"Curbside Carryout Only") }}
+				{{> templates-reopen-status-li(title:"Retail",status:"Limited - Bars, Bottled Water and Other Beverage Options") }}
+				{{> templates-reopen-status-li(title:"Menu",status:"Smoothies, Shakes and Coffee") }}
+			</ul>
+		</div>
+		<div class="container p-y-grid">
+			<div class="btn-wrap">
+				<button class="btn btn-primary" disabled>Submit Updates</button>
+				<button class="btn btn-link">Cancel</button>
+			</div>
+		</div>
+	</form>
+</main>
+{{> templates-tmhub-footer }}

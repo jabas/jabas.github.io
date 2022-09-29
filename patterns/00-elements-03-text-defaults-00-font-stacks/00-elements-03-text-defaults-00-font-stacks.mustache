@@ -1,0 +1,71 @@
+<div class="container m-t-2">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<p>Font Stack:<br><code>font-family: -apple-system, BlinkMacSystemFont, system-ui, 'Helvetica Neue', 'Roboto', 'Segoe UI', Helvetica, Arial, sans-serif;</code></p>
+
+			<p>We leverage system fonts for these reasons:</p>
+			<ul>
+				<li>Increased performance and load time</li>
+				<li>Same font stack for all sites and properties without worrying about licensing</li>
+				<li>We’re using the same approach for email, apps and other digital properties</li>
+			</ul>
+			<p><strong>Note:</strong> The font stack should be used with the long-hand <code>font-family:</code> declaration to prevent Internet Explorer from reading <code>-apple-system</code> as a vendor prefixed property and ignoring the declaration completely. <a href="https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f" target="_blank" rel="noopener">Reference</a></p>
+
+			<div class="table-responsive">
+				<table class="table table-striped table-sm">
+					<thead>
+						<tr>
+							<th>OS</th>
+							<th>Version</th>
+							<th>System Font</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Mac OS X</td>
+							<td>El Capitan</td>
+							<td>San Francisco</td>
+						</tr>
+						<tr>
+							<td>Mac OS X</td>
+							<td>Yosemite</td>
+							<td>Helvetica Neue</td>
+						</tr>
+						<tr>
+							<td>Mac OS X</td>
+							<td>Mavericks</td>
+							<td>Lucida Grande (will use Helvetica Neue)</td>
+						</tr>
+						<tr>
+							<td>Windows</td>
+							<td>Vista</td>
+							<td>Roboto* (Segoe UI fallback)</td>
+						</tr>
+						<tr>
+							<td>Windows</td>
+							<td>XP</td>
+							<td>Roboto* (Arial fallback)</td>
+						</tr>
+						<tr>
+							<td>iOS</td>
+							<td>8</td>
+							<td>San Francisco</td>
+						</tr>
+						<tr>
+							<td>iOS</td>
+							<td>7</td>
+							<td>Helvetica Neue</td>
+						</tr>
+						<tr>
+							<td>Android</td>
+							<td>Ice Cream Sandwich (4.0+)</td>
+							<td>Roboto</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="small">* Roboto is a preferred fallback to system fonts in these instances and is being loaded via `@font-face`.</p>
+			</div>
+		</div>
+	</div>
+</div>
+

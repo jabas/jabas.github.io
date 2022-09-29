@@ -1,0 +1,55 @@
+<div class="bg-bio-match text-hide-overflow">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-6 b-b b-b-lg-0 col-lg-bottom text-xs-center">
+				<picture class="bio-detail-picture">
+					<source srcset="/images/theme-base/avatars/bio-avatar-{{bio.avatar}}-full.jpg" media="(min-width: 992px)">
+					<img src="/images/theme-base/avatars/bio-avatar-{{bio.avatar}}-head.jpg" alt="">
+				</picture>
+			</div>
+			<div class="col-xs-12 col-lg-6 edge-l-lg-up bio-detail-main-col">
+				<div class="bio-detail-main">
+					<div class="content-section">
+						<h1 class="m-b-sm">{{bio.firstname}} {{bio.initial}}.</h1>
+						{{# memberView }}
+						<p class="m-b-sm"><a href="#0">Contact Me</a></p>
+						{{/ memberView }}
+						<p class="h5 m-b-1">{{bio.title}}</p>
+						<div class="row p-b-1">
+							{{# memberView }}
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 p-r-0">
+							{{/ memberView }}
+							{{^ memberView }}
+							<div class="col-xs-12 col-md-8 col-lg-12 p-r-0">
+							{{/ memberView }}
+								<ul class="list-unstyled">
+									<li>{{bio.location}}</li>
+								</ul>
+							</div>
+							{{# memberView }}
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+								<p class="text-icon-indent m-b-1 m-r-2">
+									<span class="ico-phone-sm"></span>{{bio.phone}}
+								</p>
+							</div>
+							{{/ memberView }}
+						</div>
+						<div class="b-t p-t-2">
+							<h2 class="h4">I Am Responsible For</h2>
+							<ul class="list-bulleted">{{{bio.responsibilities}}}</ul>
+						</div>
+						<div class="b-t p-t-2">
+							<h2 class="h4">About Me</h2>
+							<p>{{bio.story}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="bio-detail-footnote">
+					<ul class="list-unstyled small">
+						<li>Schedule available upon request.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<li class="card card-product b-rounded-lg box-shadow {{#comingSoon}}m-t-4{{/comingSoon}}" tabindex="0" aria-title="{{clubName}}" aria-role="button">
+	{{#comingSoon}}
+	<div class="badge badge-secondary badge-card">{{{comingSoon}}}</div>
+	{{/comingSoon}}
+	<div class="card-img-top bg-gray-12">
+		<picture>
+			<source media="(min-width:992px) and (max-width: 1399px)" srcset="https://www.lifetime.life/content/dam/ltp/images/locations/geo/{{imgPath}}-xs.jpg">
+			<img alt="Building exterior at Life Time {{clubName}}" src="https://www.lifetime.life/content/dam/ltp/images/locations/geo/{{imgPath}}-sm.jpg">
+		</picture>
+	</div>
+	<div class="card-col">
+		<div class="card-block">
+			<p class="small m-b-0"><span class="font-weight-bold">{{distance}}</span> mi away</p>
+			<p id="club{{clubID}}" class="h2 h-static m-b-xs">{{clubName}}</p>
+			{{#nonClubStatus}}<p class="small m-y-xs">{{nonClubStatus}}</p>{{/nonClubStatus}}
+		{{#price}}
+			<div class="card-text">
+				<p class="large m-b-0">Starting at ${{price}}/mo</p>
+				<p class="small m-b-0 text-gray-5">+ $120 Joining Fee</p>
+			</div>
+		{{/price}}
+		</div>
+		{{^nonClub}}
+		<div class="card-footer">
+			<div class="btn-wrap m-b-0">
+				<a href="#0" class="btn {{buttonDetail}}">
+					{{#ctaText}}{{{ctaText}}}{{/ctaText}}				
+					{{^ctaText}}Club Details{{/ctaText}}
+				</a>
+				<a href="#0" class="btn {{buttonAction}}">
+					{{#ctaText}}{{{ctaText}}}{{/ctaText}}				
+					{{^ctaText}}Become a Member{{/ctaText}}
+				</a>
+			</div>
+		</div>
+		{{/nonClub}}
+	</div>
+</li>

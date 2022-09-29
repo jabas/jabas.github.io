@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<div class="container">
+
+<div class="content-section text-xs-center">
+	<h1 class="m-b-2">Get Pricing &amp; Information</h1>
+</div>
+<form>
+	<div class="content-section p-t-0">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="firstName" class="sr-only">First Name</label>
+					<input type="text" class="form-control" id="firstName" placeholder="*First Name" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="lastName" class="sr-only">Last Name</label>
+					<input type="text" class="form-control" id="lastName" placeholder="*Last Name" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="email" class="sr-only">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="*Email" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="phone" class="sr-only">Phone</label>
+					<input type="text" class="form-control" id="phone" placeholder="*Phone" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="birthYear" class="sr-only">Birth Year</label>
+					<select id="birthYear" class="c-select" aria-required="true">
+						<option value="">*Birth Year</option>
+						<option>Option Two</option>
+						<option>Option Three</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="clubLocation" class="sr-only">Club Location</label>
+					<select id="clubLocation" class="c-select" aria-required="true">
+						<option value="">*Club Location</option>
+						<option>Option Two</option>
+						<option>Option Three</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section p-t-0">
+		<p class="text-xs-center"><strong>Life Time Chanhassen offers a 7 day trial membership.</strong></p>
+		<div class="row content-mt">
+			<div class="col-xs-10 col-xs-offset-1 col-xl-8 col-xl-offset-2">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbBasketball" class="c-input c-checkbox m-b-2">
+							<input id="cbBasketball" type="checkbox">
+							<span class="c-indicator"></span>
+							Basketball
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbIndoorCycle" class="c-input c-checkbox m-b-2">
+							<input id="cbIndoorCycle" type="checkbox">
+							<span class="c-indicator"></span>
+							Indoor Cycle
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbOutdoorCycle" class="c-input c-checkbox m-b-2">
+							<input id="cbOutdoorCycle" type="checkbox">
+							<span class="c-indicator"></span>
+							Outdoor Cycle
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbGroupFitness" class="c-input c-checkbox m-b-2">
+							<input id="cbGroupFitness" type="checkbox">
+							<span class="c-indicator"></span>
+							Group Fitness
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbKids" class="c-input c-checkbox m-b-2">
+							<input id="cbKids" type="checkbox">
+							<span class="c-indicator"></span>
+							Kids
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbPTC" class="c-input c-checkbox m-b-2">
+							<input id="cbPTC" type="checkbox">
+							<span class="c-indicator"></span>
+							Physical Therapy and Chiropractic
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbSpa" class="c-input c-checkbox m-b-2">
+							<input id="cbSpa" type="checkbox">
+							<span class="c-indicator"></span>
+							Spa
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbPilates" class="c-input c-checkbox m-b-2">
+							<input id="cbPilates" type="checkbox">
+							<span class="c-indicator"></span>
+							Pilates
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbRacquetball" class="c-input c-checkbox m-b-2">
+							<input id="cbRacquetball" type="checkbox">
+							<span class="c-indicator"></span>
+							Racquetball
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbRun" class="c-input c-checkbox m-b-2">
+							<input id="cbRun" type="checkbox">
+							<span class="c-indicator"></span>
+							Run
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbSquash" class="c-input c-checkbox m-b-2">
+							<input id="cbSquash" type="checkbox">
+							<span class="c-indicator"></span>
+							Squash
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbSwim" class="c-input c-checkbox m-b-2">
+							<input id="cbSwim" type="checkbox">
+							<span class="c-indicator"></span>
+							Swim
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbTennis" class="c-input c-checkbox m-b-2">
+							<input id="cbTennis" type="checkbox">
+							<span class="c-indicator"></span>
+							Tennis
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbTraining" class="c-input c-checkbox m-b-2">
+							<input id="cbTraining" type="checkbox">
+							<span class="c-indicator"></span>
+							Training
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbWeightLoss" class="c-input c-checkbox m-b-2">
+							<input id="cbWeightLoss" type="checkbox">
+							<span class="c-indicator"></span>
+							Weight Loss
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbYoga" class="c-input c-checkbox m-b-2">
+							<input id="cbYoga" type="checkbox">
+							<span class="c-indicator"></span>
+							Yoga
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbAthletic" class="c-input c-checkbox m-b-2">
+							<input id="cbAthletic" type="checkbox">
+							<span class="c-indicator"></span>
+							Athletic Events
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+						<label for="cbMediSpa" class="c-input c-checkbox m-b-2">
+							<input id="cbMediSpa" type="checkbox">
+							<span class="c-indicator"></span>
+							MediSpa
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section p-t-0">
+		<label for="customCheckboxsm" class="c-input c-checkbox-sm m-b-2">
+			<input id="customCheckboxsm" type="checkbox">
+			<span class="c-indicator"></span>
+			By clicking submit, I consent to receive emails and phone calls from Life Time, regarding Life Time's products and services, through the information provided above.
+			<a href="#" target="_blank">I have read and agree to the terms of consent.</a>
+		</label>
+	</div>
+	<div class="content-section text-xs-center p-t-0">
+		<div class="btn-wrap">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+		<p class="small"><a href="#" target="_blank">Privacy Policy</a>, <a href="#" target="_blank">Terms of Use</a>, and <a href="#" target="_blank">Guest Pass Terms</a></p>
+	</div>
+</form>
+
+</div>
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"patterns","patternSubtype":"form-examples"},"patternExtension":"mustache","patternName":"Lead Form Interests","patternPartial":"patterns-lead-form-interests","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

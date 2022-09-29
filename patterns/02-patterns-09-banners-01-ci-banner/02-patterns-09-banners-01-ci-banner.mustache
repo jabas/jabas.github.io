@@ -1,0 +1,24 @@
+<div class="split-banner ci-banner {{styleModifier}}">
+	<div class="container">
+		<div class="row">
+			<div class="split-primary col-xs-12 col-md-2 text-xs-center text-md-left">
+				<div class="split-bg">
+					{{> elements-background-banner }}
+				</div>
+				<div class="split-content">
+					<h1 class="h2">{{companyInside.name}}</h1>
+					{{> components-responsive-btn-group }}
+				</div>
+			</div>
+			<div class="split-secondary col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0 text-xs-center text-md-left">
+				<div class="split-content">
+					<h2>{{headline.short}}</h2>
+					<p>{{excerpt.short}}</p>
+					<div class="btn-wrap">
+						<a href="#" class="btn btn-secondary-outline">{{button.text}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

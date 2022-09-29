@@ -1,0 +1,42 @@
+{{> templates-tmhub-header }}
+<main>
+	<div class="bg-gray-12 p-t-3 p-b-1 b-b">
+		<div class="container">
+			<img src="/images/placeholder/tmh-location-selector.svg" alt="" class="pull-xs-left m-r-2 m-b-2">
+			<div class="text-hide-overflow">
+				<p class="m-b-grid">Start by choosing your club location:</p>
+			</div>
+			<select class="c-select m-b-2" style="max-width:24rem;">
+				<option>Select one</option>
+				<optgroup label="Texas">
+					<option selected>Dallas - Highland Park</option>
+				</optgroup>
+			</select>
+		</div>
+	</div>
+	{{> templates-reopen-page-heading(club:"Dallas - Highland Park") }}
+	{{> templates-reopen-status-select(includeDate:true) }}
+	<div class="container p-y-grid">
+		<h2 class="h3 h-static m-b-grid">Category Status</h2>
+		<p class="small m-b-grid p-b-grid b-b">The current status for each available category at this club are listed below. Click any entry to update the status or supporting links, or to access the subcategories under each category.</p>
+		<ul class="list-bulleted">
+			{{> templates-reopen-status-li(title:"Fitness Floor",status:"Open") }}
+			{{> templates-reopen-status-li(title:"Locker Rooms",status:"Closed") }}
+			{{> templates-reopen-status-li(title:"Group Fitness",status:"Open, Reservation Required") }}
+			{{> templates-reopen-status-li(title:"Kids",status:"Open, Reservation Required") }}
+			{{> templates-reopen-status-li(title:"Racquet Sports",status:"Coming Soon") }}
+			{{> templates-reopen-status-li(title:"Gyms",status:"Open With Limitations") }}
+			{{> templates-reopen-status-li(title:"LifeSpa",status:"Open, Reservation Required") }}
+			{{> templates-reopen-status-li(title:"LifeCafe",status:"Open With Limitations") }}
+			{{> templates-reopen-status-li(title:"Training",status:"Open, Reservation Required") }}
+			{{> templates-reopen-status-li(title:"Pilates",status:"Open, Reservation Required") }}
+		</ul>
+		<h3 class="h6 m-b-grid">Not Available at this Location</h3>
+		<ul class="list-bulleted">
+			<li><a href="#">Aquatics</a></li>
+			<li><a href="#">Life Time Sport</a></li>
+			<li><a href="#">Rockwall</a></li>
+		</ul>
+	</div>
+</main>
+{{> templates-tmhub-footer }}

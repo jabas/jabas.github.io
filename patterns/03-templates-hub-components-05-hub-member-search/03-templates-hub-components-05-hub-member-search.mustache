@@ -1,0 +1,238 @@
+<div class="body-simulator m-b-3" id="ecMemberSearch">
+	<div class="loading-spinner fade" role="progress-bar" style="position: fixed; width: 40px; z-index: 2000; left: 50vw; top: 50vh;"></div>
+
+	<div class="container-fluid p-x-0 bg-white">
+		<div class="container">
+			<div class="row p-t-2 m-b-1">
+				<div class="col-xs-12 col-md-6">
+					<form>
+						<fieldset class="form-group">
+							<legend class="sr-only">Search Member Input</legend>
+							<div class="form-input-action">
+								<div class="input-group">
+									<input aria-label="Member Search" autocomplete="off" class="form-control p-l-3 input-icon-search" id="memberSearchText" placeholder="Search by Name or Member #" type="text">
+								</div>
+								<button class="form-input-btn form-input-clear" id="clear_search_text" data-target="#memberSearchText" type="button">
+									<span class="ico-delete"></span>
+									<span class="sr-only">Clear Input</span>
+								</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="multiselect">
+						<button aria-controls="multiSelectGroupOptions" aria-expanded="false" class="multiselect-btn">Select Club(s)</button>
+						<div aria-hidden="true" class="multiselect-wrap" id="multiSelectGroupOptions" style="display: none;">
+							<fieldset class="multiselect-group">
+								<legend class="sr-only">MultiSelectGroup</legend>
+								<div>
+									<div class="multiselect-subheading">
+										Alabama
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Vestavia Hills</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Arizona
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Gilbert</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>North Scottsdale</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Palm Valley</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Scottsdale at Shea and 101</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Tempe</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										California
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Folsom</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Laguna Niguel</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Rancho San Clemente</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Roseville</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Colorado
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Centennial</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Centennial Tennis</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Colorado Springs</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Flatirons</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Parker-Aurora</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Westminster</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Florida
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Boca Raton</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Coral Gables</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Living Coral Gables</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Tampa</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Georgia
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Alpharetta</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Johns Creek</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Peachtree Corners</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Sandy Springs</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Sugarloaf</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Woodstock</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Illinois
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Algonquin</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bloomingdale</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Burr Ridge</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Northbrook</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Old Orchard</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Orland Park</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Romeoville</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Schaumburg</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Vernon Hills</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Warrenville</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Indiana
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Castle Creek</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Fishers</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>North Meridian</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Iowa
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Des Moines</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Kansas
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Lenexa</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Overland Park</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Maryland
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Columbia</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Gaithersburg</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Rockville</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Massachusetts
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Burlington</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Chestnut Hill</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>MetroWest-Boston</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Westwood</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Michigan
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bloomfield Township</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Canton Township</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Commerce Township</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Novi</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Rochester Hills</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Shelby Township</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Troy</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Minnesota
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Apple Valley</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bloomington North</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bloomington South</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Champlin</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Chanhassen</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Coon Rapids</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Crosstown (Eden Prairie)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Eagan</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Eden Prairie Athletic</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Edina at Southdale</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Fridley</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Highland Park</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Lakeville</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Sport Winter Park (Eden Prairie)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Swim Maple Grove</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Work Southdale (Edina)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Work West End (SLP)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Maple Grove</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Minnetonka</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>New Hope</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Oakdale Village Tennis</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Plymouth</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Roseville (Women Only)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Savage</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>St. Louis Park</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Target Center (Minneapolis)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>White Bear Lake</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Woodbury</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Missouri
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Frontenac</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>West County-Chesterfield</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Nebraska
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Omaha</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Nevada
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Green Valley</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Living Green Valley (Henderson)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Summerlin</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										New Jersey
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bergen County</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Berkeley Heights</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bridgewater</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Florham Park</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Mount Laurel</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Princeton</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										New York
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Chappaqua</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Garden City</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Sky (Manhattan)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Syosset</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Westchester</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										North Carolina
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Apex</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Cary</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Charlotte</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Matthews</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Plantation Point</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Raleigh</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Six Forks</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>University</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Ohio
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Beachwood</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Deerfield Township</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Dublin</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Easton</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Pickerington</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Upper Arlington</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Oklahoma
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Oklahoma City</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>South Tulsa</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Pennsylvania
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Ardmore</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Fort Washington</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>King of Prussia</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Work Ardmore</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Tennessee
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Collierville</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Franklin</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Texas
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Allen</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Austin - Arboretum</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Austin - Downtown</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Austin - North</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Austin - South</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Baybrook</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Champions</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Cinco Ranch</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>City Centre Houston</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Colleyville</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Cypress</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Dallas - Addison</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Dallas - Highland Park</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Dallas Midtown</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Flower Mound</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Fort Worth-Alliance</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Galleria Tennis (Houston)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Garland</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Greenway</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Kingwood</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Lake Houston</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Living Midtown (Dallas)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Life Time Work City Centre Five (Houston)</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Mansfield</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Plano</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Plano Tennis</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>San Antonio 281</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>San Antonio at the Rim</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Sugar Land</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Utah
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>South Jordan</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Virginia
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Ashburn-Sterling</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Centreville</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Fairfax</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Gainesville</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Reston</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Washington
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Bellevue</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Wisconsin
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Brookfield</label>
+								</div>
+								<div>
+									<div class="multiselect-subheading">
+										Canada
+									</div><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Ajax</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Mississauga</label><label class="c-input c-checkbox-sm"><input name="checkbox" type="checkbox"> <span class="c-indicator"></span>Vaughan</label>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="clubFilters" class="col-xs-12">
+					<div class="chiclets-container">
+						<div class="chiclets-label">Filtered by:</div>
+						<button id="btn_clear_club_201" class="chiclet">
+							<span class="sr-only">Remove "</span>
+							<span>Vestavia Hills</span>
+							<span class="sr-only">" Filter</span>
+							<span class="chiclet-close">
+								<svg viewBox="0 0 12 12">
+									<path d="M 2,2 L 10,10 M 10,2 L 2,10" class="close-x"></path>
+								</svg>
+							</span>
+						</button>
+						<a id="lbl_clearFilters" class="btn btn-link p-l-0">Clear Filters</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container m-t-2">
+		<ul class="list-unstyled">
+			<li class="card m-b-0">
+				<div class="card-block">
+					<div class="row">
+						<div class="col-xs-12 text-xs-center col-sm-3 col-md-2">
+							<span class="messaging">
+								<img id="client-card_member-image" src="/images/placeholder/profile_blank.svg" alt="Adam Tuvman" class="img-circle img-thumbnail">
+							</span>
+						</div>
+						<div class="col-xs-12 text-xs-center text-sm-left col-sm-8 col-md-9 p-t-1">
+							<h3 class="card-title" id="client-card_member-name"><a href="#">Adam Tuvman</a></h3>
+							<div class="row m-b-2">
+								<div class="col-xs-12 col-sm-6 col-md-3 p-md-up-r-0 m-b-2 p-t-half">
+									<h6 class="m-b-0" id="clientProgram_program_heading">Club</h6>
+									<p class="m-b-0" id="clientProgram_program_title">Chanhassen, MN</p>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-3 p-md-up-x-0 m-b-2 p-t-half">
+									<h6 class="m-b-0" id="clientProgram_progress_heading">Date of Birth</h6>
+									<p class="m-b-0" id="clientProgram_sessions">02/10/1990</p>
+								</div>
+								<div class="col-xs-6 col-md-3 p-md-up-l-0 m-b-2 p-t-half">
+									<h6 class="m-b-0" id="clientProgram_compliance_heading">Member #</h6><span id="clientProgram_compliance_badge-pill">101613436</span>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 p-md-up-l-0 m-b-2">
+									<button class="btn btn-primary-outline btn-xs cta-btn" id="btn-request-connection" type="button">Connect</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>

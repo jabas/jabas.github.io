@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<div class="container m-t-2">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h1>Grid System</h1>
+			<p class="lead">The Core grid system is based off of Bootstrap 4, with 12 columns over 5 seperately defined breakpoints.</p>
+			<h2>How it Works</h2>
+			<p>There are three major components—containers, rows, and columns:</p>
+			<ul>
+			  <li>Containers—<code>.container</code> for 100% width up to the XL breakpoint or <code>.container-fluid</code> for full width—center your site’s contents and help align your grid content.</li>
+			  <li>Regardless of container type, within it a <code>.row</code> is required to surround all columns.</li>
+			  <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+			</ul>
+			<p>Columns are named in a systemic way, to allow them to occupy different percentages of space at different breakpoints. They all begin with the <code>.col-</code> designation, and the next portions define the breakpoint where it is first applied, and a numeric used to control the width percentage.</p>
+			<h3>Breakpoints</h3>
+			<p>Column breakpoints are additive, meaning they apply to the breakpoint specified and all those above it (e.g., <code>.col-sm-4</code> applies to small, medium, large, and extra large window sizes):</p>
+			<div class="table-responsive">
+			  <table class="table table-bordered table-striped">
+			    <thead>
+			      <tr>
+			        <th></th>
+			        <th class="text-xs-center">
+			          Extra small<br>
+			          <small>&lt;544px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Small<br>
+			          <small>≥544px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Medium<br>
+			          <small>≥768px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Large<br>
+			          <small>≥992px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Extra large<br>
+			          <small>≥1200px</small>
+			        </th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <th class="text-nowrap" scope="row">Class prefix</th>
+			        <td><code>.col-xs-</code></td>
+			        <td><code>.col-sm-</code></td>
+			        <td><code>.col-md-</code></td>
+			        <td><code>.col-lg-</code></td>
+			        <td><code>.col-xl-</code></td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+			<h3>Column Width</h3>
+			<p>Column width is determined as a fraction of the 12 columns per row, where the percentage width of a <code>.col-xx-n</code> class is evaluated as <code>n/12</code>. So if you want three equal-width columns, you’d use <code>.col-xs-4</code>.</p>
+			<ul>
+			  <li>Column <code>width</code>s are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
+			  <li>Columns have <code>1rem</code> padding on each side to create the gutters between individual columns for a total gutter width of <code>2rem</code>.</li>
+			</ul>
+
+			<h2>SCSS Mixins</h2>
+			<p>Grid classes are created via SCSS mixins, so you can use these instead of grid classes to create custom components and layouts that still align with the defined grid. Refer to <code>css/theme-base/mixins/_grid.scss</code> for the mechanics of their use.</p>
+
+		</div>
+	</div>
+</div>
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"elements","patternSubtype":"grid"},"patternExtension":"mustache","patternName":"Grid System","patternPartial":"elements-grid-system","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,144 @@
+{{> patterns-header-member }}
+<main>
+
+	<div class="content-section container">
+		<div class="row row-xs-baseline">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-lg-center">
+				<h1 class="h2">Review & Payment</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-section p-t-0">
+		<div class="container p-b-2">
+			<div class="row">
+				<div class="col-xs-12 col-lg-8 col-lg-offset-0">
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
+
+							<!-- Review Selections -->
+							<div class="row">
+								<div class="col-lg-4 hidden-md-down">
+									<h2 class="h5 m-b-grid">Review</h2>
+								</div>
+								<div class="col-xs-12 col-lg-8 text-lg-right">
+									<p class="m-b-grid">Time left to complete: <strong>14:56</strong></p>
+								</div>
+							</div>
+							{{> templates-esr-registration-card(headingClass:'h5',price:'$10.00',participants:'John') }}
+							{{> templates-esr-registration-card(headingClass:'h5',price:'$10.00',participants:'Cindy') }}
+							<hr>
+							<!-- END Review Selections -->
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-12 col-lg-offset-0">
+
+							<!-- Payment Information -->
+							<div class="row">
+								<div class="col-xs-12 col-lg-4">
+									<h2 class="h5">Payment Information</h2>
+								</div>
+								<div class="col-xs-12 col-lg-8">
+									<div class="b-b small clearfix" style="padding-top: 0.125rem;">
+										<p class="m-b-sm pull-xs-left" aria-hidden="true">Payment Type</p>
+										<p class="m-b-sm pull-xs-right"><a data-toggle="collapse" href="#radioOptions" aria-expanded="false" aria-controls="radioOptions" data-label-collapsed="Change <span class='sr-only'>Payment Type</span>" data-label-expanded="Cancel <span class='sr-only'>Change of Payment Type</span>" role="button">Change <span class="sr-only">Payment Type</span></a></p>
+									</div>
+									<fieldset class="form-group c-inputs-stacked m-b-0">
+										<legend class="sr-only">Payment Type</legend>
+										<label for="payment1" class="c-input c-radio text-hide-overflow b-b p-b-grid m-t-grid m-b-0">
+											<input id="payment1" name="paymentOptions" type="radio" checked>
+											<span class="c-indicator"></span>
+											<span class="ico-cc-visa selected pull-xs-left m-r-grid"></span>
+											<span class="sr-only">Visa</span>
+											Club Tab&nbsp;&nbsp;
+											************1234
+										</label>
+										<div id="radioOptions" class="collapse fade">
+											<label for="payment2" class="c-input c-radio text-hide-overflow b-b p-b-grid m-t-grid m-b-0">
+												<input id="payment2" name="paymentOptions" type="radio">
+												<span class="c-indicator"></span>
+												<span class="ico-cc-amex selected pull-xs-left m-r-grid"></span>
+												<span class="sr-only">American Express</span>
+												Credit Card&nbsp;&nbsp;
+												************1234
+											</label>
+											<label for="payment3" class="c-input c-radio text-hide-overflow b-b p-b-grid m-t-grid m-b-0">
+												<input id="payment3" name="paymentOptions" type="radio">
+												<span class="c-indicator"></span>
+												<span class="ico-cc-discover selected pull-xs-left m-r-grid"></span>
+												<span class="sr-only">Discover</span>
+												************1234
+											</label>
+											<div class="b-b">
+												<p class="m-t-grid font-weight-bold"><a href="#" role="button"><span class="ico-plus-sm"></span> Add another form of payment</a></p>
+												<div class="btn-wrap">
+													<button class="btn btn-primary">Update Payment Type</button>
+												</div>
+											</div>
+
+
+										</div>
+									</fieldset>
+									<div class="p-t-2">
+										<div class="m-b-1">
+											<a href="#" target="_blank" class="link-underlined small text-nowrap m-r-1">General Terms and Agreements</a>
+											<a href="#" target="_blank" class="link-underlined small text-nowrap m-r-1">Georgia Consumer Warning</a>
+											<a href="#" target="_blank" class="link-underlined small text-nowrap m-r-1">Terms of Use</a>
+											<a href="#" target="_blank" class="link-underlined small text-nowrap">Privacy Policy</a>
+										</div>
+										<div class="form-group">
+											<label for="termsConditionsCb" class="c-input c-checkbox-sm">
+												<input id="termsConditionsCb" type="checkbox">
+												<span class="c-indicator"></span>
+												I agree to the Life Time Fitness terms and conditions. 
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<hr class="hidden-lg-up">
+							<!-- END Payment Information -->
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-0 p-x-grid col-stretch-section">
+					<div class="content-section container b-l-xs-0 b-l-lg p-y-0 p-r-0 edge-l-md-down">
+						<div class="container p-r-0 edge-l-md-down">
+
+							<!-- Summary Table -->
+							<table class="table table-sm m-b-1">
+								<caption class="h5 p-y-0 m-b-grid">Order Summary</caption>
+								<tbody>
+									<tr>
+										<td>Ride for a Reason</td>
+										<td class="text-xs-right">$20.00</td>
+									</tr>
+									<tr>
+										<td>Tax</td>
+										<td class="text-xs-right">$1.63</td>
+									</tr>
+									<tr>
+										<td><strong>Total</strong></td>
+										<td class="text-xs-right"><strong>$21.63</strong></td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="btn btn-primary btn-block m-b-2">Complete Purchase</button>
+							<div class="m-b-1">
+								<img src="/images/theme-base/icon-secure-checkout.svg" alt="">
+								<span class="small">&nbsp;<strong>Secure Checkout</strong></span>
+							</div>
+							<!-- END Summary Table -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
+{{> patterns-mylt-footer }}

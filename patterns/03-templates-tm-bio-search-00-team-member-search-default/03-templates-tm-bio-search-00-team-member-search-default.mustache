@@ -1,0 +1,64 @@
+{{> templates-bios-admin-header }}
+<main>
+	<div class="content-section container">
+		<h1 class="h2 m-b-1">Search Team Member Bios</h1>
+	</div>
+	<div class="p-y-sm bg-gray-12">
+		<form>
+		<div class="container">
+			<div class="row row-lg-bottom">
+				<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-0">
+					<div class="row">
+						<div class="col-xs-12 col-lg-4 p-y-sm edge-r-lg-up">
+							<div class="form-group m-b-0">
+								<label for="inputName">Name (min. 3 characters)</label>
+								<input type="text" class="form-control" id="inputName">
+							</div>
+						</div>
+						<div class="col-xs-12 col-lg-4 p-y-sm edge-r-lg-up">
+							<div class="form-group m-b-0">
+								<label for="selLocation">Location</label>
+								<select id="selLocation" class="c-select">
+									<option>Add a Location</option>
+									<option value="1">Club Name List</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-12 col-lg-4 p-y-sm edge-r-lg-up">
+							<div class="form-group m-b-0">
+								<label for="selRole">Role</label>
+								<select id="selRole" class="c-select" disabled>
+									<option>Add a Role</option>
+									<option value="1">Personal Trainer</option>
+									<option value="2">Yoga Instructor</option>
+									<option value="3">Cycle Instructor</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-2">
+					<div class="row">
+						<div class="col-xs-12 col-md-3 col-md-offset-2 col-lg-12 col-lg-offset-0 p-y-sm">
+							<div class="btn-wrap m-b-0">
+								<button class="btn btn-primary btn-block">Search</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+	<div class="content-section container">
+		<div class="row">
+			<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+				<div class="b-a bg-gray-12 p-a-grid">
+					<p class="m-b-0">Enter a partial name or select a location to search results. You can additionally filter by role once one of these options is added.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}

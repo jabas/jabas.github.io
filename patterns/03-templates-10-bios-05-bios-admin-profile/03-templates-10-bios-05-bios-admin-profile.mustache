@@ -1,0 +1,160 @@
+{{> templates-bios-admin-header }}
+<main>
+	<div class="container-fluid p-y-grid b-b bg-gray-12">
+		<h1 class="h6 h-static m-b-sm">Public Status</h1>
+		<p class="m-b-0">
+			<span class="ico-checkmark-solid text-success"></span>
+			The public version of this bio can be viewed on <a href="#0">this page</a>. The edits displayed below require manager approval to be incorporated.
+		</p>
+		<p class="m-t-sm m-b-0 micro text-muted">Public Version Published: MM/DD/YYY 12:00A</p>
+	</div>
+	<div class="container-fluid p-t-grid p-b-sm">
+		<div class="row row-xs-center">
+			<div class="col-xs-12 col-md-4">
+				<h1 class="h2 h-static m-b-sm">Profile Admin</h1>
+			</div>
+			<div class="col-xs-12 col-md-8 p-b-sm text-md-right">
+				<div class="d-inline-block align-middle">
+					<span class="m-t-xs small font-weight-bold">Edit Status:</span> <span class="badge badge-pill badge-warning align-middle m-r-grid m-y-sm">Pending Approval</span>
+				</div><br class="hidden-md-up"/>
+				<div class="d-inline-block align-middle m-r-grid">
+					<span id="cbFeaturedLabel" class="form-control-label d-inline-block align-middle">Featured</span>
+					<label for="cbFeatured" aria-labelledby="cbFeaturedLabel" class="c-input c-toggle align-middle">
+						<input id="cbFeatured" type="checkbox" role="switch">
+						<span class="c-indicator"></span>
+					</label>
+				</div>
+				<div class="d-inline-block align-middle">
+					<span id="cbVisibleLabel" class="form-control-label d-inline-block align-middle">Visible</span>
+					<label for="cbVisible" aria-labelledby="cbVisibleLabel" class="c-input c-toggle align-middle">
+						<input id="cbVisible" type="checkbox" role="switch" checked>
+						<span class="c-indicator"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container-fluid b-t b-b p-y-sm">
+		<p class="text-danger m-y-sm"><span class="ico-alert-solid"></span> Roles for this performer have changed since last approved. Please review and update so these new roles can be applied publicly.</p>
+		<div class="row">
+
+			<div class="col-xs-12 col-lg-8">
+				<nav class="p-y-sm">
+					<ul class="nav nav-btns nav-stack-sm">
+						<li class="nav-item">
+							<a class="btn btn-sm" href="{{ link.templates-bios-admin-edit-1 }}">Edit About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-sm" href="{{ link.templates-bios-admin-edit-2 }}">Edit Social</a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-sm" href="{{ link.templates-bios-admin-edit-3 }}">Edit Role</a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-sm" href="{{ link.templates-bios-admin-edit-4 }}">Manage Testimonials <span class="badge badge-pill badge-danger p-x-sm m-l-sm">7</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-link btn-sm" href="#0"><span class="ico-document"></span><span class="btn-icon-text">How Do I Use This?</span></a>
+						</li>
+					</ul>
+				</nav>
+				<hr class="m-y-sm hidden-lg-up">
+			</div>
+			<div class="col-xs-12 col-lg-4 text-lg-right p-y-sm">
+				<div class="btn-wrap m-b-0">
+					<button class="btn btn-sm btn-link btn-block-sm" data-toggle="modal" data-target="#denialReason">Deny Updates</button>
+					<button class="btn btn-sm btn-primary btn-block-sm">Approve Updates</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid p-y-sm bg-bio-match">
+		<div class="row">
+			<div class="col-xs-12 col-lg-6 p-y-sm">
+				<h2 class="h-static m-y-0">Current Preview <span class="small text-nowrap font-italic">(updated MM/DD/YYY 12:00A)</span></h2>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-y-sm edge-l-lg-up">
+				<select name="viewType" id="viewType" class="c-select">
+					<option>View as Member</option>
+					<option>View as Prospect</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	
+{{> templates-bios-detail-trainer }}
+
+	<div class="content-section content-mt bg-gray-11">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-lg-6">
+					<h3>My Classes</h3>
+					<p>This section will dynamically display your classes for the week. If you would like your classes to show up differently, please update information in BOSS.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section content-mt bg-gray-11 m-b-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-lg-6">
+					<h3>Testimonials</h3>
+					<p>This section will dynamically display testimonials from your clients and approved by your manager. It is always a good idea to ask clients if they will submit a testimonial based on services they received.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="certifications" tabindex="-1" role="dialog" aria-labelledby="certModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header p-b-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h3 id="certModalLabel">Certifications</h3>
+					<ul class="list-unstyled">
+						<li>NASM - Certified Personal Trainer</li>
+						<li>NASM - Specialist</li>
+						<li>Corrective Exercise</li>
+						<li>ISSN - Sports Nutrition </li>
+						<li>Precision Nutrition Level I min. - Precision Nutrition</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="denialReason" tabindex="-1" role="dialog" aria-labelledby="certModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 class="modal-title" id="myModalLabel">Denial Reason</h5>
+				</div>
+				<div class="modal-body">
+					<p>Please explain the reason(s) for the denial of these profile updates. This message will be forwarded to the employee along with the denial notification.</p>
+					<form>
+						<div class="form-group form-group-spacer">
+							<label for="denialText" class="sr-only">Denial Reasons</label>
+							<textarea id="denialText" class="form-control" rows="8" cols="10" placeholder="Enter your message here"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary">Complete and Send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}

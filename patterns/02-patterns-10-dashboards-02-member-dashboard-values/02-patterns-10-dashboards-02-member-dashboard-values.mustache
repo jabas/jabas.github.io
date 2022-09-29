@@ -1,0 +1,28 @@
+<div class="container m-t-2">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			{{> patterns-member-dashboard-authenticated}}
+		</div>
+
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 p-y-4">
+			<h5>Authentication Values Widget</h5>
+			<form class="m-b-1">
+				<div class="row">
+					<fieldset class="form-group col-xs-12 col-sm-4">
+						<label for="valVisits" class="is-up">Club Visits</label>
+						<input id="valVisits" type="text" class="form-control" placeholder="Club Visits Value" value="0">
+					</fieldset>
+					<fieldset class="form-group col-xs-12 col-sm-4">
+					<label for="valPasses" class="is-up">Guest Passes</label>
+						<input id="valPasses" type="text" class="form-control" placeholder="Guest Passes Value" value="0">
+					</fieldset>
+					<fieldset class="form-group col-xs-12 col-sm-4">
+						<label for="valBucks" class="is-up">LT BUCK$</label>
+						<input id="valBucks" type="text" class="form-control" placeholder="LT BUCK$ Value" value="0">
+					</fieldset>
+				</div>
+			</form>
+			<button onclick="triggerGauges()" class="btn btn-primary">Animate</button>
+		</div>
+	</div>
+</div>

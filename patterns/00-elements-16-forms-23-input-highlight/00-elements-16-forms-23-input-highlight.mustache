@@ -1,0 +1,106 @@
+<div class="container-fluid">
+  <h5>input-highlight style</h5>
+  <div class="form-group form-group-spacer">
+    <div class="radio">
+      <label class="input-highlight-fake-label" for="input-highlight-has-danger">
+        <input id="input-highlight-has-danger" name="input-highlight-type" type="radio" value="has-danger" checked>
+        <strong>has-danger</strong>
+      </label>
+    </div>
+    <div class="radio">
+      <label class="input-highlight-fake-label" for="input-highlight-has-warning">
+        <input id="input-highlight-has-warning" name="input-highlight-type" value="has-warning" type="radio">
+        <strong>has-warning</strong>
+      </label>
+    </div>
+    <div class="radio">
+      <label class="input-highlight-fake-label" for="input-highlight-no-style">
+        <input id="input-highlight-no-style" name="input-highlight-type" value="" type="radio">
+        default
+      </label>
+    </div>
+  </div>
+  <form id="input-highlight-example">
+    {{#sections}}
+      <h5>{{{title}}}</h5>
+      {{#examples}}
+        <div class="form-group has-danger form-group-spacer">
+          <label for="{{id}}">
+            {{#matched}}{{{labels.matched}}}{{/matched}}
+            {{#unmatched}}{{{labels.unmatched}}}{{/unmatched}}
+          </label>
+          <input-highlight pattern="{{{pattern}}}" {{#matched}}highlight="matched"{{/matched}}>
+            {{#input}}
+              <input id="{{id}}" name="{{id}}" class="form-control" value="{{{value}}}" />
+            {{/input}}
+
+            {{#textarea}}
+              <textarea id="{{id}}" name="{{id}}" class="form-control" style="resize: both">{{{value}}}</textarea>
+            {{/textarea}}
+          </input-highlight>
+        </div>
+      {{/examples}}
+    {{/sections}}
+
+    <h5>Custom Styles</h5>
+    <style>
+      input-highlight.custom::part(highlight) {
+        color: red;
+        text-decoration: line-through;
+        background-color: transparent;
+      }
+      input-highlight.custom::part(no-highlight) {
+        color: #00a;
+      }
+    </style>
+    <div class="form-group has-danger form-group-spacer">
+      <label for="input-highlight-custom-style">
+        {{{labels.matched}}}
+      </label>
+      <input-highlight class="custom" pattern="{{{pattern}}}" highlight="matched">
+        <input id="input-highlight-custom-style" name="input-highlight-custom-style" class="form-control" value="{{{value}}}" />
+      </input-highlight>
+    </div>
+
+    <h5>Complex Examples</h5>
+    <div class="form-group has-danger form-group-spacer">
+      <label for="input-highlight-complex">
+        {{{labels.matched}}}
+      </label>
+      <div class="input-group">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary">Left</button>
+        </span>
+        <input id="input-highlight-complex" name="input-highlight-complex" class="input-highlight form-control input-icon input-icon-search" data-pattern="{{{pattern}}}" data-highlight="matched" value="{{{value}}}" />
+        <span class="input-group-btn">
+          <button class="btn btn-primary">Right</button>
+        </span>
+      </div>
+      <span class="label-help">Helper Text</span>
+    </div>
+
+    <div class="form-group form-group-spacer has-danger">
+      <label class="float-label" for="input-highlight-float-label">
+        Highlight numeric characters
+      </label>
+      <input-highlight pattern="[0-9]*" highlight="matched">
+        <input id="input-highlight-float-label" name="input-highlight-float-label" class="form-control form-control-danger" placeholder="Highlight numeric characters"/>
+      </input-highlight>
+    </div>
+  </form>
+  <script>
+    const form = document.getElementById('input-highlight-example')
+    document.querySelectorAll('[name=input-highlight-type]').forEach(el => {
+      el.addEventListener('change', () => {
+        const checked = document.querySelector('[name=input-highlight-type]:checked').value
+        form.querySelectorAll('.form-group').forEach(group => {
+          group.classList.remove('has-warning')
+          group.classList.remove('has-danger')
+          if (checked) {
+            group.classList.add(checked)
+          }
+        })
+      })
+    })
+  </script>
+</div>

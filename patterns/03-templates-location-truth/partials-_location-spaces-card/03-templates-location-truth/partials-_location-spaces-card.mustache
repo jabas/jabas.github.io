@@ -1,0 +1,23 @@
+<li class="card lsot-card {{# danger }}lsot-card-danger{{/ danger }}">
+	<div class="card-block">
+		<div class="m-b-1">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 font-weight-bold">{{name}}</div>
+				{{# danger }}
+					<div class="col-xs-12 col-md-6 text-md-right"><span class="text-danger">Hours Incomplete</span></div>
+				{{/ danger }}
+			</div>
+		</div>
+		<div class="small">
+			<div class="row">
+				<div class="col-xs-7">
+					<a href="#0"><span class="ico-edit-sm icon-adjust-horiz icon-adjust-vert"></span> Edit</a>&nbsp;&nbsp;|&nbsp;
+					<a href="#viewModal" data-toggle="modal" role="button">View</a>
+				</div>
+				<div class="col-xs-5 text-xs-right">
+					<a href="#deleteModal" data-toggle="modal" role="button"><span class="ico-trash icon-adjust-horiz icon-adjust-vert"></span> Delete</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>

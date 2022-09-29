@@ -1,0 +1,28 @@
+<{{#cardElement}}{{cardElement}}{{/cardElement}}{{^cardElement}}div{{/cardElement}} class="card p-b-1 text-xs-center {{styleModifier}}">
+	<h2 class="h3 h-scaled p-t-3 p-x-1">{{cardTitle}}</h2>
+	<div class="m-b-4 p-x-2 card-description">
+		{{#cardDescription}}{{{cardDescription}}}{{/cardDescription}}
+		{{#badge}}<br><div class="badge badge-pill badge-default">{{badge}}</div>{{/badge}}
+	</div>
+	{{#priceGroup}}
+	<div class="price-lockup {{priceModifier}} b-t b-b m-b-sm {{^priceFootnote}}m-b-4{{/priceFootnote}}">
+		{{#priceDescriptor}}<div class="price-label small p-t-1">{{priceDescriptor}}</div>{{/priceDescriptor}}
+		<span class="sr-only">{{priceFull}}</span>
+		<div aria-hidden="true">
+			<span class="currency">$</span><span class="value">{{price}}</span>{{#unit}}<span class="unit"> / {{unit}}</span>{{/unit}}
+		</div>
+	</div>
+	{{#priceFootnote}}<div class="small m-b-2">{{priceFootnote}}</div>{{/priceFootnote}}
+	{{/priceGroup}}
+	{{#priceGroupCustom}}
+	<div class="price-lockup {{priceModifier}}">
+		{{{priceCustom}}}
+	</div>
+	{{/priceGroupCustom}}
+	{{#cta}}
+	<a href="{{url}}" class="btn btn-primary btn-sm m-b-1">{{{cta}}}</a>
+	{{/cta}}
+	{{#disclaimer}}
+	<div class="small">{{{disclaimer}}}</div>
+	{{/disclaimer}}
+</{{#cardElement}}{{cardElement}}{{/cardElement}}{{^cardElement}}div{{/cardElement}}>

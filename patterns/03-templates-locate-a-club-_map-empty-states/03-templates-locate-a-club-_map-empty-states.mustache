@@ -1,0 +1,17 @@
+<div class="results-none content-section center-block text-xs-center">
+	{{#geoFail}}
+		<img class="m-b-2" src="https://mylt.lifetimefitness.com/etc/designs/lt/images/empty_location_icon.svg" alt="location reticle" />
+		<p class="large">Enter a location to find the nearest Life Time.</p>
+	{{/geoFail}}
+	{{^geoFail}}
+		<img class="m-b-2" src="https://mylt.lifetimefitness.com/etc/designs/lt/images/no_location_results_icon.svg" alt="reticle alerting no location" />
+		{{#filteredEmpty}}
+			<p class="large">There are no locations nearby matching your filters.</p>
+			<p class="small">Try a new search or remove filters.</p>
+		{{/filteredEmpty}}
+		{{^filteredEmpty}}
+			<p class="large">There are no locations nearby.</p>
+			<p class="small">Try a new search or<br /><a href="#0">view a list of all locations</a>.</p>
+		{{/filteredEmpty}}
+	{{/geoFail}}
+</div>

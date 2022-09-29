@@ -1,0 +1,131 @@
+<div class="container p-t-2 p-b-1 b-y">
+	<div class="row">
+		<div class="col-xs-12 col-md-6 col-lg-4">
+			<h2 class="h5 m-b-1">Club Hours</h2>
+			<p class="small m-b-1"><a href="#0"><span class="ico-edit-sm"></span> Edit</a></p>
+			{{# fullData }}
+			<hr class="m-y-1">
+			<table class="table table-sm table-striped m-b-1" summary="open hours summary">
+				<caption class="sr-only">Regular Club Access</caption>
+				<tbody>
+					<tr class="sr-only">
+						<th scope="col">Day</th>
+						<th scope="col">Hours</th>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+					<tr>
+						<td>Monday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td class="text-xs-right">24 hours</td>
+					</tr>
+				</tbody>
+			</table>
+			{{/ fullData }}
+			{{^ fullData }}
+				<div class="alert alert-danger alert-icon">
+					<p>Club hours needed.</p>
+				</div>
+			{{/ fullData }}
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-4">
+			<h2 class="h5 m-b-1">Guest Hours</h2>
+			<p class="small m-b-1"><a href="#0"><span class="ico-edit-sm"></span> Edit</a></p>
+			{{# fullData }}
+			<hr class="m-y-1">
+			<table class="table table-sm table-striped m-b-1" summary="open hours summary">
+				<caption class="sr-only">Guest Access Hours</caption>
+				<tbody>
+					<tr class="sr-only">
+						<th scope="col">Day</th>
+						<th scope="col">Hours</th>
+					</tr>
+					<tr>
+						<td>Sunday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>	
+					<tr>
+						<td>Monday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td class="text-xs-right">
+							<span class="time-start">5:00</span><span class="time-ampm"> AM</span>
+							<span class="time-to">to</span>
+							<span class="time-end">9:00</span><span class="time-ampm"> PM</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			{{/ fullData }}
+			{{^ fullData }}
+				<div class="alert alert-danger alert-icon">
+					<p>Guest hours needed.</p>
+				</div>
+			{{/ fullData }}
+		</div>
+	</div>
+	<p class="small text-gray-5 font-italic m-b-1">If this information is incorrect, please reach out to Kate Seiffert.</p>
+</div>

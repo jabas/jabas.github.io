@@ -1,0 +1,16 @@
+<li class="b-t b-clr-gray-4 p-y-sm">
+	<p class="pull-xs-left m-b-0">
+		{{#taskComplete}}<img src="/images/theme-base/icon-task-checked.svg" alt="">{{/taskComplete}}
+		{{#taskIncomplete}}<img src="/images/theme-base/icon-task-unchecked.svg" alt="">{{/taskIncomplete}}
+	</p>
+	<div class="container text-hide-overflow">
+		<div class="row row-xs-baseline">
+			<div class="col-xs-12 col-sm-6">
+				<span class="h3 h-static">{{task}}{{#taskComplete}}<span class="sr-only"> Complete</span>{{/taskComplete}}{{#taskIncomplete}}<span class="sr-only"> Incomplete</span>{{/taskIncomplete}}</span>
+			</div>
+			{{#taskMeta}}<div class="col-xs-12 col-sm-6 text-sm-right p-r-0 small mylt-gray-9">
+				<span>{{{taskMeta}}}</span>
+			</div>{{/taskMeta}}
+		</div>
+	</div>
+</li>

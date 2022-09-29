@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<header class="header"> <a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+    <div class="header-mobile-bar">
+        <div class="header-nav-toggle">
+            <button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="navigation"> <span class="navbar-toggler-icon"></span> </button>
+        </div>
+        <div class="header-brand-mobile">
+            <a href="/member.html"> <img src="/images/placeholder/lt-dashboard.png" alt="Life Time"> </a>
+        </div>
+        <div class="header-utility-mobile">
+            <nav aria-label="Utility Navigation">
+                <ul class="nav nav-right nav-neutral">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"> <span class="ico-user icon-adjust-horiz"></span> <span class="sr-only js-login-label">account navigation</span> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--*/ for rare mobile */-->
+    </div>
+    <div id="headerNav" class="header-nav">
+        <div data-navbar-overflow="#primaryNav" class="header-primary navbar navbar-collapse js-ltnav-primary navbar-overflow">
+            <div class="navbar-brand header-hide-mobile">
+                <a href="/member.html"><img src="/images/placeholder/lt-dashboard.png" alt="Life Time"></a>
+            </div>
+            <nav aria-label="Primary Navigation">
+                <ul id="primaryNav" class="nav nav-neutral">
+                    <li class="nav-item"><a href="#0" class="nav-link ">New Members</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link ">Personal Training</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link ">Search All Members</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link active">Location Management</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-utility">
+            <nav aria-label="Utility Navigation" class="header-utility-minor">
+                <ul class="nav nav-inverse"></ul>
+            </nav>
+            <nav aria-label="Utility Navigation" class="header-utility-major">
+                <ul class="nav nav-inverse">
+                    <li class="nav-item"><a href="#" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span> <span data-profile="" data-profile-property="employeeDetails.firstName" aria-describedby="account-nav-description" class="js-login-label">Joshua</span> <span id="account-nav-description" class="sr-only">account navigation</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav aria-label="Navigation to Other Life Time Properties" class="header-global">
+            <ul class="nav dropdown dropdown-inverse">
+                <li class="nav-item "><a href="/member.html" class=" nav-link active ">HUB</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+        <div class="dropdown-arrow"></div>
+        <div class="dropdown-menu dropdown-menu-right">
+            <p class="m-b-1 hidden-xs-up js-anonymous">
+                <a class="js-login-link btn btn-primary btn-sm btn-block"> </a>
+            </p>
+            <p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro hidden-xs-up js-anonymous"> <span class="text-muted">New member? <a class="link-reversed-white">Create Account</a></span> </p> <a class="dropdown-item micro " href="/member/bios-admin/manage-profile.html"> My Bio </a> <a class="dropdown-item micro js-logout-link" href="#"> Log Out </a> </div>
+    </div>
+</header>
+<main>
+	<div class="container p-t-2">
+		<h1 class="h2 h-static m-b-2"><span class="text-gray-8">Chanhassen&nbsp;|</span> Club Hours</h1>
+	</div>
+	<form>
+		<div class="bg-gray-12 b-t p-y-grid">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+						<label for="editEachDay" class="c-input c-radio">
+							<input id="editEachDay" name="editRadio" type="radio" value="each" checked>
+							<span class="c-indicator"></span>
+							 Edit Each Day
+						</label>
+						<label for="editAllDays" class="c-input c-radio">
+							<input id="editAllDays" name="editRadio" type="radio" value="all">
+							<span class="c-indicator"></span>
+							Edit All Days
+						</label>
+						<button class="btn btn-link align-baseline">Reset All</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="editView" class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-10 col-lg-offset-1">
+					<div id="eachDayCollapse" class="collapse fade in">
+						<!-- SUNDAY -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Sunday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="SunOpen">Opens</label>
+	<input disabled id="SunOpen" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="SunClose">Closes</label>
+	<input disabled id="SunClose" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button disabled class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- MONDAY -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Monday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option selected>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="MonOpen">Opens</label>
+	<input id="MonOpen" type="text" class="form-control" value="--:-- --" >
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="MonClose">Closes</label>
+	<input id="MonClose" type="text" class="form-control" value="--:-- --" >
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- TUESDAY -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Tuesday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option selected>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="TueOpen">Opens</label>
+	<input id="TueOpen" type="text" class="form-control" value="9:00 AM" >
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="TueClose">Closes</label>
+	<input id="TueClose" type="text" class="form-control" value="5:00 PM" >
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- WEDNESDAY -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Wednesday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option selected>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="WedOpen">Opens</label>
+	<input id="WedOpen" type="text" class="form-control" value="7:00 AM" >
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="WedClose">Closes</label>
+	<input id="WedClose" type="text" class="form-control" value="12:00 PM" >
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+
+		<div class="col-xs-9 col-sm-8 col-md-5 col-md-offset-5 col-lg-4 col-lg-offset-6">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="WedOpen2">Opens</label>
+	<input id="WedOpen2" type="text" class="form-control" value="2:00 PM" >
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="WedClose2">Closes</label>
+	<input id="WedClose2" type="text" class="form-control" value="8:00 PM" >
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button class="btn btn-link p-x-0"><span class="ico-delete icon-adjust-horiz"></span><span class="btn-icon-text">Delete</span></button>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+<!-- THURSDAY -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Thursday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option>Set Specific Hours</option>
+					<option selected>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="ThuOpen">Opens</label>
+	<input disabled id="ThuOpen" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="ThuClose">Closes</label>
+	<input disabled id="ThuClose" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button disabled class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- FRIDAY -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Friday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option selected>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="FriOpen">Opens</label>
+	<input disabled id="FriOpen" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="FriClose">Closes</label>
+	<input disabled id="FriClose" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button disabled class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Saturday -->
+<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Saturday
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option selected>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="SatOpen">Opens</label>
+	<input disabled id="SatOpen" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="SatClose">Closes</label>
+	<input disabled id="SatClose" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button disabled class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+					</div>
+					<div id="allDaysCollapse" class="collapse fade">
+						<div class="p-t-grid p-b-sm b-b">
+	<div class="row row-xs-bottom">
+		<div class="col-xs-12 col-lg-2">
+			<div class="lsot-hours-label">
+				Sun - Sat
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4">
+			<div class="form-group m-b-sm">
+				<label class="sr-only" for="scheduleSetting">Setting</label>
+				<select id="scheduleSetting" class="c-select">
+					<option>Select One</option>
+					<option>Set Specific Hours</option>
+					<option>24 Hours</option>
+					<option>Sunrise/Sunset</option>
+					<option>Closed</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4">
+			<div class="lsot-hours-inputs m-b-sm">
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="allOpen">Opens</label>
+	<input disabled id="allOpen" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+				<div class="lsot-hours-divider">
+					<span class="hidden-sm-up">&ndash;</span>
+					<span class="hidden-xs-down">&mdash;</span>
+				</div>
+				<div class="lsot-hours-input">
+					<div class="form-group m-b-0">
+	<label for="allClose">Closes</label>
+	<input disabled id="allClose" type="text" class="form-control" value="--:-- --">
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3 col-sm-4 col-md-2 p-l-0">
+			<div class="btn-wrap m-b-sm">
+				<button disabled class="btn btn-link p-x-0"><span class="ico-plus-sm icon-adjust-horiz"></span><span class="btn-icon-text">Add</span></button>
+			</div>
+		</div>
+	</div>
+</div>
+					</div>
+					<div class="content-section">
+						<div class="btn-wrap">
+							<button class="btn btn-primary">Submit</button>
+							<button class="btn btn-link">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</main>
+<footer class="footer-mylt" role="contentinfo"> <div class="p-wrap"> <nav> <div class="footer-legal"> <ul> <li class="ltnav-item "> <a href="https://www.mylt.life/policy/accessibility.html" target="_blank">Accessibility Policy</a> </li> </ul> </div> <div> <p class="copyright">© 2019 Life Time, Inc. All rights reserved.</p> </div> </nav> </div> </footer>
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-tmhub-header","lineagePath":"../../patterns/03-templates-location-truth/partials-_tmhub-header/03-templates-location-truth/partials-_tmhub-header.rendered.html"},{"lineagePattern":"templates-locations-week-list","lineagePath":"../../patterns/03-templates-location-truth/partials-_locations-week-list/03-templates-location-truth/partials-_locations-week-list.rendered.html"},{"lineagePattern":"templates-locations-single-day","lineagePath":"../../patterns/03-templates-location-truth/partials-_locations-single-day/03-templates-location-truth/partials-_locations-single-day.rendered.html"},{"lineagePattern":"templates-tmhub-footer","lineagePath":"../../patterns/03-templates-location-truth/partials-_tmhub-footer/03-templates-location-truth/partials-_tmhub-footer.rendered.html"}],"lineage":[{"lineagePattern":"templates-tmhub-header","lineagePath":"../../patterns/03-templates-location-truth/partials-_tmhub-header/03-templates-location-truth/partials-_tmhub-header.rendered.html"},{"lineagePattern":"templates-locations-week-list","lineagePath":"../../patterns/03-templates-location-truth/partials-_locations-week-list/03-templates-location-truth/partials-_locations-week-list.rendered.html"},{"lineagePattern":"templates-locations-single-day","lineagePath":"../../patterns/03-templates-location-truth/partials-_locations-single-day/03-templates-location-truth/partials-_locations-single-day.rendered.html"},{"lineagePattern":"templates-tmhub-footer","lineagePath":"../../patterns/03-templates-location-truth/partials-_tmhub-footer/03-templates-location-truth/partials-_tmhub-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"location-truth"},"patternExtension":"mustache","patternName":"Location Hours Editor","patternPartial":"templates-location-hours-editor","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+	<script src="/js/internal/lsot.js"></script>
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+			<h1 class="h2 h-static">Basic Accessible Form</h1>
+			<form class="c-inputs-stacked">
+				<div class="form-group form-group-spacer">
+					<label for="basicInput">Basic Input</label>
+					<input id="basicInput" class="form-control" type="text" aria-required="true">
+				</div>
+				<ul>
+					<li>Include matching <code>for</code> and <code>id</code> values unique to each <code>label</code> and <code>input</code> pair to associate the two.</li>
+					<li>Avoid using the float label pattern.</li>
+					<li>Avoid using placeholder text as it makes the input look complete.</li>
+				</ul>
+				<hr>
+
+				<fieldset>
+					<legend class="sr-only">Your Full Name</legend>
+					<div class="form-group">
+						<label for="firstName">First Name</label>
+						<input id="firstName" class="form-control" type="text" aria-required="true">
+					</div>
+					<div class="form-group form-group-spacer">
+						<label for="lastName">Last Name</label>
+						<input id="lastName" class="form-control" type="text" aria-required="true">
+					</div>
+				</fieldset>
+
+				<fieldset class="form-group">
+					<legend class="m-b-1">What option(s) do you prefer?</legend>
+					<label for="customCheckboxsmA" class="c-input c-checkbox">
+						<input id="customCheckboxsmA" type="checkbox">
+						<span class="c-indicator"></span>
+						Option A
+					</label>
+					<label for="customCheckbox2smB" class="c-input c-checkbox">
+						<input id="customCheckbox2smB" type="checkbox">
+						<span class="c-indicator"></span>
+						Option B
+					</label>
+					<label for="customCheckbox2smC" class="c-input c-checkbox">
+						<input id="customCheckbox2smC" type="checkbox">
+						<span class="c-indicator"></span>
+						Option C
+					</label>
+				</fieldset>
+
+				<ul>
+					<li>Only use a <code>fieldset</code> with <code>legend</code> to group associated inputs (e.g. multiple address inputs or credit card month/year inputs) or a set of radios or checkboxes. Some assistive tools will read the contents of the legend before each nested input to maintain context for a user.</li>
+					<li>The <code>legend</code> can be visually hidden with the <code>.sr-only</code> utility class.</li>
+					<li>Stack checkbox and radio buttons when possible.</li>
+				</ul>
+				<hr>
+
+				<div class="form-group form-group-spacer">
+					<label for="textHelper">Text Input with Help</label>
+					<input id="textHelper" class="form-control" type="text" aria-describedby="inputHelp">
+					<p id="inputHelp" class="label-help">Helper or instructional text for the input</p>
+				</div>
+				<ul>
+					<li>When an <code>input</code> requires additional help or descritive text match <code>aria-describedby</code> and <code>id</code> values.</li>
+				</ul>
+				<hr>
+
+				<div class="form-group form-group-spacer">
+					<label for="inputRequired">Required Input</label>
+					<input id="inputRequired" class="form-control" type="text" aria-required="true">
+				</div>
+				<ul>
+					<li>Indicate that an <code>input</code> is required by adding the <code>aria-required="true"</code> attribute. By default this is <code>false</code> and does not need set unless it will be <code>true</code>.</li>
+					<li>In most cases you do not need to label an input as required considering a majority of our inputs are. Instead, mark optional inputs in the label text, e.g., “Label (optional).”</li>
+				</ul>
+				<hr>
+
+				<div class="form-group has-danger form-group-spacer">
+					<label for="inputError">Error Input</label>
+					<input id="inputError" class="form-control form-control-danger" type="text" value="ABCDEFG" aria-invalid="true" aria-describedby="inputErrorDescription">
+					<span id="inputErrorDescription" class="label-help">Helper or instructional text for the input</span>
+				</div>
+				<ul>
+					<li>An invalid input should include the <code>aria-invalid="true"</code> attribute.</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</div>
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>Consider the following when creating forms:</p>\n<ul>\n<li>Associate labels and inputs with unique <code>for</code> and <code>id</code> pairing. You can also use <code>aria-labelledby</code>.</li>\n<li>Use a <code>fieldset</code> with <code>legend</code> only to associate a group of inputs.</li>\n<li>Do not use CSS to reorder form elements.</li>\n<li>As much as possible vertically stack form elements and avoid creating horizontal form element groups.</li>\n<li>Use appropriate ARIA attributes.</li>\n<li>Test!</li>\n</ul>\n","patternBreadcrumb":{"patternType":"patterns","patternSubtype":"form-examples"},"patternExtension":"mustache","patternName":"Accessible Forms","patternPartial":"patterns-accessible-form","patternState":"","patternEngineName":"mustache","extraOutput":{"status":"inreview"}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

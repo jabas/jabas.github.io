@@ -1,0 +1,115 @@
+<div class="split-banner split-fix-left content-inverse">
+	<div class="container">
+		<div class="row">
+			<div class="split-primary text-xs-center text-md-left">
+				<div class="split-bg">
+					{{> elements-background-banner }}
+				</div>
+				<div class="split-content">
+					<div class="club-icon-wrap">
+						<span class="ico-club m-b-sm"></span>
+						<h1 class="h3 h-static m-b-0">Chanhassen</h1>
+						<p class="small text-muted">Platinum Club</p>
+					</div>
+					{{! START responsive buttons}}
+					<div class="btn-resp-wrap">
+						<div class="btn-resp btn-resp-text">
+							<a href="#" class="btn-resp-xs">
+								<span class="ico-map-marker"></span>
+								<p>Directions</p>
+							</a>
+							<div class="btn-resp-md">
+								<span class="ico-map-marker"></span>
+								<p>2901 Corporate Place <br/>Chanhassen, MN 55317</p>
+							</div>
+						</div>
+						<div class="btn-resp btn-resp-text">
+							<a href="#" class="btn-resp-xs">
+								<span class="ico-phone-sm"></span>
+								<p>Call</p>
+							</a>
+							<div class="btn-resp-md">
+								<span class="ico-phone-sm"></span>
+								<p><a href="tel:+1-952-380-0303" aria-label="call 9 5 2, 3 8 0, 0 3 0 3">(952) 380-0303</a></p>
+							</div>
+						</div>
+						<div class="btn-resp btn-resp-text">
+							<a href="#clubHoursModal" class="btn-resp-xs" data-toggle="modal">
+								<span class="ico-clock"></span>
+								<p>Hours</p>
+							</a>
+							<div class="btn-resp-md">
+								<span class="ico-clock"></span>
+								<p><a href="#clubHoursModal" data-toggle="modal">View All Hours</a></p>
+							</div>
+						</div>
+					</div>
+					{{! END responsive buttons}}
+					
+				</div>
+			</div>
+			<div class="split-secondary text-xs-center text-md-left">
+				<div class="split-content">
+					<h2 class="h-static m-b-2">Header</h2>
+					<p>{{excerpt.medium}}</p>
+					<div class="btn-wrap">
+						<a href="#" class="btn btn-reversed-outline">Button CTA</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="clubHoursModal" tabindex="-1" role="dialog" aria-labelledby="clubHoursLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h5 class="modal-title" id="clubHoursLabel">Chanhassen Hours</h5>
+			</div>
+			<div class="modal-body">
+				<h6 class="h-th">HOURS</h6>
+				<table class="table table-sm table-striped" summary="open hours summary">
+					<caption class="sr-only">HOURS</caption>
+					<tbody>
+						<tr class="sr-only">
+							<th scope="col">Day</th>
+							<th scope="col">Hours</th>
+						</tr>
+						<tr>
+							<td>Sunday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+						<tr>
+							<td>Monday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+						<tr>
+							<td>Tuesday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+						<tr>
+							<td>Wednesday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+						<tr>
+							<td>Thursday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+						<tr>
+							<td>Friday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td class="text-xs-right">24 hours</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="small">Closed: Thanksgiving Day at 1pm, Christmas Eve at 3pm, Christmas Day opens at 3pm.</p>
+			</div>
+		</div>
+	</div>
+</div>

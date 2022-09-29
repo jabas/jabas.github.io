@@ -1,0 +1,67 @@
+<div class="container m-t-2">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h1>Grid System</h1>
+			<p class="lead">The Core grid system is based off of Bootstrap 4, with 12 columns over 5 seperately defined breakpoints.</p>
+			<h2>How it Works</h2>
+			<p>There are three major components—containers, rows, and columns:</p>
+			<ul>
+			  <li>Containers—<code>.container</code> for 100% width up to the XL breakpoint or <code>.container-fluid</code> for full width—center your site’s contents and help align your grid content.</li>
+			  <li>Regardless of container type, within it a <code>.row</code> is required to surround all columns.</li>
+			  <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+			</ul>
+			<p>Columns are named in a systemic way, to allow them to occupy different percentages of space at different breakpoints. They all begin with the <code>.col-</code> designation, and the next portions define the breakpoint where it is first applied, and a numeric used to control the width percentage.</p>
+			<h3>Breakpoints</h3>
+			<p>Column breakpoints are additive, meaning they apply to the breakpoint specified and all those above it (e.g., <code>.col-sm-4</code> applies to small, medium, large, and extra large window sizes):</p>
+			<div class="table-responsive">
+			  <table class="table table-bordered table-striped">
+			    <thead>
+			      <tr>
+			        <th></th>
+			        <th class="text-xs-center">
+			          Extra small<br>
+			          <small>&lt;544px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Small<br>
+			          <small>≥544px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Medium<br>
+			          <small>≥768px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Large<br>
+			          <small>≥992px</small>
+			        </th>
+			        <th class="text-xs-center">
+			          Extra large<br>
+			          <small>≥1200px</small>
+			        </th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <th class="text-nowrap" scope="row">Class prefix</th>
+			        <td><code>.col-xs-</code></td>
+			        <td><code>.col-sm-</code></td>
+			        <td><code>.col-md-</code></td>
+			        <td><code>.col-lg-</code></td>
+			        <td><code>.col-xl-</code></td>
+			      </tr>
+			    </tbody>
+			  </table>
+			</div>
+			<h3>Column Width</h3>
+			<p>Column width is determined as a fraction of the 12 columns per row, where the percentage width of a <code>.col-xx-n</code> class is evaluated as <code>n/12</code>. So if you want three equal-width columns, you’d use <code>.col-xs-4</code>.</p>
+			<ul>
+			  <li>Column <code>width</code>s are set in percentages, so they’re always fluid and sized relative to their parent element.</li>
+			  <li>Columns have <code>1rem</code> padding on each side to create the gutters between individual columns for a total gutter width of <code>2rem</code>.</li>
+			</ul>
+
+			<h2>SCSS Mixins</h2>
+			<p>Grid classes are created via SCSS mixins, so you can use these instead of grid classes to create custom components and layouts that still align with the defined grid. Refer to <code>css/theme-base/mixins/_grid.scss</code> for the mechanics of their use.</p>
+
+		</div>
+	</div>
+</div>

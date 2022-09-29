@@ -1,0 +1,99 @@
+{{> patterns-header-prospect }}
+<main class="page-content main-mylt">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="content-section-xs">
+					<ol class="list-ordered centered mylt-gray-4 m-b-0">
+						<li>I’m ready to join <strong>[clubname]</strong> <a href="{{url}}" class="small">Edit <span class="sr-only">Location</span></a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<hr class="b-thick b-clr-gray-4 m-t-0">
+				<h1 class="h-scaled text-xs-center p-t-1"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">2</span>Membership Options</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				{{#twoUp}}
+					<ul class="list-unstyled card-price-group even m-b-2">
+						{{> templates-oms-monthly-card }}
+						{{> templates-oms-day-pass-card }}
+						{{> patterns-pass-card(cardElement: "li") }}
+					</ul>
+				{{/twoUp}}
+				{{#threeUp}}
+					<ul class="list-unstyled card-price-group odd m-b-2">
+						{{> templates-oms-monthly-card }}
+						{{> templates-oms-jr-exec-card }}
+						{{> templates-oms-day-pass-card }}
+						{{> patterns-pass-card(cardElement: "li") }}
+					</ul>
+				{{/threeUp}}
+				{{#fourUp}}
+					<ul class="list-unstyled card-price-group even m-b-2">
+						{{> templates-oms-monthly-card }}
+						{{> templates-oms-26-under-card }}
+						{{> templates-oms-student-card }}
+						{{> templates-oms-day-pass-card }}
+						{{> patterns-pass-card(cardElement: "li") }}
+					</ul>
+				{{/fourUp}}
+
+				{{> templates-oms-modal-student }}
+				{{> templates-oms-modal-26under }}
+				{{> templates-oms-modal-jrexec }}
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="membershipTerms" class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 small" tabindex="0" role="note" aria-label="Membership Terms and Conditions">
+				<p class="m-b-sm">Membership dues, levels, fees, benefits, services and amenities vary by club and are subject to change at any time. Other terms and conditions apply. <a id="viewTerms" class="link-underlined" href="#additionalTerms" data-toggle="collapse" aria-expanded="false" aria-controls="additionalTerms" data-label-collapsed="*Show additional {{#referenceMonthly}}Monthly, {{/referenceMonthly}}{{#reference26Under}}26 and Under, {{/reference26Under}}{{#referenceJrExec}}Junior Executive, {{/referenceJrExec}}{{#referenceStudent}}Student, {{/referenceStudent}}and {{#referenceDayPass}}Day Pass{{/referenceDayPass}} terms and conditions." data-label-expanded="*Hide additional {{#referenceMonthly}}Monthly, {{/referenceMonthly}}{{#reference26Under}}26 and Under, {{/reference26Under}}{{#referenceJrExec}}Junior Executive, {{/referenceJrExec}}{{#referenceStudent}}Student, {{/referenceStudent}}and {{#referenceDayPass}}Day Pass{{/referenceDayPass}} terms and conditions.">*Show additional {{#referenceMonthly}}Monthly, {{/referenceMonthly}}{{#reference26Under}}26 and Under, {{/reference26Under}}{{#referenceJrExec}}Junior Executive, {{/referenceJrExec}}{{#referenceStudent}}Student, {{/referenceStudent}}and {{#referenceDayPass}}Day Pass{{/referenceDayPass}} terms and conditions.</a></p>
+				<div id="additionalTerms" class="collapse" tabindex="0" role="note" aria-label="Additional Membership Terms and Conditions">
+					{{#referenceMonthly}}
+					<p id="referenceMonthly" class="m-b-sm"><strong>Monthly</strong> memberships are month-to-month access memberships that continue until canceled upon 30 days’ advance written notice.</p><a class="sr-only sr-only-focusable" href="#referenceMonthly-ref" aria-label="Back to monthly membership details">↩</a>
+					{{/referenceMonthly}}
+
+					{{#reference26Under}}
+					<p id="reference26Under" class="m-b-sm"><strong>26 and Under</strong> memberships, praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum.</p><a class="sr-only sr-only-focusable" href="#reference26Under-ref" aria-label="Back to 26 and Under membership details">↩</a>
+					{{/reference26Under}}
+
+					{{#referenceJrExec}}
+					<p id="referenceJrExec" class="m-b-sm"><strong>Junior Executive</strong> memberships, praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum.</p><a class="sr-only sr-only-focusable" href="#referenceJrExec-ref" aria-label="Back to Junior Executive membership details">↩</a>
+					{{/referenceJrExec}}
+
+					{{#referenceStudent}}
+					<p id="referenceStudent" class="m-b-sm"><strong>Student</strong> memberships, cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla.</p><a class="sr-only sr-only-focusable" href="#referenceStudent-ref" aria-label="Back to student membership details">↩</a>
+					{{/referenceStudent}}
+
+					{{#referenceDayPass}}
+					<p id="referenceDayPass"><strong>Day Pass</strong> memberships are memberships that allow the purchase of passes in various increments that permit access to one club on one calendar day during a specified period of time.</p><a class="sr-only sr-only-focusable" href="#referenceDayPass-ref" aria-label="Back to day pass details">↩</a>
+					{{/referenceDayPass}}
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<hr class="b-thick">
+				<div class="h2 h-static text-xs-center text-disabled m-b-0"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">3</span>Build Membership</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<hr class="b-thick">
+				<div class="h2 h-static text-xs-center text-disabled m-b-0"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">4</span>Member Info</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<hr class="b-thick">
+				<div class="h2 h-static text-xs-center text-disabled m-b-2"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">5</span>Payment</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-prospect-footer }}

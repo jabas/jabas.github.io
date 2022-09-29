@@ -1,0 +1,141 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+			<h1 class="h2 h-static m-b-0">Payment Information</h1>
+			<form>
+				<fieldset>
+					<legend class="sr-only">Credit Card</legend>
+					<div class="form-group">
+						<label for="nameoncard">Name on Card</label>
+						<input id="nameoncard" class="form-control" type="text" aria-required="true">
+					</div>
+					<div class="form-group form-group-spacer">
+						<label for="cardnumber">Card Number</label>
+						<input id="cardnumber" class="form-control m-b-sm" type="text" aria-required="true">
+						<span class="ico-cc-visa"></span> <span class="ico-cc-mastercard"></span> <span class="ico-cc-discover"></span> <span class="ico-cc-amex"></span>
+					</div>
+				</fieldset>
+				<div class="row">
+					<fieldset class="col-xs-8 col-sm-7">
+						<legend>Expiration Date</legend>
+						<div class="row">
+							<div class="form-group col-xs-6 edge-r-xs-up p-r-sm">
+								<label for="month" class="sr-only">Month</label>
+								<select id="month" class="c-select" aria-required="true">
+									<option value="">MM</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+							</div>
+							<div class="form-group col-xs-6 edge-l-xs-up p-l-sm">
+								<label for="year" class="sr-only">Year</label>
+								<select id="year" class="c-select" aria-required="true">
+									<option value="">YY</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+					<div class="form-group col-xs-6 col-sm-5">
+						<label for="securitycode">Security Code</label>
+						<input id="securitycode" class="form-control" type="text" aria-required="true">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group form-group-spacer col-xs-6 col-md-5">
+						<label for="billingzip">Billing Zip</label>
+						<input id="billingzip" class="form-control" type="text" aria-required="true">
+					</div>
+				</div>
+				<div class="m-b-1">
+					<a data-toggle="modal" data-target=".gta-modal-lg" class="link-underlined small text-nowrap m-r-1">General Terms and Agreements</a>
+					<a data-toggle="modal" data-target=".terms-modal-lg" class="link-underlined small text-nowrap m-r-1">Terms of Use</a>
+					<a data-toggle="modal" data-target=".privacy-modal-lg" class="link-underlined small text-nowrap">Privacy Policy</a>
+				</div>
+				<div class="form-group">
+					<label for="gta" class="c-input c-checkbox-sm">
+						<input id="gta" type="checkbox">
+						<span class="c-indicator"></span>
+						By clicking this box, you are agreeing to the Life Time Fitness General Terms and Agreements, Terms of Use, and Privacy Policy.
+					</label>
+				</div>
+				<div class="btn-wrap text-xs-right m-t-1">
+					<button type="submit" class="btn btn-primary">Submit Payment</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade gta-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h5 class="modal-title" id="myModalLabel">Life Time Fitness General Terms and Agreements</h5>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade terms-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h5 class="modal-title" id="myModalLabel">Terms of Use</h5>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade privacy-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h5 class="modal-title" id="myModalLabel">Privacy Policy</h5>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

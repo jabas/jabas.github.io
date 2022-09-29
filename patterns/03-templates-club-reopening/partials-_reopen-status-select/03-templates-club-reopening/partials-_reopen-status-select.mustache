@@ -1,0 +1,36 @@
+<div class="bg-gray-12 b-y p-y-sm m-b-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4 p-y-sm">
+				<div class="form-group">
+					<label for="clubStatus">Current Status</label>
+					<select class="c-select">
+						<option>Open</option>
+						<option>Open With Limitations</option>
+						<option>Open, Reservation Required</option>
+						<option selected>Coming Soon</option>
+						<option>Closed</option>
+						<option>Not Available At This Location</option>
+					</select>
+				</div>
+			</div>
+			{{#includeDate}}
+			<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4 p-y-sm">
+				<div class="form-group">
+					<label>Reopen Date</label>
+					<div class="date-nav">
+						<button class="btn btn-input datepicker-trigger" data-provide="datepicker" data-date-today-highlight="true">
+							<span class="flex-container">
+								<span class="btn-icon-text">
+									<time class="time-start" datetime="2020-06-24">Wednesday, June 24</time>
+								</span>
+								<span class="ico-calendar"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			{{/includeDate}}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,49 @@
+{{> patterns-header-member }}
+<!-- END Header -->
+<!-- START Main -->
+<main id="main-content" class="page-content main-mylt">
+	<!-- START Banner -->
+	{{> patterns-ci-banner:split-overlap }}
+	<!-- END Banner -->
+	<!-- START Content -->
+	<div class="container">
+		<div class="card-group">
+			{{# listItems.four }}
+				{{> patterns-feature-card-1x1-img }}
+			{{/ listItems.four }}
+		</div>
+	</div>
+	<div class="content-section content-mt mylt-bg-gray-12">
+		{{> components-cta-header-h2(headingText: "Today's Classes", ctaText: "Full Schedule") }}
+	</div>
+	<div class="content-section">
+		{{> components-cta-header-h2(headingText: "Events", ctaText: "All Events") }}
+		{{> templates-events-block }}
+		<div class="container">
+			<h2 class="h-static m-b-2">News</h2>
+		</div>
+		{{> templates-news-block }}
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 text-xs-center">
+				<h2>Elevate Your Experience</h2>
+				<p>Don’t miss out on the world of information available to Life Time members. Check out these articles from the current edition of <em>Experience Life</em>, our award-winning health and fitness magazine.</p>
+			</div>
+		</div>
+	</div>
+	<div class="content-section">
+		{{> templates-blog-block }}
+	</div>
+	<div class="content-section mylt-bg-gray-12">
+		{{> components-cta-header-h2(headingText: "Featured Bio", ctaText: "All Bios") }}
+	</div>
+	<div class="content-section">
+		{{> components-cta-header-h2(headingText: "Top News", ctaText: "All News") }}
+	</div>
+	<!-- END Content -->
+</main>
+<!-- END Main -->
+<!-- START Footer -->
+{{> patterns-footer }}
+<!-- END Footer -->

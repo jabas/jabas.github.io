@@ -1,0 +1,42 @@
+<div class="form-group m-b-0">
+	<label for="inputTime">{{ label }}</label>
+	<div class="date-nav">
+		<button type="button" tabindex="-1" class="btn btn-input datepicker-trigger"><span class="flex-container"><span class="font-weight-normal text-gray-4">9:00 AM</span></span></button>
+	    <input type="text" class="form-control" id="dateStart">
+		<div class="bootstrap-datetimepicker-widget dropdown-menu bottom" style="top: 40px; bottom: auto; left: 0px; right: auto; display: block;">
+			<ul class="list-unstyled">
+				<li>
+					<div class="timepicker">
+						<div class="timepicker-picker">
+							<table class="table-condensed">
+								<tbody>
+									<tr>
+										<td><a href="#" tabindex="-1" title="Increment Hour" class="btn" data-action="incrementHours"><i class="fa fa-chevron-up"></i></a></td>
+										<td class="separator"></td>
+										<td><a href="#" tabindex="-1" title="Increment Minute" class="btn" data-action="incrementMinutes"><i class="fa fa-chevron-up"></i></a></td>
+										<td class="separator"></td>
+									</tr>
+									<tr>
+										<td><span class="timepicker-hour" data-time-component="hours" title="Pick Hour" data-action="showHours">09</span></td>
+										<td class="separator">:</td>
+										<td><span class="timepicker-minute" data-time-component="minutes" title="Pick Minute" data-action="showMinutes">00</span></td>
+										<td>
+											<button class="btn btn-primary" data-action="togglePeriod" tabindex="-1" title="Toggle Period">AM</button>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#" tabindex="-1" title="Decrement Hour" class="btn" data-action="decrementHours"><i class="fa fa-chevron-down"></i></a></td>
+										<td class="separator"></td>
+										<td><a href="#" tabindex="-1" title="Decrement Minute" class="btn" data-action="decrementMinutes"><i class="fa fa-chevron-down"></i></a></td>
+										<td class="separator"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<input id="nativeDateStart" type="datetime-local" class="form-control">
+	</div>
+</div>

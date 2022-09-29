@@ -1,0 +1,46 @@
+<li class="media">
+	{{# imgPath }}
+		<img src="https://www.mylt.life/content/dam/bios/{{imgPath}}/full.jpg.transform/bios-profile/bios-width-200/high/image.jpg" alt="" class="media-img img-circle img-thumbnail">
+	{{/ imgPath }}
+	{{^ imgPath }}
+		<img src="/images/placeholder/bios/bio-tm-missing.svg" alt="" class="media-img img-circle img-thumbnail">
+	{{/ imgPath }}
+	<div class="media-body">
+		<div class="row">
+			<div class="col-xs-12 col-md-8">
+				<h2 class="h3 m-b-sm"><a href="#0">{{name}}</a></h2>
+				{{# showRoleError }}
+				<p class="text-icon-indent small text-danger m-y-sm"><span class="ico-alert-solid"></span>Roles for this performer have changed since last approved. This bio should be updated and resubmitted.</p>
+				{{/ showRoleError }}
+				{{# showAdd }}
+					<p class="small font-weight-bold m-b-sm">
+					 	{{# featured }}
+					 		<span class="ico-star-solid"></span> Featured Performer
+					 	{{/ featured }}
+					 	{{# divider }}
+					 		<span class="m-x-sm">|</span>
+					 	{{/ divider }}
+					 	{{# testimonials }}
+							<span class="text-nowrap"><span class="badge badge-pill badge-danger p-x-sm align-text-baseline">{{testimonials}}</span> Testimonials in Queue</span>
+					 	{{/ testimonials }}
+					 </p>
+				{{/ showAdd }}
+				{{# publicVersion }}
+					<p class="small m-b-0">Public-facing version available <a href="#0">here</a>.</p>
+				{{/ publicVersion }}
+				{{^ publicVersion }}
+					{{# hidden}}
+						<p class="small m-b-0"><span class="ico-delete text-danger"></span> This bio is currently hidden from public view.</p>
+					{{/ hidden}}
+					{{^ hidden}}
+						<p class="small m-b-0">This bio must reach approved status to appear on the website.</p>
+					{{/ hidden}}
+				{{/ publicVersion }}
+			</div>
+			<div class="col-xs-12 col-md-4 text-md-right">
+				<span class="badge badge-pill {{badgeClass}} m-b-1">{{badgeText}}</span>
+				<p class="m-b-1 micro font-italic text-muted">Last Updated: <br/>MM/DD/YY 12:00A</p>
+			</div>
+		</div>
+	</div>
+</li>

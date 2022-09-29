@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<header class="header"> <a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	<div class="header-mobile-bar">
+		<div class="header-nav-toggle">
+			<button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="navigation"> <span class="navbar-toggler-icon"></span> </button>
+		</div>
+		<div class="header-brand-mobile">
+			<a role="button" class="d-inline-block" data-toggle="collapse" href="#clubLocator" aria-expanded="false" aria-controls="clubLocator" aria-describedby="club-nav-description-mobile"> <img src="https://my.lifetime.life/content/dam/mylt/logos/life-time-logo-xs.svg" alt="Life Time" />
+				<div class="header-brand-toggle dropdown-toggle js-ltnav-clubname">Target Center &#40;Minneapolis&#41;</div>
+				<div id="club-nav-description-mobile" class="sr-only">This is your current location. Use this menu to go to the club homepage or change locations. </div>
+			</a>
+		</div>
+		<div class="header-utility-mobile">
+			<nav aria-label="Utility Navigation">
+				<ul class="nav nav-right nav-neutral">
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"> <span class="ico-user icon-adjust-horiz"></span> <span class="sr-only js-login-label">account navigation</span> </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!--*/ for rare mobile */-->
+	</div>
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse js-ltnav-primary" data-navbar-overflow="#primaryNav">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="/bin/lt/rc"> <img src="https://my.lifetime.life/content/dam/mylt/logos/life-time-logo-xs.svg" alt="Life Time" /> </a>
+			</div>
+			<button class="btn btn-secondary dropdown-toggle header-hide-mobile js-ltnav-clubname" data-toggle="collapse" href="#clubLocator" aria-expanded="false" aria-controls="clubLocator" aria-describedby="club-nav-description">Target Center &#40;Minneapolis&#41;</button>
+			<div id="club-nav-description" class="sr-only">This is your current location. Use this menu to go to the club homepage or change locations. </div>
+			<nav aria-label="Primary Navigation">
+				<ul id="primaryNav" class="nav nav-neutral">
+					<li class="nav-item  dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Schedules & Reservations</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled dropdown-columns">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 GTX, Alpha, Ultra Fit Classes
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Studio, Cycle, Yoga Classes
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 ARORA Activities
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Kids Classes
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Kids Camps
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Family Swim
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Open Gym
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									Livestreaming Classes
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Pilates
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Events
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 All Classes
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 All Events
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 All Facilities
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item  dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Class Descriptions</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled dropdown-columns">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 GTX
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Alpha
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Ultra Fit
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Studio
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Yoga
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Indoor Cycle
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Pilates
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 On-Demand
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Livestreaming
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item  dropdown"> <a aria-label="Personal Training " class=" nav-link    dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Kids & Family</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled ">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									No Examples
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item  dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">ARORA</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled ">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Overview
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Classes
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Social Events
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item  dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Training</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled ">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Dynamic Personal Training
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Complimentary PT Experiences
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Schedule your PT Session
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Trainer Match
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 LT Recovery
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Virtual Training
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item  dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Sports</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled dropdown-columns">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Pickleball
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Tennis
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Squash
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Swim
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Basketball
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 GameFace
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Outdoor Cycle
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									 Run
+								</a></li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#0">All Sports</a>
+						</div>
+					</li>
+					<li class="nav-item  dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">LifeSpa</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled ">
+								<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+								<li><a class="dropdown-item " href="#0">
+									Member Booking
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									Non-Member Booking
+								</a></li>
+								<li><a class="dropdown-item " href="#0">
+									Services
+								</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#0">Hours</a></li>
+					<li class="nav-item"><a class="nav-link" href="#0">Contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="#0">LifeCafe</a></li>
+					<li class="nav-item"><a class="nav-link" href="#0">Nurra</a></li>
+					<li class="nav-item"><a class="nav-link" href="#0">All Programs</a></li>
+					<li class="nav-item"><a class="nav-link" href="#0">All Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="#0">All Features</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-utility">
+			<nav class="header-utility-minor" aria-label="Utility Navigation">
+				<ul class="nav nav-inverse">
+					<li class="nav-item  "> <a aria-label="Help get help" class=" nav-link   " href="https://my.lifetime.life/clubs.go/contact.html">Help</a> </li>
+					<li class="nav-item  "> <a aria-label="Reservations go to my reservations" class=" nav-link   " href="https://my.lifetime.life/account/my-reservations.html">Reservations</a> </li>
+				</ul>
+			</nav>
+			<nav class="header-utility-major" aria-label="Utility Navigation">
+				<ul class="nav nav-inverse">
+					<li class="nav-item">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"> <span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span> Account <span id="account-nav-description" class="sr-only">account navigation</span> </a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<nav class="header-global" aria-label="Navigation to Other Life Time Properties">
+			<ul class="nav dropdown dropdown-inverse">
+				<li class="nav-item  "> <a aria-label="Join go to the join life time website" class="nav-link-highlight nav-link   " href="https://www.lifetime.life">Join</a> </li>
+				<li class="nav-item  "> <a aria-label="Members go to the member website" class=" nav-link   active " href="https://my.lifetime.life">Members</a> </li>
+				<li class="nav-item  "> <a aria-label="Experience Life go to the Experience Life by life time website" class=" nav-link   " href="https://experiencelife.lifetime.life/?utm_source=mylt&utm_medium=web&utm_content=nav&utm_campaign=mylt-referral">Experience Life</a> </li>
+				<li class="nav-item  "> <a aria-label="Work " class=" nav-link   " href="https://work.lifetime.life/home.html">Work</a> </li>
+				<li class="nav-item  "> <a aria-label="Living go to the life time living website" class=" nav-link   " href="https://living.lifetime.life/index.html">Living</a> </li>
+				<li class="nav-item  "> <a aria-label="Store go to the life time health store website" class=" nav-link   " href="https://shop.lifetime.life" data-partner="https://shop.lifetime.life" data-partner-type="GET" data-param-name="SSOID" data-profile-param-name data-force-sso="false" data-new-window="false">Store</a> </li>
+				<li class="nav-item"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="More sites"><span class="hidden-lg-up">More sites</span></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<ul class="list-unstyled">
+							<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+							<li> <a aria-label="Life Time Sport go to the Life Time Sport website" class="dropdown-item" href="https://sport.lifetime.life/home.html">
+                         Life Time Sport
+                    </a> </li>
+							<li> <a aria-label="Life Time Athletic Events go to the Life Time Athletic Events website" class="dropdown-item" href="/athletic-events.html">
+                         Life Time Athletic Events
+                    </a> </li>
+							<li> <a aria-label="Life Time Foundation go to the Life Time Foundation website (opens in a new window)" class="dropdown-item" href="https://www.ltfoundation.org/" target="_blank">
+                         Life Time Foundation
+                    </a> </li>
+							<li> <a aria-label="Life Time Academy go to the Life Time Academy website (opens in a new window)" class="dropdown-item" href="https://www.lifetimeacademy.edu/" target="_blank">
+                         Life Time Academy
+                    </a> </li>
+							<li> <a aria-label="Culture of Inclusion " class="dropdown-item" href="https://news.lifetime.life/inclusion">
+                         Culture of Inclusion
+                    </a> </li>
+						</ul>
+						<div>
+							<div class="dropdown-divider"> </div>
+							<p><img src="https://my.lifetime.life/content/dam/mylt/icons/life-time-app-icon.svg" alt="Life Time App Icon" class="header-global-logo" /></p>
+							<div class="text-hide-overflow">
+								<div class="dropdown-header">Life Time Member App</div>
+								<ul class="list-unstyled">
+									<li>
+										<a class="dropdown-item" href="https://itunes.apple.com/us/app/life-time-member-app/id1192326768?mt=8" target="_blank"><img src="https://my.lifetime.life/content/dam/mylt/icons/app-download-app-store.svg" alt="Download the Life Time Member App on the Apple App Store (opens in a new window)" /></a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.lifetimefitness.interests.fitness" target="_blank"><img src="https://my.lifetime.life/content/dam/mylt/icons/app-download-google-play.svg" alt="Download the Life Time Member App on the Google Play Store (opens in a new window)" /></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+		<div class="dropdown-arrow"></div>
+		<div class="dropdown-menu dropdown-menu-right">
+			<p class="m-b-1 hidden-xs-up js-anonymous"> <a class="js-login-link btn btn-primary btn-sm btn-block">
+                    Log In
+                </a> </p> <a class="dropdown-item" href="/account.html">View Account</a>
+			<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm hidden-xs-up view-account-divider"></p>
+			<a class="dropdown-item" href="https://ltf.egroupnet.com/myltbucks/" data-partner="https://ltf.egroupnet.com/myltbucks/" data-partner-type="GET" data-param-name="ssoId" data-profile-param-name data-force-sso="true" data-new-window="true"> <span aria-label="LT Bucks">LTBUCK$</span><span class="js-ltbucks-value"></span> </a> <a class="dropdown-item hidden-xs-up js-profile" href="/account/referral.html">Refer a Friend</a> <a class="dropdown-item hidden-xs-up js-club-access" href="/account/location-access.html">View All My Clubs</a>
+			<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro hidden-xs-up js-anonymous"> <span class="text-muted">New member? <a class="link-reversed-white" href="/account/create-account.html">Create Account</a></span> </p>
+			<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro hidden-xs-up js-profile"> <span class="text-muted">Not <span data-profile data-profile-property="memberDetails.firstname"></span>? <a class="link-reversed-white js-logout-link" href="/bin/lt/logout">Log Out</a></span>
+			</p>
+		</div>
+	</div>
+	<div class="header-collapse collapse js-club-locator" id="clubLocator">
+		<div class="club-global-locate header-collapse-content"> <a href="#clubLocator" data-toggle="collapse" role="button" aria-label="Close Locations Panel" class="club-locate-close hidden-md-down d-inline-block p-x-grid p-y-sm"><span class="ico-close-sm icon-adjust-horiz icon-adjust-vert"></span></a>
+			<div class="container small m-x-0">
+				<div class="row">
+					<div class="club-locate-current col-xs-12 col-lg-4 col-xl-3 b-b b-b-lg-0">
+						<p id="clubNavClubName" class="club-locate-marker base-font-size"><a href="/clubs/mn/chanhassen.html">Target Center &#40;Minneapolis&#41;</a></p>
+						<p class="nano m-b-grid">Current Location</p>
+						<p class="m-b-0"><a aria-describedby="clubNavClubName" href="/clubs/mn/chanhassen.html">Details</a><span class="d-inline-block p-x-sm">|</span><a aria-describedby="clubNavClubName" href="/locate-a-club.html?query=44.861402,-93.594677">View on Map</a></p>
+					</div>
+					<div class="club-locate-search col-xs-12 col-lg-4 b-b b-b-lg-0 col-lg-last">
+						<form method="GET" class="js-club-locator-omnibox" action="/locate-a-club.html">
+							<fieldset>
+								<legend class="sr-only">Location Search Field:</legend>
+								<label for="clubsearch">Find a Location <span class="sr-only">With City, State or Zip Code</span></label>
+								<div class="input-group">
+									<div class="form-input-action">
+										<input id="clubsearch" class="js-omnibox-input form-control" type="text" placeholder="City, State or Zip Code" name="query" />
+										<button type="button" class="form-input-btn form-input-clear" data-target="#clubsearch"> <span class="ico-delete"></span> <span class="sr-only">Clear Search Text</span> </button> <span class="label-help-error js-omnibox-error hide"></span> </div> <span class="input-group-btn">
+									<button class="btn btn-primary js-omnibox-action">
+										<span class="ico-search"></span> <span class="sr-only">Search</span> </button>
+									</span>
+								</div>
+							</fieldset>
+						</form>
+						<p class="m-t-sm m-b-0"><a href="/view-all-clubs.html">View All Locations</a></p>
+					</div>
+					<div class="club-locate-other col-xs-12 col-lg-4 b-r-lg b-l-lg">
+						<div class="row">
+							<div class="col-xs-12 b-b b-b-lg-0 p-b-sm">
+								<div class="nano text-gray-4 font-weight-bold m-b-1">Recently Viewed</div>
+								<ul class="list-unstyled m-b-0" id="recently-viewed"></ul>
+							</div>
+							<div class="col-xs-12">
+								<div class="p-t-grid b-t-lg">
+									<div class="nano text-gray-4 font-weight-bold m-b-1">Locations Near Target Center &#40;Minneapolis&#41;</div>
+									<ul class="list-unstyled m-b-0" id="nearest-clubs">
+										<li class="m-b-sm"><a href="/clubs/mn/minnetonka.html">Minnetonka</a> (7.3 miles)</li>
+										<li class="m-b-sm"><a href="/clubs/mn/crosstown-eden-prairie.html">Crosstown (Eden Prairie)</a> (7.6 miles)</li>
+										<li class="m-b-sm"><a href="/clubs/mn/eden-prairie-athletic.html">Eden Prairie Athletic</a> (7.8 miles)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<main id="main-content" role="main" class=" main-mylt">
+	<div class="js-geolocation hide"></div>
+	<div class="js-alert-notification"></div>
+	<div class="hero hero-overlay  ">
+		<div class="hero-media">
+			<picture class="hero-banner">
+				<!--[if IE 9]><video style="display: none;"><![endif]-->
+				<source media="(min-width:992px)" srcset="https://my.lifetime.life/content/dam/ltp/images/locations/geo/target-center-lg.jpg" />
+				<source media="(min-width:768px)" srcset="https://my.lifetime.life/content/dam/ltp/images/locations/geo/target-center-sm.jpg" />
+				<!--[if IE 9]></video><![endif]--><img alt="Building exterior at Life Time Target Center Minneapolis" src="https://my.lifetime.life/content/dam/ltp/images/locations/geo/target-center-xs.jpg" class="cq-dd-image" /> </picture>
+		</div>
+		<div class="hero-body  ">
+			<div class="row">
+				<div class="hero-content">
+					<div class="hero-content-block  ">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 p-b-1 p-t-0">
+									<p class="h5 text-uppercase m-b-1">Your Life Time
+										<br /> </p>
+									<h1 class="m-b-1">Life Time Target Center (Minneapolis)</h1>
+									<div class="small m-b-sm"><a aria-label="find a club" href="/view-all-clubs.html">Edit Your Location</a>
+										<br /> </div>
+									<p class="small m-b-sm p-t-1">
+										<a href="/clubs/mn/target-center-minneapolis/hours.html"> <span class="ico-clock-sm"></span> Hours<span class="btn-icon-text"></span> </a>
+									</p>
+									<p class="small m-b-sm p-t-1">
+										<a href="/clubs/mn/target-center-minneapolis/classes.html"> <span class="ico-calendar-sm"></span> Class Schedules and Reservations<span class="btn-icon-text"></span> </a>
+									</p>
+									<p class="small m-b-sm p-t-1">
+										<a href="tel:6124863600"> <span class="ico-phone-sm"></span> (612) 486-3600<span class="btn-icon-text"></span> </a>
+									</p>
+									<p class="small m-b-sm p-t-1">
+										<a href="https://www.google.com/maps/dir//Life+Time+Athletic+Target+Center,+North+1st+Avenue,+Minneapolis,+MN/@44.9762666,-93.2778369,15.5z/data=!4m9!4m8!1m0!1m5!1m1!1s0x52b33291bbf6587b:0x707eb5766a0659df!2m2!1d-93.275989!2d44.9795281!3e0" target="_blank"> <span class="ico-map-marker-sm"></span> <span class="btn-icon-text">600 1st Ave N, Minneapolis, MN 55403</span> </a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="xf-content-height">
+		<div class="cling ">
+			<div class="cling-content">
+				<div class="content-section p-y-0 m-b-0 col-xs-12 text-xs-center text-xs-center">
+					<p class="lead d-inline-block  p-y-1 m-b-0" style="vertical-align: middle;text-align: center;"><strong>Experience Signature Group Training<sup> </sup></strong><a class="link-reversed-white link-reversed link-underlined analytics-link m-x-sm m-y-sm" aria-label="Learn more about Signature Group Training" href="https://my.lifetime.life/clubs.go/training/group-training.html?section=bluebar_signaturegrouptraining">Learn More</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section mylt-bg-gray-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 p-t-1">
+					<div class="row">
+						<div class="col-xs-12 col-md-3 p-b-2">
+							<div class="text-icon-indent">
+								<h2 class="m-b-sm h5"><span
+class="ico-club"></span>Club Information</h2>
+								<p class="m-b-sm small"><a aria-label="view club hours" href="/clubs/mn/target-center-minneapolis/hours.html?section=quicklinks_hours">Club Hours</a>
+									<br /> </p>
+								<p class="m-b-sm small"><a aria-label="go to view our club safety protocols" href="/safety.html?section=quicklinks_clubsafetyprotocols">Club Safety Protocols</a></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-3 p-b-2">
+							<div class="text-icon-indent">
+								<h2 class="m-b-sm h5"><span
+class="ico-person"></span>Membership</h2>
+								<p class="m-b-sm small"><a aria-label="go to your account services" href="/account.html?section=quicklinks_accountinformation">Account Information</a></p>
+								<p class="m-b-sm small"><a aria-label="learn more about signature membership" href="/signature-membership.html?section=quicklinks_signaturemembership">Signature Membership</a></p>
+								<p class="m-b-sm small"><a aria-label="go to contact member concierge" href="/clubs/mn/target-center-minneapolis/contact.html?section=quicklinks_memberservices#memberrelations">Member Concierge</a></p>
+								<p class="m-b-sm small"><a aria-label="go to view our frequently asked questions" href="/faq.html?section=quicklinks_faqs">FAQs</a></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-3 p-b-2">
+							<div class="text-icon-indent">
+								<h2 class="h5 m-b-sm"><span
+class="ico-calendar"></span>Schedules and Reservations</h2>
+								<p class="m-b-sm small"><a aria-label="go to class schedules and reservations" href="/clubs/mn/target-center-minneapolis/classes.html?section=quicklinks_classschedulesandreservations">Class Schedules and Reservations</a></p>
+								<p class="m-b-sm small"><a aria-label="view event schedules and reservations" href="/clubs/mn/target-center-minneapolis/events.html?section=quicklinks_events">Event Schedules and Reservations</a></p>
+								<p class="m-b-sm small"><a aria-label="go to kids schedules and reservations" href="/clubs/mn/target-center-minneapolis/classes.html?section=quicklinks_kidsschedulesandreservations&amp;interest=Kids">Kids Schedules and Reservations</a></p>
+								<p class="m-b-sm small"><a aria-label="go to view your reservations" href="/account/my-reservations.html?section=quicklinks_myreservations">View Your Reservations</a></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-3 p-b-2">
+							<div class="text-icon-indent">
+								<h2 class="m-b-sm h5"><span
+class="ico-video-sm"></span>Life Time Digital<br />
+</h2>
+								<p class="m-b-sm small"><a aria-label="go to Live-Streaming Classes" href="/live.html?section=quicklinks_livestreamingclasses">Livestreaming Classes<br />
+</a></p>
+								<p class="m-b-sm small"><a aria-label="go to Classes On Demand" href="/on-demand.html?section=quicklinks_ondemandclasses">Classes On-Demand<br />
+</a></p>
+								<p class="m-b-sm small"><a aria-label="view Articles and Recipes" href="https://experiencelife.lifetime.life/?utm_source=mylt&amp;utm_medium=web&amp;utm_content=quicklinks_articlesandrecipes&amp;utm_campaign=mylt-referral">Articles and Recipes<br />
+</a></p>
+								<p class="m-b-sm small"><a aria-label="go to virtual training" href="https://my.lifetime.life/lp/virtual-training/about-virtual-training.html?section=quicklinks_virtualtraining">Virtual Training<br />
+</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section action-list p-b-3 p-t-3 mylt-bg-gray-12 b-b hide">
+		<div class="xf-content-height">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 p-b-2">
+						<h2 class="h-static" style="text-align: center;">Make the Most of Your Membership</h2> </div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-0 ">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12  p-x-0   text-xs-left">
+									<div class="content-section bg-white b-a">
+										<div class="container">
+											<div class="row">
+												<div class="col-xs-12 p-x-2">
+													<h3 class="h5 mylt-gray-5 m-b-sm text-uppercase" style="text-align: left;">Recommended</h3>
+													<h3 class="h5 m-b-2 " style="text-align: left;">Schedule Your Complimentary One-Hour Onboarding Session</h3>
+													<p style="text-align: left;">If you haven't already, meet with one of our experts to set goals, receive a recommended plan personalized to your needs and interests, and go through a workout experience.</p>
+													<div class="btn-wrap"> <a aria-label="Schedule Session  " href="/clubs.go/training/booking.html" class="btn btn-primary btn-block-sm">
+    
+    
+        
+        
+        
+            Schedule Session
+			
+        
+        
+    
+    </a> </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-0 ">
+						<div class="content-section ">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12">
+										<h3 class="h5 m-b-1">Download the App</h3>
+										<p>Access your digital membership card in the Life Time Digital App to check into the club. Plus, view class schedules, reserve your spot, manage your account, and access a library of on-demand classes, award-winning health content and more.</p>
+										<div>
+											<p>
+												<a href="https://itunes.apple.com/us/app/life-time-member-app/id1192326768?mt=8" target="_blank"><img src="https://my.lifetime.life/content/dam/mylt/buttons/app-download-app-store.svg" alt="Download on the App Store" class="m-r-sm" /></a>
+												<a href="https://play.google.com/store/apps/details?id=com.lifetimefitness.interests.fitness" target="_blank"><img src="https://my.lifetime.life/content/dam/mylt/buttons/app-download-google-play.svg" alt="Download on Google Play" /></a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-0 ">
+						<div class="content-section ">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12">
+										<h3 class="h5 m-b-1">Access New Member Resources</h3>
+										<p>Discover exclusive new member programs, explore class schedules, browse FAQ, get a quick locker tutorial and more.</p>
+										<div class="btn-wrap"> <a aria-label="Get Resources  for new members" href="/get-started.html" class="btn btn-primary btn-block-sm">
+    
+    
+        
+        
+        
+            Get Resources
+			
+        
+        
+    
+    </a> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section p-b-0">
+		<div id="JourneyContainer" class="pega-container hidden-xs-up"> </div>
+		<script id="JourneyContainer-config" type="application/json"> { "defaultXfUri" : "/content/experience-fragments/personalization/purchase/tennis/junior-tennis-programs-start-soon/master.html", "useDefaultXf" : "", "memberId" : "" } </script>
+	</div>
+	<div class="content-section p-b-4">
+		<div class="xf-content-height">
+			<div class="container">
+				<div class="row b-a m-x-0 m-t-1 link-underlined">
+					<div class="col-xs-12  col-lg-7 edge-xs-up col-lg-last  p-y-0"> <img alt="Smiling woman hitting pickleball with paddle" src="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg" srcset="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg.transform/r479/img.jpg 479w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg.transform/r767/img.jpg 767w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg.transform/r959/img.jpg 959w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg.transform/r1199/img.jpg 1199w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg.transform/r1535/img.jpg 1535w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/tennis-woman.jpg 1536w" class="cq-dd-image" /> </div>
+					<div class="col-xs-12  col-lg-5  col-xs-center m-t-2 ">
+						<div class="container">
+							<div class="row p-y-2">
+								<div class="col-xs-12">
+									<h2 class="h3" style="text-align: left;">Pickleball — A Sport For All</h2>
+									<p style="text-align: left;">The game that’s sweeping the country is here at your Life Time. It’s easy to learn and low impact. Join us and find out what everyone is raving about. </p>
+									<p class="m-b-1" style="text-align: left;"><a href="https://my.lifetime.life/clubs.go/classes.html?mode=week&amp;selectedDate=2022-02-23&amp;interest=Pickleball&amp;section=myltweeklyfeature_pickleball" class="link-underlined analytics-link" aria-label="View Open Play Schedule ">View Open Play Schedule <span class="ext-ref"></span></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section p-b-5 p-t-0 hide">
+		<div class="xf-content-height">
+			<div class="container">
+				<div class="row b-a m-x-0 ">
+					<div class="col-xs-12  col-lg-7  p-y-0 p-x-0"> <img alt="woman smiling on bike with Ride of a Life Time logo" src="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg" srcset="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg.transform/r479/img.jpg 479w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg.transform/r767/img.jpg 767w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg.transform/r959/img.jpg 959w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg.transform/r1199/img.jpg 1199w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg.transform/r1535/img.jpg 1535w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2021-8-23/evin21429703-masonry-roalt-xs-1536x1024.jpg 1536w" class="cq-dd-image" /> </div>
+					<div class="col-xs-12  col-lg-5 col-xs-center m-t-2 ">
+						<div class="container">
+							<div class="row p-y-2">
+								<div class="col-xs-12">
+									<h2 class="h3 m-b-0">Ride of a Life Time</h2>
+									<p class="h5">Sept 25 | 3 Ways to Ride</p>
+									<p class="h5"> </p>
+									<p>In the club. At home. On the road. Join us Saturday, September 25th, for a cycling event unlike any other to raise money for the Life Time Foundation and Children’s Miracle Network Hospitals.</p>
+									<p><a class="link-underlined analytics-link" href="http://rideofalifetime.life/" aria-label="Register Now for Ride of a Life Time " target="_self">Register Now </a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section p-t-4 mylt-bg-gray-12">
+		<div class="xf-content-height">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 p-b-2">
+								<h2 style="text-align: center;"><a id="new"></a>Now at Life Time Target Center (Minneapolis)<br />
+</h2> </div>
+							<div class="col-xs-12">
+								<div class="card-deck card-deck-three-up">
+									<div class="card card-feature">
+										<div class="card-img-top"> <img alt=" Image of person running through mountain trails." src="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin21418983-card-mountaintrail-running-01.jpg" srcset="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin21418983-card-mountaintrail-running-01.jpg.transform/r479/img.jpg 479w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin21418983-card-mountaintrail-running-01.jpg.transform/r767/img.jpg 767w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin21418983-card-mountaintrail-running-01.jpg.transform/r959/img.jpg 959w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin21418983-card-mountaintrail-running-01.jpg 1136w" class="cq-dd-image" /> </div>
+										<div class="card-block">
+											<h2 class="h5 text-uppercase m-b-1" style="text-align: left;">Featured in Fitness<br />
+</h2>
+											<h3 style="text-align: left;">Tips and Workouts</h3>
+											<p style="text-align: left;">The latest fitness stories, tips and workouts from our experts all in one place.</p>
+											<p class="m-b-1" style="text-align: left;"><a href="https://experiencelife.lifetime.life/category/fitness?utm_source=mylt&amp;utm_medium=web&amp;utm_content=nowatltcard1&amp;utm_campaign=fitnessoverview" class="link-underlined analytics-link" aria-label="Read More about tips and workouts">Read More<span class="ext-ref"></span></a></p>
+										</div>
+									</div>
+									<div class="card card-feature">
+										<div class="card-img-top"> <img alt="A women in a group fitness class smiling." src="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-1-21/ltin21363485-card-edi-go-studio-groupfitness-16-1136x640.jpg" srcset="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-1-21/ltin21363485-card-edi-go-studio-groupfitness-16-1136x640.jpg.transform/r479/img.jpg 479w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-1-21/ltin21363485-card-edi-go-studio-groupfitness-16-1136x640.jpg.transform/r767/img.jpg 767w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-1-21/ltin21363485-card-edi-go-studio-groupfitness-16-1136x640.jpg.transform/r959/img.jpg 959w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-1-21/ltin21363485-card-edi-go-studio-groupfitness-16-1136x640.jpg 1136w" class="cq-dd-image" /> </div>
+										<div class="card-block">
+											<h2 class="h5 text-uppercase m-b-1" style="text-align: left;">In-Club Events</h2>
+											<h3 style="text-align: left;">Get In on the Fun</h3>
+											<p style="text-align: left;">Try a new workout. Meet new people. Reach your goals. Adult-only and family-friendly events are happening every week at your club.</p>
+											<p class="m-b-1" style="text-align: left;"><a href="https://my.lifetime.life/clubs.go/events.html?startDate=2022-01-17&amp;endDate=2022-04-17&amp;section=nowatltcard2_events" class="link-underlined analytics-link" aria-label="View Event Schedules" target="_self">View Event Schedules<span class="ext-ref"></span></a></p>
+										</div>
+									</div>
+									<div class="card card-feature">
+										<div class="card-img-top"> <img alt="A man holding a pair of dumbbells on his shoulders while doing a lunge forward. " src="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin20360358-mylt-evergreen-homepage-components-card-classesondemand.jpg" srcset="https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin20360358-mylt-evergreen-homepage-components-card-classesondemand.jpg.transform/r479/img.jpg 479w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin20360358-mylt-evergreen-homepage-components-card-classesondemand.jpg.transform/r767/img.jpg 767w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin20360358-mylt-evergreen-homepage-components-card-classesondemand.jpg.transform/r959/img.jpg 959w, https://my.lifetime.life/content/dam/mylt/images/mylt-home-base/2022-2-28/ltin20360358-mylt-evergreen-homepage-components-card-classesondemand.jpg 1136w" class="cq-dd-image" /> </div>
+										<div class="card-block">
+											<h2 class="h5 text-uppercase m-b-1" style="text-align: left;">Digital Classes<br />
+</h2>
+											<h3 style="text-align: left;">Your Favorite Classes On-Demand</h3>
+											<p style="text-align: left;">Our most popular classes are available in video format so that you can work out anytime, anywhere.</p>
+											<p class="m-b-1" style="text-align: left;"><a href="https://my.lifetime.life/on-demand.html?section=nowatltcard3_ondemandclasses" class="link-underlined analytics-link" aria-label="Explore Classes">Explore Classes<span class="ext-ref"></span></a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section p-t-2 p-b-5 mylt-bg-gray-12 hide">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="h4, section-header" style="text-align: center;">Stay Connected<br />
+</h2>
+					<p style="text-align: center;">Want to hear more? Check out our club's Facebook page to go more club updates and connect with your Life Time community.</p>
+					<p style="text-align: center;"><span class="text-primary ico-facebook"></span><a class="link-underlined analytics-link" href="https://www.facebook.com/248758028481384" aria-label="visit Life Time on Facebook">Visit Us on Facebook</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section m-b-0 p-b-0 p-t-5">
+		<div class="xf-content-height">
+			<div class="row link-underlined">
+				<div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1 text-xs-center">
+					<h2 class="section-header">Strong. Safe. Together.</h2>
+					<p>Your health is our top priority. Advanced measures like enhanced air filtration and real-time capacity monitoring are in place now.</p>
+					<p><a class="link-underlined analytics-link" aria-label="Learn About Safety Measures at your Life Time" href="/safety.html">See Safety Measures</a></p>
+				</div>
+			</div>
+			<div class="content-section text-xs-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-10 col-md-offset-1">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-6 col-md-4"> <img alt="Touchless Check-In" src="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_touchless-checkin.svg" srcset="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_touchless-checkin.svg" class="cq-dd-image align-center p-b-1" />
+										<p style="text-align: center;"><strong>Touchless Check-In</strong></p>
+									</div>
+									<div class="col-xs-6 col-md-4"> <img alt="Extensive Cleaning Protocols" src="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_extensive-cleaning.svg" srcset="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_extensive-cleaning.svg" class="cq-dd-image align-center p-b-1" />
+										<p style="text-align: center;"><strong>Extensive Cleaning Protocols</strong></p>
+									</div>
+									<div class="col-xs-6 col-md-4"> <img alt="Hospital Grade Air Filteration" src="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_hospital-grade.svg" srcset="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_hospital-grade.svg" class="cq-dd-image align-center p-b-1" />
+										<p style="text-align: center;"><strong>Enhanced Air Circulation</strong></p>
+									</div>
+								</div>
+							</div>
+							<div class="row p-t-2 ">
+								<div class="col-xs-6 col-md-4 "> <img alt="Spacious Clubs Offering Ample Social Distancing" src="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_spacious-club.svg" srcset="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_spacious-club.svg" class="cq-dd-image align-center p-b-1" />
+									<p style="text-align: center;"><strong>Spacious Clubs Offering Ample Social Distancing</strong></p>
+								</div>
+								<div class="col-xs-6 col-md-4"> <img alt="Online Class Reservation" src="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_online-reservation.svg" srcset="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_online-reservation.svg" class="cq-dd-image align-center p-b-1" />
+									<p style="text-align: center;"><strong>Online Class Reservation</strong></p>
+								</div>
+								<div class="col-xs-6 col-md-4"> <img alt="Virtual Training and Class Options" src="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_virtual-training.svg" srcset="https://my.lifetime.life/content/dam/ltp/icons/safety-icons/etin20352901-ongoing-safety-web-updates-02-exportingcb_virtual-training.svg" class="cq-dd-image align-center p-b-1" />
+									<p style="text-align: center;"><strong>Virtual Training and Class Options</strong></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="xf-content-height">
+		<div id="offerings" class="content-section mylt-bg-gray-12 hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-xs-center p-b-2">
+						<h2 class="h3">Club Updates: Know Before You Go</h2>
+						<p>As we work to safely open your club, please take note of <a href="/safety.html#safety">new processes and policies.</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row p-b-2  m-b-2 b-b">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-6 col-md-2 col-md-offset-1">
+								<p style="text-align: left;">Fitness Floor
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Locker Rooms
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Group Fitness
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Kids Camps
+									<br /> <em><a href="mailto:MNCNKidsActivitiesManager@lt.life">Open, Reservation Required</a></em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Kids
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2 col-md-offset-1">
+								<p style="text-align: left;">Aquatics
+									<br /> <em>Closed</em>
+									<br /> </p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Racquet Sports
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Gymnasium
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">LifeSpa
+									<br /> <a href="/clubs/mn/sport-winter-park/services/lifespa/booking.html" aria-label="View Life Spa">Open, Reservation Required</a></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">LifeCafe
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2 col-md-offset-1">
+								<p style="text-align: left;">Training
+									<br /> <em>Closed</em></p>
+							</div>
+							<div class="col-xs-6 col-md-2">
+								<p style="text-align: left;">Pilates
+									<br /> <em>Closed</em></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12"> </div>
+				</div>
+			</div>
+		</div>
+		<div id="masks" class="content-section hide">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 p-b-2">
+						<div class="card">
+							<div class="card-block">
+								<div class="row">
+									<div class="col-xs-12">
+										<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#MemberSafetyProtocols816a" aria-expanded="false" aria-controls="MemberSafetyProtocols816a" data-label-collapsed="<span class='ico-plus'></span><span class='sr-only'>Show Content</span>" data-label-expanded="<span class='ico-minus'></span><span class='sr-only'>Hide Content</span>" role="button"> <span class="ico-plus"></span><span class="sr-only">Show Content</span> <span class="sr-only">Hide Content</span> </a>
+										<h3 class="h5 m-b-2 text-hide-overflow" data-toggle="collapse" data-target="#MemberSafetyProtocols816a" aria-expanded="false" aria-controls="MemberSafetyProtocols816a">Member Safety Protocols</h3> </div>
+								</div>
+								<div id="MemberSafetyProtocols816a" class="collapse fade" aria-expanded="false">
+									<hr class="m-t-0" />
+									<div class="container">
+										<div class="row p-t-2 p-b-2">
+											<div class="col-xs-12 col-md-6">
+												<h3 class="h4" style="text-align: left;">Masks</h3>
+												<p style="text-align: left;">With the State’s removal of its mask mandate, Members are no longer required to wear masks the club. Certainly, this is a personal decision and Members can continue wearing a mask should they choose. Our Life Time Team Members will also continue wearing masks at their discretion.</p>
+												<h3 class="h4" style="text-align: left;">Guests</h3>
+												<p style="text-align: left;">Please refer to your <a aria-label="view club hours" href="/clubs.go/hours.html">club hours</a> page to view the daily ability for guest visits.</p>
+											</div>
+											<div class="col-xs-12 col-md-6">
+												<h3 class="h4" style="text-align: left;">Health Screening</h3>
+												<p style="text-align: left;">To support the health and safety of the entire Life Time community, please remain at home if you're not feeling well..</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="offerterms" class="content-section p-b-3 mylt-bg-gray-12">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-xs-center offer-pricing">
+					<div class="xf-content-height">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-10 col-xs-offset-1 col-lg-12 col-lg-offset-0">
+									<p style="text-align: center;"><small>Apple Fitness+ included in membership offer is a promotional subscription code, and is not for resale, has no cash value, and will not be replaced if lost or stolen. Valid only for Apple Fitness+ in the United States. Requires Apple Media Services account. Terms and Apple Privacy Policy apply; see the applicable terms at <a class="text-gray-3" aria-label="go to apple's terms and privacy policy" href="https://www.apple.com/legal/internet-services/itunes/us/terms.html">https://www.apple.com/legal/internet-services/itunes/us/terms.html</a>. Compatible products and services required. Redeemable by only the primary account holder on the membership. Must be 13+. The following memberships are not eligible for this offer: Day Pass, Short-term, trade-out, or tuition memberships.</small></p>
+									<p style="text-align: center;"><small>This is a promotional subscription code, and is not for resale, has no cash value, and will not be replaced if lost or stolen. Valid only for Apple Fitness+ in the United States. Requires Apple Media Services account. Terms and Apple Privacy Policy apply; Must be 13+. Compatible products and services required. Cannot be combined with other offers providing access to the same service. Plan renews for $9.99/month after the promotion until cancelled.<a href="#asterisk" aria-label="Go back to top of the page" class="sr-only sr-only-focusable">↩</a></small></p>
+									<p style="text-align: center;"><small>Membership levels, types, amenities, services, programs and their associated dues, pricing, fees and/or charges may vary by location and are subject to change. Access to clubs, and certain services, programs, amenities, or areas within a club (e.g., outdoor pools, racquet courts) may be restricted, conditioned, or otherwise limited by specific terms and conditions and/or subject to a separate or supplemental fee for access or use (e.g., your access to the outdoor pool area may require a separate fee and be limited to your designated club). See club for additional terms and conditions that may apply. Actual spaces may appear different depending on club. Always consult your physician before beginning any new exercise program.<small></small></small>
+									</p>
+									<p><small><small> </small></small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="footer-mylt" role="contentinfo">
+	<div class="p-wrap">
+		<nav>
+			<div class="footer-social">
+				<ul>
+					<li><a href="https://www.facebook.com/LifeTime.Life" target="_blank"><i class="ico-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+					<li><a href="https://instagram.com/lifetime.life" target="_blank"><i class="ico-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a></li>
+					<li><a href="https://www.youtube.com/mylifetimefitness" target="_blank"><i class="ico-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span></a></li>
+					<li><a href="https://twitter.com/LifeTime_Life" target="_blank"><i class="ico-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+					<li><a href="https://www.tiktok.com/@lifetime.life" target="_blank"><i class="ico-tiktok" aria-hidden="true"></i><span class="sr-only">TikTok</span></a></li>
+				</ul>
+			</div>
+			<div class="footer-navigation">
+				<ul>
+					<li class="ltnav-item  "> <a aria-label="About Learn more about Life Time" href="https://www.lifetime.life/about-us.html">About</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Newsroom Get the latest news about life time  (opens in a new window)" href="http://news.lifetime.life/" target="_blank">Newsroom</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Investors " href="https://ir.lifetime.life/">Investors</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Help &amp; FAQS get help and frequently asked questions" href="/saved-pages/faq1/reopen-faq.html">Help &amp; FAQS</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Careers go to find life time careers (opens in a new window)" href="https://careers.lifetime.life/" target="_blank">Careers</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Advertise with Us learn more about advertising with life time (opens in a new window)" href="https://www.lifetime.life/media.html" target="_blank">Advertise with Us</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Corporate Wellness learn about life time&#39;s corporate wellness program" href="https://www.lifetime.life/corporate-wellness.html">Corporate Wellness</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Life Time Construction go to the Life Time Construction website" href="https://www.lifetime.life/life-time-construction.html">Life Time Construction</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Sustainability learn about life time&#39;s sustainability mission (opens in a new window)" href="https://news.lifetime.life/sustainability" target="_blank">Sustainability</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Culture of Inclusion " href="https://news.lifetime.life/inclusion">Culture of Inclusion</a> </li>
+				</ul>
+			</div>
+			<div class="footer-legal">
+				<ul>
+					<li class="ltnav-item  "> <a aria-label="Privacy Policy View our Privacy Policy" href="/policy/privacy-policy.html">Privacy Policy</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Terms of Use View our Terms of Use" href="/policy/terms-of-use.html">Terms of Use</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Digital Membership Terms view our digital membership terms" href="/policy/digital-membership-terms.html">Digital Membership Terms</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Guest &amp; Club Policies View our Guest and Club Policies" href="/policy/guest-and-club-policy.html">Guest &amp; Club Policies</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Accessibility Policy View our Accessibility Policy" href="/policy/accessibility.html">Accessibility Policy</a> </li>
+					<li class="ltnav-item  "> <a aria-label="California Privacy Notice View our California Policy Rights" href="/policy/ca-privacy-policy.html">California Privacy Notice</a> </li>
+					<li class="ltnav-item  "> <a aria-label="Race Entrant Policy view our race entrant policy" href="/policy/race-entry.html">Race Entrant Policy</a> </li>
+				</ul>
+			</div>
+			<div>
+				<p class="copyright">&copy; 2022 Life Time, Inc. All rights reserved.</p>
+			</div>
+		</nav>
+	</div>
+</footer>
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-header-revamp","lineagePath":"../../patterns/03-templates-08-member-revamp-_header-revamp/03-templates-08-member-revamp-_header-revamp.rendered.html"}],"lineage":[{"lineagePattern":"templates-header-revamp","lineagePath":"../../patterns/03-templates-08-member-revamp-_header-revamp/03-templates-08-member-revamp-_header-revamp.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"member-revamp"},"patternExtension":"mustache","patternName":"Target Center Example","patternPartial":"templates-target-center-example","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

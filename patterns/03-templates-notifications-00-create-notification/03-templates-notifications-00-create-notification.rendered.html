@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<header class="header">
+	<a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	<div class="header-mobile-bar">
+		<div class="header-nav-toggle">
+			<button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="header-brand-mobile">
+			<a href="#"><img src="/images/theme-base/life-time-logo-xs.svg" alt="Life Time logo"></a>
+		</div>
+		<div class="header-utility-mobile">
+			<nav aria-label="Utility Navigation">
+				<ul class="nav nav-right nav-neutral">
+					<li class="nav-item">
+						<a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz"></span><span class="sr-only">Account</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="#">
+					<img src="/images/theme-base/life-time-logo-sm.svg" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="header-utility">
+			<nav class="header-utility-major" aria-label="Utility">
+	<ul class="nav nav-inverse">
+		<li class="nav-item">
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Account</a>
+		</li>
+	</ul>
+</nav>
+		</div>
+	</div>
+	<div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+	<div class="dropdown-arrow"></div>
+	<div class="dropdown-menu dropdown-menu-right">
+		<a class="dropdown-item" href="#">View Account</a>
+		<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro">
+			<span class="text-muted">Not Joshua? </span><a class="link-reversed-white" href="#">Log Out</a>
+		</p>
+	</div>
+</div>
+
+</header>
+<main>
+    <form>
+        <div class="p-t-2 container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+                    <h1 class="h-scaled m-b-2 text-xs-center"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">1</span>Create Notification</h1>
+                    <div class="row row-xs-bottom">
+                        <div class="col-xs-12 col-lg-5">
+                            <p class="font-italic m-b-sm">All fields required</p>
+                        </div>
+                        <div class="col-xs-12 col-lg-7 small">
+                            <p class="m-b-sm">Need help? Read the <a href="https://ltfinc.sharepoint.com/DepartmentPortals/MemberServices/Documents/Club%20Notifications%20Guide.pdf" target="_blank">Club Notifications Guide</a>.</p>
+                        </div>
+                    </div>
+                    <div class="p-y-2 b-t">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-5">
+                                <h2 class="h5 m-b-grid">Notification Type</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-7">
+                                <div class="form-group m-b-0">
+                                    <label for="selType" class="sr-only">Notification Type</label>
+                                    <select id="selType" class="c-select">
+                                        <option>Select a type...</option>
+                                        <option>Full Club Closure</option>
+                                        <option>Full Club Re-Opening</option>
+                                        <option>Modified Club Hours</option>
+                                        <option>Modified Amenity Hours</option>
+                                        <option>Locker Room Closure</option>
+                                        <option>Child Center Closure</option>
+                                        <option>Full Amenity Closure (e.g. Studios, Gym, Pools, Fitness Floor)</option>
+                                        <option>Partial Amenity Closure (e.g. Studios, Gym, Pools, Fitness Floor)</option>
+                                        <option>Event Cancellation</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-y-2 b-t">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-5">
+                                <h2 class="h5 m-b-grid">Impacted Location(s) and Timing</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-7">
+                                <div id="colSingle" class="collapse fade in" aria-expanded="true">
+                                    <div class="form-group m-b-0">
+                                        <label for="selLocation">
+                                            Impacted Location
+                                        </label>
+                                        <select id="selLocation" class="c-select">
+                                            <option>Select a club...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="colAll" class="collapse fade" aria-expanded="false">
+                                    <p class="m-b-0"><span class="ico-alert-solid"></span> This notification will be sent out to all locations.</p>
+                                </div>
+                                <div id="colMulti" class="collapse fade" aria-expanded="false">
+                                    <fieldset class="form-group m-b-grid">
+                                        <legend class="sr-only">Clubs Impacted</legend>
+                                        <span class="small m-r-1">Select By:</span> 
+                                        <label class="c-input c-radio c-radio-sm">
+                                            <input id="radState" name="multiOpt" type="radio" value="state" checked>
+                                            <span class="c-indicator"></span>
+                                            State
+                                        </label>
+                                        <label class="c-input c-radio c-radio-sm">
+                                            <input name="multiOpt" type="radio" value="region">
+                                            <span class="c-indicator"></span>
+                                            Region
+                                        </label>
+                                        <label class="c-input c-radio c-radio-sm">
+                                            <input name="multiOpt" type="radio" value="list">
+                                            <span class="c-indicator"></span>
+                                            Full Club List
+                                        </label>
+                                    </fieldset>
+                                    <div id="multiState" class="collapse fade in" aria-expanded="true">
+                                        <div class="form-group m-b-0">
+                                            <label for="selState" class="sr-only">State</label>
+                                            <select id="selState" class="c-select">
+                                                <option>Select a state...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div id="multiRegion" class="collapse fade" aria-expanded="false">
+                                        <div class="form-group m-b-0">
+                                            <label for="selRegion" class="sr-only">Region</label>
+                                            <select id="selRegion" class="c-select">
+                                                <option>Select a region...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div id="multiList" class="collapse fade" aria-expanded="false">
+                                    <div class="container p-y-grid small">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-lg-6">
+                                                        <fieldset id="Alabama">
+                                                            <legend class="h6">Alabama</legend>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Vestavia Hills
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Arizona">
+                                                            <h3 class="h6">Arizona</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Biltmore
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Gilbert
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Happy Valley-Peoria
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        North Scottsdale
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Palm Valley
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Scottsdale at Shea and 101 Yoga Teacher Training Studio
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Tempe
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="California">
+                                                            <h3 class="h6">California</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Folsom
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        La Jolla
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Laguna Niguel
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Rancho San Clemente
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Roseville
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Colorado">
+                                                            <h3 class="h6">Colorado</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Centennial
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Centennial Tennis
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Cherry Creek
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Colorado Springs
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Flatirons
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Parker-Aurora
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Westminster
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Florida">
+                                                            <h3 class="h6">Florida</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Boca Raton
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Coral Gables
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Palm Beach Gardens
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Tampa
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Georgia">
+                                                            <h3 class="h6">Georgia</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Alpharetta
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Johns Creek
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Peachtree Corners
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Sandy Springs
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Sugarloaf
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Woodstock
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Illinois">
+                                                            <h3 class="h6">Illinois</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Algonquin
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bloomingdale
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Burr Ridge
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Lake Zurich
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Northbrook
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Oakbrook
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Old Orchard
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Orland Park
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        River North at One Chicago
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Romeoville
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Schaumburg
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Vernon Hills
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Warrenville
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Indiana">
+                                                            <h3 class="h6">Indiana</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Castle Creek
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Fishers
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        North Meridian
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-xs-12 col-lg-6">
+                                                        <fieldset id="Iowa">
+                                                            <h3 class="h6">Iowa</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Des Moines
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Kansas">
+                                                            <h3 class="h6">Kansas</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Lenexa
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Overland Park
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Maryland">
+                                                            <h3 class="h6">Maryland</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Columbia
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Gaithersburg
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Rockville
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Massachusetts">
+                                                            <h3 class="h6">Massachusetts</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Burlington
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Chestnut Hill
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        MetroWest-Boston
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Northshore
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Westwood
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Michigan">
+                                                            <h3 class="h6">Michigan</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bloomfield Township
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Canton Township
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Commerce Township
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Novi
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Rochester Hills
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Shelby Township
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Troy
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Minnesota">
+                                                            <h3 class="h6">Minnesota</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Apple Valley
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bloomington North
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bloomington South
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Champlin
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Chanhassen
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Coon Rapids
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Crosstown (Eden Prairie)
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Eagan
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Eden Prairie Athletic
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Edina at Southdale
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Fridley
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Highland Park
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Lakeville
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Life Time Swim Maple Grove
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Maple Grove
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Minnetonka
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        New Hope
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Oakdale Village Tennis
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Plymouth
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Savage
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        St. Louis Park
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Target Center (Minneapolis)
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        White Bear Lake
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Woodbury
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-xs-12 col-lg-6">
+                                                        <fieldset id="Missouri">
+                                                            <h3 class="h6">Missouri</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Frontenac
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        West County-Chesterfield
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Nebraska">
+                                                            <h3 class="h6">Nebraska</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Omaha
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Nevada">
+                                                            <h3 class="h6">Nevada</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Green Valley
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Summerlin
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="NewJersey">
+                                                            <h3 class="h6">New Jersey</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bergen County
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Berkeley Heights
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bridgewater
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Florham Park
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Mount Laurel
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Princeton
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="NewYork">
+                                                            <h3 class="h6">New York</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        23rd Street
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Chappaqua
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Garden City
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Midtown
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        NoHo
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        One Wall Street
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Park Avenue South
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Sky (Manhattan)
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Studio Battery Park
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Syosset
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Westchester
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="NorthCarolina">
+                                                            <h3 class="h6">North Carolina</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Apex
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Cary
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Charlotte
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Matthews
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Plantation Point
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Raleigh
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        University
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Ohio">
+                                                            <h3 class="h6">Ohio</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Beachwood
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Deerfield Township
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Dublin
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Easton
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Pickerington
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Upper Arlington
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Oklahoma">
+                                                            <h3 class="h6">Oklahoma</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Oklahoma City
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        South Tulsa
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Oregon">
+                                                            <h3 class="h6">Oregon</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Beaverton
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </div>
+                                                    <div class="col-xs-12 col-lg-6">
+                                                        <fieldset id="Pennsylvania">
+                                                            <h3 class="h6">Pennsylvania</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Ardmore
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Fort Washington
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        King of Prussia
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Life Time Work Ardmore
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Tennessee">
+                                                            <h3 class="h6">Tennessee</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Collierville
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Franklin
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Texas">
+                                                            <h3 class="h6">Texas</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Allen
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Austin - Arboretum
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Austin - Downtown
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Austin - North
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Austin - South
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Baybrook
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Champions
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Cinco Ranch
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        City Centre Houston
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Colleyville
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Cypress
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Dallas - Addison
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Dallas - Highland Park
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Dallas Midtown
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Flower Mound
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Fort Worth-Alliance
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Frisco
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Galleria Tennis (Houston)
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Garland
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        GreenStreet
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Greenway
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Kingwood
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Lake Houston
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Mansfield
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Plano
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Plano Tennis
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        San Antonio 281
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        San Antonio at the Rim
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Sienna
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Sugar Land
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Utah">
+                                                            <h3 class="h6">Utah</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        South Jordan
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Virginia">
+                                                            <h3 class="h6">Virginia</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Ashburn-Sterling
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Centreville
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Fairfax
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Gainesville
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Reston
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Washington">
+                                                            <h3 class="h6">Washington</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Bellevue
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Wisconsin">
+                                                            <h3 class="h6">Wisconsin</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Brookfield
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                        <fieldset id="Canada">
+                                                            <h3 class="h6">Canada</h3>
+                                                            <ul class="list-unstyled p-l-sm">
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Ajax
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Mississauga
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="c-input c-checkbox c-checkbox-sm">
+                                                                        <input type="checkbox">
+                                                                        <span class="c-indicator"></span>
+                                                                        Woodbridge
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-7 col-lg-offset-5">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 p-t-2">
+                                        <div class="form-group m-b-0">
+                                            <label for="dateStart">Activation/Distribution Time</label>
+                                            <div class="date-nav">
+                                                <button class="btn btn-input datepicker-trigger">
+                                                    <span class="flex-container">
+                                                        <span class="btn-icon-text">November 30, 2019 12:30am</span><span class="ico-calendar"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6 p-t-2">
+                                        <div class="form-group m-b-0">
+                                            <label for="dateEnd">Deactivation Time</label>
+                                            <div class="date-nav">
+                                                <button class="btn btn-input datepicker-trigger">
+                                                    <span class="flex-container">
+                                                        <span class="btn-icon-text">December 25, 2019 10:00pm</span><span class="ico-calendar"></span>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-y-2 b-t">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-5">
+                                <h2 class="h5 m-b-grid">Notification Content</h2>
+                            </div>
+                            <div class="col-xs-12 col-lg-7">
+                                <div class="form-group form-group-spacer">
+                                    <label for="title">Title</label>
+                                    <input id="title" type="text" class="form-control" maxlength="70" data-charcount="#titleCount" data-chartext="$rem of $max characters remaining">
+                                    <span id="titleCount" class="label-help"></span>
+                                </div>
+                                <div class="form-group m-b-0">
+                                    <label for="message" class="">Message</label>
+                                    <textarea id="message" class="form-control" rows="8" cols="10" maxlength="400" data-charcount="#messageCount" data-chartext="$rem of $max characters remaining"></textarea>
+                                    <span id="messageCount" class="label-help"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-y-2 b-t">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-5">
+                                <h2 class="h5 m-b-grid">Distribution Rules</h2>
+                                <p class="small font-weight-bold m-b-grid"><span class="ico-alert-solid"></span> Email should be used for critical notifications only</p>
+                            </div>
+                            <div class="col-xs-12 col-lg-7">
+                                <fieldset class="form-group m-b-0">
+                                    <legend class="m-b-1">Channel Type</legend>
+                                    <label for="cbWebsite" class="c-input c-checkbox">
+                                        <input id="cbWebsite" type="checkbox">
+                                        <span class="c-indicator"></span>
+                                        Website
+                                    </label>
+                                    <label for="cbApp" class="c-input c-checkbox">
+                                        <input id="cbApp" type="checkbox">
+                                        <span class="c-indicator"></span>
+                                        Mobile App
+                                    </label>
+                                    <label for="cbEmail" class="c-input c-checkbox">
+                                        <input id="cbEmail" type="checkbox">
+                                        <span class="c-indicator"></span>
+                                        Email
+                                    </label>
+                                </fieldset>
+                                <div id="additionalEmail" class="collapse fade">
+                                    <div class="p-t-2">
+                                        <h3 class="h6 m-b-grid">Additional Email Options</h3>
+                                        <fieldset class="form-group m-b-grid">
+                                            <legend class="sr-only">Gender</legend>
+                                            <label for="rdMale" name="gender" class="c-input c-radio">
+                                                <input id="rdMale" type="checkbox">
+                                                <span class="c-indicator"></span>
+                                                Male Members
+                                            </label>
+                                            <label for="rdFemale" name="gender" class="c-input c-radio">
+                                                <input id="rdFemale" type="checkbox">
+                                                <span class="c-indicator"></span>
+                                                Female Members
+                                            </label>
+                                            <label for="rdBoth" name="gender" class="c-input c-radio">
+                                                <input id="rdBoth" type="checkbox" checked>
+                                                <span class="c-indicator"></span>
+                                                Both
+                                            </label>
+                                        </fieldset>
+                                        <div class="form-group m-b-2 c-inputs-stacked">
+                                            <label for="cbChild" class="c-input c-checkbox m-b-grid">
+                                                <input id="cbChild" type="checkbox">
+                                                <span class="c-indicator"></span>
+                                                Member has child(ren) on membership
+                                            </label>
+                                            <label for="cbChildCenter" class="c-input c-checkbox">
+                                                <input id="cbChildCenter" type="checkbox">
+                                                <span class="c-indicator"></span>
+                                                Member was swiped at Child Center in past 60 days
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section b-t text-xs-center">
+                        <button class="btn btn-primary">Continue to Review & Submit</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="b-thick">
+            <div class="h2 h-static text-xs-center text-disabled m-b-2"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">2</span>Review & Submit</div>
+        </div>
+    </form>
+</main>
+<footer class="footer-mylt" role="contentinfo">
+	<div class="p-wrap">
+		<nav aria-label="Footer">
+			<div class="footer-social">
+				<ul>
+					<li><a href="http://www.facebook.com/lifetimefitness" rel="noreferrer" title="Facebook"><span class="ico-facebook"></span><span class="sr-only">Facebook</span></a></li>
+					<li><a href="http://instagram.com/lifetime.life" rel="noreferrer" title="Instagram"><span class="ico-instagram"></span><span class="sr-only">Instagram</span></a></li>
+					<li><a href="http://www.youtube.com/mylifetimefitness" rel="noreferrer" title="YouTube"><span class="ico-youtube"></span><span class="sr-only">YouTube</span></a></li>
+					<li><a href="http://www.twitter.com/lifetimefitness" rel="noreferrer" title="Twitter"><span class="ico-twitter"></span><span class="sr-only">Twitter</span></a></li>
+				</ul>
+			</div>
+
+			<div class="footer-navigation">
+				<ul>
+					<li><a href="http://news.lifetime.life/">About</a></li>
+					<li><a href="http://news.lifetime.life/">Newsroom</a></li>
+					<li><a href="https://www.mylt.life/faq.html">Help &amp; FAQs</a></li>
+					<li><a href="https://careers.lifetime.life/">Careers</a></li>
+					<li><a href="https://www.lifetime.life/media.html">Advertise with Us</a></li>
+					<li><a href="https://www.lifetime.life/corporate-wellness.html">Corporate Wellness</a></li>
+					<li><a href="https://www.lifetime.life/life-time-construction.html">Life Time Construction</a></li>
+					<li><a href="http://news.lifetime.life/corporate-social-responsibility">Sustainability</a></li>
+					<li><a href="https://www.mylt.life/clubs.go/contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-legal">
+				<ul>
+					<li><a href="https://www.mylt.life/policy/privacy-policy.html">Privacy Policy</a></li>
+					<li><a href="https://www.mylt.life/policy/terms-of-use.html">Terms of Use</a></li>
+					<li><a href="https://www.mylt.life/policy/guest-and-club-policy.html">Club Policies</a></li>
+					<li><a href="https://www.mylt.life/policy/accessibility.html">Accessibility Policy</a></li>
+					<li><a href="https://www.mylt.life/policy/ca-privacy-policy.html">CA Privacy Rights</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<p class="copyright"><span>&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Life Time, Inc. All rights reserved.</span></p>
+	</div>
+</footer>
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-bios-admin-header","lineagePath":"../../patterns/03-templates-10-bios/partials-_bios-admin-header/03-templates-10-bios/partials-_bios-admin-header.rendered.html"},{"lineagePattern":"patterns-mylt-footer","lineagePath":"../../patterns/02-patterns-01-footer-00-mylt-footer/02-patterns-01-footer-00-mylt-footer.rendered.html"}],"lineage":[{"lineagePattern":"templates-bios-admin-header","lineagePath":"../../patterns/03-templates-10-bios/partials-_bios-admin-header/03-templates-10-bios/partials-_bios-admin-header.rendered.html"},{"lineagePattern":"patterns-mylt-footer","lineagePath":"../../patterns/02-patterns-01-footer-00-mylt-footer/02-patterns-01-footer-00-mylt-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"notifications"},"patternExtension":"mustache","patternName":"Create Notification","patternPartial":"templates-create-notification","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+	<script src="/js/internal/create-notification.js"></script>
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

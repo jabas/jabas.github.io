@@ -1,0 +1,63 @@
+<ul id="chicletGroup" class="chiclets-container m-b-2 list-inline" aria-label="Applied Filters">
+	<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>First Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+	<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Second Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+	<li class="list-inline-item m-r-0"><button class="chiclet" disabled><span class="sr-only">Remove &ldquo;</span>Disabled Chiclet<span class="sr-only">&rdquo; Filter</span></button></li>
+</ul>
+<div class="m-b-5">
+	<button onclick="addChiclet()" class="btn btn-primary">Add Another Chiclet</button>
+</div>
+<script>
+	function addChiclet() {
+		$('#chicletGroup').append('<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Another Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>');
+	}
+</script>
+
+<h5 class="m-t-4">Chiclets Label</h5>
+<ul class="chiclets-container list-inline">
+	<li class="chiclets-label list-inline-item">Filtered By:</li>
+	<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>First Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+	<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Second Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+</ul>
+
+<h5 class="m-t-4">Chiclets Mobile Scroller</h5>
+<div class="chiclets-scroller-sm">
+	<ul class="chiclets-container list-inline">
+		<li class="chiclets-label list-inline-item">Filtered By:</li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>First Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Second Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Third Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Fourth Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Fifth Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Sixth Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+	</ul>
+</div>
+
+<h5 class="m-t-4">Moving Chiclet Label Scroller (swap at SM to MD breakpoint)</h5>
+<div class="chiclets-label hidden-md-up">Filtered By:</div>
+<div class="chiclets-scroller-sm">
+	<ul class="chiclets-container list-inline">
+		<li class="chiclets-label list-inline-item hidden-sm-down">Filtered By:</li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>First Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Second Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Third Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Fourth Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Fifth Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+		<li class="list-inline-item m-r-0"><button class="chiclet"><span class="sr-only">Remove &ldquo;</span>Sixth Chiclet<span class="sr-only">&rdquo; Filter</span><span class="chiclet-close"></span></button></li>
+	</div>
+</div>
+
+<h5 class="m-t-4">Legacy Markup</h5>
+<ul class="chiclets-container  list-inline m-b-2">
+	<li class="list-inline-item m-r-0"><div class="chiclet disabled">
+		<span class="chiclet-label">Disabled Chiclet</span>
+		<button href="#" class="chiclet-close"><span class="sr-only">Remove "Disabled Chiclet" Filter</span></button>
+	</div></li>
+	<li class="list-inline-item m-r-0"><div class="chiclet">
+		<span class="chiclet-label">First Chiclet</span>
+		<button href="#" class="chiclet-close"><span class="sr-only">Remove "Chiclet Label" Filter</span></button>
+	</div></li>
+	<li class="list-inline-item m-r-0"><div class="chiclet">
+		<span class="chiclet-label">Second Chiclet</span>
+		<button href="#" class="chiclet-close"><span class="sr-only">Remove "Chiclet Label" Filter</span></button>
+	</div></li>
+</ul>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<div class="planner">
+	<div class="planner-datebar">
+	<div class="container">
+		<div class="planner-date-controls" role="toolbar" aria-label="Day and Week Navigation">
+			<button class="btn planner-date-btn planner-date-btn-prev" disabled>
+				<span class="ico-arrow-left icon-adjust-horiz icon-adjust-vert"></span>
+				<span class="sr-only">Previous Week</span>
+			</button>
+			<div class="planner-date-week">
+				<div class="planner-date">
+					<div class="sr-only" id="day-total-0">60 results</div>
+					<div class="planner-date-month" aria-hidden="true">May</div>
+					<label class="planner-date-radio" for="day-0" aria-label="Sunday, May 26" aria-describedby="day-total-0">
+						<input id="day-0" type="radio" name="day-selector" value="26-05-19" class="planner-date-radio-input" disabled>
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">S</span>
+								<span class="hidden-md-down">Sun</span>
+							</span>
+							<span class="planner-date-number">26</span>
+						</span>
+					</label>
+				</div>
+				<div class="planner-date">
+					<div class="sr-only" id="day-total-1">60 results</div>
+					<label class="planner-date-radio" for="day-1" aria-label="Monday, May 27" aria-describedby="day-total-1">
+						<input id="day-1" type="radio" name="day-selector" value="27-05-19" class="planner-date-radio-input">
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">M</span>
+								<span class="hidden-md-down">Mon</span>
+							</span>
+							<span class="planner-date-number">27</span>
+						</span>
+					</label>
+				</div>
+				<div class="planner-date">
+					<div class="sr-only" id="day-total-2">60 results</div>
+					<label class="planner-date-radio" for="day-2" aria-label="Tuesday, May 28" aria-describedby="day-total-2">
+						<input id="day-2" type="radio" name="day-selector" value="28-05-19" class="planner-date-radio-input">
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">T</span>
+								<span class="hidden-md-down">Tue</span>
+							</span>
+							<span class="planner-date-number">28</span>
+						</span>
+					</label>
+				</div>
+				<div class="planner-date planner-date-no-results">
+					<div class="sr-only" id="day-total-3">0 results</div>
+					<label class="planner-date-radio" for="day-3" aria-label="Wednesday, May 29" aria-describedby="day-total-3">
+						<input id="day-3" type="radio" name="day-selector" value="29-05-19" class="planner-date-radio-input">
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">W</span>
+								<span class="hidden-md-down">Wed</span>
+							</span>
+							<span class="planner-date-number">29</span>
+						</span>
+					</label>
+				</div>
+				<div class="planner-date planner-date-current">
+					<div class="sr-only" id="day-total-4">60 results</div>
+					<label class="planner-date-radio" for="day-4" aria-label="Thursday, May 30" aria-describedby="day-total-4">
+						<input id="day-4" type="radio" name="day-selector" value="30-05-19" class="planner-date-radio-input" checked>
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">T</span>
+								<span class="hidden-md-down">Thu</span>
+							</span>
+							<span class="planner-date-number">30</span>
+						</span>
+					</label>
+				</div>
+				<div class="planner-date">
+					<div class="sr-only" id="day-total-5">60 results</div>
+					<label class="planner-date-radio" for="day-5" aria-label="Friday, May 31" aria-describedby="day-total-5">
+						<input id="day-5" type="radio" name="day-selector" value="31-05-19" class="planner-date-radio-input">
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">F</span>
+								<span class="hidden-md-down">Fri</span>
+							</span>
+							<span class="planner-date-number">31</span>
+						</span>
+					</label>
+				</div>
+				<div class="planner-date">
+					<div class="sr-only" id="day-total-6">60 results</div>
+					<div class="planner-date-month" aria-hidden="true">June</div>
+					<label class="planner-date-radio" for="day-6" aria-label="Saturday, June 1" aria-describedby="day-total-6">
+						<input id="day-6" type="radio" name="day-selector" value="01-06-19" class="planner-date-radio-input">
+						<span class="planner-date-day">
+							<span class="planner-date-dayname">
+								<span class="hidden-lg-up">S</span>
+								<span class="hidden-md-down">Sat</span>
+							</span>
+							<span class="planner-date-number">1</span>
+						</span>
+					</label>
+				</div>
+			</div>
+			<button class="btn planner-date-btn planner-date-btn-next">
+				<span class="ico-arrow-right icon-adjust-horiz icon-adjust-vert"></span>
+				<span class="sr-only">Next Week</span>
+			</button>
+		</div>
+	</div>
+</div>
+	<div class="content-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+					<div class="text-gray-10 b-a b-clr-current text-xs-center p-x-2 p-t-2 small">
+						<p class="text-gray-5"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-lifespa-datebar","lineagePath":"../../patterns/03-templates-lifespa/partials-_lifespa-datebar/03-templates-lifespa/partials-_lifespa-datebar.rendered.html"}],"lineage":[{"lineagePattern":"templates-lifespa-datebar","lineagePath":"../../patterns/03-templates-lifespa/partials-_lifespa-datebar/03-templates-lifespa/partials-_lifespa-datebar.rendered.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"templates-booking-initial-state","lineagePath":"../../patterns/03-templates-lifespa-00-booking-initial-state/03-templates-lifespa-00-booking-initial-state.rendered.html"},{"lineagePattern":"templates-booking-no-results","lineagePath":"../../patterns/03-templates-lifespa-02-booking-no-results/03-templates-lifespa-02-booking-no-results.rendered.html"}],"lineageR":[{"lineagePattern":"templates-booking-initial-state","lineagePath":"../../patterns/03-templates-lifespa-00-booking-initial-state/03-templates-lifespa-00-booking-initial-state.rendered.html"},{"lineagePattern":"templates-booking-no-results","lineagePath":"../../patterns/03-templates-lifespa-02-booking-no-results/03-templates-lifespa-02-booking-no-results.rendered.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"partials"},"patternExtension":"mustache","patternName":"Lifespa No Results","patternPartial":"templates-lifespa-no-results","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

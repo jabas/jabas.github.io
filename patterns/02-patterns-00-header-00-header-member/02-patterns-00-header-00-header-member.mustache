@@ -1,0 +1,27 @@
+<header class="header">
+	<a class="sr-only sr-only-focusable" href="#secdNav"><span class="d-inline-block p-x-grid p-y-sm">Skip to secondary navigation</span></a>
+	<a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	{{> patterns-nav-member-mobile-bar }}
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse" data-navbar-overflow="#primaryNav">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="#">
+					{{> elements-logo }}
+				</a>
+			</div>
+			<button class="btn btn-secondary dropdown-toggle header-hide-mobile" data-toggle="collapse" href="#clubLocator" aria-expanded="false" aria-controls="clubLocator">Chanhassen</button>
+			{{> patterns-nav-member-primary-links }}
+		</div>
+		<div class="header-utility">
+			{{> patterns-nav-member-minor-utility }}
+			{{> patterns-nav-member-major-utility }}
+		</div>
+		{{> patterns-nav-global }}
+	</div>
+	{{> patterns-nav-util-account }}
+	{{> patterns-nav-member-club-locate }}
+</header>
+{{# ciNavbar }}
+	{{> patterns-nav-ci-navbar }}
+{{/ ciNavbar }}
+

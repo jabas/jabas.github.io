@@ -1,0 +1,63 @@
+{{> patterns-header-prospect(removeJoinLink:true) }}
+<main class="page-content main-mylt bg-gray-12 omsc-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div id="omscSummary" class="omsc-summary">
+					{{> templates-membership-summary }}
+				</div>
+				<div class="content-section text-xs-center">
+					<h1 class="h2 m-b-1">Are you interested in reducing your monthly dues?</h1>
+					<p>You can choose to pay a higher initiation fee now to reduce your membership dues for the life of your membership</p>
+				</div>
+				<div id="omscDuesPackages" class="omsc-dues-packages">
+					<div class="row">
+						<div class="col-xs-12 p-x-sm">
+							<ul class="list-unstyled m-b-0">
+								<li class="omsc-dues-item">
+									<div class="card card-product b-rounded-lg box-shadow">
+										<div class="card-col">
+											<div class="card-block">
+												<p class="h2 h-static m-b-xs">Reduce by $30/mo</p>
+												<p class="small m-y-xs">For the life of your membership</p>
+											</div>
+											<div class="card-footer">
+												<div class="card-text">
+													<div class="display-number display-number-md text-gray-3">
+														<span class="sr-only">$ 500</span>
+														<div aria-hidden="true">
+															<span class="display-number-sup">$</span><span class="display-number-value">500</span><span class="display-number-sup">.00</span>
+															<span class="small">Initiation Fee</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<label for="cbOffer1" class="omsc-dues-checkbox c-input c-checkbox">
+										<input id="cbOffer1" type="checkbox">
+										<span class="c-indicator"></span>
+										<span class="sr-only">Reduce by $30 per month for the life of the membership</span>
+									</label>
+								</li>								
+							</ul>
+						</div>
+					</div>
+					<div class="omsc-nav">
+						<div class="btn-wrap text-xs-right">
+							<a href="{{ link.templates-full-summary }}" class="btn">No Thanks</a>
+							<a href="{{ link.templates-full-summary }}" class="btn btn-primary">Move Forward</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-section small p-t-0 link-underlined">
+					<h2 class="h5">Details</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu tincidunt nibh. Aenean suscipit, libero volutpat rutrum efficitur, odio sapien luctus nisi, vitae accumsan lorem mauris bibendum enim.</p>
+					<p>Praesent condimentum malesuada nulla cursus pellentesque. Praesent aliquet feugiat faucibus.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}
+{{> templates-moxie-example }}

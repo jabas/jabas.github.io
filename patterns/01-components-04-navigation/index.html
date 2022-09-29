@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460494733" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460494733" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460494733" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460494733" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460494733" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  
+  <!-- Patterns -->
+  <div id="sg-patterns">
+<div id="components-navigation" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/01-components-04-navigation&#x2F;index.html" class="patternLink" data-patternpartial="components-navigation">Navigation</a></h2>
+
+  <div class="sg-pattern-category-body">
+    <h5>Accessibility</h5>
+<p>All <code>&lt;nav&gt;</code> elements should use <code>aria-label=&quot;Navigation Name&quot;</code> where &quot;Navigation Name&quot; equals a meaningful name to identify the navigation. e.g., a primary navigation may have <code>&lt;nav aria-label=&quot;Primary&quot;&gt;</code>. The term &quot;navigation&quot; isn’t necessary to include since a screen reader already announces it as navigation.</p>
+<p>To indicate the current &quot;active&quot; item in a set to screen readers use the <code>aria-current=&quot;&quot;</code> attribute where the value can be equal to one of the following:</p>
+<ul>
+<li><code>page</code> represents the current page within a set of pages</li>
+<li><code>step</code> represents the current step within a process</li>
+<li><code>location</code> represents the current location within an environment or context</li>
+<li><code>date</code> represents the current date within a collection of dates</li>
+<li><code>time</code> represents the current time within a set of times</li>
+<li><code>true</code> represents the current item within a set</li>
+<li><code>false</code> does not represent item within a set</li>
+</ul>
+
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="components-nav" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-00-nav&#x2F;01-components-04-navigation-00-nav.rendered.html" class="patternLink" data-patternpartial="components-nav" title="Link to Pattern">
+          Nav
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-nav" title="View Pattern Info" id="sg-pattern-extra-toggle-components-nav" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-nav">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container m-t-2 p-b-4">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+
+			<h5>List Markup</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Nav Markup</h5>
+			<nav aria-label="Navigation Name" class="nav">
+				<a class="nav-link active" href="#">Active</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+				<a class="nav-link disabled" href="#">Disabled</a>
+			</nav>
+		</div>
+	</div>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-nav" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-nav-options" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-01-nav-options&#x2F;01-components-04-navigation-01-nav-options.rendered.html" class="patternLink" data-patternpartial="components-nav-options" title="Link to Pattern">
+          Nav Options
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-nav-options" title="View Pattern Info" id="sg-pattern-extra-toggle-components-nav-options" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-nav-options">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container m-t-2 p-b-4">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h2>Justifications</h2>
+			<h5>Center Justify</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-center">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Right Justify</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-right">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h2 class="m-t-4">Stacking</h2>
+			<h5>Stack Nav at SM</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-stack-sm">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Combined with Center Justify</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-stack-sm nav-center">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Combined with Left Justify</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-stack-sm nav-right">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h2 class="m-t-4">Link Colors</h2>
+			<h5>Neutral Coloring</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-neutral">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Inverse Coloring</h5>
+			<div class="container bg-gray-4">
+				<nav aria-label="Navigation Name">
+					<ul class="nav nav-inverse bg-gray-4">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-nav-options" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-dropdowns" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-02-dropdowns&#x2F;01-components-04-navigation-02-dropdowns.rendered.html" class="patternLink" data-patternpartial="components-dropdowns" title="Link to Pattern">
+          Dropdowns
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-dropdowns" title="View Pattern Info" id="sg-pattern-extra-toggle-components-dropdowns" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-dropdowns">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container m-t-2 p-b-4">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+
+			<h5>Dropdowns</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Two-column list for dropdown</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled dropdown-columns">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+								<li><a class="dropdown-item" href="#">Several of these</a></li>
+								<li><a class="dropdown-item" href="#">More</a></li>
+								<li><a class="dropdown-item" href="#">Want to be sure of wrap so this is long</a></li>
+								<li><a class="dropdown-item" href="#">So much</a></li>
+								<li><a class="dropdown-item" href="#">Wow</a></li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Inverse Dropdown</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item dropdown dropdown-inverse">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu">
+							<ul class="list-unstyled">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Positon Dropdown on Left</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu dropdown-menu-left">
+							<ul class="list-unstyled">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+			<h5 class="m-t-4">Positon Dropdown on Right</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-arrow"></div>
+						<div class="dropdown-menu dropdown-menu-right">
+							<ul class="list-unstyled">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-dropdowns" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-nav-tabs" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-02-nav-tabs&#x2F;01-components-04-navigation-02-nav-tabs.rendered.html" class="patternLink" data-patternpartial="components-nav-tabs" title="Link to Pattern">
+          Nav Tabs
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-nav-tabs" title="View Pattern Info" id="sg-pattern-extra-toggle-components-nav-tabs" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-nav-tabs">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container p-b-4">
+	<div class="row m-t-4">
+		<div class="col-xs-12">
+
+			<h5>Nav Tabs</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="row m-t-4">
+		<div class="col-xs-12">
+			<h5>Nav Tabs Wide</h5>
+			<nav aria-label="Navigation Name" class="btn-block-edge-sm">
+				<ul class="nav nav-tabs nav-tabs-wide">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+
+	<div class="row m-t-4">
+		<div class="col-xs-12">
+			<h5>Styled Nav Tabs (.nav-tabs-alt)</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-tabs nav-tabs-alt">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item" >
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<h2 class="m-t-2 m-b-0">Bordered Variations</h2>
+	<h5>.nav-tabs-border</h5>
+
+	<div class="row m-t-4">
+		<div class="col-xs-12">
+
+			<h5>Nav Tabs</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-tabs nav-tabs-border">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="row m-t-4">
+		<div class="col-xs-12">
+			<h5>Nav Tabs Wide</h5>
+			<nav aria-label="Navigation Name" class="btn-block-edge-sm">
+				<ul class="nav nav-tabs nav-tabs-wide nav-tabs-border">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</div>
+
+	<div class="row m-t-4">
+		<div class="col-xs-12">
+			<h5>Styled Nav Tabs (.nav-tabs-alt)</h5>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-tabs nav-tabs-alt nav-tabs-border">
+					<li class="nav-item">
+						<a class="nav-link active" href="#" aria-current="page">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item" >
+						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-nav-tabs" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-nav-underlined" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-03-nav-underlined&#x2F;01-components-04-navigation-03-nav-underlined.rendered.html" class="patternLink" data-patternpartial="components-nav-underlined" title="Link to Pattern">
+          Nav Underlined
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-nav-underlined" title="View Pattern Info" id="sg-pattern-extra-toggle-components-nav-underlined" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-nav-underlined">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container m-t-2 p-b-4">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h2>Underlined Links</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error illum provident, delectus unde earum dolore, eius. Cum quod veritatis, a, iusto nesciunt cumque omnis deserunt facere sunt accusamus, eum non.</p>
+			<nav aria-label="Navigation Name">
+				<ul class="nav link-underlined">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Active</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Lorem ipsum dolor sit amet.</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Consectetur adipisicing elit.</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+					</li>
+				</ul>
+			</nav>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet optio accusamus iste commodi assumenda ut dolore ad inventore dicta qui impedit velit esse ratione labore, facere vero excepturi reprehenderit ipsum.</p>
+			<h5 class="m-t-4">With Stack at SM</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sed iste hic mollitia esse laboriosam neque quibusdam unde blanditiis, praesentium laborum nihil alias corporis. Accusamus aliquid asperiores dolorem ex numquam!</p>
+			<nav aria-label="Navigation Name">
+				<ul class="nav nav-stack-sm link-underlined">
+					<a class="nav-link active" href="#">Active</a>
+					<a class="nav-link" href="#">Lorem ipsum dolor sit amet.</a>
+					<a class="nav-link" href="#">Consectetur adipisicing elit.</a>
+					<a class="nav-link nav-link-highlight" href="#">Highlighted</a>
+				</ul>
+			</nav>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet optio accusamus iste commodi assumenda ut dolore ad inventore dicta qui impedit velit esse ratione labore, facere vero excepturi reprehenderit ipsum.</p>
+		</div>
+	</div>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-nav-underlined" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-nav-buttons" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-04-nav-buttons&#x2F;01-components-04-navigation-04-nav-buttons.rendered.html" class="patternLink" data-patternpartial="components-nav-buttons" title="Link to Pattern">
+          Nav Buttons
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-nav-buttons" title="View Pattern Info" id="sg-pattern-extra-toggle-components-nav-buttons" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-nav-buttons">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <h5>Default</h5>
+<div class="nav nav-btns">
+	<a class="btn active" href="#" aria-current="true">Left</a>
+	<a class="btn" href="#">Middle</a>
+	<a class="btn" href="#">Right</a>
+</div>
+
+<h5 class="m-t-3">List</h5>
+<nav aria-label="Navigation Name">
+	<ul class="nav nav-btns">
+		<li class="nav-item">
+			<a class="btn active" href="#" aria-current="true">Left</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn" href="#">Middle</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn" href="#">Right</a>
+		</li>
+	</ul>
+</nav>
+
+<h5 class="m-t-3">Stack XS–SM</h5>
+<nav aria-label="Navigation Name">
+	<ul class="nav nav-btns nav-stack-sm">
+		<li class="nav-item">
+			<a class="btn active" href="#" aria-current="true">Left</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn" href="#">Middle</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn" href="#">Right</a>
+		</li>
+	</ul>
+</nav>
+
+<h5 class="m-t-3">Reversed</h5>
+<nav aria-label="Navigation Name" class="bg-gray-10 p-a-grid">
+	<ul class="nav nav-btns">
+		<li class="nav-item">
+			<a class="btn btn-reversed" href="#">Left</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-reversed" href="#">Middle</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-reversed" href="#">Right</a>
+		</li>
+	</ul>
+</nav>
+
+<h5 class="m-t-3">Sizes</h5>
+<nav aria-label="Navigation Name">
+	<ul class="nav nav-btns">
+		<li class="nav-item">
+			<a class="btn btn-lg active" href="#" aria-current="true">Large</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-lg" href="#">Large</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-lg" href="#">Large</a>
+		</li>
+	</ul><br>
+
+	<ul class="nav nav-btns">
+		<li class="nav-item">
+			<a class="btn active" href="#" aria-current="true">Default</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn" href="#">Default</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn" href="#">Default</a>
+		</li>
+	</ul><br>
+
+	<ul class="nav nav-btns">
+		<li class="nav-item">
+			<a class="btn btn-sm active" href="#" aria-current="true">Small</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-sm" href="#">Small</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-sm" href="#">Small</a>
+		</li>
+	</ul><br>
+
+	<ul class="nav nav-btns">
+		<li class="nav-item">
+			<a class="btn btn-xs active" href="#" aria-current="true">X-Small</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-xs" href="#">X-Small</a>
+		</li>
+		<li class="nav-item">
+			<a class="btn btn-xs" href="#">X-Small</a>
+		</li>
+	</ul>
+</nav>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-nav-buttons" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-navbar" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-05-navbar&#x2F;01-components-04-navigation-05-navbar.rendered.html" class="patternLink" data-patternpartial="components-navbar" title="Link to Pattern">
+          Navbar
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-navbar" title="View Pattern Info" id="sg-pattern-extra-toggle-components-navbar" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-navbar">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <nav aria-label="Navigation Name" class="navbar navbar-light" data-navbar-overflow="#navOverflow">
+	<div class="navbar-brand">Branding</div>
+	<ul id="navOverflow" class="nav nav-neutral">
+		<li class="nav-item"><a href="#" class="nav-link">Overview</a></li>
+		<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Link One</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Link Two</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Longer Link Three</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Many Links</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Many Links</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Many Links</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Many Links</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Many Links</a></li>
+	</ul>
+</nav>
+<div class="content-section">
+	<h5 class="m-b-2">Add a new nav with this button:</h5>
+	<p><button id="addNavbar" class="btn btn-primary">Add New</button></p>
+</div>
+
+<div id="addNavTarget"></div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-navbar" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-breadcrumbs" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-06-breadcrumbs&#x2F;01-components-04-navigation-06-breadcrumbs.rendered.html" class="patternLink" data-patternpartial="components-breadcrumbs" title="Link to Pattern">
+          Breadcrumbs
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-breadcrumbs" title="View Pattern Info" id="sg-pattern-extra-toggle-components-breadcrumbs" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-breadcrumbs">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <nav aria-label="Breadcrumb">
+	<ol class="breadcrumb">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Library</a></li>
+		<li class="active"><a href="#" aria-current="page">Data</a></li>
+	</ol>
+</nav>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-breadcrumbs" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="components-pagination" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/01-components-04-navigation-07-pagination&#x2F;01-components-04-navigation-07-pagination.rendered.html" class="patternLink" data-patternpartial="components-pagination" title="Link to Pattern">
+          Pagination
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="components-pagination" title="View Pattern Info" id="sg-pattern-extra-toggle-components-pagination" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-components-pagination">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <nav class="text-xs-center m-t-1" aria-label="Results Pagination 1">
+	<ul class="pagination pagination-sm">
+		<li class="page-item active"><a href="#" class="page-link" aria-label="page 1 of 3, current page" aria-current="page">1</a></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 2 of 3">2</a></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 3 of 3">3</a></li>
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-right-sm"></span>
+				<span class="sr-only">Next Page</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<nav class="text-xs-center m-t-1" aria-label="Results Pagination 2">
+	<ul class="pagination pagination-sm">
+		<li class="page-item arrow">
+			<a href="#" class="page-link" aria-disabled="true">
+				<span class="ico-arrow-left-sm"></span>
+				<span class="sr-only">Previous Page</span>
+			</a>
+		</li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 1 of 10">1</a></li>
+		<li class="page-item active"><a href="#" class="page-link" aria-label="page 2 of 10, current page" aria-current="page">2</a></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 3 of 10">3</a></li>
+		<li class="page-item"><span class="page-gap">…</span></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 10 of ten">10</a></li>
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-right-sm"></span>
+				<span class="sr-only">Next Page</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<nav class="text-xs-center m-t-1" aria-label="Results Pagination 3">
+	<ul class="pagination pagination-sm">
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-left-sm"></span>
+				<span class="sr-only">Previous Page</span>
+			</a>
+		</li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 1 of 10">1</a></li>
+		<li class="page-item"><span class="page-gap">…</span></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 8 of 10">8</a></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 9 of 10">9</a></li>
+		<li class="page-item active"><a href="#" class="page-link" aria-label="page 10 of 10, current page" aria-current="page">10</a></li>
+	</ul>
+</nav>
+
+<nav class="text-xs-center m-t-1" aria-label="Results Pagination 4">
+	<ul class="pagination pagination-sm">
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-left-sm"></span>
+				<span class="sr-only">Previous Page</span>
+			</a>
+		</li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 1 of 10">1</a></li>
+		<li class="page-item"><span class="page-gap">…</span></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 4 of 10">4</a></li>
+		<li class="page-item active"><a href="#" class="page-link" aria-label="page 5 of 10, current page" aria-current="page">5</a></li>
+		<li class="page-item"><span class="page-gap">…</span></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 10 of 10">10</a></li>
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-right-sm"></span>
+				<span class="sr-only">Next Page</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<nav class="text-xs-center bg-gray-12 m-t-1 p-y-grid" aria-label="Results Pagination 5">
+	<ul class="pagination pagination-sm pagination-inverse">
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-left-sm"></span>
+				<span class="sr-only">Previous Page</span>
+			</a>
+		</li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 1 of 6">1</a></li>
+		<li class="page-item"><span class="page-gap">…</span></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 4 of 6">4</a></li>
+		<li class="page-item active"><a href="#" class="page-link" aria-label="page 5 of 6, current page" aria-current="page">5</a></li>
+		<li class="page-item"><a href="#" class="page-link" aria-label="page 6 of 6">6</a></li>
+		<li class="page-item arrow">
+			<a href="#" class="page-link">
+				<span class="ico-arrow-right-sm"></span>
+				<span class="sr-only">Next Page</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+  </div>
+  <script type="text/json" id="sg-pattern-data-components-pagination" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+  </div> <!--end #sg-patterns-->
+
+</div><!--end .sg-main-->
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"patternPartial":"viewall-components-navigation"}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460494733">
+  (function() {
+    if (self != top) {
+      var cb = '1664460494733';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460494733">
+  (function() {
+    if (self != top) {
+      var cb = '1664460494733';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,242 @@
+<header class="header"> <a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+    <div class="header-mobile-bar">
+        <div class="header-nav-toggle">
+            <button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="navigation"> <span class="navbar-toggler-icon"></span> </button>
+        </div>
+        <div class="header-brand-mobile">
+            <a href="/member.html"> <img src="/images/placeholder/lt-dashboard.png" alt="Life Time"> </a>
+        </div>
+        <div class="header-utility-mobile">
+            <nav aria-label="Utility Navigation">
+                <ul class="nav nav-right nav-neutral">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"> <span class="ico-user icon-adjust-horiz"></span> <span class="sr-only js-login-label">account navigation</span> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--*/ for rare mobile */-->
+    </div>
+    <div id="headerNav" class="header-nav">
+        <div data-navbar-overflow="#primaryNav" class="header-primary navbar navbar-collapse js-ltnav-primary navbar-overflow">
+            <div class="navbar-brand header-hide-mobile">
+                <a href="/member.html"><img src="/images/placeholder/lt-dashboard.png" alt="Life Time"></a>
+            </div>
+            <nav aria-label="Primary Navigation">
+                <ul id="primaryNav" class="nav nav-neutral">
+                    <li class="nav-item"><a href="#0" class="nav-link ">New Members</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link ">Personal Training</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link ">Search All Members</a></li>
+                    <li class="nav-item"><a href="#0" class="nav-link active">Location Management</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-utility">
+            <nav aria-label="Utility Navigation" class="header-utility-minor">
+                <ul class="nav nav-inverse"></ul>
+            </nav>
+            <nav aria-label="Utility Navigation" class="header-utility-major">
+                <ul class="nav nav-inverse">
+                    <li class="nav-item"><a href="#" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span> <span data-profile="" data-profile-property="employeeDetails.firstName" aria-describedby="account-nav-description" class="js-login-label">Joshua</span> <span id="account-nav-description" class="sr-only">account navigation</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav aria-label="Navigation to Other Life Time Properties" class="header-global">
+            <ul class="nav dropdown dropdown-inverse">
+                <li class="nav-item "><a href="/member.html" class=" nav-link active ">HUB</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+        <div class="dropdown-arrow"></div>
+        <div class="dropdown-menu dropdown-menu-right">
+            <p class="m-b-1 hidden-xs-up js-anonymous">
+                <a class="js-login-link btn btn-primary btn-sm btn-block"> </a>
+            </p>
+            <p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro hidden-xs-up js-anonymous"> <span class="text-muted">New member? <a class="link-reversed-white">Create Account</a></span> </p> <a class="dropdown-item micro " href="/member/bios-admin/manage-profile.html"> My Bio </a> <a class="dropdown-item micro js-logout-link" href="#"> Log Out </a> </div>
+    </div>
+</header>
+<main>
+	<div class="container content-mt">
+	<h1 class="h2 h-static m-b-2">
+		<span class="text-gray-8">
+			Club Location&nbsp;|</span> Category
+	</h1>
+</div>
+	<form>
+		<div class="bg-gray-12 b-y p-y-sm m-b-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-md-5 col-lg-4 p-y-sm">
+				<div class="form-group">
+					<label for="clubStatus">Current Status</label>
+					<select class="c-select">
+						<option>Open</option>
+						<option>Open With Limitations</option>
+						<option>Open, Reservation Required</option>
+						<option selected>Coming Soon</option>
+						<option>Closed</option>
+						<option>Not Available At This Location</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="container p-y-grid">
+			<h2 class="h3 h-static m-b-grid">Supporting Links</h2>
+			<p class="small m-b-0 p-b-grid b-b">Select the supporting links you wish to include with this category. Entries using the "AEM Default" option need no further input. All other entries require either the specific URL or email to be used.</p>
+			<div class="reopen-link-row">
+	<div class="reopen-link-switch">
+		<label for="cbenabledDefault" aria-labelledby="cbenabledDefaultLabel" class="c-input c-toggle pull-xs-left m-r-grid">
+				<input id="cbenabledDefault" type="checkbox" role="switch" checked="checked">
+			<span class="c-indicator"></span>
+		</label>
+	</div>
+	<div id="cbenabledDefaultLabel" class="reopen-link-title">
+		Using Default Link
+	</div>
+	<div class="reopen-link-settings">
+		<fieldset class="form-group m-b-0">
+			<legend class="sr-only">Using Default Link URL</legend>
+			<label for="rdDefaultenabledDefault" class="c-input c-radio c-radio-sm">
+					<input id="rdDefaultenabledDefault" name="urlenabledDefault" type="radio" checked>
+				<span class="c-indicator"></span>
+				AEM Default
+			</label>
+			<label for="rdCustomenabledDefault" class="c-input c-radio c-radio-sm">
+					<input id="rdCustomenabledDefault" name="urlenabledDefault" type="radio">
+				<span class="c-indicator"></span>
+				Custom URL
+			</label>
+		</fieldset>
+	</div>
+	<div class="reopen-link-input">
+			<input id="customURLenabledDefault" type="text" class="form-control" disabled>
+
+	</div>
+</div>
+			<div class="reopen-link-row">
+	<div class="reopen-link-switch">
+		<label for="cbenabledCustom" aria-labelledby="cbenabledCustomLabel" class="c-input c-toggle pull-xs-left m-r-grid">
+				<input id="cbenabledCustom" type="checkbox" role="switch" checked="checked">
+			<span class="c-indicator"></span>
+		</label>
+	</div>
+	<div id="cbenabledCustomLabel" class="reopen-link-title">
+		Using Custom Link
+	</div>
+	<div class="reopen-link-settings">
+		<fieldset class="form-group m-b-0">
+			<legend class="sr-only">Using Custom Link URL</legend>
+			<label for="rdDefaultenabledCustom" class="c-input c-radio c-radio-sm">
+					<input id="rdDefaultenabledCustom" name="urlenabledCustom" type="radio">
+				<span class="c-indicator"></span>
+				AEM Default
+			</label>
+			<label for="rdCustomenabledCustom" class="c-input c-radio c-radio-sm">
+					<input id="rdCustomenabledCustom" name="urlenabledCustom" type="radio" checked>
+				<span class="c-indicator"></span>
+				Custom URL
+			</label>
+		</fieldset>
+	</div>
+	<div class="reopen-link-input">
+			<input id="customURLenabledCustom" type="text" class="form-control" value="http:&#x2F;&#x2F;www.google.com">
+
+	</div>
+</div>
+			<div class="reopen-link-row">
+	<div class="reopen-link-switch">
+		<label for="cbrequireURL" aria-labelledby="cbrequireURLLabel" class="c-input c-toggle pull-xs-left m-r-grid">
+				<input id="cbrequireURL" type="checkbox" role="switch" checked="checked">
+			<span class="c-indicator"></span>
+		</label>
+	</div>
+	<div id="cbrequireURLLabel" class="reopen-link-title">
+		Requires URL Entry
+	</div>
+	<div class="reopen-link-settings">
+			<span class="small">URL Required</span>
+	</div>
+	<div class="reopen-link-input">
+			<input id="customURLrequireURL" type="text" class="form-control" value="http:&#x2F;&#x2F;www.yahoo.com">
+
+	</div>
+</div>
+			<div class="reopen-link-row">
+	<div class="reopen-link-switch">
+		<label for="cbrequireEmail" aria-labelledby="cbrequireEmailLabel" class="c-input c-toggle pull-xs-left m-r-grid">
+				<input id="cbrequireEmail" type="checkbox" role="switch" checked="checked">
+			<span class="c-indicator"></span>
+		</label>
+	</div>
+	<div id="cbrequireEmailLabel" class="reopen-link-title">
+		Requires Email Entry
+	</div>
+	<div class="reopen-link-settings">
+			<span class="small">Email Required</span>
+	</div>
+	<div class="reopen-link-input">
+			<input id="customURLrequireEmail" type="text" class="form-control" value="jjabas@lt.life">
+
+	</div>
+</div>
+		</div>
+		<div class="container p-y-grid">
+	<h2 class="h3 h-static m-b-grid">Notes</h2>
+	<div class="row">
+		<div class="col-xs-12 col-lg-6">
+			<div class="form-group form-group-spacer">
+				<label for="notes" class="sr-only">Notes</label>
+				<textarea id="notes" class="form-control" rows="6" cols="10" maxlength="400" data-charcount="#charCounterRem" placeholder="enter notes"></textarea>
+				<span id="charCounterRem" class="label-help"></span>
+			</div>
+		</div>
+		<div class="col-xs-12 col-lg-6">
+			<p class="small m-b-0 p-b-grid">Notes will be incorporated in a single paragraph within the relevant section below the standard text, it will not replace it.</p>
+		</div>
+	</div>			
+</div>
+		<div class="container p-y-grid">
+			<h2 class="h3 h-static m-b-grid">Subcategory Status</h2>
+			<p class="small m-b-grid p-b-grid b-b">The current status for each available subcategory for this category are listed below. Click any entry to update the status or supporting links.</p>
+			<ul class="list-bulleted">
+				<li>
+	<a href="#">Subcategory 1</a>
+	<span class="badge badge-pill badge-default m-l-2 m-b-0 align-bottom">Open</span>
+</li>
+				<li>
+	<a href="#">Subcategory 2</a>
+	<span class="badge badge-pill badge-default m-l-2 m-b-0 align-bottom">Open With Limitations</span>
+</li>
+				<li>
+	<a href="#">Subcategory 3</a>
+	<span class="badge badge-pill badge-default m-l-2 m-b-0 align-bottom">Open, Reservation Required</span>
+</li>
+				<li>
+	<a href="#">Subcategory 4</a>
+	<span class="badge badge-pill badge-default m-l-2 m-b-0 align-bottom">Coming Soon</span>
+</li>
+				<li>
+	<a href="#">Subcategory 5</a>
+	<span class="badge badge-pill badge-default m-l-2 m-b-0 align-bottom">Closed</span>
+</li>
+			</ul>
+			<h3 class="h6 m-b-grid">Not Available at this Location</h3>
+			<ul class="list-bulleted">
+				<li><a href="#">Subcategory 6</a></li>
+				<li><a href="#">Subcategory 7</a></li>
+				<li><a href="#">Subcategory 8</a></li>
+				<li><a href="#">Subcategory 9</a></li>
+			</ul>
+		</div>
+		<div class="container p-y-grid">
+			<div class="btn-wrap">
+				<button class="btn btn-primary" disabled>Submit Updates</button>
+				<button class="btn btn-link">Cancel</button>
+			</div>
+		</div>
+	</form>
+</main>
+<footer class="footer-mylt" role="contentinfo"> <div class="p-wrap"> <nav> <div class="footer-legal"> <ul> <li class="ltnav-item "> <a href="https://www.mylt.life/policy/accessibility.html" target="_blank">Accessibility Policy</a> </li> </ul> </div> <div> <p class="copyright">© 2019 Life Time, Inc. All rights reserved.</p> </div> </nav> </div> </footer>

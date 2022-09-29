@@ -1,0 +1,372 @@
+{{> patterns-header-prospect }}
+<main class="page-content main-mylt" onclick="void(0)">
+	<div class="p-b-2 container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="h-scaled text-xs-center m-t-3"><span class="sr-only">Step </span><span class="coin coin-ring m-r-1">5</span>Payment</h1>
+				<p class="text-xs-center p-t-1 m-b-1 hidden-lg-up">
+					<a class="collapsed" data-toggle="collapse" href="#payment" aria-expanded="false" aria-controls="payment" data-label-collapsed="<span class='btn-icon-text'>Review Your Information</span><span class='ico-arrow-down-sm'></span>" data-label-expanded="<span class='btn-icon-text'>Review Your Information</span><span class='ico-arrow-up-sm'></span>"><span class="btn-icon-text">Review Your Information</span><span class="ico-arrow-down-sm"></span></a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-lg-7 col-xl-8">
+				<div id="payment" class="collapse hidden-lg-up" aria-expanded="false"> {{! Mobile Collapse }}
+
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="h4 h-static mylt-gray-4 d-block m-b-1">Review</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h3 class="h5 p-b-1 m-t-1 mylt-gray-4">Membership</h3>
+							<div class="card-deck">
+								<div class="card">
+									<div class="card-block p-b-2">
+										<span class="small pull-xs-right fixed-top"><a href="{{url}}">Edit <span class="sr-only">Location</span></a></span>
+										<p class="small m-b-0">Chanhassen</p>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-block p-b-2">
+										<span class="small pull-xs-right fixed-top"><a href="{{link.templates-oms-membership-options}}">Edit <span class="sr-only">Membership Option</span></a></span>
+										<p class="small m-b-0">Monthly Membership</p>
+									</div>
+								</div>
+							</div>
+							<h3 class="h5 p-b-1 mylt-gray-4">Member Info</h3>
+							<div class="card-deck">
+								<div class="card">
+									<div class="card-block p-b-2 small fill">
+										<span class="pull-xs-right fixed-top"><a href="{{link.templates-oms-member-info}}">Edit <span class="sr-only">Member Information</span></a></span>
+										<p class="m-b-0"><strong>Primary</strong></p>
+										<ul class="list-unstyled m-b-0">
+											<li>Firstname Lastname</li>
+											<li>Username: [username]</li>
+											<li>emailaddress@domain.com</li>
+											<li>(952) 445-6677</li>
+											<li>1234 Some Street Address</li>
+											<li>Cityname, ST 33445</li>
+										</ul>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-block p-b-2 small fill">
+										<span class="pull-xs-right fixed-top"><a href="{{link.templates-oms-addl-member-info}}">Edit <span class="sr-only">Additional Member Information</span></a></span>
+										<p class="m-b-0"><strong>Additional</strong></p>
+										<ul class="list-unstyled m-b-0">
+											<li>Firstname Lastname (Spouse/Partner)</li>
+											<li>Firstname Lastname (Junior)</li>
+											<li>Firstname Lastname (Junior)</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>  {{! end Mobile Collapse }}
+
+				<div id="payment" class="hidden-md-down">
+					<div class="row">
+						<div class="col-xs-12">
+							<span class="h4 h-static mylt-gray-4 d-block m-b-1">Review</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h4 class="h5 p-b-1 m-t-1 mylt-gray-4">Membership</h4>
+							<div class="card-deck">
+								<div class="card">
+									<div class="card-block p-b-2">
+										<span class="small pull-xs-right fixed-top"><a href="{{url}}">Edit <span class="sr-only">Location</span></a></span>
+										<p class="small m-b-0">Chanhassen</p>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-block p-b-2">
+										<span class="small pull-xs-right fixed-top"><a href="{{link.templates-oms-membership-options}}">Edit <span class="sr-only">Membership Option</span></a></span>
+										<p class="small m-b-0">Monthly Membership</p>
+									</div>
+								</div>
+							</div>
+							<h4 class="h5 p-b-1 mylt-gray-4">Member Info</h4>
+							<div class="card-deck">
+								<div class="card">
+									<div class="card-block p-b-2 small fill">
+										<span class="pull-xs-right fixed-top"><a href="{{link.templates-oms-member-info}}">Edit <span class="sr-only">Member Information</span></a></span>
+										<p class="m-b-0"><strong>Primary</strong></p>
+										<ul class="list-unstyled m-b-0">
+											<li>Firstname Lastname</li>
+											<li>Username: [username]</li>
+											<li>emailaddress@domain.com</li>
+											<li>(952) 445-6677</li>
+											<li>1234 Some Street Address</li>
+											<li>Cityname, ST 33445</li>
+										</ul>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-block p-b-2 small fill">
+										<span class="pull-xs-right fixed-top"><a href="{{link.templates-oms-addl-member-info}}">Edit <span class="sr-only">Additional Member Information</span></a></span>
+										<p class="m-b-0"><strong>Additional</strong></p>
+										<ul class="list-unstyled m-b-0">
+											<li>Firstname Lastname (Spouse/Partner)</li>
+											<li>Firstname Lastname (Junior)</li>
+											<li>Firstname Lastname (Junior)</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 m-t-2">
+						<p class="small b-b p-b-1 mylt-gray-5">All fields required.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-4 col-xl-4">
+						<h3 class="h5 mylt-gray-4">Payment Information</h3>
+					</div>
+					<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 col-lg-offset-2 col-lg-10 col-xl-offset-0 col-xl-8">
+						<form>
+							<fieldset>
+								<legend class="sr-only">Credit Card</legend>
+								<div class="form-group">
+									<label class="float-label" for="nameoncard">Name on Card</label>
+									<input id="nameoncard" class="form-control" type="text" aria-required="true" placeholder="Name on Card">
+								</div>
+								<div class="form-group form-group-spacer">
+									<label class="float-label" for="cardnumber">Card Number</label>
+									<input id="cardnumber" class="form-control m-b-sm" type="text" aria-required="true" placeholder="Card Number">
+									<span class="ico-cc-visa"></span> <span class="ico-cc-mastercard"></span> <span class="ico-cc-discover"></span> <span class="ico-cc-amex"></span>
+								</div>
+							</fieldset>
+							<div class="row">
+								<fieldset class="col-xs-8 col-sm-7">
+									<legend>Expiration Date</legend>
+									<div class="row">
+										<div class="form-group col-xs-6 edge-r-xs-up p-r-sm">
+											<label for="month" class="sr-only">Month</label>
+											<select id="month" class="c-select" aria-required="true">
+												<option value="">MM</option>
+												<option value="01">01</option>
+												<option value="02">02</option>
+												<option value="03">03</option>
+												<option value="04">04</option>
+												<option value="05">05</option>
+												<option value="06">06</option>
+												<option value="07">07</option>
+												<option value="08">08</option>
+												<option value="09">09</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+										</div>
+										<div class="form-group col-xs-6 edge-l-xs-up p-l-sm">
+											<label for="year" class="sr-only">Year</label>
+											<select id="year" class="c-select" aria-required="true">
+												<option value="">YY</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+												<option value="18">18</option>
+												<option value="19">19</option>
+												<option value="20">20</option>
+												<option value="21">21</option>
+												<option value="22">22</option>
+											</select>
+										</div>
+									</div>
+								</fieldset>
+								<div class="form-group col-xs-6 col-sm-5">
+									<label class="float-label" for="securitycode">Security Code</label>
+									<input id="securitycode" class="form-control" type="text" aria-required="true" placeholder="Security Code">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group form-group-spacer col-xs-6 col-md-5">
+									<label class="float-label" for="billingzip">Billing <span class="text-uppercase">Zip</span></label>
+									<input id="billingzip" class="form-control" type="text" aria-required="true" placeholder="Billing ZIP">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div id="clubTabAuthorization" class="m-b-1">
+										<a class="link-underlined small" data-toggle="modal" data-target=".clubTabAccount-modal-lg" role="button">Club Tab Account Authorization</a>
+									</div>
+									<label for="clubtab-cc" class="form-group m-b-0">
+										<div class="c-input c-checkbox-sm text-nowrap">
+											<input id="clubtab-cc" type="checkbox" aria-labelledby="accept-clubtab-cc" aria-describedby="agreementLinks">
+											<span class="c-indicator"></span>
+											<span for="clubtab-cc" id="accept-clubtab-cc">Use this card for my Club Tab (optional)</span>
+										</div>
+									</label>
+								</div>
+								<div class="col-xs-12"><hr></div>
+								<div class="col-xs-12">
+									<div class="m-b-1">
+										<a class="link-underlined small text-nowrap m-r-1" data-toggle="modal" data-target=".gta-modal-lg" role="button">General Terms and Agreements</a> <a href="{{urlTerms}}" target="_blank" class="link-underlined small text-nowrap m-r-1">Terms of Use</a><a href="{{urlPrivacyPolicy}}" target="_blank" class="link-underlined small text-nowrap">Privacy Policy</a>
+									</div>
+									<label for="gta" class="form-group m-b-0">
+										<div class="c-input c-checkbox-sm">
+											<input id="gta" type="checkbox" aria-labelledby="acceptAgreement">
+											<span class="c-indicator"></span>
+											<span for="gta" id="acceptAgreement">I agree to the Life Time Fitness terms and conditions.</span>
+										</div>
+									</label>
+								</div>
+							</div>
+						</form>
+						<div class="hidden-md-up p-b-1"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6 col-lg-offset-0 col-lg-5 col-xl-4 p-x-grid col-stretch-section">
+				<div class="content-section container b-l-lg p-y-0 p-r-0 edge-l-md-down">
+					<div class="container p-r-0 edge-l-md-down">
+						<hr class="hidden-lg-up">
+						<table class="table table-sm card-membership-price-build m-b-0">
+							<caption class="h5 m-b-1">Monthly Dues for [membership Type] Membership</caption>
+							<tbody>
+								<tr>
+									<td>Annual Single Membership</td>
+									<td class="text-xs-right">$89.00</td>
+								</tr>
+								<tr>
+									<td>+1 Member Age 14+</td>
+									<td class="text-xs-right">$79.00</td>
+								</tr>
+								<tr>
+									<td>+2 Juniors Age 13 and Under<span class="p-l-1"><a href="#" onclick="return false" data-trigger="hover" data-toggle="tooltip" title="" data-original-title="Junior member..." data-label="Junior member..."><span class="ico-info mylt-gray-4"></span></a></span></td>
+									<td class="text-xs-right">$89.00</td>
+								</tr>
+								<tr>
+									<td>Tax</td>
+									<td class="text-xs-right">$14.40</td>
+								</tr>
+								<tr>
+									<td>Due at the beginning of each month</td>
+									<td class="text-xs-right pricing">
+										<span class="currency">$</span>
+										<span class="value">222.</span>
+										<span class="cents">40</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table class="table table-sm">
+							<caption class="h5  m-b-1">Due Today</caption>
+							<tbody>
+								<tr>
+									<td>April Dues</td>
+									<td class="text-xs-right">$208.00<br>(plus tax)</td>
+								</tr>
+								<tr>
+									<td><em>Prorated for April</em></td>
+									<td class="text-xs-right"><em>-$8.32</em></td>
+								</tr>
+								<tr>
+									<td>Joining Fees</td>
+									<td class="text-xs-right">$129.00</td>
+								</tr>
+								<tr>
+									<td><strong>Total</strong></td>
+									<td class="text-xs-right"><strong>$357.68</strong> (plus tax)</td>
+								</tr>
+							</tbody>
+						</table>
+						<a href="{{link.templates-online-joins-step-4_2}}" class="btn btn-primary btn-block m-b-2">Complete Purchase</a>
+						<div class="m-b-1">
+							<img src="/images/theme-base/icon-secure-checkout.svg" alt="">
+							<span class="small">&nbsp;<strong>Secure Checkout</strong></span>
+						</div>
+						<p class="small m-b-sm">Questions about joining online? <a href="#" target="_blank" class="link-underlined">Read the FAQs</a> or call Membership Sales at <a href="tel:+1-800-741-4109" aria-label="call 1, 800, 7 4 1, 4 1 0 9" class="link-underlined text-nowrap">1-800-741-4109</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="hidden-md-down m-b-1"></div>
+
+	<div class="modal fade gta-modal-lg" tabindex="-1" role="dialog" aria-labelledby="gtaModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 id="gtaModalLabel" class="modal-title">Life Time Fitness General Terms and Agreements</h5>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade terms-modal-lg" tabindex="-1" role="dialog" aria-labelledby="termsOfUseModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 id="termsOfUseModalLabel" class="modal-title">Terms of Use</h5>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade clubTabAccount-modal-lg" tabindex="-1" role="dialog" aria-labelledby="clubTabAccountModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 id="clubTabAccountModalLabel" class="modal-title">Club Tab Account Authorization</h5>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade privacy-modal-lg" tabindex="-1" role="dialog" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h5 id="privacyPolicyModalLabel" class="modal-title">Privacy Policy</h5>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-link btn-sm" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-prospect-footer }}

@@ -1,0 +1,134 @@
+<form>
+	<div class="checkbox">
+		<label for="check1">
+			<input id="check1" name="checkbox" type="checkbox" checked="checked">
+			Choice A
+		</label>
+	</div>
+	<div class="checkbox">
+		<label for="check2">
+			<input id="check2" name="checkbox" type="checkbox">
+			Choice B
+		</label>
+	</div>
+	<div class="checkbox">
+		<label for="check3">
+			<input id="check3" name="checkbox" type="checkbox">
+			Choice C with a longer label that could wrap
+		</label>
+	</div>
+	<div class="checkbox">
+		<label for="check4">
+			<input id="check4" name="checkbox" type="checkbox">
+			<strong>Choice D with a longer label</strong> that wraps lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo et magnis dis parturient montes, nascetur ridiculus mus.
+		</label>
+	</div>
+	<div class="checkbox disabled">
+		<label for="check5">
+			<input id="check5" name="checkbox" type="checkbox" disabled>
+			Disabled
+		</label>
+	</div>
+	<div class="checkbox disabled">
+		<label for="check6">
+			<input id="check6" name="checkbox" type="checkbox" checked disabled>
+			Checked and Disabled
+		</label>
+	</div>
+	<div class="checkbox has-danger">
+		<label for="check7">
+			<input id="check7" name="checkbox" type="checkbox" checked>
+			Checkbox with error state
+		</label>
+	</div>
+</form>
+
+<hr>
+
+<form>
+	<label for="inlineCheckbox1" class="checkbox-inline">
+		<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+	</label>
+	<label for="inlineCheckbox2" class="checkbox-inline">
+		<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+	</label>
+	<label for="inlineCheckbox3" class="checkbox-inline">
+		<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+	</label>
+</form>
+
+<hr>
+
+<form>
+	<fieldset class="form-group form-group-spacer">
+		<label for="customCheckbox" class="c-input c-checkbox">
+			<input id="customCheckbox" type="checkbox">
+			<span class="c-indicator"></span>
+			Check this custom checkbox
+		</label>
+		<label for="customCheckbox2" class="c-input c-checkbox">
+			<input id="customCheckbox2" type="checkbox">
+			<span class="c-indicator"></span>
+			Or this one
+		</label>
+	</fieldset>
+	<fieldset class="form-group form-group-spacer">
+		<label for="customCheckboxsm" class="c-input c-checkbox-sm">
+			<input id="customCheckboxsm" type="checkbox">
+			<span class="c-indicator"></span>
+			Check this custom checkbox
+		</label>
+		<label for="customCheckbox2sm" class="c-input c-checkbox-sm">
+			<input id="customCheckbox2sm" type="checkbox">
+			<span class="c-indicator"></span>
+			Or this one
+		</label>
+	</fieldset>
+</form>
+
+<hr>
+
+<form class="c-inputs-stacked">
+	<fieldset class="form-group">
+		<label for="customCheckbox3" class="c-input c-checkbox">
+			<input id="customCheckbox3" type="checkbox">
+			<span class="c-indicator"></span>
+			Check this custom stacked checkbox
+		</label>
+		<label for="customCheckbox4" class="c-input c-checkbox">
+			<input id="customCheckbox4" type="checkbox">
+			<span class="c-indicator"></span>
+			Or this stacked one
+		</label>
+	</fieldset>
+</form>
+
+<hr>
+
+<form>
+	<fieldset class="form-group">
+		<label for="disabledCustomCB" class="c-input c-checkbox disabled">
+			<input id="disabledCustomCB" type="checkbox" disabled checked>
+			<span class="c-indicator"></span>
+			Disabled Checkbox
+		</label>
+	</fieldset>
+</form>
+
+<hr>
+
+<form>
+	<fieldset class="form-group form-group-spacer has-danger">
+		<label for="errCustomCB1" class="c-input c-checkbox">
+			<input id="errCustomCB1" type="checkbox">
+			<span class="c-indicator"></span>
+			Danger/Error Checkbox
+		</label>
+
+		<label for="errCustomCB2" class="c-input c-checkbox">
+			<input id="errCustomCB2" type="checkbox" checked>
+			<span class="c-indicator"></span>
+			Danger/Error Checkbox (Checked)
+		</label>
+	</fieldset>
+</form>

@@ -1,0 +1,18 @@
+{{> templates-tmhub-header }}
+<main>
+	{{> templates-reopen-page-heading(club:"Club Location",category:"Category",subcategory:"Subcategory") }}
+	<form>
+		{{> templates-reopen-status-select }}
+		<div class="container p-y-grid">
+			<h2 class="h3 h-static">Supporting Links</h2>
+			<p class="small m-b-0 p-b-grid b-b">Enter URLs for these links if you wish them to appear. Empty values indicate it will not be used.</p>
+			{{> templates-reopen-supporting-link(title:"Reserve Court Time",id:"reserveCourt",defaultValue:"/facilities.html?facility=Tennis:%20%20Indoor%20Court") }}
+			{{> templates-reopen-supporting-link(title:"View Racquet Sports FAQs",id:"racquetFAQ",defaultValue:"/faq/reopen-faq.html#training") }}
+			{{> templates-reopen-supporting-link(title:"Empty Link",id:"emptylink") }}
+			{{> templates-reopen-supporting-link(title:"Link With Default",id:"link",defaultValue:"/default-value.html") }}
+			{{> templates-reopen-supporting-link(title:"Another Link, Edited",id:"linkEdited",defaultValue:"/club-unedited.html",editedValue:"/club-edited.html") }}
+		</div>
+		{{> templates-reopen-notes }}
+	</form>
+</main>
+{{> templates-tmhub-footer }}

@@ -1,0 +1,150 @@
+{{> patterns-header-prospect(removeJoinLink:true) }}
+<main class="page-content main-mylt bg-gray-12 omsc-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div id="omscSummary" class="omsc-summary">
+					{{> templates-membership-summary }}
+				</div>
+				<div class="content-section text-xs-center">
+					<h1 class="h2 m-b-2">Let’s find a membership that fits your needs!</h1>
+				</div>
+				<div id="omscMbrPackages" class="omsc-mbr-packages">
+					<div class="row">
+						<div class="col-xs-12 p-x-sm">
+							{{#hasRecommended}}
+							<ul class="list-unstyled card-deck text-xs-center p-t-2">
+							{{/hasRecommended}}
+							{{^hasRecommended}}
+							<ul class="list-unstyled card-deck text-xs-center">
+							{{/hasRecommended}}
+
+								{{#packageOptions}}
+								<li class="card b-rounded-lg box-shadow m-x-sm m-b-grid">
+
+									{{#isRecommended}}
+									<div class="badge badge-secondary badge-card">Recommended For You</div>
+									{{/isRecommended}}
+
+									<div class="card-block">
+
+										<h2 class="h-static">{{name}}</h1>
+
+										{{#summary}}
+										<p class="text-xs-left">{{{summary}}}</p>
+										{{/summary}}
+
+										{{#hasHighlights}}
+										<ul class="list-unstyled text-xs-left m-b-2">
+											{{#highlights}}
+											<li class="m-b-sm">
+												<div class="pull-xs-left m-r-sm">
+													<span class="ico-check"></span>
+												</div>
+												<div class="text-hide-overflow">
+													{{{text}}}
+												</div>
+											</li>
+											{{/highlights}}
+										</ul>
+										{{/hasHighlights}}
+
+										{{#eligibility}}
+										<p><a href="#{{id}}Modal" role="button" data-anchor-button="true" data-toggle="modal">Eligibility Requirements</a></p>
+										{{!-- modal --}}
+										<div class="modal fade" id="{{id}}Modal" tabindex="-1" role="dialog" aria-labelledby="{{id}}Label" aria-hidden="true">
+											<div class="modal-dialog text-xs-left" role="document">
+												<div class="modal-content b-rounded-lg">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+														<h5 id="{{id}}Label" class="modal-title">{{name}} Details</h5>
+													</div>
+													<div class="modal-body">
+														<p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac nulla ac risus viverra condimentum. Phasellus ac metus nec odio laoreet venenatis vitae ac purus. Maecenas ac leo sit amet sapien tempor auctor. Praesent at rutrum elit. Nunc non tincidunt massa. Nunc interdum dictum malesuada. Vestibulum nec porta mauris, sit amet auctor lorem. Ut ultrices elit purus, non vehicula augue gravida quis. Vestibulum et metus eu turpis sollicitudin fermentum. Quisque vehicula consequat urna, ac tincidunt justo mollis sed. Nam varius feugiat venenatis. Sed ipsum dolor, euismod ac arcu id, placerat mollis augue. Nunc elementum, justo ac egestas porta, ligula felis finibus turpis, a mattis lacus dui ac ligula.</p>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-link p-r-0" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										{{!-- END modal --}}
+										{{/eligibility}}
+
+										<div class="display-number display-number-lg m-b-grid text-gray-3">
+											<span class="sr-only">$ {{{price}}} per month, conditions apply</span>
+											<div aria-hidden="true">
+												<span class="display-number-sup">$</span><span class="display-number-value">{{{price}}}</span><span class="display-number-units">/mo*</span>
+											</div>
+										</div>
+										<div class="btn-wrap p-t-sm">
+											<a href="{{ link.templates-experiences }}" class="btn btn-primary" aria-label="Select {{name}}">Select Membership</a>
+										</div>
+
+									</div>{{!-- END .card-block--}}
+
+									<div class="card-footer m-x-grid p-a-0 text-xs-left">
+										<div class="row row-xs-center">
+											<div class="col-xs-9" data-toggle="collapse" data-target="#{{id}}Collapse" aria-hidden="true" role="button">
+												<h3 class="h5 p-y-grid m-b-0">Membership Benefits</h3>
+											</div>
+											<div class="col-xs-3 text-xs-right p-l-0">
+												<a class="d-block p-y-grid" data-toggle="collapse" href="#{{id}}Collapse" aria-expanded="false" aria-controls="{{id}}Collapse" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Membership Benefits</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Membership Benefits</span>" role="button" data-anchor-button="true">
+													<span class="ico-arrow-down"></span><span class="sr-only">Show Membership Benefits</span>
+												</a>
+											</div>
+										</div>
+										<div class="collapse fade" id="{{id}}Collapse" aria-expanded="false">
+											<div class="small-responsive">
+												<div class="p-b-1">
+													<h4 class="h5 m-b-sm">Club Access</h4>
+													<p class="m-b-sm">A monthly club membership that grants access to all clubs at your price and below.</p>
+													<p class="m-b-sm"><a href="#clubAccess">View Additional Clubs I Can Access</a></p>
+												</div>
+												<div class="p-b-1">
+													<h4 class="h5 m-b-sm">2 Hour Onboarding Session per Adult with a Personal Trainer</h4>
+													<p class="m-b-sm">Adults ages 14 and up will receive a one-on-one session with a personal trainer to build a customized plan.</p>
+												</div>
+												<div class="p-b-1">
+													<h4 class="h5 m-b-sm">$75 LifeSpa Credit</h4>
+													<p class="m-b-sm">$25 credit towards any Spa/Salon service to help you recover.</p>
+												</div>
+												<div class="p-b-1">
+													<h4 class="h5 m-b-sm">1 Month of Group Swim Lessons per Kid 13 and Under Added to the Membership</h4>
+													<p class="m-b-sm">One month (four lessons) of Small Group Swim Lessons for every child 13 and under added to the membership upon join.</p>
+												</div>
+												<div class="p-b-1">
+													<p class="text-muted m-b-sm">* Ask the Club Concierge about these benefits on your first visit to the club.</p>
+												</div>
+												
+												<h4 class="h5 m-b-sm">Life Time Digital</h4>
+												<ul class="list-unstyled small">
+													<li class="p-t-sm p-b-1"><span class="ico-check"></span> Apple Fitness+</li>
+													<li class="b-t p-y-1"><span class="ico-check"></span> Virtual Training</li>
+													<li class="b-t p-y-1"><span class="ico-check"></span> Livestreaming Classes</li>
+													<li class="b-t p-y-1"><span class="ico-check"></span> On-Demand Classes</li>
+													<li class="b-t p-y-1"><span class="ico-check"></span> Curated Content</li>
+												</ul>
+												
+											</div>
+										</div>
+									</div>
+								</li>
+								{{/packageOptions}}
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="content-section small p-t-0 link-underlined">
+					<p>* Membership is month-to-month and will continue until canceled upon 30 days advance written notice. Joining fees may apply.</p>
+					<p>* Membership dues, levels, fees, benefits, services and amenities vary by club and are subject to change at any time. Other terms and conditions apply. Swim lessons only applicable with junior on membership and at <a href="#0">participating clubs.</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}
+{{> templates-moxie-example }}

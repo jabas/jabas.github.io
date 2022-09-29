@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<div class="modal-open">
+
+<div class="modal fade in" id="locModal" aria-labelledby="locModalHeading" tabindex="-1" role="dialog" aria-hidden="true" style="display: block;">
+	<div class="modal-dialog modal-full" role="document">
+		<div class="modal-content">
+			
+<!-- START MODAL CONTENT -->
+<div class="content-section bg-gray-12 b-b text-xs-center">
+	<div class="container">
+		<button type="button" class="close" aria-label="Close modal" data-dismiss="modal" style="width:0;margin-top:-1rem;position:relative;left:-1.25rem;">
+			<span aria-hidden="true" class="ico-close"></span>
+		</button>
+		<h2 id="locModalHeading" class="m-b-sm">Location Access</h2>
+		<p>Your Woodbury membership gives you access to 8 out of 21 clubs in your area.</p>
+	</div>
+</div>
+
+<div class="content-section p-b-0">
+	<div class="container text-xs-center">
+		<div class="row">
+			<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+				<div class="row">
+					<div class="col-xs-12 col-lg-4 col-lg-offset-4">
+						<h3 class="h2 h-static m-b-0">Area Access</h3>
+					</div>
+					<div class="col-xs-12 col-lg-4 text-lg-left p-t-xs p-x-0">
+						<a data-toggle="collapse" href="#areaCollapse" aria-expanded="true" aria-controls="areaCollapse" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show local club list</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide local club list</span>" role="button">
+							<span class="ico-arrow-up"></span><span class="sr-only">Hide local club list</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="areaCollapse" class="collapse fade in">
+	<div class="content-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-12 col-lg-offset-0">
+
+					<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Maple Grove, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Minnetonka, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">New Hope, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Oakdale Village Tennis, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Plymouth, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Roseville, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Savage, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Southdale, MN (Coming Soon)</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">St. Louis Park, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Target Center (Minneapolis), MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">White Bear Lake, MN</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 edge-xl-up">
+				<div class="container bg-gray-12 b-a p-t-2">
+					<p class="text-xs-center">To upgrade your access to include the following clubs visit the front desk at Woodbury after your online purchase.</p>
+					<div class="row">
+						<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+							<hr class="m-t-0">
+						</div>
+					</div>
+					<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+						<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="content-section">
+	<div class="container">
+		<h3 class="h2 h-static text-xs-center m-b-2">Access to other North American clubs</h3>
+	</div>
+</div>
+
+<div class="container p-x-0 b-b">
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showAL" aria-expanded="false" aria-controls="showAL" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Alabama clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Alabama clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Alabama clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showAL" aria-expanded="false" aria-controls="showAL" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Alabama</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showAL" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Alabama:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Alabama:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showAZ" aria-expanded="false" aria-controls="showAZ" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Arizona clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Arizona clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Arizona clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showAZ" aria-expanded="false" aria-controls="showAZ" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Arizona</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showAZ" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Arizona:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Arizona:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showCA" aria-expanded="false" aria-controls="showCA" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show California clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide California clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show California clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showCA" aria-expanded="false" aria-controls="showCA" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">California</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showCA" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in California:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in California:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showCO" aria-expanded="false" aria-controls="showCO" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Colorado clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Colorado clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Colorado clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showCO" aria-expanded="false" aria-controls="showCO" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Colorado</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showCO" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Colorado:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Colorado:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showFL" aria-expanded="false" aria-controls="showFL" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Florida clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Florida clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Florida clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showFL" aria-expanded="false" aria-controls="showFL" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Florida</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showFL" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Florida:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Florida:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showGA" aria-expanded="false" aria-controls="showGA" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Georgia clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Georgia clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Georgia clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showGA" aria-expanded="false" aria-controls="showGA" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Georgia</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showGA" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Georgia:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Georgia:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showIL" aria-expanded="false" aria-controls="showIL" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Illinois clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Illinois clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Illinois clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showIL" aria-expanded="false" aria-controls="showIL" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Illinois</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showIL" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Illinois:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Illinois:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+	<div class="b-t b-l-xl b-r-xl p-a-grid">
+	<div class="row">
+		<div class="col-xs-12">
+			<a class="pull-xs-right p-l-grid" data-toggle="collapse" href="#showIN" aria-expanded="false" aria-controls="showIN" data-label-collapsed="<span class='ico-arrow-down'></span><span class='sr-only'>Show Indiana clubs</span>" data-label-expanded="<span class='ico-arrow-up'></span><span class='sr-only'>Hide Indiana clubs</span>" role="button">
+				<span class="ico-arrow-down"></span><span class="sr-only">Show Indiana clubs</span>
+			</a>
+			<div class="text-hide-overflow" data-toggle="collapse" data-target="#showIN" aria-expanded="false" aria-controls="showIN" role="button">
+				<div class="row">
+					<div class="col-xs-6 col-md-5 font-weight-bold">Indiana</div>
+					<div class="col-xs-6 col-md-7 text-xs-right text-md-left">
+						<span class="ico-check"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">included</span>
+						<span class="ico-locked m-l-1"></span>88 <span class="hidden-xs-down">clubs</span><span class="sr-only">not included</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="showIN" class="collapse">
+	<div class="bg-gray-11 b-t p-a-grid">
+		<div class="bg-white b-a p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-check"></span> Membership at our <span class="font-weight-bold">Woodbury</span> location includes access to the following clubs in Indiana:</p>
+			<div class="row">
+				<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+					<hr class="m-t-0">
+				</div>
+			</div>
+			
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eagan, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Eden Prairie Athletic, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Fridley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Highland Park, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Lakeville, MN</li>
+			</ul>
+
+		</div>
+		<div class="p-x-grid p-t-2">
+			<p class="text-xs-center"><span class="ico-locked"></span> Upgrade your membership at the member services desk in-club (after purchasing online) for access to these additional clubs in Indiana:</p>
+			<ul class="row list-unstyled text-xs-center text-sm-left m-b-sm">
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Apple Valley, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington North, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Bloomington South, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Champlin, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Chanhassen, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Coon Rapids, MN</li>
+				<li class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 p-b-grid">Crosstown (Eden Prairie), MN</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div class="content-section container text-xs-center">
+	<div class="btn-wrap">
+		<button type="button" class="btn btn-primary" data-dismiss="modal">Close & Continue</button>
+	</div>
+</div>
+<!-- END MODAL CONTENT -->
+
+		</div>
+	</div>
+</div>
+
+</div>
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"templates-oms-loc-modal-state","lineagePath":"../../patterns/03-templates-oms/partials-_oms-loc-modal-state/03-templates-oms/partials-_oms-loc-modal-state.rendered.html"}],"lineage":[{"lineagePattern":"templates-oms-loc-modal-state","lineagePath":"../../patterns/03-templates-oms/partials-_oms-loc-modal-state/03-templates-oms/partials-_oms-loc-modal-state.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"templates","patternSubtype":"oms"},"patternExtension":"mustache","patternName":"Oms Location Access Modal","patternPartial":"templates-oms-location-access-modal","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/theme-prospect.css?1664460412232" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460412232" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460412232" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460412232" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460412232" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<header class="header">
+	<a class="sr-only sr-only-focusable" href="#main-content"><span class="d-inline-block p-x-grid p-y-sm">Skip to main content</span></a>
+	<div class="header-mobile-bar">
+	<div class="header-nav-toggle">
+		<button id="headerNavToggle" class="navbar-toggler" data-toggle="headernav" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
+	<div class="header-brand-mobile">
+		<a role="button" class="d-inline-block" data-toggle="collapse" href="#prospectLocations" aria-expanded="false" aria-controls="prospectLocations">
+			<img src="/images/theme-base/life-time-logo-xs.svg" alt="">
+			<div class="dropdown-toggle m-t-xs">Locations</div>
+		</a>
+	</div>
+	<div class="header-utility-mobile">
+		<nav aria-label="Utility Navigation">
+			<ul class="nav nav-right nav-neutral">
+				<li class="nav-item dropdown dropdown-inverse">
+					<a href="#" class="nav-link" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz"></span><span class="sr-only">Account</span></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+	<div id="headerNav" class="header-nav">
+		<div class="header-primary navbar navbar-collapse" data-navbar-overflow="#primaryNav">
+			<div class="navbar-brand header-hide-mobile">
+				<a href="#">
+					<img src="/images/theme-base/life-time-logo-sm.svg" alt="">
+				</a>
+			</div>
+			<nav aria-label="Primary Navigation">
+	<ul id="primaryNav" class="nav nav-neutral">
+		<li class="nav-item">
+			<a href="#prospectLocations" data-toggle="collapse" aria-expanded="false" aria-controls="prospectLocations" class="nav-link dropdown-toggle">Locations</a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Membership</a>
+			<div class="dropdown-arrow"></div>
+			<div class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li>
+						<a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Membership Options</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Benefits</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Monthly Membership</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Signature Membership</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">One-Day Membership</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Schedule A Tour</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Kids & Family</a>
+			<div class="dropdown-arrow"></div>
+			<div class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li>
+						<a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Play Area</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Events</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Classes</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Birthday Parties</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Camps</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Sports & Fitness</a>
+					</li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#0">All Kids & Family</a>
+			</div>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#0">Training</a>
+			<div class="dropdown-arrow"></div>
+			<div class="dropdown-menu">
+				<ul class="list-unstyled">
+					<li>
+						<a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Small Group Training</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Personal Training</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#0">Pilates</a>
+					</li>
+					<li>
+						<a class="dropdown-item " href="#0">Virtual Training</a>
+					</li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#0">All Training</a>
+			</div>
+		</li>
+		<li class="nav-item"><a href="#" class="nav-link">Classes</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Active Older Adults</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Sports</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Spa</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Cafe</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Events</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Spaces & Amenities</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Health & Wellness</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">Life Time Digital</a></li>
+	</ul>
+</nav>
+		</div>
+		<div class="header-utility">
+			<nav class="header-utility-major" aria-label="Utility">
+	<ul class="nav nav-inverse">
+		<li class="nav-item dropdown dropdown-inverse">
+			<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="#utilAccount" role="button" aria-controls="utilAccount" aria-haspopup="true" aria-expanded="false"><span class="ico-user icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Account</a>
+		</li>
+	</ul>
+</nav>
+		</div>
+		<nav class="header-global" aria-label="Other Life Time Properties">
+	<ul class="nav dropdown dropdown-inverse">
+		<li class="nav-item"><a class="nav-link " href="#">Join</a></li>
+		<li class="nav-item"><a class="nav-link " href="#">Members</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">Experience Life</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">Work</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">Living</a></li>
+		<li class="nav-item"><a class="nav-link " href="#">Store</a></li>
+		
+		<li class="nav-item">
+			<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-label="More sites"><span class="hidden-lg-up">More sites</span></a>
+			<div class="dropdown-menu dropdown-menu-right">
+				<ul class="list-unstyled">
+					<li><a class="dropdown-item header-dropdown-back" href="#" role="button"><span class="ico-arrow-left-sm icon-adjust-horiz icon-adjust-vert m-r-sm"></span>Back to Main Menu</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Sport</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Athletic Events</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Foundation</a></li>
+					<li><a class="dropdown-item" href="#0">Life Time Academy</a></li>
+					<li><a class="dropdown-item" href="#0">Culture of Inclusion</a></li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<p>
+					<img src="/images/theme-base/life-time-app-icon.svg" alt="Life Time App Icon" class="header-global-logo">
+				</p>
+				<div class="text-hide-overflow">
+					<div class="dropdown-header">Life Time Member App</div>
+					<ul class="list-unstyled">
+						<li><a class="dropdown-item" href="#"><img src="/images/theme-base/app-download-app-store.svg" alt=""><span class="sr-only">Download on the App Store</span></a></li>
+						<li><a class="dropdown-item" href="#"><img src="/images/theme-base/app-download-google-play.svg" alt=""><span class="sr-only">Get it on Google Play</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+
+
+
+	</div>
+	<div id="utilAccount" class="header-utility-dropdown dropdown dropdown-inverse small">
+	<div class="dropdown-arrow"></div>
+	<div class="dropdown-menu dropdown-menu-right">
+		<a class="dropdown-item micro" href="#">Continue to Member Site</a>
+		<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro">
+			<span class="text-muted">Not a member? </span><a class="link-reversed-white" href="#">Join</a>
+		</p>
+		<p class="b-t b-clr-gray-4 m-t-sm m-b-0 p-t-sm micro">
+			<span class="text-muted">New member? </span><a class="link-reversed-white" href="#">Create Account</a>
+		</p>
+	</div>
+</div>
+
+	<div class="header-collapse collapse" id="prospectLocations" aria-expanded="false" tabindex="-1">
+	<div class="club-global-locate header-collapse-content">
+		<a href="#prospectLocations" data-toggle="collapse" role="button" aria-label="Close Locations Panel" class="club-locate-close hidden-md-down d-inline-block p-x-grid p-y-sm" aria-expanded="false"><span class="ico-close-sm icon-adjust-horiz icon-adjust-vert"></span></a>
+		<div class="container small m-x-0">
+			<div class="row">
+				<div id="prospectGeolocation" class="col-xs-12 col-lg-4 col-xl-3 b-b b-b-lg-0">
+					<p id="prospectCurrentLoc" class="m-y-grid">
+						<a href="#0">Edina at Southdale</a>  (0.0 miles)
+					</p>
+                    <div class="nano text-gray-4 font-weight-bold m-b-1">Other Locations</div>
+					<ul id="prospectNearbyLoc" class="list-unstyled m-b-grid">
+						<li class="m-b-sm">
+							<a href="#0">Life Time Work Edina at Southdale</a>  (0.0 miles)
+						</li>
+						<li class="m-b-sm">
+							<a href="#0">Bloomington North</a>  (2.3 miles)
+						</li>
+						<li class="m-b-sm">
+							<a href="#0">Life Time Winter Park (Eden Prairie)</a>  (4 miles)
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-lg-4 b-l-lg">
+					<p class="font-italic m-y-grid"><a href="#0">New Clubs Coming Soon!</a></p>
+                    <form>
+						<fieldset>
+							<legend class="sr-only">Location Search Field:</legend>
+							<label for="clubsearch">Find a Location <span class="sr-only">With City, State or Zip Code</span></label>
+							<div class="input-group">
+								<div class="form-input-action">
+									<input id="clubsearch" class="js-omnibox-input form-control" type="text" placeholder="City, State or Zip Code" name="query" data-di-id="#clubsearch">
+									<button type="button" class="form-input-btn form-input-clear" data-target="#clubsearch">
+										<span class="ico-delete"></span>
+										<span class="sr-only">Clear Search Text</span>
+									</button>
+									<span class="label-help-error js-omnibox-error hide"></span>
+								</div>
+								<span class="input-group-btn">
+									<button class="btn btn-primary js-omnibox-action">
+										<span class="ico-search"></span>
+										<span class="sr-only">Search</span>
+									</button>
+								</span>
+							</div>
+						</fieldset>
+                    </form>
+                    <p class="m-t-sm m-b-grid"><a href="#0" data-di-id="di-id-56f1dae1-877fda22">View All Locations</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</header>
+
+
+<main class="main-mylt">
+	
+<div class="billboard billboard-content-top billboard-lg" style="background-color: #FFF;">
+	<div class="billboard-img billboard-img-left-xs">
+		<picture class="hero-banner">
+			<source srcset="/images/prospect/offers/offer-club-xl.jpg" media="(min-width: 1200px)">
+			<source srcset="/images/prospect/offers/offer-club-lg.jpg" media="(min-width: 992px)">
+			<source srcset="/images/prospect/offers/offer-club-md.jpg" media="(min-width: 768px)">
+			<source srcset="/images/prospect/offers/offer-club-sm.jpg" media="(min-width: 544px)">
+			<img src="/images/prospect/offers/offer-club-xs.jpg" alt="">
+		</picture>
+	</div>
+	<div class="billboard-content container-fluid content-section">
+		<div class="row">
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-6 col-lg-5 col-lg-offset-6 col-xl-4 text-xs-center text-md-left">
+				<p class="display-4 mylt-aqua">Sale extended</p>
+				<h1 class="display-2 m-b-2">Save <span class="sr-only">50%</span><span class="display-number" aria-hidden="true"><span class="display-number-value">50</span><span class="display-number-sup">%</span></span> on joining fees<a href="#offerValid" class="display-footnote-ref">*</a></h1>
+				<div class="btn-wrap">
+					<a href="#" class="btn btn-primary">Get Started</a>
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-6 col-lg-6 col-lg-offset-6 text-xs-center text-md-left">
+				<p id="offerValid" class="micro">* Offer valid through February 14, 2017. Not valid at all locations. <span class="text-nowrap">Exclusions apply.</span></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="cling cling-layered">
+	<div class="cling-content">
+		<div class="cling-lead text-xs-center text-md-left">Condimentum Sit Porta Dolor</div>
+		<div class="cling-input">
+			<label for="proxyFirst" class="sr-only">First Name</label>
+			<input type="text" id="proxyFirst" class="form-control" data-target="#firstName" placeholder="First Name">
+		</div>
+		<div class="cling-input hidden-md-down">
+			<label for="proxyLast" class="sr-only">Last Name</label>
+			<input type="text" id="proxyLast" class="form-control" data-target="#lastName" placeholder="Last Name">
+		</div>
+		<div class="cling-cta">
+			<button type="button" class="btn btn-reversed-outline" data-toggle="modal" data-target="#clingModal">
+				Lipsum
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade " id="clingModal" tabindex="-1" role="dialog" aria-hidden="true" style="">
+	<div class="modal-dialog modal-full" role="document">
+		<div class="modal-content">
+			<div class="container p-t-grid">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true" class="ico-close"></span>
+				</button>
+
+<div class="content-section text-xs-center">
+	<h1 id="formTitle" class="m-b-2">Get Your Free Pass<sup><a id="offerReferrer1" class="base-font-size text-gray-3" href="#offerTerms1" aria-label="View special offer terms">*</a></sup></h1>
+</div>
+<form aria-labelledby="formTitle">
+	<div class="content-section p-t-0">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="firstName">First Name</label>
+					<input type="text" class="form-control" id="firstName" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="lastName">Last Name</label>
+					<input type="text" class="form-control" id="lastName" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" aria-required="true">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="phone">Phone</label>
+					<input type="tel" class="form-control" id="phone" aria-required="true" data-inputmask="phone">
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="birthYear">Birth Year</label>
+					<select id="birthYear" class="c-select" aria-required="true">
+						<option disabled selected>Select one</option>
+						<option value="2018">2018</option>
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+						<option value="2013">2013</option>
+						<option value="2012">2012</option>
+						<option value="2011">2011</option>
+						<option value="2010">2010</option>
+						<option value="2009">2009</option>
+						<option value="2008">2008</option>
+						<option value="2007">2007</option>
+						<option value="2006">2006</option>
+						<option value="2005">2005</option>
+						<option value="2004">2004</option>
+						<option value="2003">2003</option>
+						<option value="2002">2002</option>
+						<option value="2001">2001</option>
+						<option value="2000">2000</option>
+						<option value="1999">1999</option>
+						<option value="1998">1998</option>
+						<option value="1997">1997</option>
+						<option value="1996">1996</option>
+						<option value="1995">1995</option>
+						<option value="1994">1994</option>
+						<option value="1993">1993</option>
+						<option value="1992">1992</option>
+						<option value="1991">1991</option>
+						<option value="1990">1990</option>
+						<option value="1989">1989</option>
+						<option value="1988">1988</option>
+						<option value="1987">1987</option>
+						<option value="1986">1986</option>
+						<option value="1985">1985</option>
+						<option value="1984">1984</option>
+						<option value="1983">1983</option>
+						<option value="1982">1982</option>
+						<option value="1981">1981</option>
+						<option value="1980">1980</option>
+						<option value="1979">1979</option>
+						<option value="1978">1978</option>
+						<option value="1977">1977</option>
+						<option value="1976">1976</option>
+						<option value="1975">1975</option>
+						<option value="1974">1974</option>
+						<option value="1973">1973</option>
+						<option value="1972">1972</option>
+						<option value="1971">1971</option>
+						<option value="1970">1970</option>
+						<option value="1969">1969</option>
+						<option value="1968">1968</option>
+						<option value="1967">1967</option>
+						<option value="1966">1966</option>
+						<option value="1965">1965</option>
+						<option value="1964">1964</option>
+						<option value="1963">1963</option>
+						<option value="1962">1962</option>
+						<option value="1961">1961</option>
+						<option value="1960">1960</option>
+						<option value="1959">1959</option>
+						<option value="1958">1958</option>
+						<option value="1957">1957</option>
+						<option value="1956">1956</option>
+						<option value="1955">1955</option>
+						<option value="1954">1954</option>
+						<option value="1953">1953</option>
+						<option value="1952">1952</option>
+						<option value="1951">1951</option>
+						<option value="1950">1950</option>
+						<option value="1949">1949</option>
+						<option value="1948">1948</option>
+						<option value="1947">1947</option>
+						<option value="1946">1946</option>
+						<option value="1945">1945</option>
+						<option value="1944">1944</option>
+						<option value="1943">1943</option>
+						<option value="1942">1942</option>
+						<option value="1941">1941</option>
+						<option value="1940">1940</option>
+						<option value="1939">1939</option>
+						<option value="1938">1938</option>
+						<option value="1937">1937</option>
+						<option value="1936">1936</option>
+						<option value="1935">1935</option>
+						<option value="1934">1934</option>
+						<option value="1933">1933</option>
+						<option value="1932">1932</option>
+						<option value="1931">1931</option>
+						<option value="1930">1930</option>
+						<option value="1929">1929</option>
+						<option value="1928">1928</option>
+						<option value="1927">1927</option>
+						<option value="1926">1926</option>
+						<option value="1925">1925</option>
+						<option value="1924">1924</option>
+						<option value="1923">1923</option>
+						<option value="1922">1922</option>
+						<option value="1921">1921</option>
+						<option value="1920">1920</option>
+						<option value="1919">1919</option>
+						<option value="1918">1918</option>
+						<option value="1917">1917</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<div class="m-b-2">
+					<label for="clubLocation">Club Location</label>
+					<select id="clubLocation" class="c-select" aria-required="true">
+						<option disabled selected>Select one</option>
+						<optgroup label="Alabama">
+									<option value="201" data-test="webguestpass" data-country="USA" data-club="Vestavia Hills" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Vestavia Hills</option>
+						</optgroup>
+
+						<optgroup label="Arizona">
+									<option value="137" data-test="webguestpass" data-country="USA" data-club="Gilbert" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="desert">Gilbert</option>
+									<option value="155" data-test="webguestpass" data-country="USA" data-club="North Scottsdale" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="desert">North Scottsdale</option>
+									<option value="156" data-test="webguestpass" data-country="USA" data-club="Palm Valley" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="desert">Palm Valley</option>
+									<option value="203" data-test="webguestpass" data-country="USA" data-club="Scottsdale at Shea and 101" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="desert">Scottsdale at Shea and 101</option>
+									<option value="132" data-test="webguestpass" data-country="USA" data-club="Tempe" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="desert">Tempe</option>
+						</optgroup>
+
+						<optgroup label="California">
+									<option value="245" data-test="webguestpass" data-country="USA" data-club="Folsom" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Folsom</option>
+									<option value="237" data-test="webguestpass" data-country="USA" data-club="Laguna Niguel" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="pacific">Laguna Niguel</option>
+									<option value="241" data-test="webguestpass" data-country="USA" data-club="Roseville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="pacific">Roseville</option>
+						</optgroup>
+
+						<optgroup label="Colorado">
+									<option value="194" data-test="webguestpass" data-country="USA" data-club="Centennial" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mountain">Centennial</option>
+									<option value="231" data-test="webguestpass" data-country="USA" data-club="Centennial Tennis" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mountain">Centennial Tennis</option>
+									<option value="197" data-test="webguestpass" data-country="USA" data-club="Colorado Springs" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mountain">Colorado Springs</option>
+									<option value="277" data-test="webguestpass" data-country="USA" data-club="Flatirons" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Flatirons</option>
+									<option value="168" data-test="webguestpass" data-country="USA" data-club="Parker-Aurora" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mountain">Parker-Aurora</option>
+									<option value="192" data-test="webguestpass" data-country="USA" data-club="Westminster" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mountain">Westminster</option>
+						</optgroup>
+
+						<optgroup label="Florida">
+									<option value="178" data-test="webguestpass" data-country="USA" data-club="Boca Raton" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="florida">Boca Raton</option>
+									<option value="213" data-test="webguestpass" data-country="USA" data-club="Tampa" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="florida">Tampa</option>
+						</optgroup>
+
+						<optgroup label="Georgia">
+									<option value="158" data-test="webguestpass" data-country="USA" data-club="Alpharetta" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Alpharetta</option>
+									<option value="184" data-test="webguestpass" data-country="USA" data-club="Johns Creek" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Johns Creek</option>
+									<option value="232" data-test="webguestpass" data-country="USA" data-club="Peachtree Corners" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Peachtree Corners</option>
+									<option value="208" data-test="webguestpass" data-country="USA" data-club="Sandy Springs" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Sandy Springs</option>
+									<option value="169" data-test="webguestpass" data-country="USA" data-club="Sugarloaf" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Sugarloaf</option>
+									<option value="182" data-test="webguestpass" data-country="USA" data-club="Woodstock" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="atlanta">Woodstock</option>
+						</optgroup>
+
+						<optgroup label="Illinois">
+									<option value="14" data-test="webguestpass" data-country="USA" data-club="Algonquin" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago north">Algonquin</option>
+									<option value="51" data-test="webguestpass" data-country="USA" data-club="Bloomingdale" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago north">Bloomingdale</option>
+									<option value="53" data-test="webguestpass" data-country="USA" data-club="Burr Ridge" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago south">Burr Ridge</option>
+									<option value="128" data-test="webguestpass" data-country="USA" data-club="Old Orchard" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago south">Old Orchard</option>
+									<option value="15" data-test="webguestpass" data-country="USA" data-club="Orland Park" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago south">Orland Park</option>
+									<option value="150" data-test="webguestpass" data-country="USA" data-club="Romeoville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago south">Romeoville</option>
+									<option value="50" data-test="webguestpass" data-country="USA" data-club="Schaumburg" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago north">Schaumburg</option>
+									<option value="183" data-test="webguestpass" data-country="USA" data-club="Vernon Hills" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago south">Vernon Hills</option>
+									<option value="52" data-test="webguestpass" data-country="USA" data-club="Warrenville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="chicago south">Warrenville</option>
+						</optgroup>
+
+						<optgroup label="Indiana">
+									<option value="30" data-test="webguestpass" data-country="USA" data-club="Castle Creek" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="indiana">Castle Creek</option>
+									<option value="225" data-test="webguestpass" data-country="USA" data-club="Fishers" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="indiana">Fishers</option>
+									<option value="226" data-test="webguestpass" data-country="USA" data-club="North Meridian" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="indiana">North Meridian</option>
+						</optgroup>
+
+						<optgroup label="Iowa">
+									<option value="238" data-test="webguestpass" data-country="USA" data-club="Des Moines" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="heartland">Des Moines</option>
+						</optgroup>
+
+						<optgroup label="Kansas">
+									<option value="198" data-test="webguestpass" data-country="USA" data-club="Lenexa" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="heartland">Lenexa</option>
+									<option value="157" data-test="webguestpass" data-country="USA" data-club="Overland Park" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="heartland">Overland Park</option>
+						</optgroup>
+
+						<optgroup label="Maryland">
+									<option value="148" data-test="webguestpass" data-country="USA" data-club="Columbia" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mid-atlantic">Columbia</option>
+									<option value="252" data-test="webguestpass" data-country="USA" data-club="Gaithersburg" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Gaithersburg</option>
+									<option value="191" data-test="webguestpass" data-country="USA" data-club="Rockville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mid-atlantic">Rockville</option>
+						</optgroup>
+
+						<optgroup label="Massachusetts">
+									<option value="254" data-test="webguestpass" data-country="USA" data-club="Burlington" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Burlington</option>
+									<option value="260" data-test="webguestpass" data-country="USA" data-club="Chestnut Hill" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Chestnut Hill</option>
+									<option value="248" data-test="webguestpass" data-country="USA" data-club="MetroWest-Boston" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">MetroWest-Boston</option>
+									<option value="244" data-test="webguestpass" data-country="USA" data-club="Westwood" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Westwood</option>
+						</optgroup>
+
+						<optgroup label="Michigan">
+									<option value="217" data-test="webguestpass" data-country="USA" data-club="Bloomfield Township" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Bloomfield Township</option>
+									<option value="131" data-test="webguestpass" data-country="USA" data-club="Canton Township" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Canton Township</option>
+									<option value="144" data-test="webguestpass" data-country="USA" data-club="Commerce Township" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Commerce Township</option>
+									<option value="21" data-test="webguestpass" data-country="USA" data-club="Novi" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Novi</option>
+									<option value="126" data-test="webguestpass" data-country="USA" data-club="Rochester Hills" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Rochester Hills</option>
+									<option value="22" data-test="webguestpass" data-country="USA" data-club="Shelby Township" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Shelby Township</option>
+									<option value="20" data-test="webguestpass" data-country="USA" data-club="Troy" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="michigan">Troy</option>
+						</optgroup>
+
+						<optgroup label="Minnesota">
+									<option value="10" data-test="webguestpass" data-country="USA" data-club="Apple Valley" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Apple Valley</option>
+									<option value="7" data-test="webguestpass" data-country="USA" data-club="Bloomington North" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">Bloomington North</option>
+									<option value="176" data-test="webguestpass" data-country="USA" data-club="Bloomington South" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Bloomington South</option>
+									<option value="12" data-test="webguestpass" data-country="USA" data-club="Champlin" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Champlin</option>
+									<option value="151" data-test="webguestpass" data-country="USA" data-club="Chanhassen" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">Chanhassen</option>
+									<option value="6" data-test="webguestpass" data-country="USA" data-club="Coon Rapids" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Coon Rapids</option>
+									<option value="173" data-test="webguestpass" data-country="USA" data-club="Crosstown (Eden Prairie)" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Crosstown (Eden Prairie)</option>
+									<option value="2" data-test="webguestpass" data-country="USA" data-club="Eagan" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Eagan</option>
+									<option value="175" data-test="webguestpass" data-country="USA" data-club="Eden Prairie Athletic" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Eden Prairie Athletic</option>
+									<option value="170" data-test="webguestpass" data-country="USA" data-club="Fridley" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Fridley</option>
+									<option value="5" data-test="webguestpass" data-country="USA" data-club="Highland Park" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Highland Park</option>
+									<option value="164" data-test="webguestpass" data-country="USA" data-club="Lakeville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-pilot">Lakeville</option>
+									<option value="167" data-test="webguestpass" data-country="USA" data-club="Maple Grove" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Maple Grove</option>
+									<option value="11" data-test="webguestpass" data-country="USA" data-club="Minneapolis Athletic Club" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">Minneapolis Athletic Club</option>
+									<option value="166" data-test="webguestpass" data-country="USA" data-club="Minnetonka" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">Minnetonka</option>
+									<option value="141" data-test="webguestpass" data-country="USA" data-club="New Hope" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">New Hope</option>
+									<option value="171" data-test="webguestpass" data-country="USA" data-club="Oakdale Village Tennis" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">Oakdale Village Tennis</option>
+									<option value="8" data-test="webguestpass" data-country="USA" data-club="Plymouth" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Plymouth</option>
+									<option value="4" data-test="webguestpass" data-country="USA" data-club="Roseville (Women Only)" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Roseville (Women Only)</option>
+									<option value="133" data-test="webguestpass" data-country="USA" data-club="Savage" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-pilot">Savage</option>
+									<option value="174" data-test="webguestpass" data-country="USA" data-club="St. Louis Park" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">St. Louis Park</option>
+									<option value="172" data-test="webguestpass" data-country="USA" data-club="Target Center (Minneapolis)" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Target Center (Minneapolis)</option>
+									<option value="189" data-test="webguestpass" data-country="USA" data-club="White Bear Lake" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-east">White Bear Lake</option>
+									<option value="3" data-test="webguestpass" data-country="USA" data-club="Woodbury" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mn-west">Woodbury</option>
+						</optgroup>
+
+						<optgroup label="Missouri">
+									<option value="181" data-test="webguestpass" data-country="USA" data-club="West County-Chesterfield" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="heartland">West County-Chesterfield</option>
+						</optgroup>
+
+						<optgroup label="Nebraska">
+									<option value="161" data-test="webguestpass" data-country="USA" data-club="Omaha" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="heartland">Omaha</option>
+						</optgroup>
+
+						<optgroup label="Nevada">
+									<option value="239" data-test="webguestpass" data-country="USA" data-club="Green Valley" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="pacific">Green Valley</option>
+									<option value="193" data-test="webguestpass" data-country="USA" data-club="Summerlin" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="pacific">Summerlin</option>
+						</optgroup>
+
+						<optgroup label="New Jersey">
+									<option value="235" data-test="webguestpass" data-country="USA" data-club="Bergen County" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Bergen County</option>
+									<option value="188" data-test="webguestpass" data-country="USA" data-club="Berkeley Heights" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Berkeley Heights</option>
+									<option value="165" data-test="webguestpass" data-country="USA" data-club="Florham Park" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Florham Park</option>
+									<option value="234" data-test="webguestpass" data-country="USA" data-club="Mount Laurel" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Mount Laurel</option>
+									<option value="258" data-test="webguestpass" data-country="USA" data-club="Princeton" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Princeton</option>
+						</optgroup>
+
+						<optgroup label="New York">
+									<option value="240" data-test="webguestpass" data-country="USA" data-club="Garden City" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Garden City</option>
+									<option value="200" data-test="webguestpass" data-country="USA" data-club="Syosset" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Syosset</option>
+									<option value="236" data-test="webguestpass" data-country="USA" data-club="Westchester" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="northeast">Westchester</option>
+						</optgroup>
+
+						<optgroup label="North Carolina">
+									<option value="227" data-test="webguestpass" data-country="USA" data-club="Apex" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Apex</option>
+									<option value="160" data-test="webguestpass" data-country="USA" data-club="Cary" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Cary</option>
+									<option value="253" data-test="webguestpass" data-country="USA" data-club="Charlotte" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Charlotte</option>
+									<option value="221" data-test="webguestpass" data-country="USA" data-club="Matthews" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Matthews</option>
+									<option value="228" data-test="webguestpass" data-country="USA" data-club="Plantation Point" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Plantation Point</option>
+									<option value="243" data-test="webguestpass" data-country="USA" data-club="Raleigh" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Raleigh</option>
+									<option value="229" data-test="webguestpass" data-country="USA" data-club="Six Forks" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Six Forks</option>
+									<option value="222" data-test="webguestpass" data-country="USA" data-club="University" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">University</option>
+						</optgroup>
+
+						<optgroup label="Ohio">
+									<option value="195" data-test="webguestpass" data-country="USA" data-club="Beachwood" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="ohio">Beachwood</option>
+									<option value="162" data-test="webguestpass" data-country="USA" data-club="Deerfield Township" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="ohio">Deerfield Township</option>
+									<option value="159" data-test="webguestpass" data-country="USA" data-club="Dublin" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="ohio">Dublin</option>
+									<option value="40" data-test="webguestpass" data-country="USA" data-club="Easton" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="ohio">Easton</option>
+									<option value="224" data-test="webguestpass" data-country="USA" data-club="Pickerington" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="ohio">Pickerington</option>
+									<option value="223" data-test="webguestpass" data-country="USA" data-club="Upper Arlington" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="ohio">Upper Arlington</option>
+						</optgroup>
+
+						<optgroup label="Oklahoma">
+									<option value="199" data-test="webguestpass" data-country="USA" data-club="South Tulsa" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="heartland">South Tulsa</option>
+						</optgroup>
+
+						<optgroup label="Pennsylvania">
+									<option value="262" data-test="webguestpass" data-country="USA" data-club="Ardmore" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Ardmore</option>
+									<option value="500" data-test="webguestpass" data-country="USA" data-club="Fort Washington" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Fort Washington</option>
+									<option value="251" data-test="webguestpass" data-country="USA" data-club="King of Prussia" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">King of Prussia</option>
+						</optgroup>
+
+						<optgroup label="Tennessee">
+									<option value="187" data-test="webguestpass" data-country="USA" data-club="Collierville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="southeast">Collierville</option>
+									<option value="257" data-test="webguestpass" data-country="USA" data-club="Franklin" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Franklin</option>
+						</optgroup>
+
+						<optgroup label="Texas">
+									<option value="153" data-test="webguestpass" data-country="USA" data-club="Allen" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Allen</option>
+									<option value="287" data-test="webguestpass" data-country="USA" data-club="Austin - Arboretum" data-guestpass="1-Day" data-pricing="true" data-inquiry="" data-division="">Austin - Arboretum</option>
+									<option value="149" data-test="webguestpass" data-country="USA" data-club="Austin - North" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-central">Austin - North</option>
+									<option value="163" data-test="webguestpass" data-country="USA" data-club="Austin - South" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-central">Austin - South</option>
+									<option value="138" data-test="webguestpass" data-country="USA" data-club="Champions" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-hous">Champions</option>
+									<option value="146" data-test="webguestpass" data-country="USA" data-club="Cinco Ranch" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-hous">Cinco Ranch</option>
+									<option value="180" data-test="webguestpass" data-country="USA" data-club="City Centre Houston" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-hous">City Centre Houston</option>
+									<option value="142" data-test="webguestpass" data-country="USA" data-club="Colleyville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Colleyville</option>
+									<option value="268" data-test="webguestpass" data-country="USA" data-club="Cypress" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Cypress</option>
+									<option value="147" data-test="webguestpass" data-country="USA" data-club="Dallas - Addison" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Dallas - Addison</option>
+									<option value="190" data-test="webguestpass" data-country="USA" data-club="Dallas - Highland Park" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Dallas - Highland Park</option>
+									<option value="143" data-test="webguestpass" data-country="USA" data-club="Flower Mound" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Flower Mound</option>
+									<option value="266" data-test="webguestpass" data-country="USA" data-club="Fort Worth-Alliance" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Fort Worth-Alliance</option>
+									<option value="272" data-test="webguestpass" data-country="USA" data-club="Galleria Tennis (Houston)" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Galleria Tennis (Houston)</option>
+									<option value="139" data-test="webguestpass" data-country="USA" data-club="Garland" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Garland</option>
+									<option value="206" data-test="webguestpass" data-country="USA" data-club="Kingwood" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-hous">Kingwood</option>
+									<option value="196" data-test="webguestpass" data-country="USA" data-club="Lake Houston" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-hous">Lake Houston</option>
+									<option value="185" data-test="webguestpass" data-country="USA" data-club="Mansfield" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Mansfield</option>
+									<option value="136" data-test="webguestpass" data-country="USA" data-club="Plano" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Plano</option>
+									<option value="230" data-test="webguestpass" data-country="USA" data-club="Plano Tennis" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-dallas">Plano Tennis</option>
+									<option value="152" data-test="webguestpass" data-country="USA" data-club="San Antonio 281" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-central">San Antonio 281</option>
+									<option value="179" data-test="webguestpass" data-country="USA" data-club="San Antonio at the Rim" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-central">San Antonio at the Rim</option>
+									<option value="140" data-test="webguestpass" data-country="USA" data-club="Sugar Land" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="tx-hous">Sugar Land</option>
+						</optgroup>
+
+						<optgroup label="Utah">
+									<option value="154" data-test="webguestpass" data-country="USA" data-club="South Jordan" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mountain">South Jordan</option>
+						</optgroup>
+
+						<optgroup label="Virginia">
+									<option value="186" data-test="webguestpass" data-country="USA" data-club="Ashburn-Sterling" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mid-atlantic">Ashburn-Sterling</option>
+									<option value="35" data-test="webguestpass" data-country="USA" data-club="Centreville" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mid-atlantic">Centreville</option>
+									<option value="36" data-test="webguestpass" data-country="USA" data-club="Fairfax" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mid-atlantic">Fairfax</option>
+									<option value="233" data-test="webguestpass" data-country="USA" data-club="Reston" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="mid-atlantic">Reston</option>
+						</optgroup>
+
+						<optgroup label="Washington">
+									<option value="274" data-test="webguestpass" data-country="USA" data-club="Bellevue" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="">Bellevue</option>
+						</optgroup>
+
+						<optgroup label="Canada">
+									<option value="242" data-test="webguestpass" data-country="Canada" data-club="Ajax" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="canada">Ajax</option>
+									<option value="205" data-test="webguestpass" data-country="Canada" data-club="Mississauga" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="canada">Mississauga</option>
+									<option value="249" data-test="webguestpass" data-country="Canada" data-club="Vaughan" data-guestpass="1-Day" data-pricing="true" data-inquiry="true" data-division="canada">Vaughan</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="m-b-1">
+		<a href="#" target="_blank" class="link-underlined small text-nowrap m-r-1">Terms of Use</a>
+		<a href="#" target="_blank" class="link-underlined small text-nowrap">Privacy Policy</a>
+	</div>
+	<div class="content-section p-y-0 m-b-0">
+		<label for="customCheckboxsm" class="c-input c-checkbox-sm m-b-0">
+			<input id="customCheckboxsm" type="checkbox">
+			<span class="c-indicator"></span>
+			I acknowledge and agree to the Privacy Policy and Terms of Use.
+		</label>
+	</div>
+	<div class="content-section text-xs-center p-b-4">
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+</form>
+
+<div id="offerTerms1" tabindex="0" role="note" aria-label="Offer Terms">
+	<small>*Limit 1 Pass per 60 day period. Primary guest must be at least 18 years old, and an area resident where the Club is located. Guest registration and photo ID required. Pass is subject to club policies and may be limited to non-peak usage and may exclude the use of the outdoor pools and/or basketball courts. Free Pass not valid at Life Time Athletic Austin Downtown, Life Time Athletic Baybrook, Life Time Athletic Chappaqua, Life Time Athletic Gainesville, Life Time Athletic Northbrook, Life Time Athletic Oklahoma City, and Life Time Athletic Sky (Manhattan). Pass valid for fitness amenity access only at Life Time Tennis and Athletic Galleria. Other exclusions may apply. <a href="#offerReferrer1" aria-label="Go back to offer" class="sr-only sr-only-focusable">↩</a></small>
+</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="content-section bg-gray-11">
+	<div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor purus vel posuere efficitur. Pellentesque urna purus, tempor porttitor malesuada sed, placerat ac massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nisi turpis, egestas sit amet metus nec, eleifend semper erat. Integer sed placerat ligula, eu ornare lorem. Duis imperdiet metus eu nisl gravida dictum. Proin faucibus, urna vitae luctus viverra, magna tellus elementum odio, ut vestibulum augue nisi vitae massa. In quis est erat. Nam vehicula pellentesque sollicitudin. Morbi scelerisque lorem sed tristique dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+	</div>
+	
+</div>
+
+</main>
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"patterns-header-prospect","lineagePath":"../../patterns/02-patterns-00-header-01-header-prospect/02-patterns-00-header-01-header-prospect.rendered.html"},{"lineagePattern":"patterns-save-50-billboard","lineagePath":"../../patterns/02-patterns-14-billboard-examples-01-save-50-billboard/02-patterns-14-billboard-examples-01-save-50-billboard.rendered.html"},{"lineagePattern":"patterns-cling-basic","lineagePath":"../../patterns/02-patterns-15-cling-form-00-cling-basic/02-patterns-15-cling-form-00-cling-basic.rendered.html"},{"lineagePattern":"patterns-cling-modal","lineagePath":"../../patterns/02-patterns-15-cling-form-03-cling-modal/02-patterns-15-cling-form-03-cling-modal.rendered.html"}],"lineage":[{"lineagePattern":"patterns-header-prospect","lineagePath":"../../patterns/02-patterns-00-header-01-header-prospect/02-patterns-00-header-01-header-prospect.rendered.html"},{"lineagePattern":"patterns-save-50-billboard","lineagePath":"../../patterns/02-patterns-14-billboard-examples-01-save-50-billboard/02-patterns-14-billboard-examples-01-save-50-billboard.rendered.html"},{"lineagePattern":"patterns-cling-basic","lineagePath":"../../patterns/02-patterns-15-cling-form-00-cling-basic/02-patterns-15-cling-form-00-cling-basic.rendered.html"},{"lineagePattern":"patterns-cling-modal","lineagePath":"../../patterns/02-patterns-15-cling-form-03-cling-modal/02-patterns-15-cling-form-03-cling-modal.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"patterns","patternSubtype":"cling-form"},"patternExtension":"mustache","patternName":"Cling Form Layered","patternPartial":"patterns-cling-form-layered","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460412232">
+  (function() {
+    if (self != top) {
+      var cb = '1664460412232';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-lg-6 col-lg-offset-3">
+
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-6 -6 112 112">
+	<rect fill="#FFFFFF" x="-6" y="-6" width="112" height="112"/>
+
+	{{#seats}}
+		{{#isTaken}}
+	<g id="click{{key}}" class="svg-seat svg-seat-unavailable">
+		{{/isTaken}}
+		{{^isTaken}}
+	<g id="click{{key}}" class="svg-seat">
+		{{/isTaken}}
+
+		<circle class="svg-seat-circle" stroke-miterlimit="10" cx="{{x}}" cy="{{y}}" r="4" vector-effect="non-scaling-stroke"/>
+		<text class="svg-seat-text" x="{{x}}" y="{{y}}" text-anchor="middle" dy="1.4" style="font-size:4px;">{{key}}</text>
+	</g>
+	{{/seats}}
+</svg>
+
+
+		</div>
+	</div>
+</div>

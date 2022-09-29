@@ -1,0 +1,71 @@
+{{> patterns-header-member }}
+<main>
+	<div class="container p-t-2 p-b-1">
+		<h1>Account</h1>
+	</div>
+	<div class="mylt-bg-gray-12 p-t-2 p-b-3">
+		<div class="container">
+			<div class="row">
+				<nav class="col-xs-12">
+					<ol class="breadcrumb p-y-0">
+						<li><a href="#0"">Account</a></li>
+						<li>Manage Payment Options</li>
+					</ol>
+				</nav>
+				<div class="col-xs-12 small">
+					<div class="card card-index">
+						<span class="ico-pay"></span>
+						<div class="card-header">
+							<h2 class="h5 card-title">Manage Payment Options</h2>
+						</div>
+						<div class="card-block">
+							<div class="row">
+
+								<div class="col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-4 hide-print">
+									<p>Update the payment options associated with your account.</p>
+									<p>At least one payment option must be associated with your membership. Visa, MasterCard, American Express and Discover are accepted.</p>
+									<p>Changes to your payment options will not affect orders you've already placed.</p>
+								</div>
+
+								<div class="col-xs-12 col-md-offset-2 col-md-8 col-lg-offset-1 col-lg-6 col-xl-5">
+									<h2 class="h5">Membership Dues Payment</h2>
+									<p class="m-b-1">This will be used for...</p>
+									<div class="m-b-3">
+										{{> templates-pci-credit-card(ccType:'amex',ccNumber:'5678',hideRemove:true) }}
+									</div>
+
+									<h2 class="h5">Club Tab</h2>
+									<p class="m-b-1">This will be used for...</p>
+									<ul class="list-unstyled m-b-0">
+										<li>
+											{{> templates-pci-credit-card(ccType:'discover',ccNumber:'9101',showUsers:true) }}
+										</li>
+									</ul>
+									<div class="b-t p-t-grid m-b-3">
+										<a href="#0"><span class="ico-plus-sm"></span> Add Form of Payment</a>
+									</div>
+									
+									<h2 class="h5">Additional Forms of Payment</h2>
+									<p class="m-b-1">This will be used for...</p>
+									<ul class="list-unstyled m-b-0">
+										<li>
+											{{> templates-pci-credit-card(ccType:'visa',ccNumber:'4567') }}
+										</li>
+										<li>
+											{{> templates-pci-credit-card(ccType:'mastercard',ccNumber:'2233',labelText:"Our Acct") }}
+										</li>
+									</ul>
+									<div class="b-t p-t-grid m-b-3">
+										<a href="#0"><span class="ico-plus-sm"></span> Add Form of Payment</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}

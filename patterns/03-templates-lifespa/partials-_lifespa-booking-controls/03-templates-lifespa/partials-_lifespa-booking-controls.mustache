@@ -1,0 +1,92 @@
+<div class="bg-gray-12 b-t p-t-grid p-b-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1 col-lg-12 col-lg-offset-0">
+				<div class="row">
+					<div class="col-xs-12 col-md-6 col-lg-3">
+						<div class="form-group m-b-sm">
+							<label for="selService">Service</label>
+							<select id="selService" class="c-select">
+								{{#initial}}
+								<option selected="selected"></option>
+								<optgroup label="Option Group 1">
+									<option>Cut - Men's Cut</option>
+								{{/initial}}
+								{{^initial}}
+								<option></option>
+								<optgroup label="Option Group 1">
+									<option selected="selected">Cut - Men's Cut</option>
+								{{/initial}}
+									<option>Option Two</option>
+									<option>Option Three</option>
+								</optgroup>
+								<optgroup label="Option Group 2">
+									<option>Option Four</option>
+									<option>Option Five</option>
+									<option>Option Six</option>
+								</optgroup>
+							</select>
+							<p class="label-help">First, select a service.</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-3">
+						<div class="form-group m-b-sm">
+							<label for="selTechnician">Technician</label>
+							{{#initial}}
+							<select id="selTechnician" class="c-select" disabled>
+							{{/initial}}
+							{{^initial}}
+							<select id="selTechnician" class="c-select">
+							{{/initial}}
+								<option selected="selected">Anyone</option>
+								<option>Anna</option>
+								<option>Erin</option>
+								<option>Meg (Megan-Beth)</option>
+								<option>Megan</option>
+								<option>Sara</option>
+								<option>Stephanie</option>
+								<option>Tasha</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-3">
+						<div class="form-group m-b-sm">
+						<label>Date</label>
+							<div class="date-nav">
+								{{#initial}}
+								<button class="btn btn-input datepicker-trigger" data-provide="datepicker" data-date-today-highlight="true" disabled>
+								{{/initial}}
+								{{^initial}}
+								<button class="btn btn-input datepicker-trigger" data-provide="datepicker" data-date-today-highlight="true">
+								{{/initial}}
+									<span class="flex-container">
+										<span class="btn-icon-text">
+											<time class="time-start" datetime="2019-05-22">Wednesday, May 22</time>
+										</span>
+										<span class="ico-calendar"></span>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6 col-lg-3">
+						<div class="form-group m-b-sm">
+							<label for="selTime">Time of Day</label>
+							{{#initial}}
+							<select id="selTime" class="c-select" disabled>
+							{{/initial}}
+							{{^initial}}
+							<select id="selTime" class="c-select">
+							{{/initial}}
+								<option selected="selected">Any</option>
+								<option>Morning</option>
+								<option>Midday</option>
+								<option>Evening</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

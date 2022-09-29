@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+	<head>
+		<title>Core | Life Time Enterprise Design System</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="/images/theme-base/apple-touch-icon.png">
+		<link rel="mask-icon" sizes="any" href="/images/theme-base/lt-icon.svg" color="#707070">
+		<link rel="icon" href="/images/theme-base/favicon.ico">
+		<!--[if IE]>
+			<link rel="shortcut icon" href="/images/theme-base/favicon.ico">
+		<![endif]-->
+		<meta name="msapplication-TileColor" content="#707070">
+		<meta name="msapplication-TileImage" content="/images/theme-base/win8-tile-icon.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<link id="pagestyle" rel="stylesheet" href="/css/shared-styles.css?1664460494733" media="all" />
+		
+
+		<link rel="stylesheet" href="/css/sample-page/sample-page.css?1664460494733" media="all" />
+
+		<!-- pass additional files to page --><!-- pass additional js files to page -->
+		<!-- Code highlighing for snippet examples -->
+		<link rel="stylesheet" href="/css/support/prism.css" media="all" />
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		<!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1664460494733" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1664460494733" media="all" />
+
+		<!-- End Pattern Lab -->
+
+		<link rel="stylesheet" href="/css/support/pattern-scaffolding.css?1664460494733" media="all" />
+		<script src="/js/vendor/picturefill.min.js" async></script>
+	</head>
+	<body class="body ">
+	<!-- Begin grid overlay for testing layout -->
+	<div class="sg-grid-overlay invisible">
+		<div class="hidden-sm-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6"><div></div></div>
+					<div class="col-xs-6"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-xs-down hidden-md-up">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+					<div class="col-xs-2"><div></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="hidden-sm-down">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+					<div class="col-xs-1"><div></div></div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End grid overlay -->
+
+<!-- Start of Pattern -->
+<!-- View All Patterns in a Pattern Sub-Type -->
+<div class="sg-main" role="main">
+  
+  <!-- Patterns -->
+  <div id="sg-patterns">
+<div id="viewall-elements-icons" class="sg-pattern-category">
+  <h2 class="sg-pattern-category-title"><a href="../../patterns/00-elements-11-icons&#x2F;index.html" class="patternLink" data-patternpartial="viewall-elements-icons">icons</a></h2>
+
+  <div class="sg-pattern-category-body">
+    
+  </div><!--end sg-pattern-category-body-->
+  
+</div><!--end sg-pattern-category-->
+<div id="elements-icon-list" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-elements-11-icons-00-icon-list&#x2F;00-elements-11-icons-00-icon-list.rendered.html" class="patternLink" data-patternpartial="elements-icon-list" title="Link to Pattern">
+          Icons
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="elements-icon-list" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-icon-list" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-icon-list">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container-fluid sg-icons">
+	<div><span class="ico-home"></span> ico-home</div>
+	<div><span class="ico-club"></span> ico-club</div>
+	<div><span class="ico-club-sm"></span> ico-club-sm</div>
+	<div><span class="ico-user"></span> ico-user</div>
+	<div><span class="ico-search"></span> ico-search</div>
+	<div><span class="ico-search-sm"></span> ico-search-sm</div>
+	<div><span class="ico-key"></span> ico-key</div>
+	<div><span class="ico-info"></span> ico-info</div>
+	<div><span class="ico-info-solid"></span> ico-info-solid</div>
+	<div><span class="ico-help"></span> ico-help</div>
+	<div><span class="ico-crosshairs"></span> ico-crosshairs</div>
+	<div><span class="ico-close"></span> ico-close</div>
+	<div><span class="ico-close-sm"></span> ico-close-sm</div>
+	<div><span class="ico-gear"></span> ico-gear</div>
+	<div><span class="ico-check"></span> ico-check</div>
+	<div><span class="ico-facebook"></span> ico-facebook</div>
+	<div><span class="ico-instagram"></span> ico-instagram</div>
+	<div><span class="ico-youtube"></span> ico-youtube</div>
+	<div><span class="ico-twitter"></span> ico-twitter</div>
+	<div><span class="ico-pinterest"></span> ico-pinterest</div>
+	<div><span class="ico-tiktok"></span> ico-tiktok</div>
+	<div><span class="ico-scroll-arrow"></span> ico-scroll-arrow</div>
+	<div><span class="ico-calendar"></span> ico-calendar</div>
+	<div><span class="ico-calendar-sm"></span> ico-calendar-sm</div>
+	<div><span class="ico-calendar-checked"></span> ico-calendar-checked</div>
+	<div><span class="ico-clock"></span> ico-clock</div>
+	<div><span class="ico-clock-sm"></span> ico-clock-sm</div>
+	<div><span class="ico-map-marker"></span> ico-map-marker</div>
+	<div><span class="ico-map-marker-sm"></span> ico-map-marker-sm</div>
+	<div><span class="ico-person"></span> ico-person</div>
+	<div><span class="ico-person-sm"></span> ico-person-sm</div>
+	<div><span class="ico-cost-sm"></span> ico-cost-sm</div>
+	<div><span class="ico-daypart-morning"></span> ico-daypart-morning</div>
+	<div><span class="ico-daypart-midday"></span> ico-daypart-midday</div>
+	<div><span class="ico-daypart-evening"></span> ico-daypart-evening</div>
+	<div><span class="ico-arrow-left"></span> ico-arrow-left</div>
+	<div><span class="ico-double-arrow-left"></span> ico-double-arrow-left</div>
+	<div><span class="ico-arrow-left-start"></span> ico-arrow-left-start</div>
+	<div><span class="ico-arrow-right"></span> ico-arrow-right</div>
+	<div><span class="ico-double-arrow-right"></span> ico-double-arrow-right</div>
+	<div><span class="ico-arrow-right-end"></span> ico-arrow-right-end</div>
+	<div><span class="ico-arrow-up"></span> ico-arrow-up</div>
+	<div><span class="ico-arrow-down"></span> ico-arrow-down</div>
+	<div><span class="ico-arrow-left-sm"></span> ico-arrow-left-sm</div>
+	<div><span class="ico-double-arrow-left-sm"></span> ico-double-arrow-left-sm</div>
+	<div><span class="ico-arrow-left-start-sm"></span> ico-arrow-left-start-sm</div>
+	<div><span class="ico-arrow-right-sm"></span> ico-arrow-right-sm</div>
+	<div><span class="ico-double-arrow-right-sm"></span> ico-double-arrow-right-sm</div>
+	<div><span class="ico-arrow-right-end-sm"></span> ico-arrow-right-end-sm</div>
+	<div><span class="ico-arrow-up-sm"></span> ico-arrow-up-sm</div>
+	<div><span class="ico-arrow-down-sm"></span> ico-arrow-down-sm</div>
+	<div><span class="ico-phone-sm"></span> ico-phone-sm</div>
+	<div><span class="ico-plus"></span> ico-plus</div>
+	<div><span class="ico-plus-sm"></span> ico-plus-sm</div>
+	<div><span class="ico-plus-sm-thick"></span> ico-plus-sm-thick</div>
+	<div><span class="ico-minus"></span> ico-minus</div>
+	<div><span class="ico-minus-sm"></span> ico-minus-sm</div>
+	<div><span class="ico-alert"></span> ico-alert</div>
+	<div><span class="ico-alert-sm"></span> ico-alert-sm</div>
+	<div><span class="ico-edit-sm"></span> ico-edit-sm</div>
+	<div><span class="ico-video-sm"></span> ico-video-sm</div>
+	<div><span class="ico-club-video"></span> ico-club-video</div>
+	<div><span class="ico-filters"></span> ico-filters</div>
+	<div><span class="ico-print"></span> ico-print</div>
+	<div><span class="ico-download"></span> ico-download</div>
+	<div><span class="ico-export"></span> ico-export</div>
+	<div><span class="ico-membership"></span> ico-membership</div>
+	<div><span class="ico-pay"></span> ico-pay</div>
+	<div><span class="ico-ltbucks-sm"></span> ico-ltbucks-sm</div>
+	<div><span class="ico-preferences"></span> ico-preferences</div>
+	<div><span class="ico-lab"></span> ico-lab</div>
+	<div><span class="ico-checkmark-solid"></span> ico-checkmark-solid</div>
+	<div><span class="ico-alert-solid"></span> ico-alert-solid</div>
+	<div><span class="ico-cart"></span> ico-cart</div>
+	<div><span class="ico-cart-sm"></span> ico-cart-sm</div>
+	<div><span class="ico-autoship"></span> ico-autoship</div>
+	<div><span class="ico-mail"></span> ico-mail</div>
+	<div><span class="ico-mail-solid"></span> ico-mail-solid</div>
+	<div><span class="ico-gift"></span> ico-gift</div>
+	<div><span class="ico-locked"></span> ico-locked</div>
+	<div><span class="ico-whistle-sm"></span> ico-whistle-sm</div>
+	<div><span class="ico-play"></span> ico-play</div>
+	<div><span class="ico-delete"></span> ico-delete</div>
+	<div><span class="ico-trash"></span> ico-trash</div>
+	<div><span class="ico-heart"></span> ico-heart</div>
+	<div><span class="ico-heart-solid"></span> ico-heart-solid</div>
+	<div><span class="ico-star"></span> ico-star</div>
+	<div><span class="ico-star-solid"></span> ico-star-solid</div>
+	<div><span class="ico-star-half"></span> ico-star-half</div>
+	<div><span class="ico-flag"></span> ico-flag</div>
+	<div><span class="ico-flag-solid"></span> ico-flag-solid</div>
+	<div><span class="ico-refer"></span> ico-refer</div>
+	<div><span class="ico-document"></span> ico-document</div>
+	<div><span class="ico-document-blank"></span> ico-document-blank</div>
+	<div><span class="ico-clipboard"></span> ico-clipboard</div>
+	<div><span class="ico-list"></span> ico-list</div>
+	<div><span class="ico-knife"></span> ico-knife</div>
+	<div><span class="ico-history"></span> ico-history</div>
+	<div><span class="ico-scan"></span> ico-scan</div>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-elements-icon-list" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="elements-icon-elements" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-elements-11-icons-01-icon-elements&#x2F;00-elements-11-icons-01-icon-elements.rendered.html" class="patternLink" data-patternpartial="elements-icon-elements" title="Link to Pattern">
+          Icon Elements
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="elements-icon-elements" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-icon-elements" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-icon-elements">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container m-t-2">
+	<p class="text-icon-indent">
+		<span class="ico-map-marker"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec sem leo. Morbi orci eros, tempus et ipsum vel, aliquam luctus arcu. Sed et massa id sapien ornare faucibus id vitae est. Fusce placerat urna lorem, non consequat purus venenatis a. Cras eu nisi neque. Etiam non lorem viverra augue condimentum dapibus eget eu lectus.
+	</p>
+	<div class="svg-icon-wrap">
+		<span class="svg-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 28 28">
+				<path fill="none" stroke="currentColor" stroke-miterlimit="10" d="M8.5,21.5V8.4C10,7.2,11.9,6.5,14,6.5s4,0.7,5.5,1.9v13.1H8.5z M8.5,10.5h-4v11h4 M19.5,21.5h4v-11h-4 M16.5,21.5V14c0-1.4-1.1-2.5-2.5-2.5s-2.5,1.1-2.5,2.5v7.5"/>
+			</svg>
+		</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec sem leo. Morbi orci eros, tempus et ipsum vel, aliquam luctus arcu. Sed et massa id sapien ornare faucibus id vitae est. Fusce placerat urna lorem, non consequat purus venenatis a. Cras eu nisi neque. Etiam non lorem viverra augue condimentum dapibus eget eu lectus.</p>
+	</div>
+</div>
+  </div>
+  <script type="text/json" id="sg-pattern-data-elements-icon-elements" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="elements-close-icon" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-elements-11-icons-02-close-icon&#x2F;00-elements-11-icons-02-close-icon.rendered.html" class="patternLink" data-patternpartial="elements-close-icon" title="Link to Pattern">
+          Close Icon
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="elements-close-icon" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-close-icon" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-close-icon">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <button type="button" class="close" aria-label="Close">
+	<span aria-hidden="true">×</span>
+</button>
+  </div>
+  <script type="text/json" id="sg-pattern-data-elements-close-icon" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="elements-icon-adjust" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-elements-11-icons-03-icon-adjust&#x2F;00-elements-11-icons-03-icon-adjust.rendered.html" class="patternLink" data-patternpartial="elements-icon-adjust" title="Link to Pattern">
+          Icon Alignment Adjustment
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="elements-icon-adjust" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-icon-adjust" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-icon-adjust">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container">
+	<h2>Icon Alignment Adjustment</h2>
+	<h6 class="m-b-1">Horizontal Alignment (.icon-adjust-horiz)</h6>
+	<p><span class="ico-lab"></span> This icon is how it normally appears.</p>
+	<p><span class="ico-lab icon-adjust-horiz"></span> This icon is adjusted remove extra horizontal space.</p>
+	<p>Any <code>-arrow-right</code> icons have extra margin on left instead of <span class="text-nowrap">right. <a href="#0"><span class="ico-double-arrow-right-sm icon-adjust-horiz"></span></a></span></p>
+	<h6 class="m-b-1">Vertical Alignment (.icon-adjust-vert)</h6>
+	<p class="micro m-b-0"><span class="ico-calendar-sm"></span> These icons have not been vertically adjusted.</p>
+	<p class="micro m-b-0"><span class="ico-map-marker-sm"></span> This impacts the line-height of each paragraph.</p>
+	<p class="micro"><span class="ico-person-sm"></span> Which you can see when multiple paragraphs stack.</p>
+	<p class="micro m-b-0"><span class="ico-calendar-sm icon-adjust-vert"></span> These icons have been vertically adjusted.</p>
+	<p class="micro m-b-0"><span class="ico-map-marker-sm icon-adjust-vert"></span> The icon no longer impacts the line-height of each paragraph.</p>
+	<p class="micro"><span class="ico-person-sm icon-adjust-vert"></span> Which you can see when multiple paragraphs stack.</p>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-elements-icon-adjust" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="elements-social-link-icons" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-elements-11-icons-04-social-link-icons&#x2F;00-elements-11-icons-04-social-link-icons.rendered.html" class="patternLink" data-patternpartial="elements-social-link-icons" title="Link to Pattern">
+          Social Link Icons
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="elements-social-link-icons" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-social-link-icons" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-social-link-icons">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container-fluid">
+	<h5>.icon-social-link</h5>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="content-section">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="#0" class="ico-instagram icon-social-link"><span class="sr-only">Visit Life Time Instagram</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-facebook icon-social-link"><span class="sr-only">Visit Life Time Facebook</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-tiktok icon-social-link"><span class="sr-only">Visit Life Time TikTok</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-twitter icon-social-link"><span class="sr-only">Visit Life Time Twitter</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-youtube icon-social-link"><span class="sr-only">Visit Life Time YouTube</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail-solid icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3 bg-gray-3 content-inverse">
+			<div class="content-section">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="#0" class="ico-instagram icon-social-link"><span class="sr-only">Visit Life Time Instagram</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-facebook icon-social-link"><span class="sr-only">Visit Life Time Facebook</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-tiktok icon-social-link"><span class="sr-only">Visit Life Time TikTok</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-twitter icon-social-link"><span class="sr-only">Visit Life Time Twitter</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-youtube icon-social-link"><span class="sr-only">Visit Life Time YouTube</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail-solid icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3">
+			<div class="content-section text-xs-right">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="#0" class="ico-instagram icon-social-link"><span class="sr-only">Visit Life Time Instagram</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-facebook icon-social-link"><span class="sr-only">Visit Life Time Facebook</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-tiktok icon-social-link"><span class="sr-only">Visit Life Time TikTok</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-twitter icon-social-link"><span class="sr-only">Visit Life Time Twitter</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-youtube icon-social-link"><span class="sr-only">Visit Life Time YouTube</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail-solid icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-lg-3 bg-gray-3 content-inverse">
+			<div class="content-section text-xs-right">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="#0" class="ico-instagram icon-social-link"><span class="sr-only">Visit Life Time Instagram</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-facebook icon-social-link"><span class="sr-only">Visit Life Time Facebook</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-tiktok icon-social-link"><span class="sr-only">Visit Life Time TikTok</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-twitter icon-social-link"><span class="sr-only">Visit Life Time Twitter</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-youtube icon-social-link"><span class="sr-only">Visit Life Time YouTube</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#0" class="ico-mail-solid icon-social-link"><span class="sr-only">Send an email</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<h5>.icon-social-link-solid</h5>
+	<div class="content-section">
+		<ul class="list-inline">
+			<li class="list-inline-item">
+				<a href="#0" class="ico-instagram icon-social-link-solid"><span class="sr-only">Visit Life Time Instagram</span></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#0" class="ico-facebook icon-social-link-solid"><span class="sr-only">Visit Life Time Facebook</span></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#0" class="ico-tiktok icon-social-link-solid"><span class="sr-only">Visit Life Time TikTok</span></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#0" class="ico-twitter icon-social-link-solid"><span class="sr-only">Visit Life Time Twitter</span></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#0" class="ico-youtube icon-social-link-solid"><span class="sr-only">Visit Life Time YouTube</span></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#0" class="ico-mail icon-social-link-solid"><span class="sr-only">Send an email</span></a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#0" class="ico-mail-solid icon-social-link-solid"><span class="sr-only">Send an email</span></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-elements-social-link-icons" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+<div id="elements-credit-card-icons" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/00-elements-11-icons-05-credit-card-icons&#x2F;00-elements-11-icons-05-credit-card-icons.rendered.html" class="patternLink" data-patternpartial="elements-credit-card-icons" title="Link to Pattern">
+          Credit Card Icons
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="elements-credit-card-icons" title="View Pattern Info" id="sg-pattern-extra-toggle-elements-credit-card-icons" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-elements-credit-card-icons">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div class="container-fluid">
+	<h5 class="m-b-2">Available Card Options</h5>
+	<ul class="list-inline">
+		<li class="list-inline-item m-r-0"><span class="ico-cc-visa"></span><span class="sr-only">Visa</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-mastercard"></span><span class="sr-only">Mastercard</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-discover"></span><span class="sr-only">Discover</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-amex"></span><span class="sr-only">American Express</span></li>
+	</ul>
+	<h5 class="m-b-2">Detected Card (typically only one at a time)</h5>
+	<ul class="list-inline">
+		<li class="list-inline-item m-r-0"><span class="ico-cc-visa selected"></span><span class="sr-only">Visa</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-mastercard selected"></span><span class="sr-only">Mastercard</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-discover selected"></span><span class="sr-only">Discover</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-amex selected"></span><span class="sr-only">American Express</span></li>
+	</ul>
+	<h5 class="m-b-2">Example</h5>
+	<span class="sr-only">Available Payment Options</span>
+	<ul class="list-inline">
+		<li class="list-inline-item m-r-0"><span class="ico-cc-visa"></span><span class="sr-only">Visa</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-mastercard selected"></span><span class="sr-only">Mastercard Detected</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-discover"></span><span class="sr-only">Discover</span></li>
+		<li class="list-inline-item m-r-0"><span class="ico-cc-amex"></span><span class="sr-only">American Express</span></li>
+	</ul>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-elements-credit-card-icons" class="sg-pattern-data">
+    
+  </script>
+</div><!--end .sg-pattern-->
+  </div> <!--end #sg-patterns-->
+
+</div><!--end .sg-main-->
+
+	<!--DO NOT REMOVE-->
+	<script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"patternPartial":"viewall-elements-icons"}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1664460494733">
+  (function() {
+    if (self != top) {
+      var cb = '1664460494733';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1664460494733">
+  (function() {
+    if (self != top) {
+      var cb = '1664460494733';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="/js/vendor/tether.min.js"></script>
+	<!-- Code highlighing for snippet examples -->
+	<script src="/js/vendor/prism.js"></script>
+	<script src="/js/vendor/bootstrap.min.js"></script>
+	<script src="/js/vendor/spin.js"></script>
+	<script src="/js/vendor/moment.js"></script>
+	<script src="/js/vendor/gridoverlay.js"></script>
+	<script src="/js/shared-components.js"></script>
+	<script src="/js/internal/style-pageload.js"></script>
+	<script src="/js/vendor/iframeResizer.contentWindow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+	
+	<!-- pass additional js files to page -->
+
+	<script>
+		// Effect for the Core overview page
+		var header = $('.core-header');
+		var isScrolled = false;
+
+		$(window).scroll(function() {
+		  var overThreshold = $(this).scrollTop() > 140;
+		  if(overThreshold && !isScrolled) {
+		    header.addClass('scrolled');
+		    isScrolled = true;
+		  }else if(!overThreshold && isScrolled) {
+		    header.removeClass('scrolled');
+		    isScrolled = false;
+		  }
+		});
+	</script>
+
+	</body>
+</html>

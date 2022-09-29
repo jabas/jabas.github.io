@@ -1,0 +1,36 @@
+<div class="card p-t-2 p-x-2 p-b-1 text-xs-center {{styleModifier}}">
+	<h4>{{membershipName}}</h4>
+	<div class="tag {{tagModifier}} m-t-2 m-b-4">{{{tag}}}</div>
+	<div class="card-membership-descriptor small m-b-grid">{{descriptor}}</div>
+	{{#startingAt}}
+	<div class="small">Starting at</div>
+	{{/startingAt}}
+	{{#priceGroup}}
+	<div class="card-membership-price b-b {{borderModifier}} m-b-sm"><span class="currency">$</span><span class="value">{{price}}</span><span class="unit"> / {{unit}}</span></div>
+	{{/priceGroup}}
+	{{#passPriceGroup}}
+	<div class="card-membership-price b-b {{borderModifier}} m-b-sm">
+		<form class="text-xs-left">
+			<fieldset class="form-group form-group-spacer">
+				<label for="cRadio1" class="c-input c-radio">
+					<input id="cRadio1" name="radio" type="radio" checked="checked">
+					<span class="c-indicator"></span>
+					$25 / 1 pass
+				</label>
+				<label for="cRadio2" class="c-input c-radio">
+					<input id="cRadio2" name="radio" type="radio">
+					<span class="c-indicator"></span>
+					$125 / 5 passes
+				</label>
+			</fieldset>
+		</form>
+	</div>
+	{{/passPriceGroup}}
+	<div class="small m-b-3">{{fee}}</div>
+	{{#cta}}
+	<a href="{{link.templates-online-joins-step-3}}" class="btn btn-primary m-b-1">Select</a>
+	{{/cta}}
+	{{#disclaimer}}
+	<div class="micro">Choose location above to <br>view exact rates</div>
+	{{/disclaimer}}
+</div>

@@ -1,0 +1,38 @@
+{{> patterns-header-prospect(removeJoinLink:true) }}
+<main class="page-content main-mylt bg-gray-12 omsc-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+				<div id="omscSummary" class="omsc-summary">
+					{{> templates-membership-summary }}
+				</div>
+				<div class="content-section text-xs-center">
+					<h1 class="h2 m-b-1">What are you interested in?</h1>
+					<p>Help us find the best membership for you by sharing some of your favorite interests.</p>
+				</div>
+				<div id="omscInterests">
+					<div class="omsc-interests">
+						<div class="content-section-x-pad b-a b-rounded-lg box-shadow bg-white m-b-2">
+							<div class="p-b-1">
+								{{#interestOptions}}
+								<div class="omsc-interest-chk m-b-1 m-r-xs">
+									<input id="{{id}}" type="checkbox" value="child center" />
+									<label for="{{id}}">{{{label}}}</label>
+								</div>
+								{{/interestOptions}}
+							</div>
+						</div>
+						<div class="omsc-nav">
+							<div class="btn-wrap text-xs-right">
+								<a href="{{ link.templates-membership }}" class="btn">Skip <span class="omsc-hidden-xxs">This</span> Step</a>
+								<a href="{{ link.templates-membership }}" class="btn btn-primary">Move Forward</a>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{{> patterns-mylt-footer }}
+{{> templates-moxie-example }}
