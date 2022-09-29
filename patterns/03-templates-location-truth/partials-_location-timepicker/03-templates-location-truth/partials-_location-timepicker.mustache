@@ -1,9 +1,0 @@
-<div class="form-group m-b-0">
-	<label for="{{id}}">{{ label }}</label>
-	{{# disabled }}
-	<input disabled id="{{id}}" type="text" class="form-control" value="--:-- --">
-	{{/ disabled }}
-	{{^ disabled }}
-	<input id="{{id}}" type="text" class="form-control" value="{{# time }}{{time}}{{/ time }}{{^ time }}--:-- --{{/ time }}" >
-	{{/ disabled }}
-</div>
