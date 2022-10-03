@@ -6,3 +6,4 @@ var viewAllPaths = {"atoms":{"buttons":"atoms-buttons","all":"atoms"},"molecules
 var plugins = [{"name":"@mfranzke/plugin-node-uiextension","templates":[],"stylesheets":["../../../css/pattern-scaffolding.css"],"javascripts":["patternlab-components/pattern-lab/@mfranzke-plugin-node-uiextension/js/@mfranzke-plugin-node-uiextension.js"],"onready":"PluginUIExtension.init()","callback":"","navLinks":{"before":[],"after":[]},"toolLinks":{"before":[],"after":[]}}];
 var defaultShowPatternInfo = false;
 var defaultPattern = "pages-welcome";
+module.exports = { config, ishControls, navItems, patternPaths, viewAllPaths, plugins, defaultShowPatternInfo, defaultPattern };
