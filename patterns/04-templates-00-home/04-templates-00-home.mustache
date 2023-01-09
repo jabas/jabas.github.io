@@ -1,0 +1,43 @@
+{{> organisms-header-prospect }}
+<main>
+	{{> molecules-template-hero(parentClasses:"hero-overlay", bodyClasses:"hero-content-semi-trans") }}
+	{{> aem-sticky-promo(style:"stickybar-primary",inverseBtns:true,CTATxt:"Ultricies vehicula lorem bibendum un pharetra.", btn1Txt:"Button 1", btn2Txt: "Button 2") }}
+	{{> aem-chapter-start(bgClass: 'bg-light', shortRule?:true, headingTxt:'Maecenas eu ullamcorper orci.', bodyTxt:'Ut eu arcu dignissim, blandit nisl vel, vulputate augue. Praesent nec sem mattis, malesuada diam ac, scelerisque dui. Praesent vestibulum laoreet neque eu molestie. Nulla tempor tellus tempor tellus laoreet viverra. Ut efficitur sapien eu scelerisque auctor. Duis id rutrum nisi. Phasellus convallis elit orci, id pellentesque quam dictum accumsan. Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', navOne: 'Navigation #1', navTwo:'Navigation #2', navThree:'Navigation #3', navFour:'Navigation #4')}}
+	{{> aem-chapter-end}}
+	{{> aem-chapter-start(headingTxt:'Etiam pulvinar ullamcorper lorem', shortRule?:true)}}
+		{{> aem-card-row-start(colMD:'2', colLG:'3') }}
+			{{> aem-feature-card(inRow:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardSubtitle:'Aenean ut purus tincidunt', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #1') }}
+			{{> aem-feature-card(inRow:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Suspendisse', cardSubtitle:'Ut eu arcu dignissim', cardText:'Etiam ante purus, finibus malesuada turpis nec, pretium facilisis felis. Suspendisse enim turpis, hendrerit vel augue suscipit, porttitor mollis lectus. Fusce ante odio, elementum vitae ultricies ac, pulvinar eu arcu. Curabitur enim ante, faucibus sed lacus id, lobortis mollis erat.', linkOne:'CTA #2') }}
+			{{> aem-feature-card(inRow:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #3', linkTwo:'CTA #4') }}
+		{{> aem-card-row-end }}
+	{{> aem-chapter-end}}
+	{{> aem-chapter-start(bgClass: 'bg-light', headingTxt:'Vestibulum sapien dolor', shortRule?:true)}}
+		{{> aem-card-row-start(colMD:'2', colLG:'1') }}
+			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardSubtitle:'Aenean ut purus tincidunt', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #1') }}
+			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Suspendisse', cardSubtitle:'Ut eu arcu dignissim', cardText:'Etiam ante purus, finibus malesuada turpis nec, pretium facilisis felis. Suspendisse enim turpis, hendrerit vel augue suscipit, porttitor mollis lectus. Fusce ante odio, elementum vitae ultricies ac, pulvinar eu arcu. Curabitur enim ante, faucibus sed lacus id, lobortis mollis erat.', linkOne:'CTA #2') }}
+			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.', linkOne:'CTA #3', linkTwo:'CTA #4') }}
+		{{> aem-card-row-end }}
+	{{> aem-chapter-end}}
+	{{> aem-club-highlight }}
+	{{> aem-chapter-start(bgClass:'bg-light')}}
+		{{> aem-card-row-start }}
+			{{> aem-feature-card(inRow:true, isBillboard:true, cardImage:'https://via.placeholder.com/992x558?text=16:9', cardTitle:'Phasellus aliquam', cardSubtitle:'Aenean ut purus tincidunt', cardText:'Nunc tempor, ligula vitae tincidunt euismod, mauris elit ultricies est, eu convallis felis dolor ut nisl. Maecenas aliquet velit ligula, non mollis erat rutrum quis. Donec volutpat ligula nulla, at tincidunt neque facilisis ut.') }}
+		{{> aem-card-row-end }}
+		{{> aem-chapter-break-start }}
+			{{> aem-feature-icon-list }}
+		{{> aem-chapter-break-end }}
+	{{> aem-chapter-end}}
+	{{> aem-chapter-start(headingTxt:'Integer feugiat sapien')}}
+		{{> aem-chapter-break-start }}
+			{{> aem-action-icon-list }}
+		{{> aem-chapter-break-end }}
+		{{> aem-chapter-break-start(addRule?:true)}}
+			<div class="small">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque leo nec nunc cursus congue nec at enim. Maecenas eu dignissim lectus. Maecenas non sapien eget nibh aliquet consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque id erat quam. Etiam a posuere turpis. Donec mollis massa sed vestibulum consectetur. In hac habitasse platea dictumst. Nulla felis ex, finibus blandit commodo eget, lacinia quis ligula. Integer maximus elit malesuada mollis porta. Sed lacinia diam mattis nibh vulputate consequat. Suspendisse scelerisque urna et magna vehicula facilisis. Phasellus condimentum nisi turpis, eu luctus tortor sollicitudin eu. Ut scelerisque quis leo non vestibulum.</p>
+				<p>Sed eget sapien ullamcorper, tincidunt ante sed, varius tellus. Aliquam nec varius urna. Donec tempor posuere nisl, nec euismod lacus ultrices et. Nunc eleifend fringilla leo at tempor. Vestibulum id tortor id erat tempus semper. Aliquam venenatis nisi velit, ac commodo arcu blandit at. Duis malesuada erat pellentesque lacus accumsan, vel laoreet mauris mattis. Pellentesque accumsan dolor vitae ligula dictum interdum. Pellentesque mauris quam, congue sit amet dui vel, accumsan pretium justo. Sed ac lorem turpis. Curabitur laoreet arcu eu nisi sagittis varius. Quisque in augue arcu. Integer quis egestas enim. Quisque a rhoncus nisi. Suspendisse potenti. Ut scelerisque facilisis vehicula.</p>
+				<p>Etiam porta urna elit, nec tempus ipsum tincidunt non. Quisque et justo dolor. Cras condimentum lorem quis volutpat aliquet. Maecenas vestibulum vehicula velit ac tempus. Etiam id magna vel eros pretium pulvinar id at nisl. Donec molestie lacus et auctor vestibulum. Sed convallis metus nec libero convallis, non porttitor ligula ullamcorper. Fusce quam massa, viverra et scelerisque ut, gravida luctus nibh. Morbi lacus nisl, gravida nec nisi vel, commodo posuere ipsum. Integer faucibus, orci sed ultricies lobortis, eros urna congue erat, et vulputate libero quam et massa. Vestibulum vestibulum lorem vel finibus condimentum. Sed congue felis a imperdiet gravida. Fusce justo dui, interdum sit amet metus pellentesque, eleifend porta sapien.</p>
+			</div>
+		{{> aem-chapter-break-end}}
+	{{> aem-chapter-end}}
+</main>
+{{> organisms-footer }}

@@ -1,0 +1,8 @@
+{{# size }}
+<svg class="ico ico-{{name}}" width="{{size}}" height="{{size}}" aria-label="{{ariaLabel}}">
+{{/ size}}
+{{^ size }}
+<svg class="ico ico-{{name}}" width="1em" height="1em" aria-label="{{ariaLabel}}">
+{{/ size}}
+	<use xlink:href="/images/core-ui/lifetime-icons.svg#{{name}}"/>
+</svg>

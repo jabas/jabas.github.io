@@ -1,0 +1,107 @@
+<div class="lt-header border-bottom">
+	<a class="visually-hidden-focusable" href="#main-content"><span class="d-inline-block">Skip to main content</span></a>
+	<div class="lt-header-mobile-bar d-lg-none bg-white row row-cols-3 g-0 justify-content-between align-items-center">
+		<div class="col text-start">
+			<button class="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		<div class="text-center">
+			<a role="button" class="d-inline-block text-decoration-none" aria-expanded="false">
+                {{> atoms-logo }}
+				<div class="dropdown-toggle">Locations</div>
+			</a>
+		</div>
+		<nav aria-label="Utility Navigation">
+			<ul class="nav nav-right flex-nowrap justify-content-end">
+				<li class="nav-item"><a href="#" class="nav-link fw-bold">Join</a></li>
+				<li class="nav-item dropdown dropdown-inverse">
+					<a href="#0" class="nav-link text-body" role="button" aria-expanded="false">
+						{{> atoms-lti-icon(name:'person-circle-outline',size:'1.25rem') }}
+						<span class="visually-hidden">Account</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div id="headerNav" class="lt-header-nav d-none d-lg-flex">
+		<div class="lt-header-primary navbar py-0 bg-white">
+			<div class="container-fluid">
+				<div class="navbar-brand line-height-1 me-1">
+					<a href="#0">
+						{{> atoms-logo }}
+					</a>
+				</div>
+				<nav aria-label="Primary" class="me-auto">
+					<ul id="primaryNav" class="nav nav-neutral">
+						<li class="nav-item dropdown">
+							<a href="#" id="navLocations" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations</a>
+							<div class="dropdown-menu" aria-labelledby="navLocations">
+								<a class="dropdown-item" href="#">All Locations</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" id="navMembership" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Membership</a>
+							<div class="dropdown-menu" aria-labelledby="navMembership">
+								<ul class="list-unstyled">
+									<li><a class="dropdown-item" href="#">Offers</a></li>
+									<li><a class="dropdown-item" href="#">Membership Options</a></li>
+									<li><a class="dropdown-item" href="#">Benefits</a></li>
+									<li><a class="dropdown-item" href="#">Build and Price</a></li>
+									<li><a class="dropdown-item" href="#">Free Pass</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" id="navMembership" class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore</a>
+							<div class="dropdown-menu" aria-labelledby="navMembership">
+								<ul class="list-unstyled lt-header-dropdown-col">
+									<li><a class="dropdown-item" href="/fitness-classes.html">Classes</a></li>
+									<li><a class="dropdown-item" href="/training-types.html">Training</a></li>
+									<li><a class="dropdown-item" href="/sports-programs.html">Sports</a></li>
+									<li><a class="dropdown-item" href="/kids-family-fun.html">Kids</a></li>
+									<li><a class="dropdown-item" href="/health-wellness.html">Health &amp; Wellness</a></li>
+									<li><a class="dropdown-item" href="/spa.html">Spa</a></li>
+									<li><a class="dropdown-item" href="/life-cafe.html">Cafe</a></li>
+									<li><a class="dropdown-item" href="/active-events.html">Events</a></li>
+									<li><a class="dropdown-item" href="/spaces/outdoor-pools.html">Outdoor Pools</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="lt-header-utility">
+			<nav class="lt-header-utility-minor" aria-label="Utility Navigation">
+				<ul class="nav nav-dark-neutral bg-gray-4">
+					<li class="nav-item">
+						<a class="nav-link link-inverse fw-bold" href="#">Join</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="lt-header-utility-major" aria-label="Utility Navigation">
+				<ul class="nav nav-dark-neutral bg-gray-4">
+					<li class="nav-item">
+						<a class="nav-link dropdown-toggle" href="#">
+							{{> atoms-lti-icon(name:'person-circle-outline',size:'1.25rem') }}
+							Account
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="lt-header-global">
+			<ul class="nav dropdown dropdown-inverse">
+				<li class="nav-item"><a class="nav-link active" href="/home.html">Join</a></li>
+				<li class="nav-item  "><a class="nav-link" href="https://my.lifetime.life">Members</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://experiencelife.lifetime.life/">Experience Life</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://work.lifetime.life/home.html">Work</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://living.lifetime.life/index.html">Living</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://shop.lifetime.life">Store</a></li>
+				<li class="nav-item"><a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" aria-label="More sites"><span class="d-lg-none">More sites</span></a></li>
+			</ul>
+		</div>	
+	</div>
+</div>
+
