@@ -1,0 +1,11 @@
+{
+  "name": "Hanko Brand Library",
+  "short_name": "Hanko",
+  "icons": [
+    { "src": "/assets/img/favicons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/assets/img/favicons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#253e5e",
+  "background_color": "#253e5e",
+  "display": "standalone"
+}

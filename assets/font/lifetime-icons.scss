@@ -1,0 +1,93 @@
+$lifetime-icons-font: "lifetime-icons" !default;
+$lifetime-icons-font-dir: "./fonts" !default;
+$lifetime-icons-font-file: "#{$lifetime-icons-font-dir}/#{$lifetime-icons-font}" !default;
+$lifetime-icons-font-hash: "24e3eb84d0bcaf83d77f904c78ac1f47" !default;
+$lifetime-icons-font-src: url("#{$lifetime-icons-font-file}.woff2?#{$lifetime-icons-font-hash}") format("woff2"),
+                           url("#{$lifetime-icons-font-file}.woff?#{$lifetime-icons-font-hash}") format("woff") !default;
+
+@font-face {
+  font-display: block;
+  font-family: $lifetime-icons-font;
+  src: $lifetime-icons-font-src;
+}
+
+.lti::before,
+[class^="lti-"]::before,
+[class*=" lti-"]::before {
+  display: inline-block;
+  font-family: $lifetime-icons-font !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$lifetime-icons-map: (
+  "location": "\f91f",
+  "lt-mark": "\f920",
+  "arrow-lowerleft": "\f921",
+  "arrow-lowerright": "\f922",
+  "arrow-upperleft": "\f923",
+  "arrow-upperright": "\f924",
+  "meatball": "\f925",
+  "check": "\f101",
+  "yin-yang": "\f102",
+  "sliders": "\f103",
+  "bookmark-fill": "\f104",
+  "bookmark": "\f105",
+  "court": "\f106",
+  "calendar-fill": "\f107",
+  "calendar": "\f108",
+  "card-fill": "\f109",
+  "card": "\f10a",
+  "home-fill": "\f10b",
+  "home": "\f10c",
+  "placeholder": "\f10d",
+  "laic": "\f10e",
+  "chart-fill": "\f10f",
+  "chart": "\f110",
+  "bar-chart-fill": "\f111",
+  "bar-chart": "\f112",
+  "laic-circle-fill": "\f113",
+  "laic-circle": "\f114",
+  "list": "\f115",
+  "arrow-down": "\f116",
+  "arrow-left": "\f117",
+  "arrow-right": "\f118",
+  "arrow-up": "\f119",
+  "chevron-down": "\f11a",
+  "chevron-left": "\f11b",
+  "chevron-right": "\f11c",
+  "chevron-up": "\f11d",
+  "search": "\f11e",
+  "clipboard-data": "\f11f",
+  "clipboard": "\f120",
+  "calendar-check": "\f121",
+  "calendar-check-fill": "\f122",
+  "calendar-x-fill": "\f123",
+  "calendar-x": "\f124",
+  "three-dots": "\f125",
+  "heart-fill": "\f126",
+  "heart": "\f127",
+  "download": "\f128",
+  "minus": "\f129",
+  "plus": "\f12a",
+  "x-lg": "\f12b",
+  "x": "\f12c",
+  "facebook": "\f12d",
+  "instagram": "\f12e",
+  "play-fill": "\f12f",
+  "play": "\f130",
+  "spotify": "\f131",
+  "tiktok": "\f132",
+  "twitter-x": "\f133",
+  "youtube": "\f134",
+);
+
+@each $icon, $codepoint in $lifetime-icons-map {
+  .lti-#{$icon}::before { content: $codepoint; }
+}

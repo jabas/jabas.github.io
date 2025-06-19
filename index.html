@@ -1,279 +1,788 @@
-<!DOCTYPE html>
-<html id="patternlab-html">
-  <head id="patternlab-head">
-    
-    <title id="title">Pattern Lab</title>
-    <meta charset="UTF-8">
-    
-    <!-- never cache patterns -->
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-    
-    <!-- handle the viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- load the pattern lab css -->
-    <link rel="stylesheet" href="styleguide/css/styleguide.min.css" media="all" />
-    <link rel="stylesheet" href="styleguide/css/prism-typeahead.min.css" media="all" />
-    
+<!doctype html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4000&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanko Brand Library · Digital Artwork For Life Time</title>
+<meta name="description" content="Digital Artwork For Life Time">
+<meta name="generator" content="Hugo 0.134.3">
+
+<link rel="canonical" href="http://localhost:4000/"><script src="/assets/js/color-modes.js"></script>
+
+<link rel="stylesheet" href="/assets/font/lifetime-icons.min.css"><link rel="stylesheet" href="/assets/css/docs.css">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
   </head>
-  <body id="patternlab-body">
-    
-    <!--Style Guide Header-->
-    <header class="sg-header" role="banner">
-      <a href="#sg-nav-container" class="sg-nav-toggle">Menu</a>
-      <div class="sg-nav-container" id="sg-nav-container">
-        <ol class="sg-nav" id="pl-pattern-nav-target"><!-- pattern lab nav will be inserted here --></ol>
-        <div class="sg-controls" id="sg-controls"><!-- ish Controls will be inserted here --></div>
+  <body id="icons-body">
+    <a class="skippy visually-hidden-focusable" href="#content">
+  <span class="skippy-text">Skip to main content</span>
+</a>
+
+    <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top">
+  <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation">
+    <div class="d-lg-none" style="width: 2.25rem;"></div>
+
+    <div class="navbar-brand p-0 me-0 me-lg-2">
+      Hanko Brand Library
+    </div>
+
+    <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="lti lti-meatball" aria-hidden="true"></i>
+    </button>
+
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+      <div class="offcanvas-header px-4 pb-0">
+        <h5 class="offcanvas-title text-white" id="bdNavbarOffcanvasLabel">Hanko</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
       </div>
-    </header>
-    <!--End Style Guide Header-->
-    
-    <!-- iFrame -->
-    <div id="sg-vp-wrap">
-      <div id="sg-cover"></div>
-      <div id="sg-gen-container">
-        <iframe id="sg-viewport" name="sg-viewport" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-        <div id="sg-rightpull-container">
-          <div id="sg-rightpull"></div>
-        </div>
+
+      <div class="offcanvas-body p-4 pt-0 p-lg-0">
+        <hr class="d-lg-none text-white-50">
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2 active" href="/">Icons</a>
+          </li>
+          <li class="nav-item col-6 col-lg-auto">
+            <a class="nav-link py-2 px-0 px-lg-2 active" href="/logos-overview">Logos</a>
+          </li>
+        </ul>
+
+        <hr class="d-lg-none text-white-50">
+
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+
+          <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+            <hr class="d-lg-none my-2 text-white-50">
+          </li>
+
+          <li class="nav-item dropdown">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="circle-half" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+              </symbol>
+              <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+              </symbol>
+              <symbol id="sun-fill" viewBox="0 0 16 16">
+                <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+              </symbol>
+              <symbol id="check" viewBox="0 0 16 16">
+                <path d="M14 4.74 6.46 12 2 7.7l.74-.74 3.72 3.59L13.26 4z"/>
+              </symbol>
+            </svg>
+
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                    id="bd-theme"
+                    type="button"
+                    aria-expanded="false"
+                    data-bs-toggle="dropdown"
+                    data-bs-display="static"
+                    aria-label="Toggle theme (auto)">
+              <svg class="lti my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                  <svg class="lti me-2 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
+                  Light
+                  <svg class="lti ms-auto d-none"><use href="#check"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                  <svg class="lti me-2 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
+                  Dark
+                  <svg class="lti ms-auto d-none"><use href="#check"></use></svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                  <svg class="lti me-2 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
+                  Auto
+                  <svg class="lti ms-auto d-none"><use href="#check"></use></svg>
+                </button>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
       </div>
     </div>
-    <!--end iFrame-->
+  </nav>
+</header>
+
+    <div class="hero py-5 text-center text-lg-start">
+  <div class="container-xxl bd-gutter">
+    <div class="row flex-lg-row-reverse">
+      <div class="col-6 mx-auto col-lg-5 mx-lg-0">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="260" height="174" viewBox="0 0 260 174">
+          <path d="M259,87c0-47.5-38.5-86-86-86-15.66,0-30.35,4.19-43,11.51v148.99c12.65,7.32,27.34,11.51,43,11.51,47.5,0,86-38.5,86-86Z" fill="none" stroke="var(--bs-body-color)" stroke-width="1.5"/>
+          <path d="M130,12.51c-12.65-7.32-27.34-11.51-43-11.51C39.5,1,1,39.5,1,87s38.5,86,86,86c15.66,0,30.35-4.19,43-11.51V12.51Z" fill="none" stroke="var(--bs-body-color)" stroke-width="1.5"/>
+          <path d="M129.5,13.38c25.71,14.87,43,42.66,43,74.49s-17.29,59.62-43,74.49c-25.71-14.87-43-42.66-43-74.49s17.29-59.62,43-74.49Z" fill="var(--bs-body-bg)"/>
+          <path d="M129.5,13.38l.38-.65-.38-.22-.38.22.38.65ZM129.5,162.37l-.38.65.38.22.38-.22-.38-.65ZM129.5,13.38l-.38-.65c-.82.47-1.63.96-2.43,1.46l.4.64.4.64c.79-.49,1.59-.97,2.39-1.44l-.38-.65ZM122.41,17.96l-.44-.61c-1.54,1.1-3.04,2.26-4.5,3.46l.48.58.48.58c1.44-1.18,2.91-2.31,4.43-3.4l-.44-.61ZM113.71,25.1l-.51-.55c-1.38,1.29-2.72,2.63-4.01,4.01l.55.51.55.51c1.27-1.36,2.59-2.67,3.95-3.95l-.51-.55ZM106.02,33.31l-.58-.48c-1.2,1.46-2.35,2.96-3.46,4.5l.61.44.61.44c1.09-1.51,2.22-2.99,3.4-4.42l-.58-.48ZM99.46,42.45l-.64-.4c-1,1.6-1.95,3.24-2.84,4.91l.66.35.66.35c.88-1.64,1.81-3.25,2.79-4.83l-.64-.4ZM94.15,52.37l-.68-.31c-.78,1.72-1.51,3.47-2.18,5.24l.7.26.7.26c.66-1.75,1.37-3.46,2.14-5.15l-.68-.31ZM90.18,62.9l-.72-.22c-.55,1.8-1.04,3.63-1.47,5.49l.73.17.73.17c.42-1.82.9-3.62,1.44-5.39l-.72-.22ZM87.64,73.86l-.74-.12c-.3,1.86-.55,3.74-.73,5.63l.75.07.75.07c.18-1.86.42-3.71.72-5.53l-.74-.12ZM86.54,85.06l-.75-.02c-.03.94-.05,1.89-.05,2.84h1.5c0-.93.01-1.86.04-2.79l-.75-.02ZM86.5,87.87h-.75c0,.95.01,1.9.05,2.84l.75-.02.75-.02c-.03-.93-.04-1.86-.04-2.79h-.75ZM86.91,96.31l-.75.07c.18,1.9.43,3.77.73,5.63l.74-.12.74-.12c-.3-1.83-.54-3.67-.72-5.53l-.75.07ZM88.73,107.41l-.73.17c.43,1.85.92,3.68,1.47,5.49l.72-.22.72-.22c-.54-1.77-1.02-3.57-1.44-5.39l-.73.17ZM91.99,118.18l-.7.26c.67,1.78,1.4,3.53,2.18,5.25l.68-.31.68-.31c-.77-1.69-1.48-3.41-2.14-5.15l-.7.26ZM96.64,128.42l-.66.35c.9,1.67,1.84,3.31,2.84,4.91l.64-.4.64-.4c-.98-1.58-1.91-3.19-2.79-4.83l-.66.35ZM102.59,137.97l-.61.44c1.11,1.54,2.26,3.04,3.46,4.5l.58-.48.58-.48c-1.18-1.44-2.31-2.91-3.4-4.42l-.61.44ZM109.74,146.66l-.55.51c1.29,1.38,2.63,2.72,4.01,4.01l.51-.55.51-.55c-1.36-1.27-2.67-2.59-3.95-3.95l-.55.51ZM117.95,154.36l-.48.58c1.46,1.2,2.96,2.35,4.5,3.46l.44-.61.44-.61c-1.51-1.09-2.99-2.22-4.43-3.4l-.48.58ZM127.09,160.92l-.4.64c.8.5,1.61.99,2.43,1.46l.38-.65.38-.65c-.81-.47-1.6-.94-2.39-1.44l-.4.64ZM129.5,162.37l.38.65c.82-.47,1.63-.96,2.43-1.46l-.4-.64-.4-.64c-.79.49-1.59.97-2.39,1.44l.38.65ZM136.59,157.79l.44.61c1.54-1.1,3.04-2.26,4.5-3.46l-.48-.58-.48-.58c-1.44,1.18-2.91,2.31-4.43,3.4l.44.61ZM145.29,150.64l.51.55c1.38-1.29,2.72-2.63,4.01-4.01l-.55-.51-.55-.51c-1.27,1.36-2.59,2.67-3.95,3.95l.51.55ZM152.98,142.43l.58.48c1.2-1.46,2.35-2.96,3.46-4.5l-.61-.44-.61-.44c-1.09,1.51-2.22,2.99-3.4,4.42l.58.48ZM159.54,133.29l.64.4c1-1.6,1.95-3.24,2.84-4.91l-.66-.35-.66-.35c-.88,1.64-1.81,3.25-2.79,4.83l.64.4ZM164.85,123.38l.68.31c.78-1.72,1.51-3.47,2.18-5.25l-.7-.26-.7-.26c-.66,1.75-1.37,3.46-2.14,5.15l.68.31ZM168.82,112.85l.72.22c.55-1.8,1.04-3.63,1.47-5.49l-.73-.17-.73-.17c-.42,1.82-.9,3.62-1.44,5.39l.72.22ZM171.36,101.89l.74.12c.3-1.86.55-3.74.73-5.63l-.75-.07-.75-.07c-.18,1.86-.42,3.71-.72,5.53l.74.12ZM172.46,90.69l.75.02c.03-.94.05-1.89.05-2.84h-1.5c0,.93-.01,1.86-.04,2.79l.75.02ZM172.5,87.87h.75c0-.95-.01-1.9-.05-2.84l-.75.02-.75.02c.03.93.04,1.86.04,2.79h.75ZM172.09,79.44l.75-.07c-.18-1.9-.43-3.77-.73-5.63l-.74.12-.74.12c.3,1.83.54,3.67.72,5.53l.75-.07ZM170.27,68.34l.73-.17c-.43-1.85-.92-3.68-1.47-5.49l-.72.22-.72.22c.54,1.77,1.02,3.57,1.44,5.39l.73-.17ZM167.01,57.57l.7-.26c-.67-1.78-1.4-3.53-2.18-5.24l-.68.31-.68.31c.77,1.69,1.48,3.41,2.14,5.15l.7-.26ZM162.36,47.32l.66-.35c-.9-1.67-1.84-3.31-2.84-4.91l-.64.4-.64.4c.98,1.58,1.91,3.19,2.79,4.83l.66-.35ZM156.41,37.77l.61-.44c-1.11-1.54-2.26-3.04-3.46-4.5l-.58.48-.58.48c1.18,1.44,2.31,2.91,3.4,4.42l.61-.44ZM149.26,29.08l.55-.51c-1.29-1.38-2.63-2.72-4.01-4.01l-.51.55-.51.55c1.36,1.27,2.67,2.59,3.95,3.95l.55-.51ZM141.05,21.39l.48-.58c-1.46-1.2-2.96-2.35-4.5-3.46l-.44.61-.44.61c1.51,1.09,2.99,2.22,4.43,3.4l.48-.58ZM131.91,14.83l.4-.64c-.8-.5-1.61-.99-2.43-1.46l-.38.65-.38.65c.81.47,1.6.95,2.39,1.44l.4-.64Z" fill="var(--bs-body-color)"/>
+        </svg>
+      </div>
+      <div class="col-lg-7">
+        <h1 class="f0">Icon Library</h1>
+        <p class="mb-4 f3 font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id assumenda quaerat mollitia repudiandae eaque! Porro ipsa consequatur beatae eveniet sequi quis maxime aliquid, exercitationem non ab, deserunt? Dolore, vero!</p>
+
+        <p class="text-muted">
+          Currently <strong>v.Alpha.1</strong>
+          <span class="px-1">&#8226;</span>
+          <a href="#icons">Icons</a>
+          <span class="px-1">&#8226;</span>
+          <a href="/sprite/">Icon Sprite</a>
+          <span class="px-1">&#8226;</span>
+          <a href="#install">Install</a>
+          <span class="px-1">&#8226;</span>
+          <a href="#usage">Usage</a>
+          <span class="px-1">&#8226;</span>
+          <a href="#styling">Styling</a>
+          <span class="px-1">&#8226;</span>
+          <a href="#accessibility">Accessibility</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <main class="container-xxl bd-gutter" id="content">
+      <div class="my-5">
+  <div class="d-flex mb-4">
+    <h2 id="icons" class="mb-0">Icons</h2>
+    <form class="subnav-search d-flex flex-nowrap ms-auto">
+      <label for="search" class="visually-hidden">Search for icons</label>
+      <input class="form-control search mb-0" id="search" type="search" placeholder="Start typing to filter..." autocomplete="off">
+    </form>
+  </div>
+  <ul id="icons-list" class="row row-cols-3 row-cols-sm-4 row-cols-lg-6 row-cols-xl-8 list-unstyled list">
     
-    <!-- modal window -->
-    <div id="sg-modal-container" class="sg-modal anim-ready" style="bottom: -2000px">
-      
-      <!-- modal close btn -->
-      <button id="sg-modal-close-btn" class="sg-modal-close-btn" title="Hide pattern info">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
-            <title>Close</title>
-            <path fill="#808080" d="M11.8905,9.6405 L11.8905,9.6405 L8.25,6 L11.8905,2.3595 L11.8905,2.3595 C11.9295,2.3205 11.958,2.27475 11.976,2.226 C12.0255,2.0925 11.997,1.9365 11.8905,1.82925 L10.17075,0.1095 C10.0635,0.00225 9.9075,-0.02625 9.774,0.024 C9.72525,0.042 9.6795,0.0705 9.6405,0.1095 L9.6405,0.1095 L6,3.75 L2.3595,0.1095 L2.3595,0.1095 C2.3205,0.0705 2.27475,0.042 2.226,0.024 C2.0925,-0.0255 1.9365,0.00225 1.82925,0.1095 L0.1095,1.82925 C0.00225,1.9365 -0.02625,2.0925 0.024,2.226 C0.042,2.27475 0.0705,2.3205 0.1095,2.3595 L0.1095,2.3595 L3.75,6 L0.1095,9.6405 L0.1095,9.6405 C0.0705,9.6795 0.042,9.72525 0.024,9.774 C-0.0255,9.9075 0.00225,10.0635 0.1095,10.17075 L1.82925,11.8905 C1.9365,11.99775 2.0925,12.02625 2.226,11.976 C2.27475,11.958 2.3205,11.9295 2.3595,11.8905 L2.3595,11.8905 L6,8.25 L9.6405,11.8905 L9.6405,11.8905 C9.6795,11.9295 9.72525,11.958 9.774,11.976 C9.9075,12.0255 10.0635,11.99775 10.17075,11.8905 L11.8905,10.17075 C11.99775,10.0635 12.02625,9.9075 11.976,9.774 C11.958,9.72525 11.9295,9.6795 11.8905,9.6405 L11.8905,9.6405 Z"></path>
-          </svg>
-      </button><!--end .sg-modal-close-btn-->
-      
-      <div id="sg-modal-content" class="sg-modal-content"></div><!--end .sg-modal-content-->
-      
-    </div><!--end .sg-modal-->
-    <!-- end modal window -->
-    
-    <!-- mustache templates -->
-    <script type="text/mustache" id="pl-pattern-nav-template">
-      {{# patternTypes }}
-  <li><a class="sg-acc-handle">{{ patternTypeUC }}</a><ol class="sg-acc-panel">
-  {{# patternTypeItems }}
-    <li><a class="sg-acc-handle">{{ patternSubtypeUC }}</a><ol class="sg-acc-panel sg-sub-nav">
-    {{# patternSubtypeItems }}
-      <li><a href="patterns/{{ patternPath }}" class="sg-pop  {{# patternState }}sg-pattern-state {{ patternState }}{{/ patternState }}" data-patternpartial="{{ patternPartial }}">{{ patternName }}</a></li>
-    {{/ patternSubtypeItems }}
-    </ol></li>
-  {{/ patternTypeItems }}
-  {{# patternItems }}
-    <li><a href="patterns/{{ patternPath }}" class="sg-pop {{# patternState }}sg-pattern-state {{ patternState }}{{/ patternState }}" data-patternpartial="{{ patternPartial }}">{{ patternName }}</a></li>
-  {{/ patternItems }}
-  </ol></li>
-{{/ patternTypes }}
-{{^ ishControlsHide.views-all }}
-  <li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">All</a></li>
-{{/ ishControlsHide.views-all }}
-    </script>
-    
-    <script type="text/mustache" id="pl-ish-controls-template">
-      <div class="sg-control-content">
-  <ul class="sg-control">
-    <li class="sg-size">
-      <div class="sg-current-size">
-        <form id="sg-form">
-          <label for="sg-size-px">Size</label>
-          <input type="text" class="sg-input sg-size-px" id="sg-size-px" value="---">px /
-          <input type="text" class="sg-input sg-size-em" value="---">em
-        </form><!--end #sg-form-->
-      </div><!--end #sg-current-size-->
-      <ul class="sg-size-options">
-        {{^ ishControlsHide.s }}
-          <li><a href="#" id="sg-size-s">S</a></li>
-        {{/ ishControlsHide.s }}
-        {{^ ishControlsHide.m }}
-          <li><a href="#" id="sg-size-m">M</a></li>
-        {{/ ishControlsHide.m }}
-        {{^ ishControlsHide.l }}
-          <li><a href="#" id="sg-size-l">L</a></li>
-        {{/ ishControlsHide.l }}
-        {{^ ishControlsHide.full }}
-          <li><a href="#" id="sg-size-full">Full</a></li>
-        {{/ ishControlsHide.full }}
-        {{^ ishControlsHide.random }}
-          <li><a href="#" id="sg-size-random">Rand</a></li>
-        {{/ ishControlsHide.random }}
-        {{^ ishControlsHide.disco }}
-          <li><a href="#" class="mode-link" id="sg-size-disco">Disco</a></li>
-        {{/ ishControlsHide.disco }}
-        {{^ ishControlsHide.hay }}
-          <li><a href="#" class="mode-link" id="sg-size-hay">Hay!</a></li>
-        {{/ ishControlsHide.hay }}
-      </ul>
-    </li>
-    {{^ ishControlsHide.tools-all }}
-      <li class="sg-tools">
-        <button class="sg-acc-handle sg-tools-toggle" id="sg-tools-toggle" title="Tools">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
-            <title>Pattern Lab Tools</title>
-            <path fill="#808080" d="M12.767 8.343c-0.735-1.272-0.293-2.903 0.986-3.643l-1.376-2.383c-0.393 0.23-0.85 0.363-1.338 0.363-1.47 0-2.662-1.2-2.662-2.68h-2.752c0.004 0.457-0.11 0.92-0.355 1.343-0.735 1.272-2.367 1.705-3.649 0.967l-1.376 2.383c0.396 0.225 0.739 0.555 0.983 0.977 0.733 1.27 0.294 2.897-0.98 3.64l1.376 2.383c0.392-0.228 0.847-0.359 1.332-0.359 1.466 0 2.654 1.192 2.662 2.665h2.752c-0.001-0.452 0.113-0.91 0.355-1.329 0.733-1.27 2.362-1.703 3.642-0.971l1.376-2.383c-0.393-0.225-0.734-0.554-0.977-0.974zM7 9.835c-1.566 0-2.835-1.269-2.835-2.835s1.269-2.835 2.835-2.835c1.566 0 2.835 1.269 2.835 2.835s-1.269 2.835-2.835 2.835z"></path>
-          </svg>
-        </button>
-        <ul class="sg-acc-panel sg-right sg-checklist">
-          <li><a href="#" id="sg-t-patterninfo">Show Pattern Info</a></li>
-          {{^ ishControlsHide.views-new }}
-            <li><a href="#" target="_blank" id="sg-raw">Open in new window</a></li>
-          {{/ ishControlsHide.views-new }}
-          {{^ ishControlsHide.tools-docs }}
-            <li><a href="http://patternlab.io/docs/" target="_blank">Pattern Lab Docs</a></li>
-          {{/ ishControlsHide.tools-docs }}
-          {{^ ishControlsHide.find }}
-            <li id="sg-find"><input class="typeahead" id="typeahead" type="text" placeholder="Find pattern" /></li>
-          {{/ ishControlsHide.find }}
-        </ul>
+      <li class="col mb-4" data-name="arrow-down" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-down/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-down"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-down</div>
+        </a>
       </li>
-    {{/ ishControlsHide.tools-all }}
+      <li class="col mb-4" data-name="arrow-left" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-left/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-left"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-left</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="arrow-lowerleft" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-lowerleft/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-lowerleft"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-lowerleft</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="arrow-lowerright" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-lowerright/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-lowerright"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-lowerright</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="arrow-right" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-right/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-right"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-right</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="arrow-up" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-up/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-up"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-up</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="arrow-upperleft" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-upperleft/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-upperleft"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-upperleft</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="arrow-upperright" data-tags="arrow" data-categories="arrows">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/arrow-upperright/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-arrow-upperright"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">arrow-upperright</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="bar-chart" data-tags="chart graph analytics activity" data-categories="data">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/bar-chart/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-bar-chart"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">bar-chart</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="bar-chart-fill" data-tags="chart graph analytics activity" data-categories="data">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/bar-chart-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-bar-chart-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">bar-chart-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="bookmark" data-tags="reading book label tag category save" data-categories="miscellaneous">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/bookmark/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-bookmark"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">bookmark</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="bookmark-fill" data-tags="reading book label tag category save" data-categories="miscellaneous">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/bookmark-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-bookmark-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">bookmark-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="calendar">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/calendar/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-calendar"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">calendar</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="calendar-check">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/calendar-check/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-calendar-check"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">calendar-check</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="calendar-check-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/calendar-check-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-calendar-check-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">calendar-check-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="calendar-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/calendar-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-calendar-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">calendar-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="calendar-x">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/calendar-x/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-calendar-x"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">calendar-x</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="calendar-x-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/calendar-x-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-calendar-x-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">calendar-x-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="card">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/card/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-card"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">card</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="card-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/card-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-card-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">card-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="check" data-tags="checkmark todo select done checkbox" data-categories="ui keyboard">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/check/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-check"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">check</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="chevron-down" data-tags="chevron" data-categories="chevrons">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/chevron-down/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-chevron-down"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">chevron-down</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="chevron-left" data-tags="chevron" data-categories="chevrons">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/chevron-left/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-chevron-left"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">chevron-left</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="chevron-right" data-tags="chevron" data-categories="chevrons">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/chevron-right/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-chevron-right"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">chevron-right</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="chevron-up" data-tags="chevron" data-categories="chevrons">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/chevron-up/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-chevron-up"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">chevron-up</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="clipboard" data-tags="copy paste" data-categories="real world">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/clipboard/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-clipboard"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">clipboard</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="clipboard-data" data-tags="copy paste data analytics graph chart" data-categories="real world">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/clipboard-data/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-clipboard-data"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">clipboard-data</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="court">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/court/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-court"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">court</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="download">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/download/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-download"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">download</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="facebook" data-tags="social chat" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/facebook/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-facebook"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">facebook</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="heart">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/heart/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-heart"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">heart</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="heart-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/heart-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-heart-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">heart-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="home">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/home/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-home"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">home</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="home-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/home-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-home-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">home-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="instagram">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/instagram/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-instagram"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">instagram</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="laic" data-tags="ai" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/laic/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-laic"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">laic</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="laic-circle" data-tags="ai" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/laic-circle/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-laic-circle"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">laic-circle</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="laic-circle-fill" data-tags="ai" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/laic-circle-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-laic-circle-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">laic-circle-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="list" data-tags="text type justify alignment menu hamburger" data-categories="typography">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/list/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-list"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">list</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="location" data-tags="geography map pin location" data-categories="geo">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/location/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-location"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">location</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="lt-mark" data-tags="brand lifetime" data-categories="brand">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/lt-mark/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-lt-mark"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">lt-mark</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="minus">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/minus/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-minus"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">minus</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="placeholder">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/placeholder/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-placeholder"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">placeholder</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="play">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/play/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-play"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">play</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="play-fill">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/play-fill/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-play-fill"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">play-fill</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="plus">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/plus/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-plus"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">plus</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="search" data-tags="magnifying-glass look lens" data-categories="communications">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/search/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-search"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">search</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="sliders" data-tags="equalizer settings preferences dials" data-categories="graphics">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/sliders/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-sliders"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">sliders</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="spotify">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/spotify/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-spotify"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">spotify</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="three-dots" data-tags="meatballs more ellipsis overflow menu" data-categories="controls">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/three-dots/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-three-dots"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">three-dots</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="tiktok">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/tiktok/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-tiktok"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">tiktok</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="twitter-x">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/twitter-x/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-twitter-x"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">twitter-x</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="x">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/x/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-x"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">x</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="x-lg">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/x-lg/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-x-lg"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">x-lg</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="yin-yang" data-tags="peace" data-categories="real world">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/yin-yang/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-yin-yang"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">yin-yang</div>
+        </a>
+      </li>
+      <li class="col mb-4" data-name="youtube">
+        <a class="d-block text-body-emphasis text-decoration-none" href="/icons/youtube/">
+          <div class="px-3 py-4 mb-2 bg-body-secondary text-center rounded">
+            <i class="lti lti-youtube"></i>
+          </div>
+          <div class="name text-muted text-decoration-none text-center pt-1">youtube</div>
+        </a>
+      </li>
   </ul>
 </div>
 
-    </script>
-    
-    <!-- the template for the modal slider -->
-    <script type="text/mustache" id="pl-panel-template-base">
-      <div class="sg-pattern-extra-inner">
+      <h2 id="usage">Usage</h2>
+<p>Hanko Icons are SVGs, so you can include them into your HTML in a few ways depending on how your project is setup. We recommend using a <code>width: 1em</code> (and optionally <code>height: 1em</code>) for easy resizing via <code>font-size</code>.</p>
+<div class="row my-4">
+  <div class="col-md-4">
+<h3 id="embedded">Embedded</h3>
+<p>Embed your icons within the HTML of your page (as opposed to an external image file). Here we&rsquo;ve used a custom <code>width</code> and <code>height</code>.</p>
+  </div>
+  <div class="col-md-8">
+    <div class="bd-example"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="lti lti-lt-mark" viewBox="0 0 16 16">
+  <path d="M11.27 8.26c-.75 0-1.39.6-1.39 1.35S10.52 11 11.27 11s1.39-.6 1.39-1.39-.6-1.35-1.39-1.35m0-3.26c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39 1.39-.64 1.39-1.39S12.06 5 11.27 5m3.34 0c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39S16 7.1 16 6.35 15.4 5 14.61 5M7.92 5c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39 1.39-.64 1.39-1.39S8.67 5 7.92 5m-5.22.11H0v5.78h9.13V8.41H2.7V5.1Z"/>
+</svg></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;16&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti lti-lt-mark&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&#34;M11.27 8.26c-.75 0-1.39.6-1.39 1.35S10.52 11 11.27 11s1.39-.6 1.39-1.39-.6-1.35-1.39-1.35m0-3.26c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39 1.39-.64 1.39-1.39S12.06 5 11.27 5m3.34 0c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39S16 7.1 16 6.35 15.4 5 14.61 5M7.92 5c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39 1.39-.64 1.39-1.39S8.67 5 7.92 5m-5.22.11H0v5.78h9.13V8.41H2.7V5.1Z&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h3 id="sprite">Sprite</h3>
+<p>Use the SVG sprite to insert any icon through the <code>&lt;use&gt;</code> element. Use the icon&rsquo;s filename as the fragment identifier (e.g., <code>toggles</code> is <code>#toggles</code>). SVG sprites allow you to reference an external file similar to an <code>&lt;img&gt;</code> element, but with the power of <code>currentColor</code> for easy theming.</p>
+<p><strong>Heads up!</strong> There&rsquo;s an issue with Chrome where <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=470601"><code>&lt;use&gt;</code> doesn&rsquo;t work across domains</a>.</p>
 
-  <!-- description, etc. -->
-  {{# descBlockExists }}
+  </div>
+  <div class="col-md-8">
+<div class="bd-example" style="font-size: 32px;">
+  <i class="lti lti-lt-mark"></i>
+  <i class="lti lti-location"></i>
+  <i class="lti lti-yin-yang"></i>
+</div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;lifetime-icons.svg#lt-mark&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;lifetime-icons.svg#location&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;lifetime-icons.svg#yin-yang&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h3 id="external-image">External image</h3>
+<p>Copy the Bootstrap Icons SVGs to your directory of choice and reference them like normal images with the <code>&lt;img&gt;</code> element.</p>
+  </div>
+  <div class="col-md-8">
+    <div class="bd-example"><img src="/assets/icons/lt-mark.svg" alt="Life Time" width="32" height="32"></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/assets/icons/lt-mark.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Life Time&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span><span class="p">&gt;</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h3 id="icon-font">Icon font</h3>
+<p>Icon fonts with classes for every icon are also included for Bootstrap Icons. Include the icon web fonts in your page via CSS, then reference the class names as needed in your HTML (e.g., <code>&lt;i class=&quot;lti lti-lt-mark&quot;&gt;&lt;/i&gt;</code>).</p>
+<p>Use <code>font-size</code> and <code>color</code> to change the icon appearance.</p>
 
-    <div class="sg-pattern-extra-info">
+  </div>
+  <div class="col-md-8">
+    <div class="bd-example"><i class="lti lti-lt-mark"></i></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti lti-lt-mark&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span></span></span></code></pre></div>
+    <div class="bd-example"><i class="lti lti-lt-mark" style="font-size: 2rem; color: cornflowerblue;"></i></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti lti-lt-mark&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;font-size: 2rem; color: cornflowerblue;&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h3 id="css">CSS</h3>
+<p>You can also use the SVG within your CSS (<strong>be sure to escape any characters</strong>, such as <code>#</code> to <code>%23</code> when specifying hex color values). When no dimensions are specified via <code>width</code> and <code>height</code> on the <code>&lt;svg&gt;</code>, the icon will fill the available space.</p>
+<p>The <code>viewBox</code> attribute is required if you wish to resize icons with <code>background-size</code>. Note that the <code>xmlns</code> attribute is required.</p>
 
-      {{# isPatternView }}
-        <!-- if this is for a single pattern provide some extra info -->
-        <div class="sg-pattern-head">
+  </div>
+  <div class="col-md-8">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">lti</span><span class="p">::</span><span class="nd">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">vertical-align</span><span class="p">:</span> <span class="mf">-.125</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&#34;data:image/svg+xml,&lt;svg viewBox=&#39;0 0 16 16&#39; fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;&gt;&lt;path fill-rule=&#39;evenodd&#39; d=&#39;M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z&#39; clip-rule=&#39;evenodd&#39;/&gt;&lt;/svg&gt;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-size</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h2 id="styling">Styling</h2>
+<p>Color can be changed by setting a <code>.text-*</code> class or custom CSS:</p>
+  </div>
+  <div class="col-md-8">
+    <div class="bd-example">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="lti lti-lt-mark text-success" viewBox="0 0 16 16">
+  <path d="M11.27 8.26c-.75 0-1.39.6-1.39 1.35S10.52 11 11.27 11s1.39-.6 1.39-1.39-.6-1.35-1.39-1.35m0-3.26c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39 1.39-.64 1.39-1.39S12.06 5 11.27 5m3.34 0c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39S16 7.1 16 6.35 15.4 5 14.61 5M7.92 5c-.75 0-1.39.6-1.39 1.35s.64 1.39 1.39 1.39 1.39-.64 1.39-1.39S8.67 5 7.92 5m-5.22.11H0v5.78h9.13V8.41H2.7V5.1Z"/>
+</svg>
+    </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti lti-lt-mark text-success&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;32&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 0 16 16&#34;</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h2 id="accessibility">Accessibility</h2>
+<p>For purely decorative icons, add <code>aria-hidden=&quot;true&quot;</code>. Otherwise, provide an appropriate text alternative. Depending on which method you&rsquo;re using to add the icons, and where you&rsquo;re using them (e.g. as standalone images, or as the only content of a button or similar control), there are various possible approaches. Here are a few examples:</p>
+  </div>
+  <div class="col-md-8">
+    <div class="bd-example">
+      <img src="/assets/icons/lt-mark.svg" alt="Life Time" width="32" height="32">
+    </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- alt=&#34;...&#34; on &lt;img&gt; element --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/assets/icons/lt-mark.svg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;Life Time&#34;</span> <span class="err">...</span><span class="p">&gt;</span></span></span></code></pre></div>
+    <div class="bd-example">
+      <i class="lti-github" role="img" style="font-size: 2em" aria-label="GitHub"></i>
+      <i class="lti-tools" role="img" style="font-size: 2em" aria-label="Tools"></i>
+    </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti&#34;</span> <span class="err">...</span> <span class="na">role</span><span class="o">=</span><span class="s">&#34;img&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Tools&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">use</span> <span class="na">xlink:href</span><span class="o">=</span><span class="s">&#34;lifetime-icons.svg#tools&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span></span></span></code></pre></div>
+    <div class="bd-example">
+      <button type="button" class="btn btn-primary" aria-label="Mute">
+        <svg class="lti lti-volume-mute-fill" width="32" height="32" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6.717 3.55A.5.5 0 017 4v8a.5.5 0 01-.812.39L3.825 10.5H1.5A.5.5 0 011 10V6a.5.5 0 01.5-.5h2.325l2.363-1.89a.5.5 0 01.529-.06zm7.137 2.096a.5.5 0 010 .708L12.207 8l1.647 1.646a.5.5 0 01-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 01-.708-.708L10.793 8 9.146 6.354a.5.5 0 11.708-.708L11.5 7.293l1.646-1.647a.5.5 0 01.708 0z"></path></svg>
+      </button>
+    </div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- aria-label=&#34;...&#34; on the control --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">button</span> <span class="err">...</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;Mute&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;lti lti-volume-mute-fill&#34;</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&#34;true&#34;</span> <span class="err">...</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="row my-4">
+  <div class="col-md-4">
+<h2 id="working-with-svgs">Working with SVGs</h2>
+<p>SVGs are awesome to work with, but they do have some known quirks to work around. Given the numerous ways in which SVGs can be used, we haven&rsquo;t included these attributes and workarounds in our code.</p>
+  </div>
+  <div class="col-md-8">
+<p>Known issues include:</p>
+<ul>
+<li>
+<p><strong>SVGs receive focus by default in Internet Explorer and Edge Legacy.</strong> When embedding your SVGs, add <code>focusable=&quot;false&quot;</code> to the <code>&lt;svg&gt;</code> element. <a href="https://stackoverflow.com/questions/18646111/disable-onfocus-event-for-svg-element">Learn more on Stack Overflow.</a></p>
+</li>
+<li>
+<p><strong>When using SVGs with <code>&lt;img&gt;</code> elements, screen readers may not announce them as images, or skip the image completely.</strong> Include an additional <code>role=&quot;img&quot;</code> on the <code>&lt;img&gt;</code> element to avoid any issues. <a href="https://web.archive.org/web/20201112013541/https://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-2">See this article for details.</a></p>
+</li>
+<li>
+<p><strong>External SVG sprites may not function correctly in Internet Explorer.</strong> Use the <a href="https://github.com/jonathantneal/svg4everybody">svg4everybody</a> polyfill as needed.</p>
+</li>
+</ul>
 
-          <div class="sg-pattern-breadcrumb">
-            {{# patternBreadcrumb }}
-              {{ patternType }}
-              {{# patternSubtype }}
-                / {{ patternSubtype }}
-              {{/ patternSubtype }}
-            {{/ patternBreadcrumb }}
-          </div>
+  </div>
+</div>
 
-          <h2 class="sg-pattern-title">
-            {{ patternNameCaps }}
-            {{# patternState }}
-              <span class="sg-pattern-state {{ patternState }}">{{ patternState }}</span>
-            {{/ patternState }}
-          </h2>
+    </main><footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 text-body-secondary text-decoration-none" href="/" aria-label="Hanko">
+          <span class="fs-5">Hanko Home</span>
+        </a>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links and Stuff to Come</h5>
+      </div>
+    </div>
+  </div>
+</footer>
+<script async src="/assets/js/vendor/bootstrap.bundle.min.js"></script><script async src="/assets/js/search.js"></script><script async src="/assets/js/application.js"></script>
 
-        </div><!--end .sg-pattern-head-->
-      {{/ isPatternView }}
-
-      {{# patternDescExists }}
-        <div class="sg-pattern-desc">
-          {{{ patternDesc }}}
-          {{# patternDescAdditions }}
-            {{{ patternDescAdditions }}}
-          {{/ patternDescAdditions }}
-        </div><!--end .sg-pattern-desc-->
-      {{/ patternDescExists }}
-
-      {{# lineageExists }}
-        <p class="sg-pattern-lineage">
-          The <strong>{{ patternName }}</strong> pattern contains the following patterns:
-          <span id="sg-code-lineage-fill">
-          {{# lineage }}
-            <a href='{{ lineagePath }}' class='{{# lineageState }}sg-pattern-state {{ lineageState }}{{/ lineageState }}' data-patternPartial='{{ lineagePattern }}'>{{ lineagePattern }}</a>{{# hasComma }}, {{/ hasComma }}
-          {{/ lineage }}
-          </span>
-        </p><!--end .sg-pattern-lineage-->
-      {{/ lineageExists }}
-
-      {{# lineageRExists }}
-        <p class="sg-pattern-lineage">
-          The <strong>{{ patternName }}</strong> pattern is included in the following patterns:
-          <span id="sg-code-lineager-fill">
-          {{# lineageR }}
-            <a href='{{ lineagePath }}' class='{{# lineageState }}sg-pattern-state {{ lineageState }}{{/ lineageState }}' data-patternPartial='{{ lineagePattern }}'>{{ lineagePattern }}</a>{{# hasComma }}, {{/ hasComma }}
-          {{/ lineageR }}
-          </span>
-        </p><!--end .sg-pattern-lineage-->
-      {{/ lineageRExists }}
-
-      {{# annotationExists }}
-        <div class="sg-annotations" id="sg-annotations">
-          <h2 class="sg-annotations-title">Annotations</h2>
-          <ol class="sg-annotations-list">
-            {{# annotations }}
-              <li><h4 class="sg-annotations-list-title">{{ title }}</h4> {{{ comment }}}</li>
-            {{/ annotations }}
-          </ol>
-        </div>
-      {{/ annotationExists }}
-
-    </div><!--end .sg-pattern-extra-info-->
-  {{/ descBlockExists }}
-
-  <div class="sg-pattern-extra-code">
-
-    <div id="sg-{{ patternPartial }}-tabs" class="sg-tabs">
-      <ul class="sg-tabs-list">
-        {{# panels }}
-          <li id="sg-{{ patternPartial }}-{{ id }}-tab" data-patternpartial="{{ patternPartial }}" data-panelid="{{ id }}"><a href="#sg-{{ patternPartial }}-{{ id }}-panel" class="active">{{ name }}</a></li>
-        {{/ panels }}
-      </ul><!--end .sg-tabs-list-->
-
-      <div id="sg-{{ patternPartial }}-panels" class="sg-tabs-content">
-        {{# panels }}
-          <div id="sg-{{ patternPartial }}-{{ id }}-panel"  class="sg-tabs-panel" style="display: none">
-            {{{ content }}}
-          </div>
-        {{/ panels }}
-      </div><!--end .sg-tabs-content-->
-
-    </div><!--end .sg-tabs-->
-
-  </div><!--end .sg-pattern-extra-code-->
-
-</div><!--end .sg-pattern-extra-inner-->
-
-    </script>
-    
-    <!-- the tempalte for code-related tabs in the code view slider -->
-    <script type="text/mustache" id="pl-panel-template-code">
-      <pre class="language-markup">
-  <code id="sg-code-fill-{{ language }}" class="language-{{ language }}">{{{ code }}}</code>
-</pre>
-
-    </script>
-    
-    <!-- load the data generated by pattern lab -->
-    <script src="styleguide/data/patternlab-data.js"></script>
-    <script src="annotations/annotations.js"></script>
-    
-    <!-- load the external library js -->
-    <script src="styleguide/bower_components/jquery.min.js"></script>
-    <script src="styleguide/bower_components/hogan-3.0.2.min.js"></script>
-    <script src="styleguide/bower_components/prism.min.js"></script>
-    <script src="styleguide/bower_components/jwerty.min.js"></script>
-    <script src="styleguide/bower_components/classList.min.js"></script>
-    <script src="styleguide/bower_components/typeahead.bundle.min.js"></script>
-    <script src="styleguide/bower_components/EventEmitter.min.js"></script>
-    <script src="styleguide/bower_components/script.min.js"></script>
-    
-    <!-- set-up the dispatcher -->
-    <script>
-      var Dispatcher = new EventEmitter();
-    </script>
-    
-    <!-- load the pattern lab viewer js -->
-    <script src="styleguide/js/patternlab-viewer.min.js"></script>
-    
   </body>
 </html>

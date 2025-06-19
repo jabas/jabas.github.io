@@ -1,0 +1,17 @@
+.ltl {
+  display: inline-block;
+  vertical-align: top;
+  width: var(--hk-logo-width, auto);
+  height: var(--hk-logo-height, 2rem);
+  max-width: 100%;
+  max-height: 100%; }
+
+.ltl-be-meditation {
+  -webkit-mask: url(../assets/logos/be-meditation.svg) left top/contain no-repeat !important;
+          mask: url(../assets/logos/be-meditation.svg) left top/contain no-repeat !important;
+  aspect-ratio: 94 / 36 !important; }
+
+.ltl-fire-hiit {
+  -webkit-mask: url(../assets/logos/be-meditation.svg) left top/contain no-repeat !important;
+          mask: url(../assets/logos/be-meditation.svg) left top/contain no-repeat !important;
+  aspect-ratio: 94 / 36 !important; }
