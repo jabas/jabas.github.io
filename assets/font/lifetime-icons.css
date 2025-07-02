@@ -1,8 +1,8 @@
 @font-face {
   font-display: block;
   font-family: "lifetime-icons";
-  src: url("./fonts/lifetime-icons.woff2?badfa3894d3919f0d5233967c6eaf7e0") format("woff2"),
-url("./fonts/lifetime-icons.woff?badfa3894d3919f0d5233967c6eaf7e0") format("woff");
+  src: url("./fonts/lifetime-icons.woff2?596567ca77946d7131f1c55d031b8d8c") format("woff2"),
+url("./fonts/lifetime-icons.woff?596567ca77946d7131f1c55d031b8d8c") format("woff");
 }
 
 .lti::before,
@@ -79,3 +79,7 @@ url("./fonts/lifetime-icons.woff?badfa3894d3919f0d5233967c6eaf7e0") format("woff
 .lti-tiktok::before { content: "\f132"; }
 .lti-twitter-x::before { content: "\f133"; }
 .lti-youtube::before { content: "\f134"; }
+.lti-pause-fill::before { content: "\f135"; }
+.lti-backward-15::before { content: "\f136"; }
+.lti-forward-15::before { content: "\f137"; }
+.lti-stop-fill::before { content: "\f138"; }

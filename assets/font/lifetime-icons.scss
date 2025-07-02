@@ -86,6 +86,10 @@ $lifetime-icons-map: (
   "tiktok": "\f132",
   "twitter-x": "\f133",
   "youtube": "\f134",
+  "pause-fill": "\f135",
+  "backward-15": "\f136",
+  "forward-15": "\f137",
+  "stop-fill": "\f138",
 );
 
 @each $icon, $codepoint in $lifetime-icons-map {

@@ -43,6 +43,9 @@
     <loc>http://localhost:4000/icons/arrow-upperright/</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/icons/backward-15/</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/icons/bar-chart/</loc>
   </url>
   <url>
@@ -148,6 +151,9 @@
     <loc>http://localhost:4000/logos/flow-vinyasa-stacked/</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/icons/forward-15/</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/logos/gtx/</loc>
   </url>
   <url>
@@ -238,6 +244,9 @@
     <loc>http://localhost:4000/logos/miora/</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/icons/pause-fill/</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/logos/pickleball/</loc>
   </url>
   <url>
@@ -248,9 +257,6 @@
   </url>
   <url>
     <loc>http://localhost:4000/icons/placeholder/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:4000/icons/play/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/icons/play-fill/</loc>
@@ -293,6 +299,9 @@
   </url>
   <url>
     <loc>http://localhost:4000/logos/squash-mark/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/stop-fill/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/logos/strike/</loc>

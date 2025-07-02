@@ -57,5 +57,9 @@
   "spotify": 61745,
   "tiktok": 61746,
   "twitter-x": 61747,
-  "youtube": 61748
+  "youtube": 61748,
+  "pause-fill": 61749,
+  "backward-15": 61750,
+  "forward-15": 61751,
+  "stop-fill": 61752
 }
