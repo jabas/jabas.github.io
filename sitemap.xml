@@ -1,360 +1,888 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4000/</loc>
+    <loc>https://kumiko.lifetime.life/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/alpha/</loc>
+    <loc>https://kumiko.lifetime.life/icons/0-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/alpha-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/0-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/alpha-paired/</loc>
+    <loc>https://kumiko.lifetime.life/icons/1-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/amp/</loc>
+    <loc>https://kumiko.lifetime.life/icons/1-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/arora/</loc>
+    <loc>https://kumiko.lifetime.life/icons/2-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-down/</loc>
+    <loc>https://kumiko.lifetime.life/icons/2-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-left/</loc>
+    <loc>https://kumiko.lifetime.life/icons/3-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-lowerleft/</loc>
+    <loc>https://kumiko.lifetime.life/icons/3-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-lowerright/</loc>
+    <loc>https://kumiko.lifetime.life/icons/4-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-right/</loc>
+    <loc>https://kumiko.lifetime.life/icons/4-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-up/</loc>
+    <loc>https://kumiko.lifetime.life/icons/5-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-upperleft/</loc>
+    <loc>https://kumiko.lifetime.life/icons/5-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/arrow-upperright/</loc>
+    <loc>https://kumiko.lifetime.life/icons/6-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/backward-15/</loc>
+    <loc>https://kumiko.lifetime.life/icons/6-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/bar-chart/</loc>
+    <loc>https://kumiko.lifetime.life/icons/7-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/bar-chart-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/7-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/basketball/</loc>
+    <loc>https://kumiko.lifetime.life/icons/8-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/basketball-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/8-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/be-meditation/</loc>
+    <loc>https://kumiko.lifetime.life/icons/9-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/be-meditation-stacked/</loc>
+    <loc>https://kumiko.lifetime.life/icons/9-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/bookmark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/airplane-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/bookmark-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/airplane-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/calendar/</loc>
+    <loc>https://kumiko.lifetime.life/logos/alpha/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/calendar-check/</loc>
+    <loc>https://kumiko.lifetime.life/logos/alpha-mark/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/calendar-check-fill/</loc>
+    <loc>https://kumiko.lifetime.life/logos/alpha-paired/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/calendar-fill/</loc>
+    <loc>https://kumiko.lifetime.life/logos/amp/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/calendar-x/</loc>
+    <loc>https://kumiko.lifetime.life/logos/arora/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/calendar-x-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-down/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/card/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-down-up/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/card-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-left/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/check/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-left-right/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/chevron-down/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-lowerleft/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/chevron-left/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-lowerright/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/chevron-right/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-repeat/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/chevron-up/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-right/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/climb/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-u-turn/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/climb-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-up/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/clipboard/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-upperleft/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/clipboard-data/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrow-upperright/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/court/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrows-angle-contract/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/danze/</loc>
+    <loc>https://kumiko.lifetime.life/icons/arrows-angle-expand/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/download/</loc>
+    <loc>https://kumiko.lifetime.life/icons/award/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/dpt/</loc>
+    <loc>https://kumiko.lifetime.life/icons/award-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/edg/</loc>
+    <loc>https://kumiko.lifetime.life/icons/backward-15/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/facebook/</loc>
+    <loc>https://kumiko.lifetime.life/icons/badge-cc/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/fire-hiit/</loc>
+    <loc>https://kumiko.lifetime.life/icons/badge-cc-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/fire-hiit-stacked/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bag/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/flow-vinyasa/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bag-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/flow-vinyasa-stacked/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bar-chart/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/forward-15/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bar-chart-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/gtx/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bar-chart2/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/gtx-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bar-chart2-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/gtx-paired/</loc>
+    <loc>https://kumiko.lifetime.life/icons/barbell/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos-overview/</loc>
+    <loc>https://kumiko.lifetime.life/logos/basketball/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/heart/</loc>
+    <loc>https://kumiko.lifetime.life/icons/basketball-hoop/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/heart-fill/</loc>
+    <loc>https://kumiko.lifetime.life/logos/basketball-mark/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/home/</loc>
+    <loc>https://kumiko.lifetime.life/logos/be-meditation/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/home-fill/</loc>
+    <loc>https://kumiko.lifetime.life/logos/be-meditation-stacked/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/sprite/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bicycle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bicycle-framed/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/instagram/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bicycle-ground/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/laic/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bicycle-mountain/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/laic-circle/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bookmark/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/laic-circle-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bookmark-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/life-barre/</loc>
+    <loc>https://kumiko.lifetime.life/icons/boot/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/lifetime/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-down/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/lifetime-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-in-down/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/lifetime-swim/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-in-left/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/lift/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-in-right/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/list/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-in-up/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/location/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-left/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-right/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/lt-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/box-arrow-up/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/ltopen/</loc>
+    <loc>https://kumiko.lifetime.life/icons/bullseye/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/maxout/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/mb360/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-arrow-left/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/mb360-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-arrow-left-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/mb360-paired/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-arrow-right/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/minus/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-arrow-right-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/miora/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-check/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/pause-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-check-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/pickleball/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/pickleball-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-x/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/pilates/</loc>
+    <loc>https://kumiko.lifetime.life/icons/calendar-x-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/placeholder/</loc>
+    <loc>https://kumiko.lifetime.life/icons/card-edit/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/play-fill/</loc>
+    <loc>https://kumiko.lifetime.life/icons/card-text/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/plus/</loc>
+    <loc>https://kumiko.lifetime.life/icons/card-text-edit/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/pwr/</loc>
+    <loc>https://kumiko.lifetime.life/icons/card-text-heart/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/remixx/</loc>
+    <loc>https://kumiko.lifetime.life/icons/cast/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/root-hatha/</loc>
+    <loc>https://kumiko.lifetime.life/icons/chat/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/root-hatha-stacked/</loc>
+    <loc>https://kumiko.lifetime.life/icons/check/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/search/</loc>
+    <loc>https://kumiko.lifetime.life/icons/check-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/shred/</loc>
+    <loc>https://kumiko.lifetime.life/icons/check-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/sliders/</loc>
+    <loc>https://kumiko.lifetime.life/icons/check-sm/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/sol-guided/</loc>
+    <loc>https://kumiko.lifetime.life/icons/chevron-down/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/sol-guided-stacked/</loc>
+    <loc>https://kumiko.lifetime.life/icons/chevron-left/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/spotify/</loc>
+    <loc>https://kumiko.lifetime.life/icons/chevron-right/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/squash/</loc>
+    <loc>https://kumiko.lifetime.life/icons/chevron-up/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/squash-mark/</loc>
+    <loc>https://kumiko.lifetime.life/logos/climb/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/stop-fill/</loc>
+    <loc>https://kumiko.lifetime.life/logos/climb-mark/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/strike/</loc>
+    <loc>https://kumiko.lifetime.life/icons/climbing-holds/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/surrender-yin/</loc>
+    <loc>https://kumiko.lifetime.life/icons/clipboard/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/surrender-yin-stacked/</loc>
+    <loc>https://kumiko.lifetime.life/icons/clipboard-data/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/swim/</loc>
+    <loc>https://kumiko.lifetime.life/icons/clock/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/tennis/</loc>
+    <loc>https://kumiko.lifetime.life/icons/clock-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/tennis-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/clock-history/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/three-dots/</loc>
+    <loc>https://kumiko.lifetime.life/icons/club/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/tiktok/</loc>
+    <loc>https://kumiko.lifetime.life/icons/code/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/twitter-x/</loc>
+    <loc>https://kumiko.lifetime.life/icons/code-slash/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/ultra-fit/</loc>
+    <loc>https://kumiko.lifetime.life/icons/copy/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/ultra-fit-mark/</loc>
+    <loc>https://kumiko.lifetime.life/icons/court/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/ultra-fit-paired/</loc>
+    <loc>https://kumiko.lifetime.life/icons/currency-dollar-circle/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/warrior/</loc>
+    <loc>https://kumiko.lifetime.life/icons/currency-dollar-circle-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/x/</loc>
+    <loc>https://kumiko.lifetime.life/icons/cursor/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/x-lg/</loc>
+    <loc>https://kumiko.lifetime.life/icons/cursor-fill/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/logos/xtreme/</loc>
+    <loc>https://kumiko.lifetime.life/logos/danze/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/yin-yang/</loc>
+    <loc>https://kumiko.lifetime.life/icons/dot/</loc>
   </url>
   <url>
-    <loc>http://localhost:4000/icons/youtube/</loc>
+    <loc>https://kumiko.lifetime.life/icons/download/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/dpt/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/dumbbell/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/ebike/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/edg/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/elliptical/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/envelope/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/exclamation-triangle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/exclamation-triangle-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/eye/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/eye-slash/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/facebook/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/file-earmark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/file-earmark-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/file-earmark-text/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/file-earmark-text-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/fire/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/fire-hiit/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/fire-hiit-stacked/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/flame/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/flow-vinyasa/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/flow-vinyasa-stacked/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/footsteps/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/forward-15/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/four-circle-grid/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/fruit/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/gear/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/gear-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/gift/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/golf-club/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/gtx/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/gtx-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/gtx-paired/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/hand-thumbs-down/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/hand-thumbs-down-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/hand-thumbs-up/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/hand-thumbs-up-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos-overview/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/heart/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/heart-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/heart-pulse/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/heart-pulse-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/home/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/home-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/sprite/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/id-card/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/id-card-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/info-circle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/info-circle-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/instagram/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/justify/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/justify-left/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/justify-right/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/kettlebell/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/laic/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/laic-circle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/laic-circle-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/life-barre/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/lifetime/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/lifetime-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/lifetime-swim/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/lift/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/lightning-charge/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/lightning-charge-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/link/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/link-45deg/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/list/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/location/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/lock/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/lotus/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/lt-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/ltopen/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/maxout/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/mb360/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/mb360-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/mb360-paired/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/mic/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/mic-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/mic-mute/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/mic-mute-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/minus/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/miora/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/pause-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/people/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/person/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/pickleball/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/pickleball-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/pilates/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/pilates/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/placeholder/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/play/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/play-circle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/play-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/playlist/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/plus/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/podium-circle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/pwr/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/question-circle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/racquet-pickleball/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/racquet-racquetball/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/racquet-squash/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/racquet-tennis/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/remixx/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/replay/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/root-hatha/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/root-hatha-stacked/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/rowing-machine/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/search/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shield-check/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shield-check-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shoe/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shoe-run/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shoe-run-framed/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shoe-run-ground/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/shred/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/shuffle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/skip-end/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/skip-end-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/skip-start/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/skip-start-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/skis/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/sleep/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/sliders/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/snowboard/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/sol-guided/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/sol-guided-stacked/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/soundwave/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/spotify/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/squash/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/squash-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/stack/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/stairs/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/star/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/star-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/star-half/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/star2/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/star2-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/stationary-bike/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/stop-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/stopwatch/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/stopwatch-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/strike/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/surrender-yin/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/surrender-yin-stacked/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/swim/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/telephone/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/tennis/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/tennis-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/test-tube/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/test-tube-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/three-dots/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/ticket/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/ticket-detailed/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/ticket-detailed-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/ticket-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/tiktok/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/trash/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/trophy/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/twitter-x/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/ultra-fit/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/ultra-fit-mark/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/ultra-fit-paired/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/unlock/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/volume/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/volume-off/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/warrior/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/water/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/x/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/x-circle/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/x-circle-fill/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/x-lg/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/logos/xtreme/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/yin-yang/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/yoga-mat/</loc>
+  </url>
+  <url>
+    <loc>https://kumiko.lifetime.life/icons/youtube/</loc>
   </url>
 </urlset>
