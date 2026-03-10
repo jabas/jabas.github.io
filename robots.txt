@@ -1,5 +1,4 @@
 # www.robotstxt.org
-# Allow crawling of all content
 User-agent: *
-Disallow:
-Sitemap: https://kumiko.lifetime.life/sitemap.xml
+Disallow: /
+Sitemap: http://localhost:4000/sitemap.xml

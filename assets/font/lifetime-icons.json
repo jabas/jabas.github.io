@@ -246,5 +246,12 @@
   "golf-club": 61934,
   "snowboard": 61935,
   "stairs": 61936,
-  "water": 61937
+  "water": 61937,
+  "lock-fill": 61938,
+  "unlock-fill": 61939,
+  "question-circle-fill": 61940,
+  "pause": 61941,
+  "stop": 61942,
+  "play-circle-fill": 61943,
+  "telephone-fill": 61944
 }

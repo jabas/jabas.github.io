@@ -1,8 +1,8 @@
 @font-face {
   font-display: block;
   font-family: "lifetime-icons";
-  src: url("./fonts/lifetime-icons.woff2?480d3779ee4b43bbda83ff3494aa7cdc") format("woff2"),
-url("./fonts/lifetime-icons.woff?480d3779ee4b43bbda83ff3494aa7cdc") format("woff");
+  src: url("./fonts/lifetime-icons.woff2?1dead118cf88db514eebd0e7e27318d0") format("woff2"),
+url("./fonts/lifetime-icons.woff?1dead118cf88db514eebd0e7e27318d0") format("woff");
 }
 
 .lti::before,
@@ -268,3 +268,10 @@ url("./fonts/lifetime-icons.woff?480d3779ee4b43bbda83ff3494aa7cdc") format("woff
 .lti-snowboard::before { content: "\f1ef"; }
 .lti-stairs::before { content: "\f1f0"; }
 .lti-water::before { content: "\f1f1"; }
+.lti-lock-fill::before { content: "\f1f2"; }
+.lti-unlock-fill::before { content: "\f1f3"; }
+.lti-question-circle-fill::before { content: "\f1f4"; }
+.lti-pause::before { content: "\f1f5"; }
+.lti-stop::before { content: "\f1f6"; }
+.lti-play-circle-fill::before { content: "\f1f7"; }
+.lti-telephone-fill::before { content: "\f1f8"; }

@@ -275,6 +275,13 @@ $lifetime-icons-map: (
   "snowboard": "\f1ef",
   "stairs": "\f1f0",
   "water": "\f1f1",
+  "lock-fill": "\f1f2",
+  "unlock-fill": "\f1f3",
+  "question-circle-fill": "\f1f4",
+  "pause": "\f1f5",
+  "stop": "\f1f6",
+  "play-circle-fill": "\f1f7",
+  "telephone-fill": "\f1f8",
 );
 
 @each $icon, $codepoint in $lifetime-icons-map {
