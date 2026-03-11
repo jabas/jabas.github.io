@@ -282,6 +282,19 @@ $lifetime-icons-map: (
   "stop": "\f1f6",
   "play-circle-fill": "\f1f7",
   "telephone-fill": "\f1f8",
+  "parens-plus": "\f1f9",
+  "parens-minus": "\f1fa",
+  "arrow-down-sm": "\f1fb",
+  "arrow-left-sm": "\f1fc",
+  "arrow-right-sm": "\f1fd",
+  "arrow-up-sm": "\f1fe",
+  "arrow-upperright-sm": "\f1ff",
+  "parens-arrow-down": "\f200",
+  "parens-arrow-left": "\f201",
+  "parens-arrow-right": "\f202",
+  "parens-arrow-up": "\f203",
+  "parens-arrow-upperright": "\f204",
+  "parens-close": "\f205",
 );
 
 @each $icon, $codepoint in $lifetime-icons-map {

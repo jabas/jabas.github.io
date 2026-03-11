@@ -1,8 +1,8 @@
 @font-face {
   font-display: block;
   font-family: "lifetime-icons";
-  src: url("./fonts/lifetime-icons.woff2?1dead118cf88db514eebd0e7e27318d0") format("woff2"),
-url("./fonts/lifetime-icons.woff?1dead118cf88db514eebd0e7e27318d0") format("woff");
+  src: url("./fonts/lifetime-icons.woff2?1301a255c5510244549964b149bc81a5") format("woff2"),
+url("./fonts/lifetime-icons.woff?1301a255c5510244549964b149bc81a5") format("woff");
 }
 
 .lti::before,
@@ -275,3 +275,16 @@ url("./fonts/lifetime-icons.woff?1dead118cf88db514eebd0e7e27318d0") format("woff
 .lti-stop::before { content: "\f1f6"; }
 .lti-play-circle-fill::before { content: "\f1f7"; }
 .lti-telephone-fill::before { content: "\f1f8"; }
+.lti-parens-plus::before { content: "\f1f9"; }
+.lti-parens-minus::before { content: "\f1fa"; }
+.lti-arrow-down-sm::before { content: "\f1fb"; }
+.lti-arrow-left-sm::before { content: "\f1fc"; }
+.lti-arrow-right-sm::before { content: "\f1fd"; }
+.lti-arrow-up-sm::before { content: "\f1fe"; }
+.lti-arrow-upperright-sm::before { content: "\f1ff"; }
+.lti-parens-arrow-down::before { content: "\f200"; }
+.lti-parens-arrow-left::before { content: "\f201"; }
+.lti-parens-arrow-right::before { content: "\f202"; }
+.lti-parens-arrow-up::before { content: "\f203"; }
+.lti-parens-arrow-upperright::before { content: "\f204"; }
+.lti-parens-close::before { content: "\f205"; }

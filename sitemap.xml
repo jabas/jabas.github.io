@@ -88,6 +88,9 @@
     <loc>http://localhost:4000/icons/arrow-down/</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/icons/arrow-down-sm/</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/icons/arrow-down-up/</loc>
   </url>
   <url>
@@ -95,6 +98,9 @@
   </url>
   <url>
     <loc>http://localhost:4000/icons/arrow-left-right/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/arrow-left-sm/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/icons/arrow-lowerleft/</loc>
@@ -109,16 +115,25 @@
     <loc>http://localhost:4000/icons/arrow-right/</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/icons/arrow-right-sm/</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/icons/arrow-u-turn/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/icons/arrow-up/</loc>
   </url>
   <url>
+    <loc>http://localhost:4000/icons/arrow-up-sm/</loc>
+  </url>
+  <url>
     <loc>http://localhost:4000/icons/arrow-upperleft/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/icons/arrow-upperright/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/arrow-upperright-sm/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/icons/arrows-angle-contract/</loc>
@@ -608,6 +623,30 @@
   </url>
   <url>
     <loc>http://localhost:4000/logos/miora/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-arrow-down/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-arrow-left/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-arrow-right/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-arrow-up/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-arrow-upperright/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-close/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-minus/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:4000/icons/parens-plus/</loc>
   </url>
   <url>
     <loc>http://localhost:4000/icons/pause/</loc>

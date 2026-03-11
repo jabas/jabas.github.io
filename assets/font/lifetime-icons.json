@@ -253,5 +253,18 @@
   "pause": 61941,
   "stop": 61942,
   "play-circle-fill": 61943,
-  "telephone-fill": 61944
+  "telephone-fill": 61944,
+  "parens-plus": 61945,
+  "parens-minus": 61946,
+  "arrow-down-sm": 61947,
+  "arrow-left-sm": 61948,
+  "arrow-right-sm": 61949,
+  "arrow-up-sm": 61950,
+  "arrow-upperright-sm": 61951,
+  "parens-arrow-down": 61952,
+  "parens-arrow-left": 61953,
+  "parens-arrow-right": 61954,
+  "parens-arrow-up": 61955,
+  "parens-arrow-upperright": 61956,
+  "parens-close": 61957
 }
